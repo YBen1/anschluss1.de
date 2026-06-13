@@ -1,0 +1,45 @@
+Technische Anforderungen für den Anschluss an das Mittelspannungsnetz Berlin
+Anlage 2
+Übersicht über die Anschlussprinzipien
+
+                                                               Kundenanlage                                               Art der Übergabe
+Netzform
+                                            Anlagenaufbau                       Einspeisung                               Anschlussprinzip
+Offen betriebener Ring                                                                                   vereinfacht, Lasttrennschalter-Sicherungs-Kombination
+(n-1)-sicher, Umschaltung              Transformator ≤ 800 kVA        keine
+                                                                                                                                 Bild 1.1
+
+                                                                                                                    Übergabe mit Leistungsschalter
+                                       Transformator > 800 kVA        keine
+                                                                                                                              Bild 1.3
+
+                                                                                                                    Übergabe mit Leistungsschalter
+                                           mehrere Abgänge            keine
+                                                                                                                              Bild 1.5
+
+                                                                      eine Einspeisung,                  vereinfacht, Lasttrennschalter-Sicherungs-Kombination
+                                       Transformator ≤ 800 kVA
+                                                                      Kurzschlussstrombeitrag ≤ 600 A1                           Bild 1.6
+
+                                                                      eine Einspeisung,                             Übergabe mit Leistungsschalter
+                                       Transformator > 800 kVA
+                                                                      Kurzschlussstrombeitrag ≤ 600 A1                        Bild 1.7
+
+                                                                      ≥ zwei Einspeisungen,                         Übergabe mit Leistungsschalter
+                                       Transformator > 800 kVA
+                                                                      Kurzschlussstrombeitrag ≤ 600 A1                        Bild 1.8
+Geschlossen betriebener Ring                                                                                        Übergabe mit Leistungsschalter
+(n-1)-sicher, stand by                     Seiteneinspeisung          keine
+                                                                                                                              Bild 1.9
+
+                                     Mitteneinspeisung und Längs-                                                   Übergabe mit Leistungsschalter
+                                                                      keine
+                                     kupplung mit Leistungsschalter                                                          Bild 1.10
+Stichanschaltung2                                                                                                   Übergabe mit Leistungsschalter
+(n-0)-sicher                                                          größere Wind- oder PV-Anlage
+                                                                                                                             Bild 1.11
+1
+    in Summe im gesamten Ring
+2
+    nur für Einspeisungen zulässig
+

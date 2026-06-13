@@ -1,0 +1,65 @@
+Technische Anforderungen für den
+Anschluss an das Mittelspannungsnetz Berlin
+Anlage 4
+Messwandler
+Stromwandler
+Übersichtsbild
+
+
+
+
+Vorgaben für den Anschluss
+• Für jeden Außenleiter ist ein Stützerstromwandler nach DIN 42600, U m 12 kV vorzusehen.
+• Es werden Stromwandler nach DIN 42600, Teil 4 (kleine Bauform) eingesetzt.
+• Um die Auswechselbarkeit der Wandler zu gewährleisten, ist die maximal mögliche Bauhöhe (h2) der
+  Stromwandler nach DIN 42600 zu beachten. Ebenfalls sind die in der DIN 42600 angegebenen
+  Grundplatten-Befestigungsmaße (e1,e2) einzuhalten. Die den Wandlern beigefugten Einbauhinweise sind
+  zu berücksichtigen.
+• Die Querschnitte der Sekundärleitungen zwischen den Wandlern und den Reihenklemmen (X1) betragen
+  für Spannungsmessleitungen 6 mm² Cu und für Strommessleitungen 4 mm² Cu. Für diese Verbindung
+  können massive oder flexible Leitungen (H07V-K oder H07V-U) verwendet werden. Bei flexibler
+  Verdrahtung sind Gabelkabelschuhe zu verwenden. Der Querschnitt der Strom- und Spannungs-
+  messleitungen zwischen den Reihenklemmen (X1) und (X2) beträgt 4 mm² Cu (Leitungslänge ≤ 15 m).
+  Sind im Ausnahmefall Leitungslängen über 15 m erforderlich, wird der Querschnitt von Stromnetz Berlin
+  angegeben. Die Messleitungen werden vom Anlagenerrichter so verlegt, dass sie auf der ganzen Länge
+  mechanisch geschützt sind und sich nach Möglichkeit während des Betriebes auswechseln lassen. Die in
+  den Zählerschrank eingeführten und abgesetzten Leitungsenden sollen ca. 1 m lang sein. Der Anschluss
+  an die Reihenklemmen (X2) erfolgt durch Mitarbeiter des Messstellenbetreibers.
+• Die Messwandler-Sekundärleitungen sind ungeschnitten von den Wandlerklemmen zur X1-Reihenklemme
+  und von der X1-Reihenklemme ungeschnitten zum Zählerschrank zu verlegen.
+
+
+
+
+Seite 1 / 2
+Technische Anforderungen für den
+Anschluss an das Mittelspannungsnetz Berlin
+Anlage 4
+Messwandler
+Spannungswandler
+Übersichtsbild
+
+
+
+
+Vorgaben für den Anschluss
+• Für jeden Außenleiter ist ein einpolig isolierter Spannungswandler nach DIN 42600, Um 12 kV vorzusehen.
+• Es sind Spannungswandler nach DIN 42600, Teil 7 (kleine Bauform) erforderlich.
+• Die den Wandlern beigefügten Einbauhinweise sind zu berücksichtigen. Vor den Klemmkästen der
+  Spannungswandler ist im Abstand von ca. 100 mm ein Verdrahtungskanal für die Sekundärverdrahtung
+  anzubringen. Für die sekundären Strom- und Spannungsmessleitungen werden in der Schaltanlage
+  Reihen- und Sicherungsklemmen (X1) so angebracht, dass Kontrollmessungen ohne Öffnen der
+  Schaltfelder möglich sind.
+• Der primärseitige Spannungswandleranschluss wird separat an der Stromschiene angeschlossen.
+• Die Reihenklemmen erfüllen nachstehende Bedingungen:
+   -   Klemmen für Leiterquerschnitte bis 10 mm² Cu
+   -   Isolierstege in den Brücken
+   -   Nennspannung 500 V
+   -   Sicherungsreihenklemmen mit Schmelzeinsatz
+   -   2,0 A (mit Kennmelder)
+
+
+
+
+Seite 2 / 2
+

@@ -1,0 +1,28 @@
+Bild 1.6 Übergabestation mit Anschluss an einem offenen 10-kV-Ring Übergabe ≤ 800 kVA, mit
+Erzeugeranlage ≤ 600 A
+
+
+
+
+    *1 Schalterbedienung durch Kunden im               Erdungsschalter sowie deren Antriebe und Bedienhebel
+       Normalbetrieb                                   sind rot zu kennzeichnen. Sämtliche Schaltfeldtüren des
+    *2 Die Bedienung der Schaltgeräte                  Übergabeteils dürfen nur von Beauftragten des
+       einschließlich Erdungsschalter                  Netzbetreibers geöffnet werden. Alle dargestellten
+       in den Einspeisefeldern ist nur vom             Schutzgeräte sind dreipolig auszuführen und allpolig
+       Netzbetreiber bzw. deren Beauftragten           anzuschließen. Für die Mittelspannungs-
+       Zulässig. Der jeweilige Antrieb ist durch ein   Erzeugungsmessung sind die Spannungswandler von
+       Hinweisschild „Schalterbedienung nur durch      der generatorischen Einspeisung aus gesehen vor den
+       Netzbetreiber- Personal“ zu kennzeichnen.       Messstromwandlern zu errichten.
+    *3 Beistellung durch den Messstellenbetreiber      Vor Beginn der Arbeiten am Übergabeteil benennt der
+    *4 Kurzschlussanzeiger                             Anlagenbetreiber dem Netzbetreiber-
+    *5 Für Messzwecke und Wartungsarbeiten             Störungsmanagement einen Anlagenverantwortlichen,
+    *6 Maximale Kabellänge 150m                        der nach DIN VDE 0105-100 die Verantwortung für die
+    *7 Spannungsschutz                                 Anlagenteile an der Arbeitsstelle trägt. Der zuständige
+       Für PV-Anlagen mit nicht-netzbildenden          Betriebsverantwortliche (verantwortliche Person gemäß
+       Umrichtern kann auf den Spannungsschutz         DIN VDE 0105-100) ist zu informieren.
+       verzichtet werden, wenn sie ein aktives
+       Inselnetzdetektionsverfahren nach VDE-AR-N
+       4105 besitzen und dieses aktiviert ist.
+    *8 Netzentkupplungsschutz
+    *9 Einspeisemanagement
+

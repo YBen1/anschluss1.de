@@ -1,0 +1,33 @@
+Bild 1.9 Übergabestation mit Anschluss an einem geschlossenen 10-kV-Ring (Seiteneinspeisung)
+
+
+
+
+    *1 Schalterbedienung durch Kunden im              geöffnet werden. Ist ein fest eingebauter
+       Normalbetrieb                                  Leistungsschalter geplant, ist vor diesem
+    *2 Die Bedienung der Schaltgeräte                 Leistungsschalter ein Lasttrennschalter (oder verriegelter
+       einschließlich Erdungsschalter                 Trennschalter) und nach diesem Leistungs-schalter eine
+       in den Einspeisefeldern ist nur vom            Lasttrennschalter- Erdungsschalter-Kombination
+       Netzbetreiber bzw. deren Beauftragten          (Verriegelung) vorzusehen. In diesem Fall sind vor und
+       Zulässig. Plombieren der Schalterantriebe      nach dem fest eingebauten Erdungsschalter
+       erfüllt diese Forderung nicht. Der jeweilige   Erdungsfestpunkte erforderlich.
+       Antrieb ist durch ein Hinweisschild            Alle dargestellten Schutzgeräte sind dreipolig
+       „Schalterbedienung nur durch Netzbetreiber-    auszuführen und allpolig anzuschließen. Der Netz-
+       Personal“ zu kennzeichnen.                     übergabeschutz wirkt direkt auf den Übergabeschalter.
+    *3 Beistellung durch den Messstellenbetreiber     Die Beistellung der relevanten Schutzgeräte im
+    *4 a) Beistellung durch den Netzbetreiber,        Übergabeteil erfolgt durch den Netzbetreiber. Für die
+        Vergleichsschutz, Schutz gemäß aktuellem      Messung am Netzverknüpfungs-punkt sind die
+        Konzept ( mehrere IL - und 3I0 - Stufen,      Spannungswandler vom Netz des Netzbetreibers aus
+        intermittierender EK-Schutz, Leistungs-       gesehen vor den Messstromwandlern anzuschließen.
+        versagerschutz usw.)                          Vor Beginn der Arbeiten am Übergabeteil benennt der
+    *4 b) Beistellung durch den Netzbetreiber,        Anlagenbetreiber dem Netzbetreiber-
+        Impedanzschutz (unverzögert bei               Störungsmanagement einen Anlagen-verantwortlichen,
+        mehrpoligem Nahfehler im Netz)                der nach DIN VDE 0105-100 die Verantwortung für die
+    *5 Für Messzwecke und Wartungsarbeiten            Anlagenteile an der Arbeitsstelle trägt. Der zuständige
+                                                      Betriebsverantwortliche (verantwortliche Person gemäß
+    Erdungsschalter sowie deren Antriebe und          DIN VDE 0105-100) ist zu informieren.
+    Bedienhebel sind rot zu kennzeichnen. Sämtliche
+    Schaltfeldtüren des Übergabeteiles sind mit
+    Netzbetreiber- Schließzylinder zu versehen und
+    dürfen nur von Beauftragten des Netzbetreibers
+

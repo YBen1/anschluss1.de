@@ -1,0 +1,1434 @@
+Dokumentart:              Dokumentbezeichnung:        Vertraulichkeitsklasse:   Anlagen:   Anzahl Seiten:
+
+Technische
+                          TB3340                      Medium (C1)               0          35
+Beschreibung
+Ansprechpartner:          Dokumentverantwortlicher:   Genehmigt von:            Version:   Gültig ab:
+
+                          Leiter Mittel-/
+Bereichssteuerung                                     Leiter Assets             1          27.04.2019
+                          Niederspannungsnetz
+
+
+
+
+FERNSTEUERUNG VON NETZ- UND KUNDENSTATIONEN IM MS-NETZ
+
+Zusammenfassung
+Diese Technische Beschreibung beinhaltet den Aufbau und die Ausführungen für die
+Fernsteuerungsanbindung von Kunden- und Netzstationen der Stromnetz Berlin GmbH.
+ Dokumentbezeichnung:                           Dokumenttitel:                                                    Version:                Seitenzahl:
+
+                                                Fernsteuerung von Netz- und
+ TB3340                                                                                                           1                       2 (35)
+                                                Kundenstationen im MS-Netz
+
+
+INHALT
+1 Änderungshinweise ............................................................................................................................... 4
+2 Ziel und Zweck ...................................................................................................................................... 4
+3 Geltungsbereich .................................................................................................................................... 4
+4 Mitgeltende Dokumente ........................................................................................................................ 4
+    4.1       Verordnungen .............................................................................................................................. 4
+    4.2       Normen ........................................................................................................................................ 4
+5 Copyright ............................................................................................................................................... 5
+6 Vorwort .................................................................................................................................................. 5
+7 Verantwortlichkeiten .............................................................................................................................. 6
+8 Systembeschreibung ............................................................................................................................. 6
+9 Schaltanlagen ........................................................................................................................................ 6
+10 USV ....................................................................................................................................................... 9
+11 Montagerahmen .................................................................................................................................... 9
+12 Antenne ............................................................................................................................................... 10
+13 TK-Verteiler.......................................................................................................................................... 11
+14 Hilfsspannung ...................................................................................................................................... 11
+15 Installation............................................................................................................................................ 11
+16 Beistellungen (nur Kundenanlagen) .................................................................................................... 16
+17 Umgebungsbedingungen .................................................................................................................... 16
+18 Dokumentation .................................................................................................................................... 16
+19 Inbetriebsetzung .................................................................................................................................. 17
+    19.1 Sicherheitshinweis ..................................................................................................................... 17
+20 Information zur Anordnung und Aufbau .............................................................................................. 18
+    20.1 Datenmodell............................................................................................................................... 18
+    20.2 Kontaktbelegung Steckverbindung (Standard) ......................................................................... 19
+    20.3 Kontaktbelegung Steckverbindung (Erweitert) .......................................................................... 21
+    20.4 Steckerbelegung ........................................................................................................................ 24
+    20.5 Montagerahmen......................................................................................................................... 25
+    20.6 Montagefläche-FWG-USV – begehbare Station ....................................................................... 27
+    20.7 Automat MS-Netz Anlagenstruktur ............................................................................................ 28
+    20.8 Han-Modular Blindmodul ........................................................................................................... 29
+    20.9 TK-Verteiler für begehbare Stationen........................................................................................ 29
+    20.10 TK-Verteiler für Kompaktstationen ............................................................................................ 30
+    Dokumentbezeichnung:                        Dokumenttitel:                                                    Version:               Seitenzahl:
+
+                                                Fernsteuerung von Netz- und
+    TB3340                                                                                                        1                      3 (35)
+                                                Kundenstationen im MS-Netz
+
+
+      20.11 Erdung des Steckergehäuses -X1 an der USV ......................................................................... 30
+      20.12 Meldungen und Befehle............................................................................................................. 31
+Anhang ..................................................................................................................................................... 33
+I     Abkürzungen, Definitionen .................................................................................................................. 33
+II Abbildungsverzeichnis ......................................................................................................................... 34
+III Tabellenverzeichnis ............................................................................................................................. 34
+IV Revisionsverzeichnis ........................................................................................................................... 35
+ Dokumentbezeichnung:            Dokumenttitel:                          Version:     Seitenzahl:
+
+                                 Fernsteuerung von Netz- und
+ TB3340                                                                  1            4 (35)
+                                 Kundenstationen im MS-Netz
+
+
+1    Änderungshinweise
+
+Alle Änderungshinweise aus älteren Versionen sind im Anhang IV Revisionsverzeichnis, Tabelle
+Anhang IV-1 Revisionsverzeichnis abgelegt.
+Tabelle 1-1 Änderungsübersicht
+
+ Version 1
+
+ Abschnitt                       Thema
+
+                                 Dieses Dokument ersetzt die Technische Beschreibung TB3310
+ Gesamtes Dokument
+                                 Version 1 und wurde grundlegend überarbeitet.
+
+
+
+2    Ziel und Zweck
+
+Diese Technische Beschreibung definiert den Sollzustand über die bestehenden Gesetze, Normen und
+Richtlinien hinaus, für die Fernsteuerung von Netz- und Kundenstationen und Festlegungen zum
+Einsatz in Kunden- und Netzstationen im Verteilungsnetz der Stromnetz Berlin GmbH (nachfolgend
+SNB genannt).
+Die Geschäfts- und Verkehrssprache ist deutsch.
+
+
+
+3    Geltungsbereich
+
+Diese Technische Beschreibung gilt für den Einsatz in Kunden- und Netzstationen im Verteilungsnetz
+der folgenden Gesellschaft:
+                      Stromnetz Berlin GmbH
+
+
+
+4    Mitgeltende Dokumente
+
+4.1 Verordnungen
+
+Verbindlich sind die jeweils geltenden Fassungen der:
+          •    Unfallverhütungsvorschriften der Berufsgenossenschaften
+          •    BDEW- und FNN-Richtlinien
+          •    Technische Anforderung Mittelspannung Berlin
+          •    TRBS
+
+
+4.2 Normen
+
+Verbindlich sind die jeweils geltenden Fassungen der:
+          •    DIN VDE – Normen
+ Dokumentbezeichnung:          Dokumenttitel:                             Version:       Seitenzahl:
+
+                               Fernsteuerung von Netz- und
+ TB3340                                                                   1              5 (35)
+                               Kundenstationen im MS-Netz
+
+
+5   Copyright
+
+Alle Inhalte dieser Technischen Beschreibung inklusive der Abbildungen, Zeichnungen [Tabellen,
+Diagramme usw.] und Anlagen unterliegen, sofern nicht anders angegeben, urheberrechtlichem
+Schutz. Es ist untersagt, sie ganz oder teilweise ohne ausdrückliche vorherige schriftliche Zustimmung
+der Stromnetz Berlin GmbH zu vervielfältigen, zu verbreiten, zu bearbeiten oder umzugestalten.
+
+
+
+6   Vorwort
+
+Es ist vorgesehen, die Wiederversorgungszeiten im Verteilungsnetz Berlin durch Fernsteuerung von
+6/10-kV-Netz-, Übergabe- bzw. Kombistationen weiter zu verkürzen. Hierzu sind die Fernschaltung der
+Lasttrennschalter in den Ringkabelfeldern sowie die Meldung der elektronischen Kurzschlussanzeiger
+und des Übergabeschutzes erforderlich.
+    Dokumentbezeichnung:              Dokumenttitel:                           Version:        Seitenzahl:
+
+                                      Fernsteuerung von Netz- und
+    TB3340                                                                     1               6 (35)
+                                      Kundenstationen im MS-Netz
+
+
+7        Verantwortlichkeiten
+
+•        Schaltanlagenlieferant
+         Der Schaltanlagenlieferant liefert dem Netzbetreiber oder einem Dritten eine Schaltanlage nach
+         DIN/VDE 0671, Teil 200 und nach den Technischen Beschreibungen TB3310 bzw. TB3311,
+         erweitert nach dieser TB3340.
+
+•        Installateur
+         Der Installateur ist für die fachgerechte Montage aller Komponenten in der Station zuständig.
+
+•        Netzbetreiber
+         Der Netzbetreiber stellt die nach Punkt 15 genannten Komponenten bei und führt die ausdrücklich
+         dem Netzbetreiber vorbehaltenen Arbeiten durch.
+
+
+
+8        Systembeschreibung
+
+Folgende Fernwirk- und Meldeaufkommen einer 6/10-kV-Station sind sicherzustellen:
+Tabelle 8-1 Fernwirk- und Meldeaufkommen 6/10-kV-Station
+    a)                 Fernschaltung der Lasttrennschalter in den Ringkabelfeldern
+
+    b)                 Rückmeldung der Lasttrennschalterstellungsmeldungen
+
+    c)                 Meldung der Kurzschlussanzeiger
+
+    d)                 Störmeldungen der Stromversorgung
+
+    e)                 Systemmeldungen der Fernwirkkomponenten
+
+    f)                 Störmeldung der Schaltanlage
+
+    g)                 Meldungen vom Überstomzeitschutzgerät
+
+
+Auflistung der Prozessinformation siehe unter Punkt 20
+
+
+
+9        Schaltanlagen
+
+Die Schaltanlage muss für die Fernsteuerung in allen Ringkabelfeldern mit Motorantrieben 24V-DC und
+Kurzschlussanzeigern ausgerüstet sein.
+Interne Verdrahtung auf Stecker siehe Anlage 19.14.
+Eine evtl. benötigte Nachlaufzeit (max. 2 sek.), um den Antrieb in die Endstellung zu fahren, wird von
+der Fernwirkeinheit zur Verfügung gestellt.
+    Dokumentbezeichnung:          Dokumenttitel:                               Version:   Seitenzahl:
+
+                                  Fernsteuerung von Netz- und
+    TB3340                                                                     1          7 (35)
+                                  Kundenstationen im MS-Netz
+
+
+Anforderung an die Schaltanlage:
+
+•     Motorsteuerung ohne Selbsthaltung
+
+•     Das Schaltgerät (Lasttrennschalter) und der Motorantrieb müssen im selben Feld eingebaut sein
+      und vom diesem Schaltfeld zugänglich sein
+
+•     Die motorischen Antriebe müssen mit Endschaltern abgesteuert werden.
+
+•     Entspannungsmöglichkeit oder automatische Entspannung der Schaltfelder, wenn der
+      Schaltvorgang unerwartet abgebrochen wird
+
+•     Entstörschaltung an den Motoranschlüssen
+
+•     Der Schaltvorgang des Lasttrennschalters muss innerhalb von 30 Sekunden komplett (incl. 2 sec.
+      Nachlauf) abgeschlossen sein.
+
+•     Der Anlaufstrom des Motors darf max. 25A für 300 ms betragen.
+
+•     Überlaststrom max. 15A für 3 sec
+
+•     Dauerstrom max. 10A für 30 sec.
+
+•     Leistungs-Zeit-Produkt (Arbeit) darf 2,5 kWs (kJ) nicht überschreiten.
+
+•     Im Leistungsteil wird der negative Pol der 24V-DC Versorgung geerdet.
+
+•     Koppelrelais der Motoren mit Freilaufdioden
+
+•     Sichtbare Schaltzustandsanzeige vor Ort und potenzialfreie Rückmeldungskontakte der
+      Schalterstellung
+
+•     Steuerungen und Verrieglungen, die nicht mechanisch ausgeführt werden, sind vorzugsweise in
+      Relaistechnik zu realisieren. Der maximal zulässige Eigenverbrauch im passiven Zustand darf 0,1
+      W nicht überschreiten.
+
+•     Damit Antrieb und Mechanik des Lasttrennschalters bei eingeschaltetem Erder keinen Schaden
+      nehmen, ist eine gesicherte Verrieglung zu gewährleisten.
+
+•     Der Steuerungsteil wird als erdschlussüberwachte Schutzkleinspannung 24V DC betrieben und
+      muss daher isoliert gegen Erde aufgebaut sein.
+
+•     Die Eingangsimpedanz der Motorensteuerung muss zwischen 3 – 4kΩ liegen.
+
+•     Elektronische Kurzschlussanzeiger mit potenzialfreien Kontakten
+      (siehe TB3370 )
+
+•     Frontal zugängliche Steckverbinder
+    Dokumentbezeichnung:                   Dokumenttitel:                                        Version:   Seitenzahl:
+
+                                           Fernsteuerung von Netz- und
+    TB3340                                                                                       1          8 (35)
+                                           Kundenstationen im MS-Netz
+
+
+•     Bei SF6-Schaltanlagen ist der Druckverlust temperaturkompensiert in die Störungssammelmeldung
+      einzubinden.
+
+•     Der Schaltanlagenhersteller muss benennen, welche Betriebsmittel in der Sammelfehlermeldung
+      überwacht werden und dies auf der Schaltanlage kenntlich machen. Die Prüfmöglichkeiten für die
+      einzelnen Betriebsmittel sind dem Netzbetreiber zu nennen. Werden keine Meldungen aus der
+      Schaltanlage generiert, muss die Verbindung kurzgeschlossen werden.
+
+•     Für den eingesetzten Motorantrieb ist ein Datenblatt der Stromnetz Berlin GmbH vorzulegen.
+
+
+Materialliste Steckverbinder Schaltanlage
+Tabelle 9-1 Steckverbinder -X10 an der Schaltanlage (24V M) (Harting)
+
+
+              Steckverbinder -X10 an der Schaltanlage (24V M) (Harting)
+
+
+    Anzahl   Bezeichnung                                  Hersteller Artikel Nr.      Bemerkung
+
+       1     Anbaugehäuse HAN 6B-agg-LB                   Harting    09 30 006 0301
+
+             Gelenkrahmen 6B für Gehäuseoberteile
+       1     und 2 Module                                 Harting    09 14 006 0303
+
+       1     Modular DD-Modul Stifteinsatz (M)            Harting    09 14 012 3001
+
+       2     Crimpkontaktstifte 2,5 mm², versilbert (M)   Harting    09 15 000 6106
+
+       1     Han-Modular-Blindmodul                       Harting    09 14 000 9950   Siehe Anlage 19.8
+
+
+
+Tabelle 9-2 Steckverbinder -X20 an der Schaltanlage (M) (Harting)
+
+                   Steckverbinder -X20 an der Schaltanlage (M) (Harting)
+
+    Anzahl   Bezeichnung                                  Hersteller Artikel Nr.      Bemerkung
+
+       1     Anbaugehäuse HAN 16B-agg-LB                  Harting    09 30 016 0307
+
+             Gelenkrahmen M16B für
+       1     Gehäuseoberteile und 4 Module                Harting    09 14 016 0303
+
+             DDD-Modul Stifteinsatz für 17 Kontakte
+       4     (M)                                          Harting    09 14 017 3001
+
+                                                                                      Wert in Klammern
+                                                                                      für erweiterte
+    42(50)   Crimpkontaktstifte 0,5 mm², versilbert (M)   Harting    09 15 000 6103   Version (siehe14)
+ Dokumentbezeichnung:                   Dokumenttitel:                                   Version:   Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                                                  1          9 (35)
+                                        Kundenstationen im MS-Netz
+
+
+Tabelle 9-3 Steckverbinder -X10 an der Schaltanlage (24V M) (Phönix)
+
+
+            Steckverbinder -X10 an der Schaltanlage (24V M) (Phönix)
+
+
+ Anzahl    Bezeichnung                               Hersteller Artikel Nr.   Bemerkung
+
+     1     HC-EVO-B06-BWS-PLRBK                      Phönix        1407621
+
+     1     HC-M-B06-MF-B                             Phönix        1417398
+
+     1     HC-M-12-CT-M                              Phönix        1414354
+
+     2     CK1,6-ED-2,50ST AG                        Phönix        1663381
+
+     1     HC-M-00                                   Phönix        1414353    Siehe Anlage 19.8
+
+
+
+Tabelle 9-4 Steckverbinder -X20 an der Schaltanlage (M) (Phönix)
+
+               Steckverbinder -X20 an der Schaltanlage (M) (Phönix)
+
+ Anzahl    Bezeichnung                               Hersteller Artikel Nr.   Bemerkung
+
+     1     HC-EVO-B16-BWS-PLRBK                      Phönix        1407646
+
+     1     HC-M-B16-MF-B                             Phönix        1417400
+
+     4     HC-M-17-CT-M                              Phönix        1414356
+
+                                                                              Wert in Klammern
+  42(50)   CK1,6-ED-0,50ST AG                        Phönix        1663349    für erweiterte
+                                                                              Version (siehe14)
+
+
+
+
+10 USV
+
+Die USV dient zur Versorgung einer Fernwirkeinheit sowie der Mittelspannungsschalter bei Netzausfall.
+
+Die Ausgangsspannung beträgt 24V DC +/- 5%.
+
+Siehe hierzu die TB3341 „Unterbrechungsfreie Stromversorgung (230-V-AC/24-V-DC) zur
+Hilfsenergieversorgung von motorischen Antrieben und Fernwirkgeräten“.
+
+
+
+11 Montagerahmen
+
+Der Montagerahmen (siehe Anhang) dient zur Aufnahme von zwei Teileinschubkassetten (USV und
+Fernwirkeinheit). Der Montagerahmen muss sowohl waagerecht wie auch senkrecht verbaut werden
+können.
+Die Außenmaße des Montagerahmens sind:
+462 mm Breite, 600 Tiefe, 88,4 mm Höhe (Maße ohne Befestigungswinkel).
+ Dokumentbezeichnung:                  Dokumenttitel:                                   Version:   Seitenzahl:
+
+                                       Fernsteuerung von Netz- und
+ TB3340                                                                                 1          10 (35)
+                                       Kundenstationen im MS-Netz
+
+
+Der Montagerahmen ist an den Potentialausgleich anzuschließen.
+Es muss eine PE-Verbindung (90 cm) in 6 mm² zwischen Montagerahmen und USV (Kabelschuh für
+M6) vorinstalliert werden.
+Siehe hierzu die TB3371 Erdung in Netzstationen.
+
+
+Begehbare Stationen
+Die Montage muss verwindungsfrei mit ausreichendem Platzbedarf (siehe Anlage 19.6) erfolgen.
+Auf eine sinnvolle Nähe zur Schaltanlage und auf einen ausreichenden Arbeitsbereich
+(Sicherheitsabstand zu offenen spannungsführenden Teilen) ist zu achten.
+
+
+Kompaktstationen
+In Kompaktstationen wird der Montagerahmen oberhalb der Schaltanlage montiert (andere
+Montageorte nur in Absprache mit dem Netzbetreiber).
+
+
+
+12 Antenne
+
+Die Art der Antenne, der mit dem Kunden/Eigentümer vereinbarte Montageort sowie die
+einzusetzenden Kabel- und Steckertypen werden durch den Netzbetreiber benannt.
+Die Montage der Antenne am vereinbarten Ort, der Anschluss des Kabels an der Antenne sowie die
+Kabellegung zur Front des Montagerahmens erfolgen durch den Installateur. Die Montageanweisungen
+der Hersteller für die verwendeten Antennen und Antennenkabel sind einzuhalten.
+Als Richtwerte gelten folgende Grenzen:
+Tabelle 12-1 Richtwerte für Antennen
+ Max.       Bezeichnung        Hersteller         Min.     Konfekt. Länge     Aussen-
+                                                                              durch-
+ Länge                                            Biege-   (einseitig mont.
+                                                                              messer
+                                                  radius
+                                                           N-Stecker)
+
+ 15 m       Ecoflex 10         SSB Electronic     40 mm    15 m               10,2 mm
+
+ 40 m       FSJ4-50B ½’’       ANDREW             32 mm    25 m, 40 m         13,2 mm
+
+
+
+Wenn eine der genannten Kabeltypen temporär nicht beschafft werden kann, sind solche Kabel
+einzusetzen, deren Eigenschaften nachweisbar die o. g. Anforderungen mindestens erfüllen.
+Die Beistellung der Antenne sowie des antennenseitig, vorkonfektionierten Antennenkabels in den o. g.
+Längen, erfolgen durch den Netzbetreiber.
+Der Anschluss des Antennenkabels am Fernwirkgerät, inklusive der Montage des notwendigen
+Steckers, erfolgt ebenfalls durch den Netzbetreiber.
+Eventuell weiteres Montagematerial zur Installation der Antenne muss durch den Installateur beigestellt
+werden.
+ Dokumentbezeichnung:          Dokumenttitel:                            Version:        Seitenzahl:
+
+                               Fernsteuerung von Netz- und
+ TB3340                                                                  1               11 (35)
+                               Kundenstationen im MS-Netz
+
+
+13 TK-Verteiler
+
+Begehbare Stationen
+Der TK-Verteiler wird vom Netzbetreiber, bzw. seinem Beauftragten geliefert und montiert.
+Bei Kundenstationen wird der TK-Verteiler durch den Netzbetreiber beigestellt.
+Die ankommenden Fernmeldekabel werden in dem TK-Verteiler durch den Netzbetreiber
+angeschlossen.
+Der Montageplatz des TK-Verteiler ist an der Wand, möglichst in der Nähe der TK-Kabeleinführungen
+vorzusehen (Abhängig von der Bauart der Station). Vom TK-Verteiler ist ein Fernmeldekabel Typ
+IY(St)Y 6x2x0,6 mm² zum Montagerahmen mit einer Mehrlänge von jeweils 2 m durch den Installateur
+zu legen.
+Das Auflegen des Kabels auf die Fernwirkeinheit wird durch den Netzbetreiber ausgeführt.
+
+
+Kompaktstationen
+Die ankommenden Fernmeldekabel (max. 3 Kabel 30x2x0,8 mm²) werden in einem seitlich, von außen
+zugänglichen, abschließbaren TK-Verteiler aufgelegt (siehe Anlage 19.10). Die Kabel müssen über
+eine Zugentlastung gesichert werden und der Kabelweg in der Station ist zu verrohren (drei Leerrohre
+oder gleichwertig).
+Auf eine TAE-Dose wird in Kompaktstationen verzichtet.
+Die innere lichte Weite der Leerrohre müssen min. 30 mm, der Biegeradius min. 200 mm betragen und
+jedes Rohr ist mit einem Ziehdraht zu versehen. Die Innenwand der Leerrohre muss glatt sein. Es ist
+kein flexibles Rohr zu verwenden.
+Andere Einbauvarianten sind mit dem Netzbetreiber abzustimmen.
+Vom TK-Verteiler ist ein Fernmeldekabel Typ IY(St)Y 6x2x0,6 mm² zum Montagerahmen mit einer
+Mehrlänge von jeweils 2 m durch den Installateur zu legen.
+
+
+
+14 Hilfsspannung
+
+Die Hilfsspannung von 230V-AC wird über eine separate Sicherung 16A aus der
+Niederspannungsverteilertafel bereitgestellt. In Kundenanlagen soll die Bereitstellung vorzugsweise aus
+dem beigestelltem Revisions-Hausanschluss erfolgen.
+
+
+
+15 Installation
+
+Die Verlegung und die Konfektionierung der Kabel mit den Steckverbindern erfolgt durch den
+Installateur. In der Standardversion sind damit bis zu drei Ringschalter und Kurzschlussanzeiger
+fernsteuerbar bzw. werden Schaltzustandsmeldungen und Kurzschlussanzeigerstatus übertragen.
+Müssen mehr wie drei Ringschalter und Kurzschlussanzeiger fernsteuerbar ausgerüstet werden, sind
+weitere Fernsteuerracks analog des ersten Fernsteuerracks aufzubauen.
+ Dokumentbezeichnung:                   Dokumenttitel:                                 Version:    Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                                                1           12 (35)
+                                        Kundenstationen im MS-Netz
+
+
+Für die Kabel -X1 bis -X10 vom Montagerahmen zur Schaltanlage müssen folgende Kabel verwendet
+werden:
+Tabelle 15-1 Stromversorgung 230 V aus Niederspannungsverteilung oder Hausanschluss
+
+ Kabel in Anlehnung an die DIN VDE 0292:
+
+ Stromversorgung 230 V                     3 G 2,5 flexibel, schwer brennbar, ölbeständig.
+                                           2 X 2,5 flexibel, schwer brennbar, ölbeständig.
+ Stromversorgung 24 V                      Alternativ 3 G 2,5 flexibel, schwer brennbar, ölbeständig (ohne
+                                           Anschluss des Schutzleiters auf beiden Seiten)
+
+
+Materiallisten Steckverbinder
+Tabelle 15-2 Steckverbinder -X1 Kabelseite (230V F/24V M) (Harting)
+
+
+                   Steckverbinder -X1 Kabelseite (230V F/24V M) (Harting)
+
+
+  Anzahl Bezeichnung                                 Hersteller       Artikel Nr.      Bemerkung
+
+           Tüllengehäuse HAN-6B-gs-
+    1      M25                                       Harting          19 30 006 1541
+           Gelenkrahmen 6B für
+           Gehäuseoberteile und 2
+    1      Module                                    Harting          09 14 006 0303
+           Modular DD-Modul Stifteinsatz
+    1      (M)                                       Harting          09 14 012 3001
+           Crimpkontaktstifte 2,5 mm²,
+    2      versilbert (M)                            Harting          09 15 000 6106
+           Modular E-Modul
+    1      Buchseneinsatz (F)                        Harting          09 14 006 3101
+           Crimpkontaktbuchsen 2,5 mm²
+    3      versilbert (F)                            Harting          09 33 000 6202
+           Uni-Mehrfachverschraubung
+    1      M25x1,5                                   Pflitsch         22554 d m2x9
+ Dokumentbezeichnung:                   Dokumenttitel:                                Version:       Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                                               1              13 (35)
+                                        Kundenstationen im MS-Netz
+
+
+Tabelle 15-3 Steckverbinder -X10 Kabelseite (24V F) (Harting)
+
+
+                        Steckverbinder -X10 Kabelseite (24V F) (Harting)
+
+
+ Anzahl Bezeichnung                                   Hersteller     Artikel Nr.      Bemerkung
+
+    1      Tüllengehäuse HAN-6B-gs-M25 Harting                       19 30 006 1541
+           Gelenkrahmen 6B für
+           Gehäuseunterteile und 2
+    1      Module                                     Harting        09 14 006 0313
+           Modular DD-Modul
+    1      Buchseneinsatz (F)                         Harting        09 14 012 3101
+           Crimpkontaktbuchse 2,5 mm²,
+    2      versilbert (F)                             Harting        09 15 000 6206
+                                                                                      Siehe Anlage
+    1      Han-Modular Blindmodul                     Harting        09 14 000 9950   20.8
+           Uni-Mehrfachverschraubung
+    1      M20x1,5                                    Pflitsch       22554 d m1x9
+
+
+Tabelle 15-4 Steckverbinder -X1 Kabelseite (230V F/24V M) (Phönix)
+
+
+                    Steckverbinder -X1 Kabelseite (230V F/24V M) (Phönix)
+
+
+  Anzahl Bezeichnung                                  Hersteller     Artikel Nr.      Bemerkung
+
+    1      HC-EVO-B06-HLFS-PLBK                       Phönix         1407619
+    1      HC-M-B06-MF-H                              Phönix         1417403
+    1      HC-M-12-CT-M                               Phönix         1414354
+    2      CK1,6-ED-2,50ST AG                         Phönix         1663381
+    1      HC-M-06-CT-F                               Phönix         1414367
+    3      CK2,5-ED-2,50BU AG                         Phönix         1663682
+    1      HC-B-G-M20-PLRBK                           Phönix         1407669
+ Dokumentbezeichnung:                   Dokumenttitel:                                 Version:   Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                                                1          14 (35)
+                                        Kundenstationen im MS-Netz
+
+
+Tabelle 15-5 Steckverbinder -X10 Kabelseite (24V F) (Phönix)
+
+
+                  Steckverbinder -X10 Kabelseite (24V F) (Phönix)
+
+
+ Anzahl     Bezeichnung                               Hersteller Artikel Nr.       Bemerkung
+
+     1      HC-EVO-B06-HLFS-PLBK                      Phönix     1407619
+     1      HC-M-B06-MF-H                             Phönix     1417403
+     1      HC-M-12-CT-F                              Phönix     1414355
+     2      CK2,5-ED-2,50BU AG                        Phönix     1663682
+                                                                                   Siehe
+                                                                                   Anlage
+     1      HC-M-00                                   Phönix     1414353           20.8
+     1      HC-B-G-M20-PLRBK                          Phönix     1407669
+
+
+Für das Kabel -X2 bis -X20 vom Montagerahmen zur Schaltanlage muss folgendes Kabel verwendet
+werden:
+Kabel nach DIN VDE 0292:
+42 G 0,5 flexibel, schwer brennbar, ölbeständig
+(50 G 0,5 flexibel, schwer brennbar, ölbeständig - erweiterte Version)
+
+
+Materialliste Steckverbinder
+Tabelle 15-6 Steckverbinder -X2 Kabelseite (M) (Harting)
+
+                       Steckverbinder -X2 Kabelseite (M) (Harting)
+
+   Anzahl    Bezeichnung                              Hersteller Artikel Nr.       Bemerkung
+
+             Tüllengehäuse HAN 16B-gs-
+     1       R-M25                                    Harting     19 30 016 1541
+             Gelenkrahmen M16B für
+             Gehäuseoberteile und 4
+     1       Module                                   Harting     09 14 016 0303
+             DDD-Modul Stifteinsatz für 17
+     4       Kontakte (M)                  Harting                09 14 017 3001
+             Crimpkontaktstifte 0,5 mm²,
+     42      versilbert (M)                           Harting     09 15 000 6103
+     1       Uni-Verschraubung M40x1,5                Pflitch     22553 d 13
+ Dokumentbezeichnung:                    Dokumenttitel:                                 Version:   Seitenzahl:
+
+                                         Fernsteuerung von Netz- und
+ TB3340                                                                                 1          15 (35)
+                                         Kundenstationen im MS-Netz
+
+
+Tabelle 15-7 Steckverbinder -X20 Kabelseite (F) (Harting)
+
+                        Steckverbinder -X20 Kabelseite (F) (Harting)
+
+ Anzahl      Bezeichnung                                  Hersteller Artikel Nr.   Bemerkung
+
+             Tüllengehäuse HAN 16B-gs-R-         19 30 016
+     1       M25                         Harting 1541
+             Gelenkrahmen F16B für
+             Gehäuseunterteile und 4                              09 14 016
+     1       Module                                       Harting 0313
+             DDD-Modul Stifteinsatz für 17                        09 14 017
+     4       Kontakte (F)                                 Harting 3101
+                                                                                   Wert in
+                                                                                   Klammern für
+         Crimpkontaktbuchsen 0,5 mm²,         09 15 000                            erweiterte
+ 42/(50) versilbert (F)               Harting 6203                                 Version
+     1       Uni-Verschraubung M40x1,5                    Pflitch    22553 d 13
+
+
+Tabelle 15-8 Steckverbinder -X2 Kabelseite (M) (Phönix)
+
+                       Steckverbinder -X2 Kabelseite (M) (Phönix)
+
+   Anzahl    Bezeichnung                              Hersteller Artikel Nr.        Bemerkung
+
+     1       HC-EVO-B16-HLFS-PLBK                     Phönix        1420931
+     1       HC-M-B16-MF-H                            Phönix        1417405
+     4       HC-M-17-CT-M                             Phönix        1414356
+     42      CK1,6-ED-0,50ST AG                       Phönix        1663349
+     1       HC-B-G-M25-PLRBK                         Phönix        1407670
+    Dokumentbezeichnung:                Dokumenttitel:                                 Version:   Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+    TB3340                                                                             1          16 (35)
+                                        Kundenstationen im MS-Netz
+
+
+Tabelle 15-9 Steckverbinder -X20 Kabelseite (F) (Phönix)
+
+                        Steckverbinder -X20 Kabelseite (F) (Phönix)
+
+    Anzahl   Bezeichnung                                 Hersteller Artikel Nr.   Bemerkung
+
+       1     HC-EVO-B16-HLFS-PLBK                        Phönix     1420931
+       1     HC-M-B16-MF-H                               Phönix     1417405
+       4     HC-M-17-CT-F                                Phönix     1414357
+                                                                                  Wert in
+                                                                                  Klammern für
+                                                                                  erweiterte
+    42/(50) CK1,6-ED-0,50BU AG                           Phönix     1663404       Version
+       1     HC-B-G-M25-PLRBK                            Phönix     1407670
+
+
+
+16 Beistellungen (nur Kundenanlagen)
+
+•      Antenne ohne Montagematerial für die Befestigung
+•      Antennenkabel für die vorgesehene Länge mit einem antennenseitig montierten N-Stecker
+•      Montagerahmen
+•      TK-Verteiler
+
+
+
+17 Umgebungsbedingungen
+
+Die Übertragungs- und Fernsteuerungstechnik sowie die Stromversorgung sind für einen
+Temperaturbereich von -20 C bis + 55 C ausgelegt.
+
+
+
+18 Dokumentation
+
+Durch den Schaltanlagenlieferanten und den Installateur sind dem Netzbetreiber nachfolgende
+Unterlagen zur Verfügung zu stellen:
+       •     Prüfprotokolle
+       •     Anordnungsplan
+       •     Stromlaufplan
+       •     Klemmenplan
+       •     Pläne für Baukörper
+ Dokumentbezeichnung:          Dokumenttitel:                             Version:       Seitenzahl:
+
+                               Fernsteuerung von Netz- und
+ TB3340                                                                   1              17 (35)
+                               Kundenstationen im MS-Netz
+
+
+19 Inbetriebsetzung
+
+Inbetriebnahme Schaltanlage
+Die Funktionsfähigkeit der Schaltanlage inklusive aller Meldungen und Befehle, sowie Verdrahtung und
+Verkabelung bis zu den Steckverbindern -X1 und -X2 am Montagerahmen muss von dem Installateur
+mit geeigneter Prüfeinrichtung (Prüfbox für die Primärtechnik) nachgewiesen werden. Die Abnahme
+erfolgt vor Ort in Anwesenheit des Installateurs und dem Netzbetreiber.
+
+
+Inbetriebnahme Fernwirkeinheit, USV und Übertragungsweg
+Die Funktionsfähigkeit von Fernwirkeinheit, USV und des Übertragungsweges wird durch eine
+geeignete Prüfeinrichtung (Prüfbox für die Sekundärtechnik) seitens des Netzbetreibers sichergestellt
+(ohne Befehlsausgabe).
+
+
+Scharfschalttest
+Der Scharfschalttest ist die vom Netzbetreiber durchgeführte, abschließende Inbetriebnahmeprozedur
+zur Einbindung der fernsteuerbaren Station ins Netz.
+
+
+
+19.1 Sicherheitshinweis
+
+Das Aufstecken der Steckverbinder auf USV und Fernwirkeinheit erfolgt grundsätzlich durch Personal
+des Netzbetreibers! Bei Zuwiderhandlung besteht Lebensgefahr!
+
+
+Vor dem Scharfschalttest darf der Stecker -X1 nur mit einem Inbetriebnahmeadapter, der die 24-V-
+Stromversorgung zur Schaltanlage unterbricht, gesteckt werden!
+Vor dem Scharfschalttest darf der Stecker -X2 nicht gesteckt werden!
+ Dokumentbezeichnung:               Dokumenttitel:                                 Version:   Seitenzahl:
+
+                                    Fernsteuerung von Netz- und
+ TB3340                                                                            1          18 (35)
+                                    Kundenstationen im MS-Netz
+
+
+20 Information zur Anordnung und Aufbau
+
+20.1 Datenmodell
+
+Die Zeilen 1-29 enthalten die Daten der Standardversion, die von 30-41 (kursiv) die erweiterte Version.
+
+
+Tabelle 20-1 Datenmodell
+  Lfd.               Prozessinformation              Info-            Ursprung/Ziel
+   1     RS Feld 1 AUS                                DB     Schaltanlage
+   2     RS Feld 1 EIN                               DB      Schaltanlage
+   3     RS Feld 2 AUS                               DB      Schaltanlage
+   4     RS Feld 2 EIN                               DB      Schaltanlage
+   5     RS Feld 3 AUS                               DB      Schaltanlage
+   6     RS Feld 3 EIN                               DB      Schaltanlage
+   7     KA Rücksetzen                               EB      Kurzschlussanzeiger
+   8     KA Setzen                                   EB      Kurzschlussanzeiger
+   9     RS Feld 1 AUS                               DM      Schaltanlage
+   10    RS Feld 1 EIN                               DM      Schaltanlage
+   11    RS Feld 2 AUS                               DM      Schaltanlage
+   12    RS Feld 2 EIN                               DM      Schaltanlage
+   13    RS Feld 3 AUS                               DM      Schaltanlage
+   14    RS Feld 3 EIN                               DM      Schaltanlage
+   15    Steuerung Ort                               DM      FWG
+   16    Steuerung Fern                              DM      FWG
+   17    KA RS 1 (L1)                                EM      Kurzschlussanzeiger
+   18    KA RS 1 (L2)                                EM      Kurzschlussanzeiger
+   19    KA RS 1 (L3)                                EM      Kurzschlussanzeiger
+   20    KA RS 2 (L1)                                EM      Kurzschlussanzeiger
+   21    KA RS 2 (L2)                                EM      Kurzschlussanzeiger
+   22    KA RS 2 (L3)                                EM      Kurzschlussanzeiger
+   23    KA RS 3 (L1)                                EM      Kurzschlussanzeiger
+   24    KA RS 3 (L2)                                EM      Kurzschlussanzeiger
+   25    KA RS 3 (L3)                                EM      Kurzschlussanzeiger
+   26    MS-Anlage Gestört                           EM      Schaltanlage
+   27    Netzspannung fehlt                          EM      NS-Verteilung
+   28    USV 24-V-DC Warnung                         EM      USV
+   29    Systemmeldungen                             EM      FWG
+   30    RS Feld 4 AUS                               DB      Schaltanlage
+   31    RS Feld 4 EIN                               DB      Schaltanlage
+   32    RS Feld 5 AUS                               DB      Schaltanlage
+   33    RS Feld 5 EIN                               DB      Schaltanlage
+   34    RS Feld 4 AUS                               DM      Schaltanlage
+   35    RS Feld 4 EIN                               DM      Schaltanlage
+   36    RS Feld 5 AUS                               DM      Schaltanlage
+   37    RS Feld 5 EIN                               DM      Schaltanlage
+   38    KA RS 4 (L1)                                EM      Kurzschlussanzeiger
+   39    KA RS 4 (L2)                                EM      Kurzschlussanzeiger
+   40    KA RS 4 (L3)                                EM      Kurzschlussanzeiger
+ Dokumentbezeichnung:                 Dokumenttitel:                            Version:   Seitenzahl:
+
+                                      Fernsteuerung von Netz- und
+ TB3340                                                                         1          19 (35)
+                                      Kundenstationen im MS-Netz
+
+
+20.2 Kontaktbelegung Steckverbindung (Standard)
+
+Kontaktbelegung -X1 und -X10
+Tabelle 20-2 Kontaktbelegung -X1 und -X10 (Standard)
+                                                                               Belegung
+      Kontakt                    Beschreibung               Bemerkung
+                                                                               mit Ader
+
+                                     nur-X1.A
+         1                             L                    230V/AC               ja
+         3                             N                    230V/AC               ja
+         6                 PE (gebrückt mit Gehäuse)    PE (s. Anlage 19.13)      ja
+       2,4,5                          NC
+                                     -X1.B / -X10.B
+         1                             L+                    24V/DC               ja
+         2                             L-                     0V/DC               ja
+       3-12                           NC
+
+
+
+Tabelle 20-3 Kontaktbelegung -X2 und -X20 (Standard)
+                                                                               Belegung
+      Kontakt                    Beschreibung               Bemerkung
+                                                                               mit Ader
+
+                                     -X2.A / -X20.A (Meldungen)
+        1-4                           NC                                          ja
+                      Mittelspannungsschaltanlage
+         5                       gestört               Sammelmeldung              ja
+                                                       Ist im KA zu
+         6                  KA: L1;L2;L3; RS 1         brücken                    ja
+         7                        NC; RS 1                                        ja
+         8                        NC; RS 1                                        ja
+                                                       Ist im KA zu
+         9                  KA: L1;L2;L3; RS 2         brücken                    ja
+         10                       NC; RS 2                                        ja
+         11                       NC; RS 2                                        ja
+                                                       Ist im KA zu
+         12                 KA: L1;L2;L3; RS 3         brücken                    ja
+         13                       NC; RS 3                                        ja
+Dokumentbezeichnung:           Dokumenttitel:                        Version:   Seitenzahl:
+
+                               Fernsteuerung von Netz- und
+TB3340                                                               1          20 (35)
+                               Kundenstationen im MS-Netz
+
+
+       14                    NC; RS 3                                 ja
+       15                       NC                                    ja
+       16                       L+               Meldespannung        ja
+       17                       L-               Meldespannung        ja
+                           -X2.B / -X20.B (Meldungen)
+       1                       AUS               Ringschalter RS 1    ja
+       2                       EIN               Ringschalter RS 1    ja
+       3                       AUS               Ringschalter RS 2    ja
+       4                       EIN               Ringschalter RS 2    ja
+       5                       AUS               Ringschalter RS 3    ja
+       6                       EIN               Ringschalter RS 3    ja
+     7-12                       NC                                    ja
+     13-17                      NC
+                            -X2.C / -X20.C (Meldungen)
+     1-17                       NC
+                             -X2.D / -X20:D (Befehle)
+       1                       AUS               Ringschalter RS 1    ja
+       2                       EIN               Ringschalter RS 1    ja
+       3                       AUS               Ringschalter RS 2    ja
+       4                       EIN               Ringschalter RS 2    ja
+       5                       AUS               Ringschalter RS 3    ja
+       6                       EIN               Ringschalter RS 3    ja
+       7                       EIN               KA rücksetzen        ja
+       8                       EIN               KA setzen            ja
+     9-11                       NC                                    ja
+     12-16                      NC
+       17              Steuerspannung Wurzel                          ja
+ Dokumentbezeichnung:                  Dokumenttitel:                             Version:   Seitenzahl:
+
+                                       Fernsteuerung von Netz- und
+ TB3340                                                                           1          21 (35)
+                                       Kundenstationen im MS-Netz
+
+
+20.3 Kontaktbelegung Steckverbindung (Erweitert)
+
+Tabelle 20-4 Kontaktbelegung -X1 und -X10 (Erweitert)
+                                                                                Belegung
+       Kontakt                    Beschreibung               Bemerkung
+                                                                                 mit Ader
+
+                                      nur-X1.A
+          1                              L                   230V/AC               ja
+          3                              N                   230V/AC               ja
+          6                 PE (gebrückt mit Gehäuse)    PE (s. Anlage 19.13)      ja
+       2,4,5                            NC
+                                      -X1.B / -X10.B
+          1                             L+                    24V/DC               ja
+          2                             L-                     0V/DC               ja
+        3-12                            NC
+
+
+
+Kontaktbelegung -X2 und –X20
+Tabelle 20-5 Kontaktbelegung -X2 und –X20 (Erweitert)
+                                                                                Belegung
+      Kontakt                    Beschreibung               Bemerkung
+                                                                                mit Ader
+
+                                      -X2.A / -X20.A (Meldungen)
+        1-4                            NC                                          ja
+                      Mittelspannungsschaltanlage
+         5                       gestört                Sammelmeldung              ja
+                                                        Ist im KA zu
+         6                   KA: L1;L2;L3; RS 1         brücken                    ja
+         7                         NC; RS 1                                        ja
+         8                         NC; RS 1                                        ja
+                                                        Ist im KA zu
+         9                   KA: L1;L2;L3; RS 2         brücken                    ja
+         10                        NC; RS 2                                        ja
+         11                        NC; RS 2                                        ja
+                                                        Ist im KA zu
+         12                  KA: L1;L2;L3; RS 3         brücken                    ja
+         13                        NC; RS 3                                        ja
+Dokumentbezeichnung:          Dokumenttitel:                       Version:   Seitenzahl:
+
+                              Fernsteuerung von Netz- und
+TB3340                                                             1          22 (35)
+                              Kundenstationen im MS-Netz
+
+
+      14                   NC; RS 3                                ja
+      15                      NC                                   ja
+      16                      L+               Meldespannung       ja
+      17                       L-              Meldespannung       ja
+                          -X2.B / -X20.B (Meldungen)
+       1                     AUS               Ringschalter RS 1   ja
+       2                      EIN              Ringschalter RS 1   ja
+       3                     AUS               Ringschalter RS 2   ja
+       4                      EIN              Ringschalter RS 2   ja
+       5                     AUS               Ringschalter RS 3   ja
+       6                      EIN              Ringschalter RS 3   ja
+      7-8                     NC                                   ja
+       9                     AUS               Ringschalter RS 4   ja
+      10                      EIN              Ringschalter RS 4   ja
+      11                     AUS               Ringschalter RS 5   ja
+      12                      EIN              Ringschalter RS 5   ja
+    13-17                     NC
+                          -X2.C / -X20.C (Meldungen)
+                                               Ist im KA zu
+       1               KA: L1;L2;L3; RS 4      brücken             ja
+       2                   NC; RS 4                                ja
+       3                   NC; RS 4                                ja
+      4-5                     NC                                   ja
+     1-17                     NC
+                           -X2.D / -X20.D (Befehle)
+       1                     AUS               Ringschalter RS 1   ja
+       2                      EIN              Ringschalter RS 1   ja
+       3                     AUS               Ringschalter RS 2   ja
+       4                      EIN              Ringschalter RS 2   ja
+       5                     AUS               Ringschalter RS 3   ja
+       6                      EIN              Ringschalter RS 3   ja
+Dokumentbezeichnung:            Dokumenttitel:                       Version:   Seitenzahl:
+
+                                Fernsteuerung von Netz- und
+TB3340                                                               1          23 (35)
+                                Kundenstationen im MS-Netz
+
+
+       7                       EIN               KA rücksetzen       ja
+       8                       EIN               KA setzen           ja
+       9                       AUS               Ringschalter RS 4   ja
+      10                       EIN               Ringschalter RS 4   ja
+      11                       AUS               Ringschalter RS 5   ja
+      12                       EIN               Ringschalter RS 5   ja
+    13-14                       NC                                   ja
+    15-16                       NC
+      17               Steuerspannung Wurzel                         ja
+ Dokumentbezeichnung:            Dokumenttitel:                       Version:   Seitenzahl:
+
+                                 Fernsteuerung von Netz- und
+ TB3340                                                               1          24 (35)
+                                 Kundenstationen im MS-Netz
+
+
+20.4 Steckerbelegung
+
+Belegung des Steckverbinders –X2 (Kabelseite) und
+Belegung des Steckverbinders –X20 (Schaltanlagenseite) in der Standardversion
+
+
+                 -X2/-X20
+
+
+
+
+                                            -X2.A
+
+
+
+                                                        -X1
+
+
+                                            -X2.B
+
+
+                                                                   -X1.A
+
+
+
+                                            -X2.C
+                                                                   -X1.B
+
+
+
+
+                                            -X2.D
+
+
+
+
+Abbildung 20-1 Steckerbelegung
+ Dokumentbezeichnung:                Dokumenttitel:                Version:   Seitenzahl:
+
+                                     Fernsteuerung von Netz- und
+ TB3340                                                            1          25 (35)
+                                     Kundenstationen im MS-Netz
+
+
+20.5 Montagerahmen
+
+
+
+
+Abbildung 20-2 Montagerahmen
+
+
+
+
+Abbildung 20-3 Montagerahmen Seitenansicht
+
+
+
+
+Abbildung 20-4 Montagerahmen Frontansicht
+ Dokumentbezeichnung:                Dokumenttitel:                Version:   Seitenzahl:
+
+                                     Fernsteuerung von Netz- und
+ TB3340                                                            1          26 (35)
+                                     Kundenstationen im MS-Netz
+      232,5*
+
+
+
+
+                                                                   352,5*
+      88
+      132
+       70
+ 88
+
+
+
+
+      19,3
+
+
+                                              479,7
+
+
+                                              486,3
+
+
+
+
+Abbildung 20-5 Montagerahmen Draufsicht
+ Dokumentbezeichnung:               Dokumenttitel:                Version:   Seitenzahl:
+
+                                    Fernsteuerung von Netz- und
+ TB3340                                                           1          27 (35)
+                                    Kundenstationen im MS-Netz
+
+
+20.6 Montagefläche-FWG-USV – begehbare Station
+
+
+
+
+Abbildung 20-6 Montagefläche-FWG-USV – begehbare Station
+ Dokumentbezeichnung:                 Dokumenttitel:                Version:   Seitenzahl:
+
+                                      Fernsteuerung von Netz- und
+ TB3340                                                             1          28 (35)
+                                      Kundenstationen im MS-Netz
+
+
+20.7 Automat MS-Netz Anlagenstruktur
+
+
+
+
+Abbildung 20-7 Automat MS-Netz Anlagenstruktur
+ Dokumentbezeichnung:                   Dokumenttitel:                Version:   Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                               1          29 (35)
+                                        Kundenstationen im MS-Netz
+
+
+20.8 Han-Modular Blindmodul
+
+
+
+
+Abbildung 20-8 Han-Modular Blindmodul
+
+
+
+
+20.9 TK-Verteiler für begehbare Stationen
+
+
+
+
+Befestigungs-
+bohrung 1
+                                        235
+
+
+
+
+Befestigungs-         Befestigungs-
+
+bohrung 2             bohrung 3
+
+
+
+
+                    75
+
+
+Abbildung 20-9 TK-Verteiler für begehbare Stationen
+ Dokumentbezeichnung:                  Dokumenttitel:                Version:   Seitenzahl:
+
+                                       Fernsteuerung von Netz- und
+ TB3340                                                              1          30 (35)
+                                       Kundenstationen im MS-Netz
+
+
+20.10 TK-Verteiler für Kompaktstationen
+
+
+
+
+Abbildung 20-10 TK-Verteiler für Kompaktstationen
+
+
+
+
+20.11 Erdung des Steckergehäuses -X1 an der USV
+
+
+
+
+Abbildung 20-11 Erdung des Steckergehäuses -X1 an der USV
+ Dokumentbezeichnung:                         Dokumenttitel:                                            Version:   Seitenzahl:
+
+                                              Fernsteuerung von Netz- und
+ TB3340                                                                                                 1          31 (35)
+                                              Kundenstationen im MS-Netz
+
+
+20.12 Meldungen und Befehle
+    Meldungen sind durch potentialfreien Schließer oder Öffner zu realisieren
+                                                                           .
+    Die Spannung ist an X.2 A Pin 16 zu entnehmen
+
+
+    Beispiel Schaltzustandsmeldungen RS 1:
+
+        24V = L+
+       -X2.A/16
+
+
+
+
+                       RS 1 AUS   RS 1 EIN        ...
+
+
+
+
+       -X2.B/01
+
+
+       -X2.B/02
+
+
+          ...
+
+
+      Beispiel Mittelspannungsschaltanlage gestört ( Fehlermeldungen exemplarisch )
+
+
+
+        24V = L+
+       -X2.A/16
+
+
+
+
+                    SF6 fehlt
+
+
+                                         Der Schaltanlagenhersteller muss benennen, welche Betriebsmittel
+                                         in der Sammelfehlermeldung überwacht werden  . . Die
+                                         Prüfmöglichkeiten für die einzelnen Betriebsmittel sind zu
+          Schaltfeld geöffnet            benennen. Werden keine Meldungen aus der Schaltanlage
+                                         generiert, muss die Verbindung kurzgeschlossen werden.
+
+
+
+
+                      ...
+
+
+
+
+       -X2.A/5
+
+
+
+
+    Beispiel Kurzschlussanzeiger RS 1Berlin
+
+        24V =L+
+       -X2.A/ 16
+
+
+
+
+       - X2.A/ 06
+
+
+
+Abbildung 20-12 Meldungen
+ Dokumentbezeichnung:                   Dokumenttitel:                                            Version:   Seitenzahl:
+
+                                        Fernsteuerung von Netz- und
+ TB3340                                                                                           1          32 (35)
+                                        Kundenstationen im MS-Netz
+
+
+                                                                    .
+     Befehle werden über einen “Wurzelkontakt“ gesichert ausgegeben
+     Beispiel Motorschütz für RS1 im Steuer und Leistungsteil ( hier ohne Drehrichtungsumkehr):
+                                         .
+     Ein Motorschutz ist in der USV integriert
+
+        24V =L+
+       -X1.B/ 01
+
+
+       -X2.D/01
+
+
+
+                             =       RS 1 AUS
+
+
+
+          Wurzel
+       - X2. D/ 17
+
+
+
+
+                      M
+         0V =L-
+        -X1.B/ 02
+
+
+
+
+       Beispiel Rücksetzen Kurzschlussanzeiger
+
+
+       - X2.D/ 07
+
+
+
+
+                                                 Rücksetzen KA ( 1-3)
+                                                 Relais ist vom
+                                        =        Schaltanlagenhersteller
+                                                 bereitzustellen
+
+
+
+
+          Wurzel
+       - X2.D/ 17
+
+
+
+Abbildung 20-13 Befehle
+    Dokumentbezeichnung:             Dokumenttitel:                Version:   Seitenzahl:
+
+                                     Fernsteuerung von Netz- und
+    TB3340                                                         1          33 (35)
+                                     Kundenstationen im MS-Netz
+
+
+Anhang
+
+I      Abkürzungen, Definitionen
+
+DB                    Doppelbefehl
+DM                    Doppelmeldung
+EM                    Einzelmeldung
+F                     Female
+FWG                   Fernwirkgerät
+HA                    Hausanschluss
+KA                    Kurzschlussanzeiger
+M                     Male
+MS                    Mittelspannung
+NC                    ohne Signalbelegung
+NS                    Niederspannung
+RS                    Ringkabelschalter
+USV                   Unterbrechungsfreie Stromversorgung
+-X                    Stecker
+ Dokumentbezeichnung:                        Dokumenttitel:                                               Version:              Seitenzahl:
+
+                                             Fernsteuerung von Netz- und
+ TB3340                                                                                                   1                     34 (35)
+                                             Kundenstationen im MS-Netz
+
+
+II    Abbildungsverzeichnis
+
+Abbildung 20-1 Steckerbelegung ............................................................................................................. 24
+Abbildung 20-2 Montagerahmen .............................................................................................................. 25
+Abbildung 20-3 Montagerahmen Seitenansicht ....................................................................................... 25
+Abbildung 20-4 Montagerahmen Frontansicht ......................................................................................... 25
+Abbildung 20-5 Montagerahmen Draufsicht ............................................................................................ 26
+Abbildung 20-6 Montagefläche-FWG-USV – begehbare Station ............................................................ 27
+Abbildung 20-7 Automat MS-Netz Anlagenstruktur ................................................................................. 28
+Abbildung 20-8 Han-Modular Blindmodul ................................................................................................ 29
+Abbildung 20-9 TK-Verteiler für begehbare Stationen ............................................................................. 29
+Abbildung 20-10 TK-Verteiler für Kompaktstationen ............................................................................... 30
+Abbildung 20-11 Erdung des Steckergehäuses -X1 an der USV ............................................................ 30
+Abbildung 20-12 Meldungen .................................................................................................................... 31
+Abbildung 20-13 Befehle .......................................................................................................................... 32
+
+
+
+III Tabellenverzeichnis
+
+Tabelle 1-1 Änderungsübersicht ................................................................................................................ 4
+Tabelle 8-1 Fernwirk- und Meldeaufkommen 6/10-kV-Station .................................................................. 6
+Tabelle 9-1 Steckverbinder -X10 an der Schaltanlage (24V M) (Harting) ................................................. 8
+Tabelle 9-2 Steckverbinder -X20 an der Schaltanlage (M) (Harting) ........................................................ 8
+Tabelle 9-3 Steckverbinder -X10 an der Schaltanlage (24V M) (Phönix).................................................. 9
+Tabelle 9-4 Steckverbinder -X20 an der Schaltanlage (M) (Phönix) ......................................................... 9
+Tabelle 12-1 Richtwerte für Antennen...................................................................................................... 10
+Tabelle 15-1 Stromversorgung 230 V aus Niederspannungsverteilung oder Hausanschluss ................ 12
+Tabelle 15-2 Steckverbinder -X1 Kabelseite (230V F/24V M) (Harting).................................................. 12
+Tabelle 15-3 Steckverbinder -X10 Kabelseite (24V F) (Harting) ............................................................. 13
+Tabelle 15-4 Steckverbinder -X1 Kabelseite (230V F/24V M) (Phönix) .................................................. 13
+Tabelle 15-5 Steckverbinder -X10 Kabelseite (24V F) (Phönix) .............................................................. 14
+Tabelle 15-6 Steckverbinder -X2 Kabelseite (M) (Harting) ...................................................................... 14
+Tabelle 15-7 Steckverbinder -X20 Kabelseite (F) (Harting) ..................................................................... 15
+Tabelle 15-8 Steckverbinder -X2 Kabelseite (M) (Phönix) ...................................................................... 15
+Tabelle 15-9 Steckverbinder -X20 Kabelseite (F) (Phönix) ..................................................................... 16
+Tabelle 20-1 Datenmodell ........................................................................................................................ 18
+ Dokumentbezeichnung:                    Dokumenttitel:                                           Version:            Seitenzahl:
+
+                                         Fernsteuerung von Netz- und
+ TB3340                                                                                           1                   35 (35)
+                                         Kundenstationen im MS-Netz
+
+
+Tabelle 20-2 Kontaktbelegung -X1 und -X10 (Standard) ...................................................................... 19
+Tabelle 20-3 Kontaktbelegung -X2 und -X20 (Standard) ...................................................................... 19
+Tabelle 20-4 Kontaktbelegung -X1 und -X10 (Erweitert) ....................................................................... 21
+Tabelle 20-5 Kontaktbelegung -X2 und –X20 (Erweitert) ........................................................................ 21
+
+
+Tabelle Anhang IV-1 Revisionsverzeichnis.............................................................................................. 35
+Tabelle Anhang IV-2 Übersicht Erstellung, Verantwortlicher, Prüfung und Genehmigung ..................... 35
+
+
+
+IV Revisionsverzeichnis
+
+Tabelle Anhang IV-1 Revisionsverzeichnis
+
+ Version
+
+ Abschnitt                           Thema
+
+ Gesamtes Dokument                   KG4051 Version 1 vom 03.03.2009 ersetzt durch Version 2 vom
+                                     08.04.2009
+ Gesamtes Dokument                   KG4051 Version 2 vom 08.04.2009 ersetzt durch die Version 3 vom
+                                     01.12.2009
+ Gesamtes Dokument                   KG4051 Version 3 vom 01.12.2009 ersetzt durch die Version 4 vom
+                                     10.06.2010
+ Gesamtes Dokument                   KG4051 Version 4 vom 10.06.201 ersetzt durch die Version 5 vom
+                                     04.04.2012
+ Gesamtes Dokument                   KG 4051 Version 5 vom 04.04.2012 ersetzt durch die Version 6 vom
+                                     23.01.2013
+ Gesamtes Dokument                   KG 4051 Version 6 vom 23.01.2013 ersetzt durch TB3340 Version 1 vom
+                                     05.09.2014
+ Gesamtes Dokument                   TB3340 Version 1 vom 05.09.2014 ersetzt durch Version 2 vom
+                                     01.03.2019
+
+
+
+
+Tabelle Anhang IV-2 Übersicht Erstellung, Verantwortlicher, Prüfung und Genehmigung
+
+                         Erstellt:                    Verantwortet:               Geprüft:                    Genehmigt:
+
+ Datum:                  02.04.2019                   25.04.2019                  30.04.2019                  02.05.2019
+                                                      Kompetenzcenter
+ Durch:                  Hr. Andre Preuß                                          Hr. Opitz                   Hr. Schunk
+                                                      Stationsbau
+

@@ -1,0 +1,919 @@
+Technische Anforderungen für
+den Anschluss an das
+Mittelspannungsnetz Berlin
+Ergänzung der VDE-AR-N 4110
+Ausgabe 2025
+
+
+
+
+Stromnetz Berlin GmbH
+Eichenstraße 3a
+12435 Berlin
+
+info@stromnetz-berlin.de
+www.stromnetz.berlin
+                                                                                                                                   Technische
+Inhalt                                                                                                                 Seite       Anforderungen
+                                                                                                                                   Mittelspannung
+1 Vorwort ................................................................................................................... 3
+                                                                                                                                   Seite/Umfang
+2 Geltungsbereich .................................................................................................... 3           2/20
+3 Spezifische Anforderungen .................................................................................. 4                   Ausgabe
+                                                                                                                                   2025
+    3.1       Bemessung der Betriebsmittel, Sternpunkterdung und Schutzeinstellungen 4
+    3.2       Anschluss- und Schutzkonzept ..................................................................... 4
+              3.2.1 Grundsätze.......................................................................................... 4
+              3.2.2 Anschluss an einen offen betriebenen 10-kV-Ring ............................. 5
+              3.2.3 Anschluss an einen geschlossen betriebenen 10-kV-Ring.................. 7
+              3.2.4 Anschluss an einen 10-kV-Stich.......................................................... 8
+              3.2.5 Übertragung von Schutzmeldungen .................................................... 9
+    3.3       Blindleistungskompensation .......................................................................... 9
+    3.4       Anforderungen an Erzeugungsanlagen ....................................................... 10
+              3.4.1 Statisches Verhalten ......................................................................... 10
+              3.4.2 Dynamisches Verhalten .................................................................... 10
+              3.4.3 Anforderungen im Hinblick auf Echtzeitdaten.................................... 10
+              3.4.4 Betriebsvereinbarung ........................................................................ 10
+    3.5       Notstromaggregate bzw. Netzersatzanlagen .............................................. 11
+              3.5.1 Allgemeine Vorgaben ........................................................................ 11
+              3.5.2 Notstromaggregate bzw. Netzersatzanlagen im geschlossen
+                     betriebenen Ring ............................................................................... 11
+              3.5.3 Notstromaggregate bzw. Netzersatzanlagen im offen betriebenen
+                     Ring ................................................................................................... 11
+              3.5.4 Betriebsvereinbarung ........................................................................ 11
+              3.5.5 Verrechnungsmessung ..................................................................... 12
+    3.6       Baulicher und elektrischer Teil .................................................................... 12
+              3.6.1 Baulicher Teil .................................................................................... 12
+                     3.6.1.1 Allgemeines .......................................................................... 12
+                     3.6.1.2 Einzelheiten zur baulichen Ausführung ................................ 13
+                     3.6.1.3 Elektrische und elektromagnetische Felder .......................... 15
+              3.6.2 Elektrischer Teil................................................................................. 15
+                     3.6.2.1 Allgemeines .......................................................................... 15
+                     3.6.2.2 Schaltanlagen ....................................................................... 15
+4 Messstellenbetrieb und Messung ...................................................................... 17
+    4.1       Allgemeines................................................................................................. 17
+    4.2       Messstellenbetrieb Niederspannung ........................................................... 18
+    4.3       Messstellenbetrieb Mittelspannung ............................................................. 18
+    4.4       Datenübertragung ....................................................................................... 18
+5 Formulare zur Anlagenerrichtung ...................................................................... 18
+6 Quellenverzeichnis .............................................................................................. 18
+7 Verzeichnis der Anlagen und Bilder .................................................................. 19
+1     Vorwort                                                                   Technische
+                                                                                Anforderungen
+Die technischen Anschlussregeln für Planung, Errichtung, Betrieb und Änderung   Mittelspannung
+von elektrischen Anlagen von Kunden, die am Netzanschlusspunkt an das Mittel-
+                                                                                Seite/Umfang
+spannungsnetz eines Netzbetreibers der allgemeinen Versorgung angeschlossen     3/20
+werden, sind in der VDE-Anwendungsregel VDE-AR-N 4110 (TAR Mittel-
+spannung) beschrieben. Elektrische Anlagen von Kunden umfassen Bezugs- und      Ausgabe
+                                                                                2025
+Erzeugungsanlagen, Speicher sowie Mischanlagen. Kunden sind Anschluss-
+nehmer und Anschlussnutzer – diese können auch personenidentisch sein.
+
+Die VDE-Anwendungsregel VDE-AR-N 4110 beschreibt hinsichtlich der
+Anschlussbedingungen Mindestanforderungen, deckt jedoch nicht automatisch
+alle netzbetreiberspezifischen Bedingungen ab.
+
+Die vorliegenden Technischen Anforderungen für den Anschluss an das Mittel-
+spannungsnetz Berlin ergänzen die VDE-AR-N 4110 hinsichtlich der spezifischen
+Aspekte des Berliner Mittelspannungsnetzes, wie
+    • der Bemessungsdaten der Betriebsmittel,
+    • der Sternpunkterdung,
+    • der Anschluss- und Schutzprinzipien,
+    • der Messeinrichtungen und der Fernsteuerung,
+    • der Eigentums- und Bedienungsgrenzen usw.,
+
+die für Planung, Bau, Anschluss und Betrieb von elektrischen Anlagen von
+Kunden (Übergabestationen), die am Netzanschlusspunkt an das Mittel-
+spannungsnetz der Stromnetz Berlin GmbH angeschlossen werden, über die
+VDE-AR-N 4110 hinaus zu beachten sind.
+
+Diese Technischen Anforderungen – Ausgabe 2025 – ersetzen die Technischen
+Anforderungen für den Anschluss an das Mittelspannungsnetz Berlin, Ergänzung
+der VDE-AR-N 4110, Ausgabe 2024. Geltungsbeginn ist der 01.07.2025.
+
+
+2     Geltungsbereich
+Das vorliegende Dokument gilt zusammen mit der VDE-Anwendungsregel VDE-
+AR-N 4110 für Planung, Errichtung, Betrieb und Änderung von Kundenanlagen,
+die am Netzanschlusspunkt an das 10-kV-Netz von Stromnetz Berlin ange-
+schlossen werden.
+
+Im Netzgebiet des Umspannwerks Kladow betreibt Stromnetz Berlin derzeit noch
+ein 6-kV-Netz. Die Bedingungen für den Anschluss an und den Betrieb am 6-kV-
+Netz sind mit Stromnetz Berlin abzustimmen.
+
+
+3     Spezifische Anforderungen
+3.1 Bemessung der Betriebsmittel, Sternpunkterdung und
+    Schutzeinstellungen
+Die Betriebsmittel im Berliner Mittelspannungsnetz sind generell für die in
+Anlage 1 angegebenen Bemessungswerte auszulegen. Darüber hinaus sind,
+z. B. zur Einstellung der kundeneigenen Schutzeinrichtungen und zur Auslegung     Technische
+der Erdungsanlagen, die weiteren Angaben in Anlage 1 zu berücksichtigen.          Anforderungen
+                                                                                  Mittelspannung
+                                                                                  Seite/Umfang
+3.2 Anschluss- und Schutzkonzept                                                  4/20
+3.2.1 Grundsätze                                                                  Ausgabe
+                                                                                  2025
+Die Anschlussprinzipien sind von der Höhe der Entnahmeleistung, der Höhe der
+Einspeiseleistung, dem Kurzschlussstrombeitrag (generatorische Einspeisung
+oder Wechselrichter) sowie dem Aufbau der elektrischen Anlage des Kunden
+(Leistung des Transformators, Anzahl der Abgangsfelder usw.) abhängig.
+
+Zur Erfüllung der jeweiligen Kundenanforderungen kommen grundsätzlich drei
+Netzformen zum Anschluss der elektrischen Anlage des Kunden an das Mittel-
+spannungsnetz der Stromnetz Berlin zur Anwendung:
+  • Anschluss an einen offen betriebenen Netzring,
+  • Anschluss an einen geschlossen betriebenen Netzring,
+  • Anschluss an einen Stich (nur zum direkten Anschluss von größeren Wind-
+    oder PV-Anlagen an ein 110/10-kV-Umspannwerk).
+
+Die Wahl der zum Anschluss anzuwendenden Netzform (offen oder geschlossen
+betriebener Netzring bzw. Stich) ist auch unter Beachtung der jeweils örtlichen
+Netzbedingungen zu treffen.
+
+Der offen betriebene Ring stellt die Standardanschlussform dar und deckt den
+Großteil der Anschlussbedarfe ab.
+
+Bei reinen Erzeugungsanlagen (größere Wind- oder PV-Anlagen), die die
+mögliche Anschlussleistung des offen betriebenen Ringes übersteigen, sind im
+Einzelfall Stichanbindungen mit direkter Anbindung an ein 110/10-kV-Umspann-
+werk (ohne Redundanz) möglich.
+
+Bei Kombinationen aus Entnahme und Erzeugung bzw. Entnahmeleistungen, die
+jeweils oberhalb der Übertragungsfähigkeit von offen betriebenen Netzringen
+liegen, oder bei höheren Anforderungen an die Versorgungszuverlässigkeit bzw.
+Anlagen mit größeren Netzrückwirkungen, erfolgt der Anschluss der elektrischen
+Anlage des Kunden an einen geschlossen betriebenen Netzring, welcher eben-
+falls direkt aus einem 110/10-kV-Umspannwerk versorgt wird.
+
+Für die Abrechnungsmessung ist – abweichend von der Darstellung in der VDE-
+AR-N 4110 – der Spannungswandler im Messfeld in Energieflussrichtung
+grundsätzlich vor dem Stromwandler anzuordnen:
+  • Bei Bezugsanlagen sind die Spannungswandler vom Netz von Stromnetz
+    Berlin aus gesehen vor den Messstromwandlern zu installieren.
+  • Bei Erzeugungsanlagen sind im Gegensatz dazu die Spannungswandler
+    von der Kundeneinspeisung aus gesehen vor den Messstromwandlern zu
+    errichten.
+
+Die Spannungswandler sind mit einer Bedämpfungseinrichtung zu beschalten.
+                                                                                   Technische
+Die bei den jeweiligen Kundenanforderungen anzusetzenden Netzformen und            Anforderungen
+                                                                                   Mittelspannung
+Anschlussprinzipien sind in Anlage 2 dargestellt.
+                                                                                   Seite/Umfang
+                                                                                   5/20
+3.2.2 Anschluss an einen offen betriebenen 10-kV-Ring
+                                                                                   Ausgabe
+Primärkonzept                                                                      2025
+Die Einbindung einer 10-kV-Anlage in einen offen betriebenen 10-kV-Ring ist – in
+Abhängigkeit von Anlagenaufbau und möglichem Kurzschlussstrombeitrag – in
+den Bildern 1.1 bis 1.8 der Anlage 2 dargestellt.
+
+Die Übersichtsschaltbilder zeigen auch die Eigentums- und Bedienungsgrenzen.
+Die beiden Ringkabelfelder sowie das Übergabeschaltfeld (bei Transformator-
+Bemessungsleistungen bis 800 kVA mit vereinfachter Übergabe in Form Last-
+trennschalter/Sicherungskombination oder bei Transformator-Bemessungs-
+leistungen größer 800 kVA mit Leistungsschalter und Netzübergabeschutz) und
+das Messfeld befinden sich im Eigentum von Stromnetz Berlin. Der Übergabeteil
+in begehbaren Stationen wird durch Stromnetz Berlin errichtet und betrieben.
+Kompaktstationen werden durch den Kunden errichtet. Die zugehörigen
+Beistellungen für den Übergabeteil werden durch Stromnetz Berlin zur Verfügung
+gestellt.
+
+Stromnetz Berlin setzt unter Beachtung der F-Gase-Verordnung metallgekapselte
+Schaltanlagen ein.
+
+Der erforderliche Aufstellungsplatz für die Unterbringung der Felder inkl. des
+Platzes für die Unterbringung der fernwirktechnischen Komponenten
+(Abmessungen 2.800 x 1.100 x 2.400 mm (B x T x H)) ist durch den Kunden und
+zu dessen Lasten bereitzustellen. Die Aufstellung sowie ggf. abweichende Maße
+sind mit Stromnetz Berlin in der Planungsphase abzustimmen.
+
+Der Betriebsteil ist durch den Kunden aufzubauen und zu betreiben.
+
+Schutzkonzept
+Die Schutzeinrichtungen teilen sich auf in:
+   • Netzübergabeschutz (NÜS)
+     Der Netzübergabeschutz befindet sich im Eigentum von Stromnetz Berlin
+     und wird durch diese zu ihren Lasten errichtet und betrieben.
+   • Kurzschlussschutzeinrichtungen des Kunden
+     Besteht der Betriebsteil des Kunden aus einem 10-kV-Schaltfeld, muss
+     dieses nicht über eine eigene Schutzeinrichtung verfügen. Der Kurzschluss-
+     schutz erfolgt durch den Netzübergabeschutz.
+     Besteht der Betriebsteil des Kunden aus mehreren 10-kV-Schaltfeldern,
+     müssen diese jeweils mit einer Schutzeinrichtung ausgerüstet werden.
+     Stromnetz Berlin setzt an dieser Stelle schnellschaltende Schutzfunktionen
+     für einpolige und mehrpolige Kurzschlüsse im 10-kV- Anlagenbereich des
+     Kunden voraus. Zusätzlich erfolgt ein Kurzschlussschutz durch den Netz-
+     übergabeschutz.
+   • Entkupplungsschutzeinrichtungen (bei Erzeugungsanlagen und Speichern)           Technische
+     Nach Erfordernis – insbesondere bei Einspeisern in der elektrischen Anlage      Anforderungen
+                                                                                     Mittelspannung
+     des Kunden (vgl. Bilder 1.6 und 1.7 der Anlage 2) – ist ein Netz-
+     entkupplungsschutz (NES) zu errichten. Zur Erfassung von einpoligen             Seite/Umfang
+                                                                                     6/20
+     Fehlern auf der 10-kV-Seite wird zur Trennung der Erzeugungsanlage auf
+     der Niederspannungsseite ein Auslösesignal des Spannungsschutzes                Ausgabe
+     seitens Stromnetz Berlin zur Verfügung gestellt.                                2025
+
+
+Die Bilder 1.1 bis 1.8 der Anlage 2 zeigen in prinzipieller Form das Schutzkonzept
+mit den für das 10-kV-Netz relevanten Schutzkomponenten der 10-kV-Schalt-
+anlage. Die entsprechenden sekundärtechnischen Unterlagen werden auf Anfrage
+durch Stromnetz Berlin zur Verfügung gestellt.
+
+Die zur Abstimmung der Einstellung des relevanten Schutzes notwendigen An-
+gaben sind in Anlage 1 aufgelistet. Alle dargestellten Schutzgeräte sind dreipolig
+auszuführen und allpolig anzuschließen. Der Übergabeschutz wirkt direkt auf den
+Übergabeleistungsschalter.
+
+Bei Einspeiseanlagen, die in Mittelspannungsringen angeschlossen werden, ist im
+Fehlerfall eine Rückspeisung in das Mittelspannungsnetz von maximal 600 A zu-
+lässig. Diese Grenze gilt auch beim Einsatz von Is-Begrenzern. Sie darf in Summe
+von den Einspeisern in einem Netzring (Vollring) nicht überschritten werden.
+
+Fernsteuerung
+Es erfolgt eine planmäßige Fernsteuerung des Mittelspannungsnetzes. Für den
+sicheren Netzbetrieb werden daher die Ringkabelfelder mit Motorantrieben und
+Kurzschlussanzeigern ausgerüstet, um sie in die Fernsteuerung von Stromnetz
+Berlin einbeziehen zu können.
+
+Die Fernsteuerung wird durch Stromnetz Berlin zu ihren Lasten errichtet. Der Zeit-
+punkt der sekundärtechnischen Erschließung richtet sich nach den Aspekten der
+örtlichen Lage im Ring sowie der sekundärtechnischen Erschließung und wird von
+Stromnetz Berlin festgelegt.
+
+Alle erforderlichen Vorgaben für den Aufbau des Montagerahmens zur Aufnahme
+von zwei Einschubkassetten (USV und Fernwirkeinheit) können der TB3340
+entnommen werden.
+
+Bereitstellung der Eigenbedarfs- und Hilfsenergieversorgung
+Eigenbedarf und Hilfsenergie für die sekundärtechnischen Einrichtungen von
+Stromnetz Berlin werden, abweichend von VDE-AR-N 4110 Pkt. 6.3.3, in der
+Regel über einen Revisions-Hausanschluss zur Verfügung gestellt. Die
+Bemessungsspannung der Hilfsenergieversorgung ist 230 V AC.
+
+3.2.3 Anschluss an einen geschlossen betriebenen 10-kV-Ring
+Primärkonzept
+Die Einbindung einer 10-kV-Anlage in einen geschlossen betriebenen 10-kV-Ring
+ist – in Abhängigkeit von Anlagenaufbau (ein oder zwei Betriebsteile) und Art der
+Erzeugung – in den Bildern 1.9 und 1.10 der Anlage 2 dargestellt. Der Ring ist in
+der elektrischen Anlage des Kunden durchgeschaltet.
+Diese Übersichtsschaltbilder zeigen auch die Eigentums- und Bedienungs-              Technische
+grenzen. Der Kabelendverschluss der Mittelspannungskabel bildet die Eigentums-       Anforderungen
+                                                                                     Mittelspannung
+grenze der Primäranlagen.
+                                                                                     Seite/Umfang
+                                                                                     7/20
+Die Schaltanlage ist durch den Kunden aufzubauen und zu betreiben. Der
+erforderliche Platz für die Aufstellung eines separaten Schutzschrankes und eines    Ausgabe
+an der Wand zu befestigenden LWL-Verteilers, ist vom Kunden vorzuhalten und          2025
+
+mit Stromnetz Berlin in der Planungsphase abzustimmen. Der Platzbedarf variiert
+in Abhängigkeit vom Anlagenaufbau (ein oder zwei Betriebsteile) und bedarf auch
+der Abstimmung mit Stromnetz Berlin. Die Anbindung der Schutzschränke
+zwischen LWL-Verteiler und Schaltanlage hat durch den Kunden zu erfolgen.
+
+Schutzkonzept
+Die Schutzeinrichtungen teilen sich auf in:
+   • Netzrelevante Schutzeinrichtungen
+     Die netzrelevanten Schutzeinrichtungen werden zusammen in einem
+     separaten Schrank installiert (zwei bei Mitteneinspeisung), befinden sich im
+     Eigentum von Stromnetz Berlin und werden durch diese zu ihren Lasten
+     errichtet und betrieben. Hierzu gehören die folgenden Komponenten:
+      -   der Netzübergabeschutz mit Wirkung auf den Übergabeleistungs-
+          schalter,
+      -   die Schutzeinrichtungen für die 10-kV-Leitungen (Differentialschutz) und
+      -   der für die Schaltanlage erforderliche Knotenpunktschutz.
+   • Kurzschlussschutzeinrichtungen des Kunden
+     Die 10-kV-Abgangsfelder der elektrischen Anlage des Kunden müssen
+     jeweils mit einer Schutzeinrichtung ausgerüstet werden. Stromnetz Berlin
+     setzt an dieser Stelle schnellschaltende Schutzfunktionen für einpolige und
+     mehrpolige Kurzschlüsse im 10-kV-Anlagenbereich des Kunden voraus.
+     Zusätzlich erfolgt ein Kurzschlussschutz durch den Netzübergabeschutz.
+   • Entkupplungsschutzeinrichtungen
+     Art und Umfang des zu errichtenden Netzentkupplungsschutzes (NES) sind
+     abhängig von der angeschlossenen Erzeugungsanlage und werden in einer
+     Netzverträglichkeitsprüfung bewertet und vorgegeben.
+
+Bild 1.9 und 1.10 in Anlage 2 zeigen in prinzipieller Form das Schutzkonzept mit
+den für das 10-kV-Netz relevanten Schutzkomponenten der 10-kV-Schaltanlage.
+Der Schutz der elektrischen Anlage des Kunden selbst ist in den Bildern nicht
+dargestellt.
+Bereitstellung der Eigenbedarfs- und Hilfsenergieversorgung                           Technische
+Elektrische Anlagen von Kunden im geschlossenen Ring müssen über eine                 Anforderungen
+                                                                                      Mittelspannung
+netzunabhängige Eigenbedarfsversorgung verfügen (vgl. VDE-AR-N 4110, Pkt.
+6.3.3).                                                                               Seite/Umfang
+                                                                                      8/20
+
+Für den sicheren Betrieb der Schutzeinrichtungen müssen der Ladegleichrichter         Ausgabe
+und die Kapazität der Batterie überwacht und gemeldet werden. Bei Ausfall des         2025
+
+Ladegleichrichters wird ein Batteriebetrieb von mindestens acht Stunden ge-
+fordert. Die Gleichspannungskreise sind erdfrei zu betreiben und auf Erdschluss
+zu überwachen.
+
+Eigenbedarf und Hilfsenergie für sekundärtechnische Einrichtungen der Strom-
+netz Berlin werden vom Kunden zur Verfügung gestellt. Die Bemessungs-
+spannung der Hilfsenergieversorgung kann 60 V, 110 V oder 220 V DC betragen.
+
+3.2.4 Anschluss an einen 10-kV-Stich
+Primärkonzept
+Der Anschluss einer 10-kV-Anlage an einen 10-kV-Stich ist in Bild 1.11 der
+Anlage 2 dargestellt. Dieses Übersichtsschaltbild zeigt auch die Eigentums- und
+Bedienungsgrenzen. Der Kabelendverschluss der Mittelspannungskabel bildet die
+Eigentumsgrenze der Primäranlagen.
+
+Die Schaltanlage ist durch den Kunden aufzubauen und zu betreiben. Der
+erforderliche Platz für die Unterbringung der Schutzkomponenten für den netz-
+relevanten Schutz sowie für den an der Wand zu befestigenden LWL-Verteiler ist
+durch den Kunden bereitzustellen und mit Stromnetz Berlin in der Planungsphase
+abzustimmen.
+
+Schutzkonzept
+Die Schutzeinrichtungen teilen sich auf in:
+   • Netzrelevante Schutzeinrichtungen
+     Die netzrelevanten Schutzeinrichtungen werden zusammen in einem
+     separaten Schrank installiert, befinden sich im Eigentum von Stromnetz
+     Berlin und werden durch diese zu ihren Lasten errichtet und betrieben.
+     Hierzu gehören die folgenden Komponenten:
+      -   der Netzübergabeschutz mit Wirkung auf den Übergabeleistungs-
+          schalter,
+      -   die Schutzeinrichtungen für die 10-kV-Leitung (Differentialschutz) und
+      -   der für die Schaltanlage erforderliche Knotenpunktschutz.
+   • Kurzschlussschutzeinrichtungen des Kunden
+     Für die 10-kV-Schaltanlage ist ein schnellschaltender Kundenschutz zu
+     installieren.
+   • Entkupplungsschutzeinrichtungen (bei Erzeugungsanlagen und Speichern)
+     Nach Erfordernis – insbesondere bei Einspeisern in der elektrischen Anlage
+     des Kunden – ist ein Netzentkupplungsschutz (NES) zu errichten.
+
+Bild 1.11 in Anlage 2 zeigt in prinzipieller Form das Schutzkonzept mit den für das
+10-kV-Netz relevanten Schutzkomponenten der Anlage. Der Schutz der elek-
+trischen Anlage des Kunden selbst ist in dem Bild nicht dargestellt. Stromnetz     Technische
+Berlin setzt an dieser Stelle eine schnellschaltende Schutzfunktion für ein- und   Anforderungen
+                                                                                   Mittelspannung
+mehrpolige Kurzschlüsse im 10-kV-Anlagenbereich des Kunden voraus.
+                                                                                   Seite/Umfang
+                                                                                   9/20
+Bereitstellung der Eigenbedarfs- und Hilfsenergieversorgung
+Elektrische Anlagen von Kunden müssen über eine netzunabhängige Eigen-             Ausgabe
+bedarfsversorgung verfügen (vgl. VDE-AR-N 4110, Pkt. 6.3.3).                       2025
+
+
+Für den sicheren Betrieb der Schutzeinrichtungen müssen der Ladegleichrichter
+und die Kapazität der Batterie überwacht und gemeldet werden. Bei Ausfall des
+Ladegleichrichters wird ein Batteriebetrieb von mindestens acht Stunden ge-
+fordert. Die Gleichspannungskreise sind erdfrei zu betreiben und auf Erdschluss
+zu überwachen.
+
+Eigenbedarf und Hilfsenergie für sekundärtechnische Einrichtungen der Strom-
+netz Berlin werden vom Kunden zur Verfügung gestellt. Die Bemessungs-
+spannung der Hilfsenergieversorgung kann 60 V, 110 V oder 220 V DC betragen.
+
+3.2.5 Übertragung von Schutzmeldungen
+Bei Anschluss an einen offen betriebenen 10-kV-Ring mit Leistungsschalter und
+Netzübergabeschutz sind folgenden Meldungen aus der elektrischen Anlage des
+Kunden (Übergabestationen) an die Systemführung von Stromnetz Berlin zu
+übertragen:
+   • Schutzauslösung,
+   • Schutzanregung,
+   • Schutzwarnung,
+   • Schutzstörung (unwirksam),
+   • Leistungsschalterfall (direkt vom LS-Hilfskontakt).
+
+3.3 Blindleistungskompensation
+Verschiebungsfaktor
+Der Verschiebungsfaktor cos ϕ der elektrischen Anlage des Kunden soll den Wert
+0,9 induktiv nicht unterschreiten und darf keine kapazitiven Werte annehmen. Die
+zur Blindleistungskompensation einzubauenden Anlagen sollen entweder
+abhängig vom cos ϕ gesteuert oder im Falle der Einzelkompensation gemeinsam
+mit den zugeordneten Verbrauchsgeräten ein- bzw. ausgeschaltet werden. Eine
+lastunabhängige Festkompensation ist nicht zulässig.
+
+Ausführung der Kompensation
+Zur Vermeidung von Störungen im Netz von Stromnetz Berlin oder in den elek-
+trischen Anlagen der Kunden werden Blindleistungskompensationsanlagen als
+voll verdrosselte Anlagen errichtet. Stromnetz Berlin empfiehlt, die Anlagen mit
+einer Vollverdrosselung von mindestens 7 % auszuführen. Blindleistungs-
+kompensationsanlagen werden so dimensioniert, dass eine Überkompensation in
+jedem Fall vermieden wird.
+3.4 Anforderungen an Erzeugungsanlagen                                            Technische
+                                                                                  Anforderungen
+3.4.1 Statisches Verhalten                                                        Mittelspannung
+Erzeugungsanlagen im offenen Ring müssen sich an der statischen Spannungs-        Seite/Umfang
+haltung nach der Q(P)-Kennlinie beteiligen, für Erzeugungsanlagen im              10/20
+
+geschlossenen Ring bzw. im Stich gilt ein fester cos ϕ von 1.                     Ausgabe
+                                                                                  2025
+
+3.4.2 Dynamisches Verhalten
+Erzeugungsanlagen müssen sich an der dynamischen Netzstützung beteiligen.
+Abhängig vom Anschlusskonzept sind die Erzeugungsanlagen mit nachfolgend
+beschriebenen Schutzeinrichtungen auszurüsten.
+
+Erzeugungsanlagen im offen betriebenen Ring
+Synchron- und Asynchrongeneratoren im offen betriebenen Ring sind zur
+Vermeidung der Zusammenschaltung von asynchronen Spannungsvektoren mit
+einem zeitverzögerten Vektorsprungrelais auszurüsten. Die Einstellparameter
+(Winkel, Verzögerung) werden durch Stromnetz Berlin vorgegeben. Das bedeutet,
+dass sich diese Generatoren bei elektrisch nahen Fehlern vom Netz trennen und
+in diesen Fällen keinen Beitrag zur dynamischen Netzstützung leisten.
+
+Erzeugungsanlagen im geschlossen betriebenen Ring bzw. am Stich
+Alle direkt an das Umspannwerk angeschalteten Erzeugungsanlagen sind im
+Falle einer Reserveumschaltung (RUA) mittels der 10-kV-Übergabeschalter vom
+Netz zu trennen. Dies erfolgt durch eine Mitnahmeschaltung. Auf diese Weise
+wird vermieden, dass sich nach Störungen mit Ausfall des Umspannwerks-
+transformators (z. B. Auslösung des Transformators über Buchholzschutz) stabile
+Inselnetze bilden.
+
+Die Mitnahmeschaltung wird durch Stromnetz Berlin aufgebaut. Die kundenseitige
+Anbindung ist durch den Kunden selbst zu realisieren.
+
+3.4.3 Anforderungen im Hinblick auf Echtzeitdaten
+Für EEG-Anlagen mit einer Bemessungsleistung größer 100 kW ergeben sich aus
+dem Redispatch-Prozess und der ENTSO-E System Operation Guideline (SO GL)
+Anforderungen hinsichtlich der Leistungsbeeinflussung und an Echtzeitdaten.
+Diese sind im Dokument Technische Mindestanforderungen – Netzsicherheits-
+management für Erzeugungsanlagen im Verteilungsnetz der Stromnetz Berlin
+GmbH beschrieben.
+
+3.4.4 Betriebsvereinbarung
+Die Kunden schließen mit Stromnetz Berlin eine Betriebsvereinbarung
+Erzeugungsanlagen und Speicher ab, in der die beiderseitigen Rechte und
+Pflichten geregelt sind.
+3.5 Notstromaggregate bzw. Netzersatzanlagen                                       Technische
+                                                                                   Anforderungen
+3.5.1 Allgemeine Vorgaben                                                          Mittelspannung
+Anschluss und Betrieb von Notstromaggregaten bzw. Netzersatzanlagen sind in        Seite/Umfang
+VDE-AR-N 4110 geregelt.                                                            11/20
+
+                                                                                   Ausgabe
+Die Vorgaben von Stromnetz Berlin für den netzparallelen Probebetrieb (vgl. VDE-   2025
+AR-N 4110, Kapitel 8.9.2) sind nachfolgend aufgeführt. Sie unterscheiden sich
+nach Anschluss- und Schutzkonzept (offen bzw. geschlossen betriebener Ring)
+und Funktion der Anlage (Notstromaggregat bzw. Netzersatzanlage) wie folgt.
+
+3.5.2 Notstromaggregate bzw. Netzersatzanlagen im geschlossen
+      betriebenen Ring
+Ein Netzparallelbetrieb der Notstromaggregate bzw. Netzersatzanlagen ist
+möglich.
+
+3.5.3 Notstromaggregate bzw. Netzersatzanlagen im offen betriebenen Ring
+Geht der Parallelbetrieb eines Notstromaggregates bzw. einer Netzersatzanlage
+mit dem Netz von Stromnetz Berlin über den zur Synchronisierung zugelassenen
+Kurzzeitparallelbetrieb von maximal 100 ms und den einstündigen Probelauf
+hinaus, sind die Anforderungen für Erzeugungsanlagen der VDE-AR-N 4110
+einschließlich des Nachweises der elektrischen Eigenschaften anzuwenden und
+entsprechende schutztechnische Vorkehrungen für den dauerhaften Netzparallel-
+betrieb zu treffen.
+
+Um den Notstromaggregaten den Probelauf in einem vertretbaren finanziellen
+Rahmen zu ermöglichen, wird ein zeitlich begrenzter Netzparallelbetrieb (einmal
+pro Monat eine Stunde) durch Stromnetz Berlin toleriert.
+
+Um allen entsprechenden Kunden den Probebetrieb sicher und diskriminierungs-
+frei zu ermöglichen, sind nachfolgende Aspekte zu berücksichtigen:
+   • Entkupplungsschutz (U>>,U>,U<,f>,f<) an der Erzeugungseinheit (inkl.
+     Vektorsprung).
+   • Der Kunde meldet die monatlichen, einstündigen Belastungsprobeläufe
+     mindestens 10 Werktage vorab bei der Netzführung von Stromnetz Berlin
+     an. Damit ist eine zeitliche Entzerrung der Probeläufe von Notstrom-
+     aggregaten verschiedener Kunden möglich und eine Überschreitung der
+     Anlagenfestigkeit (Beitrag zum Kurzschlussstrom) wird vermieden. Auf
+     diese Weise wird zudem die Betriebsführung nicht wesentlich beeinträchtigt.
+   • Betriebliche Erfordernisse (z. B. Sonderschaltzustände) werden mit den
+     Probeläufen technisch und zeitlich abgestimmt und umgekehrt.
+
+3.5.4 Betriebsvereinbarung
+Die Kunden schließen mit Stromnetz Berlin eine Betriebsvereinbarung Notstrom-
+anlage ab, in der die beiderseitigen Rechte und Pflichten geregelt sind.
+3.5.5 Verrechnungsmessung                                                         Technische
+                                                                                  Anforderungen
+Für den in einem Notstromaggregat bzw. einer Netzersatzanlage erzeugten Strom     Mittelspannung
+muss grundsätzlich keine Verrechnungsmessung installiert werden. Bei
+                                                                                  Seite/Umfang
+Kombination mit einer oder mehreren Erzeugungsanlage/n ist jedoch eine            12/20
+Verrechnungsmessung (registrierende Lastgangmessung) aufzubauen.
+                                                                                  Ausgabe
+                                                                                  2025
+3.6 Baulicher und elektrischer Teil
+3.6.1 Baulicher Teil
+3.6.1.1 Allgemeines
+Wie in VDE-AR-N 4110 beschrieben, sind alle Schaltanlagen- und Transformator-
+räume grundsätzlich als „abgeschlossene elektrische Betriebsstätten“ ent-
+sprechend der aktuellen Normen, wie z. B. DIN VDE 0100 (VDE 0100) (alle Teile),
+DIN EN 61936-1 (VDE 0101-1)), sowie der Bauvorschriften des Landes Berlin zu
+planen und zu errichten sowie entsprechend DIN VDE 0105-100 (VDE 0105-100)
+zu betreiben.
+
+Fabrikfertige Stationen sind gemäß DIN EN 62271-202 zu errichten. Einzelheiten
+sind den Technischen Beschreibungen TB3312 und TB3351 zu entnehmen.
+
+Übergabestationen, die in ein vorhandenes Gebäude integriert werden, sollen
+ebenerdig an Außenwänden erstellt werden. Des Weiteren ist die VV TB Bln [1]
+Nr. A 2.2.1.10 zu beachten. Zudem muss das Gebäude der Übergabestation dem
+zu erwartenden Überdruck infolge eines Lichtbogenfehlers standhalten können.
+Durch den Anlagenerrichter ist ein diesbezüglicher Nachweis zu erbringen.
+
+Folgender Platzbedarf ist mindestens für die von Stromnetz Berlin beigestellten
+Komponenten erforderlich:
+   • Revisions-Hausanschluss
+     302 x 604 mm (B x H)
+   • Fernmeldeverteiler (für begehbare Stationen)
+     230 x 520 mm (B x H) gemäß der Technischen Beschreibung TB3340
+   • Montagerahmen (USV und Fernwirkeinheit)
+     Die Außenmaße des Montagerahmens sind 462 x 600 x 88,4 mm
+     (B x T x H). Maße ohne Befestigungswinkel gemäß der Technischen
+     Beschreibung TB3340.
+   • Zählerschrank
+     500 x 850 mm (B x H)
+   • Schutzschrank
+      • Anschlussvariante offener Ring:
+        500 x 350 x 600 mm (B x T x H). Verdrahtungsvorgaben siehe Bilder 2.1
+        und 2.3. Nur für Kompaktstationen. Umstellung bei begehbaren
+        Stationen erfolgt im Laufe des Jahres 2025.
+      • Anschlussvariante geschlossener Ring
+        800 x 600 x 2200 mm (B x T x H). Anmerkung: Bei den Anschluss-
+        varianten geschlossener Ring – Seiteneinspeisung und Stich ist der
+         Platz für einen Schutzschrank, bei der Variante geschlossener Ring –       Technische
+         Mitteneinspeisung für zwei Schutzschränke vorzuhalten. Außerdem            Anforderungen
+                                                                                    Mittelspannung
+         müssen die Türrahmen um 180° schwenkbar sein.
+                                                                                    Seite/Umfang
+                                                                                    13/20
+3.6.1.2 Einzelheiten zur baulichen Ausführung
+                                                                                    Ausgabe
+Die folgenden Ausführungen gelten für alle Stationsbautypen, soweit diese auf die   2025
+gewählte Stationsart anwendbar sind. Es sind korrosionsbeständige bzw. korro-
+sionsgeschützte Bauteile zu verwenden. Die hier beschriebenen Einzelheiten
+gelten zusätzlich zur gültigen VDE-AR-N 4110.
+
+Zugang und Türen
+An den Türen der Mittelspannungsanlagen- und Transformatorräume sind Warn-
+schilder W012 (Warnung vor gefährlicher elektrischer Spannung) nach DIN EN
+ISO 7010 und ASR A1.3 [2] und der Zusatztext: „Achtung! Hochspannung
+Lebensgefahr“ anzubringen.
+
+Der Zugang zum Niederspannungsraum ist mit dem Warnschild W012 zu kenn-
+zeichnen.
+
+Sämtliche Türen im Verlauf des Stationszuganges sollen mit Schlössern für zwei
+Schließzylinder ausgerüstet werden. Für den Fall, dass der Einbau solcher
+Schlösser nicht möglich ist, wird mit Stromnetz Berlin eine gleichwertige Lösung
+abgestimmt und vertraglich vereinbart.
+
+Fenster
+Die Räume der Übergabestation sind aus Sicherheitsgründen fensterlos aus-
+zuführen. Sind/werden dennoch Fenster eingebaut, so ist VDE 0101-1 zu
+beachten.
+
+Klimabeanspruchung, Belüftung und Druckentlastung
+Bei allen begehbaren Stationen ist ein qualifizierter Nachweis schriftlich vor-
+zulegen. Das Gebäude der Übergabestation muss dem erwartenden Überdruck
+infolge eines Lichtbogenfehlers standhalten. Druckberechnung und statische
+Beurteilung des Baukörpers bezüglich des ermittelten Maximaldruckes sind zu
+erbringen und Stromnetz Berlin vorzulegen.
+
+Zusätzlich ist eine Beschreibung beizufügen, die den Verlauf des Überdrucks bis
+ins Freie dokumentiert. Das beinhaltet sowohl eine Bewertung des Baukörpers
+sowie ein Nachweis aller Ein- und Anbauteile wie Be- und Entlüftung oder Türen.
+
+Für Stationsräume, die durch Stromnetz Berlin betrieben werden, erfolgt die
+Druckberechnung durch Stromnetz Berlin selbst. Folgende Angaben sind dafür
+vom Kunden erforderlich:
+   • Raumgröße L/B/H,
+   • Grundrisszeichnung mit allen Einbauten,
+   • Baumaterial der Wände, Decke, Boden sowie Materialstärke,
+   • Größe der Zu- und Abluftgitter (freie Fläche bei natürlicher Be-/Entlüftung)
+     sowie
+   • Angaben zum Lüftungskanal bei mechanischer Be-/Entlüftung (L/B/H).              Technische
+                                                                                     Anforderungen
+                                                                                     Mittelspannung
+Zu- und Abluftöffnungen sind direkt und unmittelbar ins Freie zu führen. Dabei ist
+an allen Öffnungen der Schutz gegen das Eindringen von Regenwasser bzw.              Seite/Umfang
+                                                                                     14/20
+Grundwasser zu gewährleisten (Schutzart mindestens IP 23). Bei den Lüftungs-
+elementen ist darauf zu achten, dass durch die Formgebung der Lamellen ein           Ausgabe
+Eindringen von Fremdkörpern verhindert wird (Stochersicherheit). Dabei ist bei       2025
+
+der Berechnung der Öffnung zu beachten, dass durch die besondere Art der
+Lamellenform eine Reduzierung des freien Lüftungsquerschnitts um ca. 45 %
+erfolgt. Zuleitungen und eventueller Einbau von Ventilatoren sind bauseits durch
+den Kunden zu installieren.
+
+Fußböden
+Zusätzlich zu den Anforderungen der gültigen VDE-AR-N 4110 ist die Technische
+Beschreibung TB3354 zu berücksichtigen.
+
+Für die Schaltanlagen-Rahmenkonstruktion zum Doppelboden benötigt Stromnetz
+Berlin einen Grundriss-/Aufstellungsplan. Der Einbau erfolgt bauseits.
+
+Schallschutzmaßnahmen und Auffangwannen
+Die Anforderungen sind gemäß der gültigen VDE-AR-N 4110 umzusetzen.
+
+Trassenführung der Netzanschlusskabel
+Grundsätzlich sind die Anforderungen gemäß der gültigen der VDE-AR-N 4110
+umzusetzen. Darüber hinaus ist die Technische Beschreibung TB3304 zu
+beachten.
+
+Beleuchtung, Steckdosen
+In begehbaren Stationsräumen sind Beleuchtung und Steckdosen mit getrennten
+Stromkreisen erforderlich. In Räumen, in denen Technik von Stromnetz Berlin
+aufgestellt ist, sind vom Errichter Schutzkontakt-Steckdosen mit 230 V, 50 Hz und
+16 A zum Anschluss ortsveränderlicher Verbraucher zu installieren.
+
+Ist in dem Gebäude eine Sicherheitsbeleuchtung vorhanden, soll diese auch für
+die Beleuchtung der Stationsräume herangezogen werden. Ist dies nicht möglich,
+ist bei Vorhandensein eines Niederspannungshausanschlusses (auch Revisions-
+hausanschluss der Kundenstation) eine automatisierte Umschaltung der Stations-
+beleuchtung auf den Niederspannungs-Hausanschluss vorzusehen. Die Um-
+schaltung erfolgt ausschließlich für den Zeitraum der Nichtverfügbarkeit der
+Allgemein- bzw. Sicherheitsversorgung.
+
+Die Beleuchtung ist so anzubringen, dass die Leuchtmittel gefahrlos aus-
+gewechselt werden können und eine ausreichende Lichtstärke vorhanden ist. Der
+Lichtschalter ist im Eingangsbereich anzubringen. Die PE- und N-Leiter der elek-
+trischen Anlage des Kunden und des Hausanschlusses sind jeweils miteinander
+zu verbinden.
+
+Bei separaten Räumen für die Mittelspannungs-Schaltanlage ist auch dort eine
+Schutzkontakt-Steckdose (230 V, 16 A) vorzusehen.
+Der elektrische Anschluss für Beleuchtung und Steckdosen hat nach der              Technische
+Abrechnungsmessung des Kunden zu erfolgen.                                         Anforderungen
+                                                                                   Mittelspannung
+Fundamenterder                                                                     Seite/Umfang
+                                                                                   15/20
+Die Anforderungen sind gemäß der gültigen VDE-AR-N 4110 umzusetzen.
+                                                                                   Ausgabe
+                                                                                   2025
+3.6.1.3 Elektrische und elektromagnetische Felder
+Der Kunde ist für die Einhaltung des Bundes-Immissionsschutzgesetzes
+(Verordnung über elektromagnetische Felder - 26. BImSchV) [3] seiner Übergabe-
+station und der nachgeschalteten elektrischen Anlagen verantwortlich. In dieser
+Verordnung sind Grenzwerte für die elektrische Feldstärke und die magnetische
+Flussdichte von Niederfrequenzanlagen mit einer Betriebsspannung über 1 kV
+festgelegt. Schon bei der Planung und Projektierung muss auf eine emissions-
+arme Anordnung und Ausführung der einzelnen Komponenten einer Übergabe-
+station und ggf. von Unterstationen geachtet werden.
+
+Die Grenzwerte müssen an Orten, die nicht nur zum vorübergehenden Aufenthalt
+von Personen gedacht sind, und an schutzwürdigen Einrichtungen wie z. B.
+Wohngebäuden, Kindergärten, Krankenhäusern und Schulen eingehalten werden.
+Der Nachweis ist rechnerisch oder über eine Messung zu erbringen. Die ent-
+sprechenden Unterlagen sind vom Betreiber vorzuhalten und den zuständigen
+Behörden auf Verlangen vorzulegen.
+
+3.6.2 Elektrischer Teil
+3.6.2.1 Allgemeines
+Grundsätzlich sind die Anforderungen gemäß der gültigen VDE-AR-N 4110 um-
+zusetzen. Die technischen Daten der Betriebsmittel sind mit Stromnetz Berlin
+rechtzeitig abzustimmen (vgl. auch Tabelle 1 in Anlage 1).
+
+Der Einsatz von Überspannungsableitern in der elektrischen Anlage des Kunden
+wird durch Stromnetz Berlin nicht gefordert.
+
+3.6.2.2 Schaltanlagen
+Schaltung und Aufbau
+Die Anforderungen sind gemäß der gültigen VDE-AR-N 4110 sowie entsprechend
+der Bilder 1.1 bis 1.11 in Anlage 2 umzusetzen.
+
+Ausführung
+Zusätzlich zu den Anforderungen der gültigen VDE-AR-N 4110 sind die jeweils
+gültigen Technischen Beschreibungen TB3312 und TB3351 zu beachten.
+
+Sämtliche Schaltfeldtüren des Übergabeteiles sind mit Schließzylinder von Strom-
+netz Berlin zu versehen und dürfen nur von Beauftragten von Stromnetz Berlin
+geöffnet werden.
+
+Ist ein fest eingebauter Leistungsschalter geplant, ist vor diesem Leistungs-
+schalter ein Lasttrennschalter (oder verriegelter Trennschalter) und nach diesem
+Leistungsschalter eine Lasttrennschalter-Erdungsschalter-Kombination (Ver-
+riegelung) vorzusehen. In diesem Fall sind vor und nach dem fest eingebauten        Technische
+Erdungsschalter Erdungsfestpunkte erforderlich. Eine Ausnahme bilden                Anforderungen
+                                                                                    Mittelspannung
+Dreiwegeschalter in gasisolierten Schaltanlagen, in denen Erdungsfestpunkte
+konstruktionsbedingt nicht vorhanden sind.                                          Seite/Umfang
+                                                                                    16/20
+
+Um Personen nicht zu gefährden, muss für Innenraumanlagen die Druckent-             Ausgabe
+lastung bei einem inneren Fehler (Störlichtbogen) definiert erfolgen, d. h. keine   2025
+
+Druckentlastung in die Kabelkanäle oder Doppelböden (z. B. über ein Reduktions-
+system oder gleichwertige Konstruktionen wie Störlichtbogenbegrenzungs-
+systeme).
+
+Kennzeichnung und Beschriftung
+Zusätzlich zu den Anforderungen der gültigen VDE-AR-N 4110 sind die Fest-
+legungen in der Technischen Beschreibung TB3312 zu beachten.
+
+Die Reihenfolge der Feldbezeichnungen beginnt grundsätzlich von links. Erdungs-
+schalter sowie deren Antriebe und Bedienhebel sind rot zu kennzeichnen.
+
+Transformatoren
+Wie in VDE-AR-N 4110 beschrieben, wird darauf hingewiesen, dass in den Mittel-
+spannungsnetzen, für die eine Umstellung der Versorgungsspannung vorgesehen
+ist, Netztransformatoren einzusetzen sind, die von der bisherigen auf die neue
+Spannung von außen umgeschaltet werden können.
+
+Trenntransformatoren, die zur Potentialtrennung bzw. zur Trennung von Erdungs-
+anlagen eingesetzt werden, müssen die Schaltgruppe Dy besitzen.
+
+Erdungsanlagen
+Zusätzlich zu den Anforderungen der gültigen VDE-AR-N 4110 sind die folgenden
+Festlegungen zu beachten.
+
+Für Stationen im 10-kV-Netz gelten in Bezug auf die Erdungsimpedanz ZE und
+den Ausbreitungswiderstand RA die Vorgaben gemäß Tabelle 5 der Anlage 1.
+
+Die Festlegungen zu Erdungsanlagen von Bahnstromversorgungen sind bei
+Stromnetz Berlin zu erfragen und zu beachten (Hinweis: Die Erdungsanlagen der
+Anlagen von Stromnetz Berlin werden getrennt von den Erdungsanlagen der
+Anlagen für die Bahnstromversorgung (Deutsche Bahn, S-Bahn, Straßenbahn
+und U-Bahn) ausgeführt und haben keine galvanische Verbindung).
+
+Die Ausführung der Erdungsanlagen in den Stationen wird ausführlich in den
+Richtlinien TB3371 und VN37 beschrieben.
+
+Blitzschutz
+Maßnahmen zum Blitzschutz von Kompaktstationen mit Pfahlmastantenne
+(Anbindung an das TETRA-Netz) sind abhängig von der Lage der Station
+individuell festzulegen.
+
+Eigenbedarf der elektrischen Anlage des Kunden
+Die Versorgung des Eigenbedarfs des Kunden ist grundsätzlich aus dessen
+eigener Anlage vorzunehmen.
+4     Messstellenbetrieb und Messung                                                     Technische
+                                                                                         Anforderungen
+4.1 Allgemeines                                                                          Mittelspannung
+Der Aufbau der Messeinrichtungen erfordert eine frühzeitige Abstimmung mit               Seite/Umfang
+                                                                                         17/20
+Stromnetz Berlin. Grundsätzliche Festlegungen, die über die folgenden
+Erläuterungen hinausgehen, können in der VDE-Anwendungsregel VDE-AR-N                    Ausgabe
+                                                                                         2025
+4400 (Metering Code) nachgelesen werden. Die Art der Messung wird von
+Stromnetz Berlin vorgegeben (siehe Technische Mindestanforderungen an
+Messeinrichtungen im Verteilungsnetz der Stromnetz Berlin GmbH und Anlage 4).
+Nur bei Anlagen mit einem Transformator bis 630 kVA, die zeitlich befristet am
+Netz angeschlossen sind, z. B. Baustromstationen [4], kann die Messung nach
+Rücksprache mit Stromnetz Berlin auf der Niederspannungsseite erfolgen.
+
+Die Messeinrichtung wird vom Messstellenbetreiber bereitgestellt und bleibt in
+dessen Eigentum. Plombenverschlüsse werden ausschließlich durch die
+Beauftragten von Stromnetz Berlin oder des Messstellenbetreibers angebracht
+oder entfernt. Sie dürfen durch Dritte nicht geöffnet werden.
+
+Die Messeinrichtungen werden in einen von Stromnetz Berlin beigestellten
+Schrank, ggf. mit fertig verdrahteter Zählertafel, beides aus Isolierstoff, eingebaut.
+Die auf einer Messsatztafel befindlichen Zähler und Steuergeräte werden vom
+Messstellenbetreiber geliefert und angeschlossen. Messwandler werden vom
+Messstellenbetreiber bereitgestellt.
+
+Die Wandler müssen übersichtlich angeordnet und die Anschlüsse im aus-
+geschalteten Zustand gut zugänglich sein. Im Störungsfall müssen Strom- und
+Spannungswandler einzeln auswechselbar sein. Schaltpläne zum Aufbau der
+Messeinrichtungen sind in Anlage 4 dargestellt.
+
+Der Zählerplatz ist im Einvernehmen mit Stromnetz Berlin festzulegen und in die
+Planungsunterlagen einzutragen. Für den Anschluss von Messeinrichtungen in
+Freiluftschränken gelten sinngemäß die entsprechenden Abschnitte in VDE-AR-N
+4100.
+
+Die Umgebungstemperatur am Anbringungsort der Messeinrichtung soll nicht
+unter -5° C absinken und nicht über +40° C ansteigen, um die Verkehrsfehler-
+grenzen einzuhalten.
+
+Bei der Ausführung des Messfeldes ist die Einhaltung der Phasenfolge L1 - L2 -
+L3 von links nach rechts erforderlich. Die Sekundärleitungen von Strom- und
+Spannungswandlern werden jeweils in getrennter Umhüllung geführt.
+
+Der Anschluss von kundeneigenen Betriebsmessgeräten an Strom- und
+Spannungswandler ist nicht zugelassen.
+
+Der Zählerschrank ist bei Stromnetz Berlin und die Messwandler sind beim Mess-
+stellenbetreiber, mit Ausnahme der Zähler und zugehöriger Steuergeräte, vom
+Anlagenerrichter rechtzeitig anzufordern, einzubauen und gemäß Schaltplan zu
+verdrahten (Bilder 2.2 und 2.4). Prüfung und Inbetriebnahme erfolgen durch den
+Messstellenbetreiber. In Sonderfällen kann eine erweiterte Messeinrichtung
+erforderlich werden. Auch dann sind alle Messeinrichtungen möglichst an einem     Technische
+gemeinsamen Platz unterzubringen.                                                 Anforderungen
+                                                                                  Mittelspannung
+                                                                                  Seite/Umfang
+4.2 Messstellenbetrieb Niederspannung                                             18/20
+Entsprechend der Angaben von Stromnetz Berlin sind je Abrechnungsmesssatz         Ausgabe
+drei Stromwandler an gut zugänglicher Stelle einzubauen. Es kommen grund-         2025
+sätzlich Schienenstromwandler zum Einsatz.
+
+Die in den Zählerschrank eingeführten und abgesetzten Leitungsenden sollen ca.
+1 m lang sein. Der Anschluss an die Reihenklemmen erfolgt durch Mitarbeiter des
+Messstellenbetreibers. Die Spannungsmessleitungen werden generell abge-
+sichert. Die Querschnitte der Spannungsmessleitungen zwischen dem Anschluss
+vor den Stromwandlern und den Reihenklemmen betragen mindestens 2,5 mm²
+Cu. Die Querschnitte der Strommessleitungen zwischen den Wandlern und den
+Reihenklemmen betragen bei Leitungslängen bis 15 m 4 mm² Cu.
+
+4.3 Messstellenbetrieb Mittelspannung
+Die Zahl der einzubauenden Strom- und Spannungswandler, deren technische
+Daten und die Einbauweise legt Stromnetz Berlin fest. Detailangaben enthält
+Anlage 4. Wenn mehrere Zählerplätze erforderlich sind, sind diese bündig neben-
+einander anzuordnen. Es ist eine 3x1,5 mm² NYM-J Leitung zum Zählerschrank
+zu verlegen. Diese Leitung ist an das vorhandene 230-V-Netz der Stations-
+sicherheitsbeleuchtung mit einer Absicherung von 1x10 A anzuschließen.
+
+Unterzählungen sind in der Planungsphase mit Stromnetz Berlin abzustimmen.
+
+4.4 Datenübertragung
+Die technischen Voraussetzungen für die Datenübertragung sind mit dem Mess-
+stellenbetreiber abzustimmen.
+
+
+5     Formulare zur Anlagenerrichtung
+Die Formulare der VDE-AR-N 4110 stehen als beschreibbare PDF-Dateien zur
+Verfügung (Anlage 5).
+
+Darüber hinaus sind die Checklisten für Abnahme, Inbetriebsetzung und
+Dokumentation (Anlage 6) auszufüllen.
+
+
+6     Quellenverzeichnis
+Hinweis:
+Die im Text angegebenen DIN- und VDE-Vorschriften sowie VDE-Anwendungs-
+regeln gelten in ihrer jeweils aktuellen Fassung. Sie werden in diesem Quellen-
+verzeichnis nicht aufgeführt.
+[1]         Verwaltungsvorschrift Technische Baubestimmungen (VV TB Bln)
+[2]         DGUV Information 211-041. Sicherheits- und Gesundheitsschutz-
+            kennzeichnung. April 2016
+[3]        26. Verordnung zur Durchführung des Bundes-Immissionsschutz-         Technische
+           gesetzes (Verordnung über elektromagnetische Felder –                Anforderungen
+                                                                                Mittelspannung
+           26. BImSchV)
+                                                                                Seite/Umfang
+[4]        Technische Richtlinie für den Anschluss von Baustromstationen in     19/20
+           den Bundesländern Berlin und Brandenburg. TR Baustromstationen
+                                                                                Ausgabe
+           2009 Berlin/Brandenburg                                              2025
+
+
+7      Verzeichnis der Anlagen und Bilder
+Anlagen
+Anlage 1   Bemessungsdaten der Betriebsmittel, Sternpunkterdung, Schutz-
+           einstellungen
+Anlage 2   Übersicht über die Anschlussprinzipen
+Anlage 3   entfällt
+Anlage 4   Messwandler
+Anlage 5   TAR Mittelspannung - Formulare. Anhang E der VDE-AR-N 4110
+Anlage 6   Checklisten für Abnahme, Inbetriebsetzung und Dokumentation
+
+Darüber hinaus wird im Text auf die folgenden Technischen Beschreibungen (TB)
+und Richtlinien von Stromnetz Berlin verwiesen:
+
+TB3304     Kabelrohrtrassen auf Kundengrundstücken
+TB3312     Mittelspannungsschaltanlagen in Kunden- und Netzstationen
+TB3340     Fernsteuerung von Netz- und Kundenstationen im MS-Netz
+TB3351     Aufstellung von Kompaktstationen
+TB3354     Räume für Kunden- und Netzstationen
+TB3371     Erdung in Netz- und Kundenstationen
+VN37       Erdung und Maßnahmen zum Schutz gegen gefährliche Körper-
+           ströme in den Verteilungsnetzen bis 10 kV
+
+Dokumente
+Technische Mindestanforderungen an Messeinrichtungen im Verteilungsnetz der
+Stromnetz Berlin GmbH
+
+Technische Mindestanforderungen – Netzsicherheitsmanagement für
+Erzeugungsanlagen im Verteilungsnetz der Stromnetz Berlin GmbH
+
+Bilder
+Bild 1.1   Übergabestation mit Anschluss an einen offenen 10-kV-Ring und
+           einem Transformator ≤ 800 kVA
+Bild 1.2   entfällt
+Bild 1.3   Übergabestation mit Anschluss an einen offenen 10-kV-Ring und
+           einem Transformator > 800 kVA
+Bild 1.4   entfällt
+Bild 1.5    Übergabestation mit Anschluss an einem offenen 10-kV-Ring und mit   Technische
+            mehreren Abgängen                                                   Anforderungen
+                                                                                Mittelspannung
+Bild 1.6    Übergabestation mit Anschluss an einem offenen 10-kV-Ring
+                                                                                Seite/Umfang
+            Übergabe ≤ 800 kVA, mit Erzeugeranlage ≤ 600 A                      20/20
+
+Bild 1.7    Übergabestation mit Anschluss an einem offenen 10-kV-Ring           Ausgabe
+            Übergabe > 800 kVA, mit Erzeugeranlage ≤ 600 A                      2025
+
+Bild 1.8    Übergabestation mit Anschluss an einem offenen 10-kV-Ring, Über-
+            gabe mit mehreren Schaltfeldern und Erzeugeranlage ≤ 600 A
+Bild 1.9    Übergabestation mit Anschluss an einem geschlossenen 10-kV-Ring
+            (Seiteneinspeisung)
+Bild 1.10   Übergabestation mit Anschluss an einem geschlossenen 10-kV-Ring
+            (Mitteneinspeisung)
+Bild 1.11   Übergabestation mit Stichanschaltung und Erzeugungsanlagen
+Bild 2.1    Verdrahtungsvorgaben MS-Anlage zum Schutzschrank
+Bild 2.2    Verdrahtungsvorgaben MS-Anlage zur Abrechnungsmessung
+Bild 2.3    Versorgung aus dem offenen Ring Standardisiertes Messfeld für mit
+            und ohne Übergabeschutz, optionaler Spannungsschutz
+Bild 2.4    Übergabeschutz bei geschlossener Ringversorgung
+

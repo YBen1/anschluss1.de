@@ -1,0 +1,80 @@
+Technische Anforderungen für den
+Anschluss an das Mittelspannungsnetz Berlin
+Anlage 1
+Bemessungsdaten der Betriebsmittel, Sternpunkterdung, Schutzeinstellungen
+
+1 Bemessungsdaten der Betriebsmittel
+Höchste Spannung für Betriebsmittel                                                     12 kV
+Bemessungs-Kurzzeit-Wechselspannung                                                     28 kV
+Bemessungs-Blitzstoßspannung                                                            75 kV
+Bemessungs-Kurzzeitstrom                                                                20 kA
+Bemessungs-Kurzschlussdauer                                                              1s
+Bemessungs-Stoßstrom                                                                    50 kA
+
+
+2 Sternpunkterdung im 10-kV-Netz
+Art der Sternpunkterdung1, 2                                                   Niederohmig (NOSPE)
+Erdfehlerfaktor                                                                         1,73
+Erdkurzschlussstrom (Auslegungswert)                                                 1 kA3 (5 s)
+1
+    Die Erdung der 10-kV-Sternpunkte der Transformatoren in den Übergabestationen ist unzulässig.
+2
+    Die Erdung der 10-kV-Sternpunkte von direkt am 10-kV-Netz angeschlossenen Generatoren ist während
+    des Parallelbetriebes mit dem Netz der Stromnetz Berlin GmbH unzulässig. Hierzu ist zur Inbetriebnahme
+    ein messtechnischer Nachweis zu erbringen und Stromnetz Berlin vorzulegen.
+3
+    Auslegungswert für den Erdkurzschlussstrom ist der Wert 1 kA. Aufgrund von (zulässigen) Toleranzen in
+    der Auslegung der Sternpunktbildner können in einigen Fällen im Netz höhere Werte auftreten (bis ca.
+    1,1 kA).
+
+3 Sternpunkterdung im 6-kV-Netz
+Art der Sternpunkterdung4, 5                                                       Isoliert (OSPE)
+Erdfehlerfaktor                                                                         1,73
+Erdschlussstrom                                                                        ≤ 250 A
+Doppelerdschlussstrom (Grundlage für die Auslegung der
+                                                                                       8,5 kA
+Erdungsanlage)
+4
+    Die Erdung der 6-kV-Sternpunkte der Transformatoren in den Übergabestationen ist unzulässig.
+5
+    Die Erdung der 6-kV-Sternpunkte von direkt am 6-kV-Netz angeschlossenen Generatoren ist während des
+    Parallelbetriebes mit dem Netz der Stromnetz Berlin GmbH unzulässig. Hierzu ist zur Inbetriebnahme ein
+    messtechnischer Nachweis zu erbringen und Stromnetz Berlin vorzulegen.
+
+4 Fehlerklärungszeiten im 10(6)-kV-Netz
+Fehlerklärungszeit Hauptschutz6                                             Werden projektspezifisch bei
+Fehlerklärungszeit Reserveschutz   7                                        Bedarf zur Verfügung gestellt
+6
+    Maximaler Wert, maßgebend für Erdungs- und Berührungsspannungen.
+7
+    Auslegungswert, maßgebend für die thermische Belastung.
+
+
+Seite 1 / 2
+Technische Anforderungen für den
+Anschluss an das Mittelspannungsnetz Berlin
+Anlage 1
+Bemessungsdaten der Betriebsmittel, Sternpunkterdung, Schutzeinstellungen
+
+5 Vorgaben für Stationen in Bezug auf die Erdungsimpedanz ZE und den
+  Ausbreitungswiderstand RA
+Station mit Verbindung zum öffentlichen Niederspannungsnetz8                 ZE ≤ 1 Ω
+Baukörper der Station9                                                       RA ≤ 5 Ω
+Station ohne Verbindung zum öffentlichen Niederspannungsnetz10
+                                                                           ZE ≤ 0,65 Ω
+(z. B. Baustationen oder kundeneigene Stationen)
+Baukörper der Station9                                                     RA ≤ 3,25 Ω
+8
+     PEN-Leiter des Niederspannungsnetzes ist an mehreren Punkten mit Erde verbunden, um die am PEN-
+     Leiter auftretende Spannung zu begrenzen
+9
+     Ohne angeschaltetes 10(6)-kV- bzw. 0,4-kV-Netz
+10
+     Verbindung zwischen Hochspannungs-Erdungsanlage und PEN-Leiter des Niederspannungsnetzes ist nur
+     in der Station hergestellt (PEN-Leiter nicht mehrfach geerdet)
+
+
+
+
+Seite 2 / 2
+

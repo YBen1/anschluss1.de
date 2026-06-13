@@ -1,0 +1,962 @@
+Dokumentart:              Dokumentbezeichnung:        Vertraulichkeitsklasse:   Anlagen:   Anzahl Seiten:
+
+Dokumentart:
+Technische
+                          TB3354                      C1 - Public               0          21
+Beschreibung
+Ansprechpartner:          Dokumentverantwortlicher:   Genehmigt von:            Version:   Gültig ab:
+
+                          Leiter/in Mittel- /         Leiter/in Technik
+Fr. Yanar                                                                       6          01.04.2024
+                          Niederspannungsnetz         SNB
+
+
+
+
+RÄUME FÜR KUNDEN- UND NETZSTATIONEN
+
+Zusammenfassung
+Die TB3354 beschreibt die Anforderungen, Ausstattungen sowie Ausführungen von elektrischen
+Betriebsräumen inkl. entsprechender Transportwege, innerhalb des Versorgungnetzes der Stromnetz
+Berlin GmbH (SNB).
+ Dokumentbezeichnung:                          Dokumenttitel:                                                  Version:               Seitenzahl:
+
+
+ TB3354                                        Räume für Kunden- und Netzstationen                             6                      2 (21)
+
+
+INHALT
+1 Änderungshinweise........................................................................................................................... 4
+2 Ziel und Zweck .................................................................................................................................. 5
+3 Geltungsbereich ................................................................................................................................ 5
+4 Mitgeltende Dokumente .................................................................................................................... 5
+    4.1      Verordnungen und Gesetze ..................................................................................................... 5
+    4.2      Normen ................................................................................................................................... 6
+    4.3      Interna ..................................................................................................................................... 6
+5 Copyright .......................................................................................................................................... 6
+6 Definition........................................................................................................................................... 7
+7 Anforderungen an den Stationsraum ................................................................................................. 7
+    7.1      Lage und Größe im Gebäude .................................................................................................. 7
+    7.2      Installationen ........................................................................................................................... 7
+    7.3      Gebots- und Warnschilder ....................................................................................................... 8
+    7.4      Brandschutz ............................................................................................................................ 8
+    7.5      Transformator .......................................................................................................................... 8
+             7.5.1         Lastaufnahmeeinrichtungen (Lasthaken) ................................................................... 9
+                  7.5.1.1             Prüfung ......................................................................................................... 9
+             7.5.2         Transformatorsenke .................................................................................................. 9
+             7.5.3         Transformatorstandort ............................................................................................... 9
+    7.6      Personenschutz (Schutzleisten) ............................................................................................ 10
+             7.6.1         Schutzleiste allgemein ............................................................................................. 10
+             7.6.2         Schutzleisten an Transformatoren (als Kennzeichnung Gefahrenzone) ................... 10
+    7.7      Störlichtbogenfestigkeit.......................................................................................................... 10
+    7.8      Aufstellungsort von Niederspannungsverteilungen ................................................................ 11
+    7.9      Be- und Entlüftung ................................................................................................................. 11
+             7.9.1         Natürliche Be- und Entlüftung .................................................................................. 11
+             7.9.2         Rauch und Wärmeabzugsanlage “Kontrollierte Natürliche Lüftung” oder “Rauch- und
+                           Wärmeaustausch” ................................................................................................... 12
+    7.10 Öffnungen für Druckentlastungen .......................................................................................... 13
+    7.11 Stationstüren ......................................................................................................................... 13
+    7.12 Bediengänge und Fluchtwege ............................................................................................... 14
+    Dokumentbezeichnung:                       Dokumenttitel:                                                 Version:               Seitenzahl:
+
+
+    TB3354                                     Räume für Kunden- und Netzstationen                            6                      3 (21)
+
+
+      7.13 Doppelböden und Kabelkanäle .............................................................................................. 14
+              7.13.1       Vorhandene Kabelkanäle ........................................................................................ 14
+              7.13.2       Doppelböden ........................................................................................................... 14
+                  7.13.2.1            Allgemein .................................................................................................... 14
+                  7.13.2.2            Unterkonstruktion ........................................................................................ 15
+                  7.13.2.3            Schaltschrankrahmen .................................................................................. 15
+                  7.13.2.4            Doppelbodenplatte ...................................................................................... 15
+      7.14 Treppen, Geländer und Absturzsicherungen .......................................................................... 16
+              7.14.1       Treppen................................................................................................................... 16
+                  7.14.1.1            Treppenabsätze .......................................................................................... 17
+                  7.14.1.2            Treppenbeleuchtung .................................................................................... 17
+              7.14.2       Geländer und Absturzsicherungen .......................................................................... 17
+      7.15 Rückhaltung von Flüssigkeiten .............................................................................................. 18
+      7.16 Wanddurchbrüche und Kabeltrassen vor dem Gebäude ........................................................ 18
+              7.16.1       Baustrom-/Notstromanschluss ................................................................................. 18
+      7.17 Wärmedämmung ................................................................................................................... 18
+      7.18 Bautechnische Anforderungen ............................................................................................... 19
+Anhang ................................................................................................................................................ 20
+I     Abkürzungen, Definitionen .............................................................................................................. 20
+II Abbildungsverzeichnis .................................................................................................................... 20
+III Tabellenverzeichnis ........................................................................................................................ 20
+IV Revisionsverzeichnis ...................................................................................................................... 21
+ Dokumentbezeichnung:           Dokumenttitel:                          Version:     Seitenzahl:
+
+
+ TB3354                         Räume für Kunden- und Netzstationen     6            4 (21)
+
+
+1    Änderungshinweise
+
+Alle Änderungshinweise aus älteren Versionen sind im Anhang IV Revisionsverzeichnis, Tabelle
+Anhang IV-1 Revisionsverzeichnis abgelegt.
+Tabelle 1-1 Änderungshinweise
+
+ Version 6
+
+ Abschnitt                                         Thema
+
+ Zusammenfassung                                   Aktualisiert
+
+ 2 Ziel und Zweck                                  Aktualisiert
+
+ 4.1 Gesetze Verordnungen                          Aktualisiert
+
+ 4.2 Normen                                        Aktualisiert
+
+ 4.3 Interna                                       Aktualisiert
+
+ 6 Definition                                      Aktualisiert
+
+ 7 Anforderungen an den Stationsraum               Aktualisiert
+
+ 7.1 Lage und Größe im Gebäude                     Aktualisiert
+
+ 7.2 Installationen                                Aktualisiert
+
+ 7.3 Gebots- und Warnschilder                      Aktualisiert
+
+ 7.4 Brandschutz                                   Aktualisiert
+
+ 7.5 Transformator                                 Aktualisiert
+
+ 7.6 Personenschutz (Schutzleiste)                 Aktualisiert
+
+ 7.7 Störlichtbogenfestigkeit                      Aktualisiert
+ 7.8 Aufstellungsort von
+                                                   Aktualisiert
+ Niederspannungsverteilungen
+ 7.9 Natürliche Be- und Entlüftung                 Aktualisiert
+
+ 7.10 Öffnungen für Druckentlastungen              Aktualisiert
+
+ 7.11 Stationstüren                                Aktualisiert
+
+ 7.12 Bediengänge von Fluchtwegen                  Aktualisiert
+
+ 7.13 Doppelboden und Kabelkanäle                  Hinzugefügt und aktualisiert
+
+ 7.14 Treppen, Geländer und Absturzsicherungen     Hinzugefügt und aktualisiert
+
+ 7.15 Rückhaltung von Flüssigkeiten                Aktualisiert
+ Dokumentbezeichnung:                  Dokumenttitel:                           Version:      Seitenzahl:
+
+
+ TB3354                                Räume für Kunden- und Netzstationen      6             5 (21)
+
+
+ 7.16 Wanddurchbrüche und Kabeltrassen vor
+                                                            Aktualisiert
+ dem Gebäude
+ 7.17 Wärmedämmung                                          Aktualisiert
+
+ 7.18 Bautechnische Anforderungen                           Aktualisiert
+
+
+
+2    Ziel und Zweck
+
+Diese technische Beschreibung definiert den technischen Sollzustand für den Neubau, Erweiterung
+sowie umfängliche Ertüchtigung von Räumen für Kunden- und Netzstationen im Verteilungsnetz der
+SNB.
+
+
+
+3    Geltungsbereich
+
+Diese technische Beschreibung gilt für den Einsatz von Stationen im Verteilungsnetz der folgenden
+Gesellschaft:
+                     Stromnetz Berlin GmbH
+
+
+
+4    Mitgeltende Dokumente
+
+Es gelten die einschlägigen Gesetze, Verordnungen, Normen und Richtlinien in der jeweils gültigen
+Fassung. Die nachfolgenden Kapitel enthalten eine Auswahl der wichtigsten Verordnungen, Normen
+und Richtlinien.
+
+4.1 Verordnungen und Gesetze
+
+Tabelle 4-1 Verordnungen und Gesetze
+                                       Sicherheits- und Gesundheitskennzeichnung: Warnzeichen und
+ ASR A1.3
+                                       Piktogramme für den Arbeitsschutz
+                                       Schutz vor Absturz und herabfallenden Gegenständen, Betreten von
+ ASR A2.1
+                                       Gefahrenbereichen
+
+ DGUV Regel 100-500                    Betreiben von Arbeitsmitteln
+
+                                       Deutsche Gesetzliche Unfallversicherung, „Elektrische Anlagen und
+ DGUV 204-003
+                                       Betriebsmittel“
+
+ EltbauVo                              Elektrobauverordnung
+
+ VV TB Bln                             Verwaltungsvorschrift Technische Baubestimmungen
+
+                                       Verordnung über Anlagen zum Umgang mit wassergefährdenden
+ AwSV
+                                       Stoffen (AwSV)
+ Dokumentbezeichnung:          Dokumenttitel:                             Version:       Seitenzahl:
+
+
+ TB3354                        Räume für Kunden- und Netzstationen        6              6 (21)
+
+
+
+
+4.2 Normen
+
+Tabelle 4-2 Normen
+ DIN EN ISO 7010:2020-07       Graphische Symbole - Sicherheitsfarben und Sicherheitszeichen
+
+ DIN EN ISO 12944-1:2019-      Beschichtungsstoffe - Korrosionsschutz von Stahlbauten durch
+ 01                            Beschichtungssysteme - Teil 1: Allgemeine Einleitung
+                               Beschichtungsstoffe - Korrosionsschutz von Stahlbauten durch
+ DIN EN ISO 12944-6:2018-
+                               Beschichtungssysteme - Teil 6: Laborprüfungen zur Bewertung von
+ 06
+                               Beschichtungssystemen
+ DIN EN IEC 61936-1 VDE        Starkstromanlagen mit Nennwechselspannungen über 1 kV AC und
+ 0101-1:2023-02                1,5 kV DC
+ DIN VDE 0100-731 VDE
+                               Errichten von Niederspannungsanlagen
+ 0100-731:2014-10
+
+ DIN 4102-1:1998-05            Brandverhalten von Baustoffen und Bauteilen
+
+ DIN EN 124-01: 2015-09        Aufsätze und Abdeckungen für Verkehrsflächen
+
+ DIN 4172: 2015-09             Maßordnung im Hochbau
+
+ DIN 18100: 1983-10            Türen, Wandöffnungen für Türen, Maße entsprechend DIN 4172
+
+ DIN EN 12825: 2002-04         Doppelböden
+
+
+
+4.3 Interna
+
+Tabelle 4-3 Interna
+                               Erdung und Maßnahmen zum Schutz gegen gefährliche Körperströme
+ Richtlinie VN 37
+                               in den Verteilungsnetzen bis 10-kV
+
+ TB3304                        Kabelrohrtrassen auf Kundengrundstücken
+
+                               Technische Anforderung für den Anschluss an das
+ TA-MS
+                               Mittelspannungsnetz
+
+
+
+5    Copyright
+
+Alle Inhalte dieser technischen Beschreibung inklusive der Abbildungen, Zeichnungen [Tabellen,
+Diagramme usw.] und Anlagen unterliegen, sofern nicht anders angegeben, urheberrechtlichem
+Schutz. Es ist untersagt, sie ganz oder teilweise, ohne ausdrückliche vorherige schriftliche Zustimmung
+der SNB zu vervielfältigen, zu verbreiten, zu bearbeiten oder umzugestalten.
+    Dokumentbezeichnung:            Dokumenttitel:                            Version:       Seitenzahl:
+
+
+    TB3354                          Räume für Kunden- und Netzstationen       6              7 (21)
+
+
+6      Definition
+
+Stationsraum
+Ein Stationsraum ist ein nicht ständig besetzter abgeschlossener elektrischer Betriebsraum, der den
+Anforderungen der einschlägigen DIN/VDE-Normen und den gesetzlichen Bestimmungen
+entsprechend ausgeführt, gewartet und instandgesetzt wird.
+
+
+
+7      Anforderungen an den Stationsraum
+
+Die Anforderungen an den Stationsraum beziehen sich auf die eingebauten Betriebsmittel,
+Raumabschluss zu anderen Räumen und auf den raumabschließenden Bauteilen.
+Der Zugang und Transportweg zum Stationsraum muss jeder Zeit gewährleistet sein. Hierbei ist die
+Zugänglichkeit vom öffentlichen Bereich bis zum Innenraum der Stationsraum gemeint.
+Der Fußboden des Stationsraumes erhält einen staubbindenden, trittfesten Anstrich.
+
+
+
+7.1 Lage und Größe im Gebäude
+
+Die Lage des Stationsraums muss folgende Bedingungen erfüllen:
+•      Der Stationsraum darf sich nicht in Geschossen befinden, deren Fußboden mehr als 4 m unter der
+       festgelegten Geländeoberfläche liegt. Er darf auch nicht in Geschossen über dem Erdgeschoss
+       liegen.
+•      Der Stationsraum muss so geplant werden, dass zum nächstgelegenen Stellplatz für
+       Kabelmesswagen der Weg max. 80 m beträgt.
+•      Die Lage des Stationsraumes ist vorzugsweise an einer Gebäudeaußenwand, um eine natürliche
+       Be- und Entlüftung ins Freie zu gewährleisten.
+•      Für Netzstationen gilt: Der Einbau der benötigten Anlagenteile erfordert einschließlich der
+       notwendigen Bedienfreiräume im Regelfall eine Raumgröße von
+                      –    Stationsraum mit 1 Transformator ≥ 25 m²
+                      –    Stationsraum mit 2 Transformatoren ≥ 50 m²
+•      Für Kundenstationen gilt: TA-MS, Punkt 3.2.2 (Anschluss an einen offenen betriebenen 10kV-Ring)
+       oder 3.2.3 (Anschluss an einen geschlossenen betriebenen 10kV-Ring) und 3.6.1.1
+
+
+
+7.2 Installationen
+
+•      Teile der Installation, die gewartet werden oder an denen gearbeitet werden muss, z. B. Leuchten,
+       sind so anzubringen, dass bei Arbeiten nicht im elektrischen Gefahrenbereich gearbeitet wird.
+    Dokumentbezeichnung:         Dokumenttitel:                            Version:       Seitenzahl:
+
+
+    TB3354                       Räume für Kunden- und Netzstationen       6              8 (21)
+
+
+•      Fremde Medien dürfen nicht durch den Stationsraum geführt werden. Wenn fremde Medien durch
+       den Stationsraum im Ausnahmefall unumgänglich geführt werden müssen, ist eine wirksame
+       Kapselung dieser Installationsleitungen, z.B. durch Mantelrohre und F90-Abkleidung innerhalb der
+       Stationsräume vorzusehen. Flüssigkeitsführende Medien sind durch ein zusätzliches Rohr zu
+       sichern und austretende Flüssigkeiten sind außerhalb der Station abzuleiten. Die
+       Mindestraummaße müssen weiterhin gewährleistet werden.
+
+
+
+7.3 Gebots- und Warnschilder
+
+Festinstallierte Schilder
+•     Schild je Zugangstür, Aufkleber Stationen DIN A4, beinhaltet „Achtung Hochspannung“ und
+      Stationsnummer und Hinweise
+•     Aushang „Erste Hilfe“ gemäß DGUV Info 204.001/004, Größe A4
+
+
+Ortsveränderliche Schilder
+Ein kompletter Satz an Sicherheits- und Warnschilder werden durch die Schaltanlagenerrichter mit
+ausgeliefert. Es ist eine entsprechende Ablagemöglichkeit im Stationsraum vorzusehen. Folgende
+Schilder sind pro Schaltfeld enthalten:
+•     Verbotsschild „Nicht schalten“ (P031), Größe 200 mm
+•     Warnschild „Warnung vor elektrischer Spannung“ (W012), Größe Basis 200 mm (Dreieck)
+•     Hinweisschild „geerdet und kurzgeschlossen“, Größe 120 x 200 mm mit weißer Schrift und blauen
+      Hintergrund
+
+
+7.4 Brandschutz
+
+Gemäß der Anlage der Verwaltungsvorschrift Technische Baubestimmungen (VV TB Bln) und deren
+Verweis auf die deutsche EltBauVO, sind raumabschließende Bauteile von Stationen feuerbeständig
+auszuführen. Das gilt auch für Kabeltrassen und Lüftungskanäle, die durch andere Räume führen.
+Dieser Grundsatz gilt auch für Gebäude, die nicht der EltBauVO unterliegen (z.B. Umspannwerke).
+Für elektrische Betriebsräume ist eine Feuerwiderstandsklasse von mindestens F90 und für Türen T30
+zu beachten.
+
+
+
+7.5 Transformator
+
+Stationsräume müssen für die Aufstellung von Transformatoren so ausgestattet sein, dass die
+Umweltverträglichkeit sichergestellt ist.
+Ausreichende Transportmöglichkeiten, z. B. für Transformatorwechsel, müssen vorhanden und auf
+Dauer gesichert sein. Für Trafotransporte müssen alle Verkehrswege zur Station ≥ 1,2 m breit und
+    Dokumentbezeichnung:        Dokumenttitel:                             Version:         Seitenzahl:
+
+
+    TB3354                      Räume für Kunden- und Netzstationen        6                9 (21)
+
+
+baulich für eine Nutzlast von min. 4 t ausgelegt sein. Bei einem Richtungswechsel ist ein
+Rangierbereich von mind. 2,0 m x 2,0 m erforderlich.
+Der Trafotransportweg ist in der Stationsraumzeichnung einzuzeichnen.
+Um die Transformatoren gefahrlos aufstellen und im Bedarfsfall wieder ausbauen zu können, soll der
+lichte Abstand zur Wand mindestens 200 mm, zwischen zwei Transformatoren mindestens 400 mm
+und zur NVT mindestens 500 mm betragen.
+
+
+7.5.1         Lastaufnahmeeinrichtungen (Lasthaken)
+
+Für den Transformatorentransport sind gemäß DGUV Regel 100-500 „Betreiben von Arbeitsmitteln“ in
+folgenden Fällen Lasthaken notwendig.
+•     Oberhalb einer Transformatorensenke zur Befestigung eines Flaschenzuges
+•     An Rampen/Schrägen zur Sicherung der Abfahrt und zum Herausnehmen
+
+
+7.5.2         Prüfung
+
+Prüfung vor der ersten Inbetriebnahme:
+
+•      Der Eigentümer des Gebäudes hat dafür zu sorgen, dass Lastaufnahmeeinrichtungen nur in
+       Betrieb genommen werden, wenn sie durch einen Sachkundigen geprüft und festgestellte Mängel
+       behoben worden sind.
+
+
+Prüfungen nach der Inbetriebnahme:
+
+•      Der Eigentümer des Gebäudes hat dafür zu sorgen, dass Lastaufnahmeeinrichtungen vor dem
+       Gebrauch durch einen Sachkundigen geprüft werden.
+
+
+
+7.5.3         Transformatorsenke
+
+Die Senke zum Einbringen des Transformators muss eine lichte Weite von ≥ 1,5 m x ≥ 2,0 m haben.
+Die minimale Deckenhöhe von Überbauungen muss über den Senkenplatten mindestens 3,0 m
+betragen. Die Senkenabdeckung ist dreiteilig herzustellen und gegen eindringendes Wasser
+abzudichten.
+Die Senke muss mit geeignetem Lastaufnahmeeinrichtungen geöffnet werden können und gegen
+unbefugtes Öffnen von außen gesichert sein.
+Belastungsklassen für Schachtabdeckungen werden nach DIN EN 124-01 hergestellt. Nach diesen
+Normen werden Schachtabdeckungen in verschieden Festigkeitsklassen eingeteilt. Die einzelnen
+Klassen können der Norm entnommen werden.
+    Dokumentbezeichnung:         Dokumenttitel:                            Version:      Seitenzahl:
+
+
+    TB3354                       Räume für Kunden- und Netzstationen       6             10 (21)
+
+
+7.5.4         Transformatorstandort
+
+Folgende Bestimmungen sind einzuhalten:
+
+
+•     DIN EN IEC 61936-1 VDE 0101-1, Abschnitt 8.8.
+•     Verordnung über Anlagen zum Umgang mit wassergefährdenden Stoffen (AwSV)
+•     Wasserhaushaltsgesetz (WHG).
+
+
+Wird der Fußboden als Rückhaltanlage verwendet, so ist dieser in einer ölfesten Ausführung
+herzustellen. Es muss gewährleistet sein, dass das Gesamtvolumen der Isolierflüssigkeiten aller
+Transformatoren zurückgehalten wird (Siehe Punkt 7.15 „Rückhalten von Flüssigkeiten“).
+Sollte eine Wanne als Rückhalteanlage verwendet werden, so ist diese wie folgt auszuführen:
+•      Am Standort des Transformators wird eine Wanne mit einem Auffangvolumen der gesamten
+       Isolierflüssigkeit des jeweiligen Transformators aufgestellt. Unter der Ölauffangwanne muss eine
+       Gummimatte (NR/SBR, 2 mm dick) gelegt werden. Auch zwischen den vier Schwingungsdämpfern
+       der Trafoschienen und der Ölauffangwanne müssen vier solche Gummimatten gelegt werden.
+
+
+7.6 Personenschutz (Schutzleisten)
+
+7.6.1         Schutzleiste allgemein
+
+Die Schutzleiste muss aus Kunststoff oder trockenem Holz bestehen.
+Es ist erforderlich, dass eine Leiste ohne Zuhilfenahme eines Werkzeuges entfernt werden kann.
+Schutzleisten müssen biegesteif sein. In Anlehnung an die DIN VDE 0100-731 sind Schutzleisten in
+abgeschlossenen elektrischen Betriebsstätten als widerstandsfähig gegen Verformung auszuführen.
+Die Schutzleisten müssen grundsätzlich in gelb-schwarz ausgeführt werden.
+Befinden sich die Leisten vor elektrischen Anlagen, die nicht berührungssicher ausgeführt sind, müssen
+diese rot-weiß markiert sein.
+Die Mindestmaße für Bediengänge und Fluchtwege dürfen nicht unterschritten werden.
+Reicht der Sicherheitsabstand zu spannungsführenden Teilen oder die Gangbreite in vorhandenen
+Stationen nicht aus, kann ein Personenschutz auch durch andere geeignete Maßnahmen (z.B.
+Abdeckungen) realisiert werden.
+
+
+
+7.6.2         Schutzleisten an Transformatoren (als Kennzeichnung Gefahrenzone)
+
+Ohne geerdetes metallisches Schutzgehäuse sind die Mittelspannungsanschlüsse am Transformator,
+in der Ausführung EPDM oder Silikon, nicht berührungssicher.
+•      Sind die Mittelspannungsanschlüsse nicht berührungssicher ausgeführt, ist der Abstand zwischen
+       Schutzleiste und Mittelspannungsanschlüssen von 1,2 m einzuhalten.
+    Dokumentbezeichnung:              Dokumenttitel:                                 Version:   Seitenzahl:
+
+
+    TB3354                            Räume für Kunden- und Netzstationen            6          11 (21)
+
+
+•      Sind die Mittelspannungsanschlüsse berührungssicher ausgeführt, muss ein Abstand von 500 mm
+       von den nicht isolierten Niederspannungsanschlüssen eingehalten werden.
+
+
+
+7.7 Störlichtbogenfestigkeit
+
+Die lichte Raumhöhe muss ≥ 2,3 m, von der Doppelbodenoberkante, betragen.
+Die mechanische Festigkeit des Gebäudes muss ausreichend sein, um alle statischen und
+dynamischen Belastungen aus dem Betrieb aufnehmen zu können.
+Die raumabschließenden Elemente müssen einem plötzlichen Druckanstieg in Folge eines
+Störlichtbogens bei Netzstationen von 2500 Pascal (N/m²) standhalten. Netzstationsräume müssen ein
+Volumen von ≥ 44 m³ haben, um alle zugelassenen Schaltanlagen aufnehmen zu können. Die Vorgabe
+von ≥ 44 m³ Raum-Volumen beinhaltet den oben definierten Stationsraum (Raum-Volumen ≥ 57 m³)
+inklusive aller eingebauten Betriebsmittel.
+Bei kleineren Räumen ist eine projektbezogene Beurteilung erforderlich. Bei Neubaustationen muss
+diese Festigkeit vom Eigentümer nachgewiesen werden.
+Bei Kundenstationen ist der Nachweis der mechanischen Festigkeit des Raumes zu berechnen und die
+Statik durch den Bauherrn nachzuweisen.
+Schaltanlagen mit geprüften Druckentlastungskanälen, die ins Freie führen, sind zulässig.
+In der Tabelle 7-1 sind allgemeine Angaben für die Druckabschätzung in geschlossenen Räumen, ohne
+Druckentlastung, auf angrenzende Wände angegeben. Die Tabelle 7-1 dient als erster Anhaltspunkt
+zur Bewertung der Festigkeit.
+Tabelle 7-1 allgemeine Angaben für die Druckschätzung in geschlossenen Räumen
+                                         Zulässiger Druck in
+    Wand (Material)                                                  Kraftwirkung in N/m²
+                                         mbar
+
+    Ziegelwand 24 cm                     3 - 10                      300 - 1.000
+
+    Bewehrte Ziegelwand 24 cm            25                          2.500
+
+    Fertigbeton Teile 15 cm              50                          5.000
+
+    Ortbeton xxx                         70                          7.000
+
+    Betonraumzellenbauweise xxx          160                         16.000
+
+
+
+7.8 Aufstellungsort von Niederspannungsverteilungen
+
+Der Aufstellungsort der Niederspannungsverteilung (NVT) sollte auf Grund der EMV-Verträglichkeit
+(Minimierungsgebot der 26.BImSchV) in unmittelbarer Nähe zum Transformator erfolgen. Die
+Kabeleinführungen der Abgangskabel erfolgen von unten.
+ Dokumentbezeichnung:                     Dokumenttitel:                                  Version:          Seitenzahl:
+
+
+ TB3354                                   Räume für Kunden- und Netzstationen             6                 12 (21)
+
+
+7.9 Be- und Entlüftung
+
+7.9.1         Natürliche Be- und Entlüftung
+
+Es ist grundsätzlich eine natürliche Lüftung vorzusehen. Dazu muss mindestens eine Raumseite der
+Station an einer Gebäudeaußenwand liegen, wobei zur Sicherstellung einer Querlüftung Räume an
+Gebäudeecken vorzuziehen sind.
+Die Zu- und Abluftöffnungen sind so zu bemessen und anzuordnen, dass der Luftaustausch möglichst
+ohne Beeinträchtigung abgeführt werden kann.
+
+
+Die Lüftung ist so auszubilden, dass eine gefährliche Annäherung an aktive Anlagenteile und das
+Gefahr bringende Eindringen von Fremdkörpern verhindert wird.
+Die Nutzung der Stationstür zur Querlüftung ist nicht zulässig.
+In Abhängigkeit von der Lage der Station im Gebäude und der Anzahl der im Endausbauzustand
+vorgesehenen Transformatoren sind je Transformator für die Zuluft und die Abluft mindestens folgende
+Lüftungsquerschnitte vorzusehen (Tabelle 7-2 „Lüftungsquerschnitt für die Zuluft und Abluft“):
+Tabelle 7-2 Lüftungsquerschnitt für die Zuluft und Abluft
+                                    Station in    Station mit einer
+                                                                                      Station ohne Außenwände
+                                    einem Eckraum Außenwand
+ Höhendifferenz
+ zwischen Mitte Zu- und                                                               gerade horizontale
+ Mitte Abluftöffnung                ohne                    ohne                      Lüftungskanäle bis zu 40 m
+                                    Lüftungskanäle          Lüftungskanäle            Summenlänge für die Zuluft und
+                                                                                      die Abluft
+
+ h ~ 1,5 m                          0,5 m²                  0,5 m²                    0,7 m²
+
+ h~0m                               1,0 m²                  Mit Blechkanal für Zuluft Lüfter erforderlich
+
+
+Eventuell erforderliche Lüftungsschächte dürfen die Kabeltrassen nicht beeinträchtigen.
+Alle Lüftungsöffnungen sind so auszuführen und anzuordnen, dass auch bei Schlagregen oder
+Staunässe kein Wasser in die Station eindringen kann. Lüftungsöffnungen, hinter denen sich
+spannungsführende Teile befinden, sind mit stochersicheren Jalousien auszurüsten.
+Die Lüftungsjalousien müssen gegen gewaltsamen Einbruch ausreichend stabil sein und der
+Schutzklasse IK 10 (Stoßfestigkeitsgrad) entsprechen. Sie sind so mit Metalldübeln und Schrauben in
+der Wand zu verankern, dass sie nicht von außen demontiert werden können.
+Um das Eindringen von Kleintieren durch die Lüftungsjalousien zu verhindern, sind zusätzliche
+Schutzgitter mit einer Maschenweite von 10 mm - 15 mm und mit einer Stegbreite/Drahtstärke von
+min. 1,5 mm anzubringen.
+Die Jalousien und Schutzgitter müssen dauerhaft gegen Korrosion geschützt sein. Stahlteile müssen
+feuerverzinkt sein.
+Das Schutzgitter ist direkt hinter der Jalousie anzubringen.
+ Dokumentbezeichnung:                Dokumenttitel:                        Version:      Seitenzahl:
+
+
+ TB3354                              Räume für Kunden- und Netzstationen   6             13 (21)
+
+
+
+
+7.9.2       Rauch und Wärmeabzugsanlage “Kontrollierte Natürliche Lüftung” oder
+            “Rauch- und Wärmeaustausch”
+
+Falls die Lage des Stationsraumes nicht für eine natürliche Be- und Entlüftung geeignet ist, muss eine
+kontrollierte Lüftungsanlage installiert werden. Bei der Dimensionierung dieser Lüftungsanlage, ist
+darauf zu achten, dass bei Betrieb der Raumschallpegel den gesetzlichen Vorschriften entspricht. Die
+kontrollierte Lüftung muss bauseits errichtet werden.
+
+
+Die Zwangsbelüftung ist notwendig, wenn die Umgebungstemperatur 20°C überschreitet oder der Raum
+schlecht belüftet ist. Die Lüftungsanlage ist durch ein Raumthermostat zu regeln.
+Als Entscheidungsgrundlage für die Dimensionierung kann die Tabelle 7-3 „Angaben zum
+Luftaustauschvolumen“ genutzt werden, bzw. eine Berechnung des tatsächlichen
+Luftaustauschvolumen erfolgen, die vom Fachbereich der SNB zu genehmigen ist.
+Tabelle 7-3 Angaben zum Luftaustauschvolumen
+Anzahl der Transformatoren
+                                    Luftaustauschvolumen
+im Endausbauzustand
+
+1 Stück                             1500 m³/h
+
+2 Stück                             3000 m³/h
+
+
+Die Steuerung ist so zu konzipieren, dass nach einem Spannungsausfall ein selbständiger
+Wiederanlauf der Lüftungsanlage sichergestellt ist.
+An den Lüftungskanälen müssen für die Stationserdung geeignete Erdungspunkte vorhanden sein. Für
+eine ordnungsgemäße Erdung ist eine elektrische Durchverbindung der Lüftungskanalsegmente
+sicherzustellen.
+
+
+
+7.10 Öffnungen für Druckentlastungen
+
+Druckentlastungsklappen sind an einer Außenwand des Gebäudes in einer Mindesthöhe von 2,5 m
+auszuführen, um eine Gefährdung von Personen und Sachgütern zu vermeiden.
+
+
+
+7.11 Stationstüren
+
+Alle Stationstüren, deren Ausgang ins Gebäude führen, sind entsprechend der Mindestanforderung
+T30-RS, als Fluchttür, d.h. nach außen aufschlagend und selbstschließend auszuführen (automatische
+Türschließung). Die Stationstür muss über einen Einbruchschutz, vergleichbar dem RC3, verfügen.
+Die Stationstüren müssen gemäß DIN VDE 0101-1, Punkt 7.5.5 ausgeführt werden und von innen,
+ohne Schlüssel, zu öffnen sein, indem eine Klinke oder ein anderes, einfaches Hilfsmittel verwendet
+    Dokumentbezeichnung:       Dokumenttitel:                             Version:     Seitenzahl:
+
+
+    TB3354                     Räume für Kunden- und Netzstationen        6            14 (21)
+
+
+wird, selbst wenn die Türen von außen abgeschlossen sind. Die Türen werden auf der Innenseite mit
+einer Drückergarnitur und Außen mit einem feststehenden Knauf versehen. Die Türschlösser müssen
+mit passenden Zylindereinsätzen, die nicht mehr als 3 mm überstehen dürfen, ausgerüstet sein. Bei
+Kundenstationen sind Türen mit einer Doppelschließung auszurüsten.
+Maßangaben als Baurichtmaß (B x H) entsprechend DIN 4172 und DIN 18100:
+•     Zugangstür für Personal: 1,00 m x 2,00 m
+•     Einbringtür: mindestens 1,25 m x 2,125 m
+
+Hat die Station insgesamt nur eine Tür, so gelten für diese Tür die Einbringmaße.
+Bei mehr als einer Tür im Stationsraum muss der Rettungsweg DIN-konform gekennzeichnet werden.
+
+7.12 Bediengänge und Fluchtwege
+
+Die Bediengänge vor MS-Schaltanlagen oder Niederspannungsverteilungen (NVT) müssen mindestens
+1,0 m, bei gegenüberliegenden zu betätigenden Anlagen mindestens 1,2 m breit sein.
+Der Bedienbereich vor MS-Schaltanlagen ohne kapazitive Spannungsanzeige muss mindestens 1,3 m
+breit sein.
+Ansonsten gilt DIN EN IEC 61936-1 (VDE 0101-1) mit den Abschnitten 7.5.4 und 7.5.5.
+
+
+7.13 Doppelböden und Kabelkanäle
+
+7.13.1        Vorhandene Kabelkanäle
+
+Bei vorhandenen Kabelkanälen, die Bediengänge in Stationsräumen kreuzen, müssen diese komplett
+geschlossen sein. Die Abdeckungen sind so auszulegen, dass eine Punktbelastung von mindestens
+100 kg und eine Flächenbelastbarkeit von mindestens 250 kg/m² eingehalten wird. In Gebäuden
+befindliche Abdeckungen von Kabelkanälen außerhalb von Netzstationsräumen müssen mindestens für
+eine Flächenlast von 250 kg/m2 ausgelegt werden.
+Die Abdeckungen müssen gegen Korrosion geschützt sein. Die Rahmen der Abdeckungen müssen aus
+verzinktem Stahl bestehen und die Abdeckplatten aus geriffeltem Aluminium- oder Stahlblech. Der
+Rahmen ist zu erden.
+Unterhalb wandmontierter 10-kV-Schaltfelder kann ggf. auf Gruben- oder Kanalabdeckungen verzichtet
+werden, wenn die Grube/der Kanal gegenüber der senkrecht nach unten verlängerter Front der
+Schaltanlage um mindestens 150 mm zurückliegt.
+Sind Gruben oder Kanäle angrenzend an Bediengänge vorhanden, sind entsprechend Kapitel 7.6
+„Personenschutz (Schutzleiste)“ Absperrleisten (Leistenoberkante 1,4 m über Boden) zu errichten.
+Bei Mittelspannungskabeln in Gebäuden müssen die verschraubten Kanäle und Rohrtrassen noch
+zusätzlich feuerbeständig ausgeführt sein.
+    Dokumentbezeichnung:       Dokumenttitel:                            Version:       Seitenzahl:
+
+
+    TB3354                     Räume für Kunden- und Netzstationen       6              15 (21)
+
+
+7.13.2        Doppelböden
+
+7.13.2.1         Allgemein
+
+Als Doppelboden gemäß DIN EN 12825, wird hier eine aufgeständerte Bodenkonstruktion in modularer
+Aufbauweise verstanden, die aus Platten und Ständern besteht. Die Platten liegen auf einer
+metallischen Rahmenkonstruktion und sind jederzeit entfernbar, um in den darunterliegenden Hohlraum
+zu gelangen. Die metallische Unterkonstruktion ist so herzustellen, dass auch ohne eingelegte Platten
+Stabilität gewährleistet ist.
+Für jeden Raum ist ein entsprechendes Hebewerkzeug zu hinterlegen.
+
+
+
+7.13.2.2         Unterkonstruktion
+
+Die Unterkonstruktion ist aus korrosionsgeschütztem mindestens verzinktem Stahl, in Rasterbauweise
+untereinander leitfähig verbunden, herzustellen. Sie ist fest mit dem Boden zu verschrauben und an die
+Erdungsanlage anzuschließen.
+Sie muss im Transportweg des Transformators dynamischen Kräften standhalten. Die Flächenlast
+muss im Trafotransportweg, durch Einbau zusätzlicher Profile, verstärkt werden.
+Belastung für den Trafotransportbereich:
+•      Flächenbelastung 40.000 N/m2 (Trafogewicht, incl. Transportmittel 4 t)
+•      Punktbelastung 20.000 N (Spurweite 670 mm, Rollendurchmesser 105 mm, Rollenbreite 50 mm)
+
+Im Bereich von Kabeleinführungen oder - durchführungen dürfen Stützen erst mit einem Abstand von
+600 mm montiert werden.
+Die Höhe des Doppelbodens beträgt ≥ 800 mm.
+
+
+
+7.13.2.3         Schaltschrankrahmen
+
+Für Schaltschränke werden verstärkte Bodenöffnungen maßgenau erstellt, auf denen die Geräte
+aufgestellt werden. Der Übergang vom Rahmen zum Gehbereich ist höhengleich zu gestalten.
+Schaltschrankrahmen und Doppelbodenplatten bilden eine konstruktive Einheit.
+Ausschnitte sind in Größe und Lage gemäß Projektzeichnung des Netzbetreibers einzubauen.
+ Dokumentbezeichnung:                  Dokumenttitel:                                 Version:   Seitenzahl:
+
+
+ TB3354                                Räume für Kunden- und Netzstationen            6          16 (21)
+
+
+7.13.2.4         Doppelbodenplatte
+
+Es ist eine Doppelbodenplatte mit folgenden Details zu verwenden.
+Tabelle 7-4 Doppelbodenplatten
+
+ Technische Daten                                           Werte
+
+ Elementklasse nach DIN EN 12825                            2
+
+ Sicherheitsfaktor nach DIN EN 12825                        2
+
+ Ableitwiderstand                                           > 106 Ω und ≤ 109 Ω, Klassifizierung: DIF
+
+ Standortübergangswiderstand                                ≥ 105 Ω
+
+ Baustoffklasse                                             B1, schwer entflammbar
+
+ Feuerwiderstandsklasse                                     F-30
+
+ Größe                                                      600 x 600 mm
+
+ Belag                                                      PVC, grau oder ähnlich
+
+
+7.14 Treppen, Geländer und Absturzsicherungen
+
+7.14.1       Treppen
+
+Als Grundlage dienen hierfür die DIN EN 18100 und DIN EN 4172. Für das sichere Begehen von
+Treppen ist das Steigverhältnis, das Verhältnis von Stufenhöhe (s) zur Auftrittsbreite (a),
+ausschlaggebend.
+
+
+
+
+                                                        Das günstigste Verhältnis ergibt sich
+                                                            aus der „Sicherheitsformel“
+                                  a = 29
+
+
+                     s = 17 cm
+        100 cm                                                        s + a = 45+-1
+
+
+
+Abbildung 7-1 Verhältnis der Stufenhöhen
+
+
+
+Die Stufenhöhe muss dabei zwischen 140 mm und 200 mm und die Auftrittsbreite zwischen 260 mm
+und 320 mm liegen. Die Stufenmaße müssen innerhalb eines Treppenlaufs gleich sein.
+Die Breite von Treppen beträgt mindestens 1000 mm.
+Die Trittflächen der Stufen müssen eben und gleitsicher sein. Stufenbeläge müssen fest aufliegen.
+ Dokumentbezeichnung:                  Dokumenttitel:                        Version:       Seitenzahl:
+
+
+ TB3354                                Räume für Kunden- und Netzstationen   6              17 (21)
+
+
+Bei Außentreppen (Freitreppen) sollen die Trittflächen besonders gleitsicher sein, z. B. geraut, gerollt,
+gekörnt.
+Bei Stufen aus Metall sollen die Stufenbleche (empfehlenswert Tränenbleche) an der
+Stufenvorderkante nicht abgewinkelt, sondern durch einen angeschweißten Steg versteift sein, der
+wenigstens 50 mm hinter der Stufenvorderkante steht.
+
+
+
+7.14.1.1         Treppenabsätze
+
+Absteigende Treppen hinter Türen müssen mindestens ein Podest von 1,0 m Tiefe haben und müssen
+durch ein Hinweisschild an der Tür gekennzeichnet sein.
+
+
+
+
+Abbildung 7-2 Beispiel Hinweisschild
+
+
+
+Die Tür darf nicht zur Treppe hin aufschlagen. Kann in besonderen Fällen die Tür nur zur Treppe hin
+aufschlagen, muss der Absatz (Podest) zwischen Tür und Treppenlauf 0,5 m tiefer sein als der
+Türflügel breit ist, mindestens jedoch 1,0 m lang, damit Absturzgefahr vermieden wird.
+
+
+
+7.14.1.2         Treppenbeleuchtung
+
+Die Treppen müssen während der Nutzung ausreichend und blendungsfrei beleuchtet sein. Die
+Stufenkanten müssen gut sichtbar, die obersten und untersten Stufen immer deutlich erkennbar sein.
+
+
+
+7.14.2       Geländer und Absturzsicherungen
+
+Erforderlich sind Geländer und Absturzsicherungen zum Schutz gegen Absturz von Personen und ggf.
+auch zur Verhinderung des Herabfallens von Gegenständen.
+Nach den technischen Regeln für Arbeitsstätten „Schutz gegen Absturz und herabfallende
+Gegenstände; Betreten von Gefahrbereichen“ (ASR A2.1) sind Geländer dort vorzusehen, wo eine
+Absturzhöhe von mehr als 1,00 m besteht. Zusätzlich können Geländer erforderlich sein, wenn
+Arbeitsplätze über 0,20 m bis 1,00 m höher als angrenzende Verkehrsflächen liegen oder wenn die
+Gefährdung des Abrutschens oder unabhängig von der vorgenannten Höhe die Gefährdung des
+Hinfallens oder des Versinkens in Stoffen besteht.
+Für Absturzsicherungen ist ebenfalls die ASR A2.1 zu beachten.
+    Dokumentbezeichnung:        Dokumenttitel:                         Version:       Seitenzahl:
+
+
+    TB3354                      Räume für Kunden- und Netzstationen    6              18 (21)
+
+
+7.15 Rückhaltung von Flüssigkeiten
+
+Es sind bauliche Maßnahmen zu treffen, die ein von außen eindringendem Wasser in den Stationsraum
+weitestgehend verhindern, wie z.B. durch Einbau von 5 - 10 cm hohen Türschwellen,
+Entwässerungsrinnen oder Sickerschächte vor der Stationstür und der Be-/Entlüftung.
+Stationsräume sind so herzurichten, dass im Fehlerfall auslaufende Isolierflüssigkeit eines
+Transformators aufgefangen wird und sich nicht in unzugänglichen Hohlräumen sammeln kann.
+Fußbodenentwässerungen oder automatische Hebeanlagen innerhalb von Stationsräumen sind nicht
+zulässig.
+Das Grund-, Oberflächen- und Abwasser darf nicht verschmutzt werden (siehe AwSV „Verordnung über
+Anlagen zum Umgang mit wassergefährdenden Stoffen“).
+
+
+
+7.16 Wanddurchbrüche und Kabeltrassen vor dem Gebäude
+
+Wanddurchbrüche (Kabeleinführungssysteme) sind nach Vorgabe des Netzbetreibers herzustellen und
+sofort nach ihrer Herstellung gegen das Eindringen von Wasser abzudichten. Nach der Kabellegung ist
+die Wasser- und Gasdichtigkeit wieder herzustellen.
+Es dürfen nur durch den Netzbetreiber zugelassene Einführungssysteme verwendet werden (siehe
+TB3304).
+Die Festlegungen für Kabelrohrtrassen auf Kundengrundstücken sind in der TB3304 definiert.
+
+7.16.1        Baustrom- / Notstromanschluss
+
+Für die Herstellung eines Baustrom-/ Notstromanschlusses ist, wenn möglich an einer Gebäudewand
+oberirdisch eine sichere, verschließbare Öffnung von 100 mm Durchmesser vorzusehen. Im
+Stationsraum ist eine Zugentlastung für das Baustrom- oder Notstromkabel zu gewährleisten und es sind
+Vorkehrungen für ein wasserundurchlässiges und stochersicheres Kabeleinführungssystem zu treffen.
+
+
+
+7.17 Wärmedämmung
+
+Wird eine Wärmedämmung in Stationsräumen notwendig, so ist diese nur unter den folgenden
+Voraussetzungen anzuwenden:
+•      Einsatz von Brandschutzdübel
+•      Verspachtelung der Dämmflächen ist nicht zulässig
+
+Alle Wände, Decken, Bekleidungen, Fußböden und Dämmungen sind ausschließlich aus nicht
+brennbaren Baustoffen, Feuerwiderstandsklasse F90-A1 entsprechend DIN 4102 [2], auszuführen.
+Das Lösen von Wärmedämmungen ist auch in Brandfällen zu vermeiden.
+    Dokumentbezeichnung:        Dokumenttitel:                        Version:      Seitenzahl:
+
+
+    TB3354                      Räume für Kunden- und Netzstationen   6             19 (21)
+
+
+7.18 Bautechnische Anforderungen
+
+•      Transportweg:
+       –  2,2 m hoch,  1,5 m breit
+
+
+•      Abladen innerhalb von Gebäuden:
+       – Ladegeschirr beachten
+
+
+•      Aufzugsnutzung:
+       – Der Aufzug muss im Störungsfall von Hand betrieben werden können oder über eine
+           gesicherte Notstromversorgung verfügen.
+
+
+•      Zugang
+       – Es ist ein ständiger Zugang (24/7h) zur Station und ggf. zum Schlüsselkasten oder
+           Schlüsseltresor zu gewährleisten. Schlüsselkasten oder Schlüsseltresor werden vom
+           Netzbetreiber beigestellt und sind durch den Grundstückseigentümer zu montieren.
+           Änderungen des Zugangssystem durch den Grundstückeigentümer, bzw. Nutzer sind der
+           Stromnetz Berlin GmbH unverzüglich mitzuteilen.
+    Dokumentbezeichnung:                     Dokumenttitel:                                                Version:              Seitenzahl:
+
+
+    TB3354                                   Räume für Kunden- und Netzstationen                           6                     20 (21)
+
+
+Anhang
+
+I          Abkürzungen, Definitionen
+
+SNB                       Stromnetz Berlin GmbH
+NVT                       Niederspannungsverteilung
+
+
+
+II         Abbildungsverzeichnis
+
+Abbildung 7-1 Verhältnis der Stufenhöhen ........................................................................................... 16
+Abbildung 7-2 Beispiel Hinweisschild ................................................................................................... 17
+
+
+
+III        Tabellenverzeichnis
+
+Tabelle 1-1 Änderungshinweise ............................................................................................................. 4
+Tabelle 4-1 Verordnungen und Gesetze ................................................................................................ 5
+Tabelle 4-2 Normen ............................................................................................................................... 6
+Tabelle 4-3 Interna ................................................................................................................................ 6
+Tabelle 7-1 allgemeine Angaben für die Druckschätzung in geschlossenen Räumen .......................... 11
+Tabelle 7-2 Lüftungsquerschnitt für die Zuluft und Abluft ...................................................................... 12
+Tabelle 7-3 Angaben zum Luftaustauschvolumen ................................................................................ 13
+Tabelle 7-4 Doppelbodenplatten .......................................................................................................... 15
+Tabelle Anhang IV-1 Revisionsverzeichnis .......................................................................................... 21
+Tabelle Anhang IV-2 Übersicht Verantwortlicher für Freigabe .............................................................. 21
+ Dokumentbezeichnung:                   Dokumenttitel:                           Version:        Seitenzahl:
+
+
+ TB3354                                 Räume für Kunden- und Netzstationen      6               21 (21)
+
+
+IV       Revisionsverzeichnis
+
+Tabelle Anhang IV-1 Revisionsverzeichnis
+
+ Version 6
+
+ Abschnitt                              Thema
+
+                                        KG4062 Version 1 vom 30.05.2005 ersetzt durch Version 2 vom
+ Gesamtes Dokument
+                                        23.01.2013
+                                        KG4062 Version 2 vom 23.01.2013 ersetzt durch Version 3 vom
+ Gesamtes Dokument
+                                        29.10.2014
+                                        KG 4062 Version 3 vom 29.10.2014 ersetzt durch TB3354 Version 1
+ Gesamtes Dokument
+                                        vom 07.04.2015
+                                        TB3354 Version 4 vom 07.04.2015 ersetzt durch TB3354 Version 5
+ Gesamtes Dokument
+                                        vom 10.06.2020
+                                        TB3354 Version 5 vom 10.06.2020 wird ersetzt durch TB3354 Version
+ Gesamtes Dokument                      6 vom 01.04.2024. Übernahme der TB3355, TB3359, TB3361 und
+                                        TB3364 hat stattgefunden.
+
+
+Tabelle Anhang IV-2 Übersicht Verantwortliche für Freigabe
+
+                        Erstellt:                  Verantwortet:    Geprüft:                Genehmigt:
+
+ Datum:                 20.03.2024                 02.04.2024       22.03.2024              03.04.2024
+
+ Durch:                 Fr. Yanar                  Hr. Voth         Hr. Hartinger           Hr. Schunk
+

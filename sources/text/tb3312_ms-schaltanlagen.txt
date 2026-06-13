@@ -1,0 +1,869 @@
+Dokumentart:               Dokumentbezeichnung:        Vertraulichkeitsklasse:   Anlagen:   Anzahl Seiten:
+
+Dokumentart:
+Technische
+                           TB3312                      Medium (C1)               0          19
+Beschreibung
+Ansprechpartner:           Dokumentverantwortlicher:   Genehmigt von:            Version:   Gültig ab:
+
+
+CC-Stationen               Leiter MS/NS                Leiter Asset              2          01.12.2023
+
+
+
+
+MITTELSPANNUNGSSCHALTANLAGEN IN KUNDEN- UND
+NETZSTATIONEN
+
+Zusammenfassung
+Diese Technische Beschreibung definiert die technischen Anforderungen an Mittelspannungsanlagen
+für die Zulassung und Beschaffung im Netzbereich der Stromnetz Berlin GmbH.
+    Dokumentbezeichnung:                        Dokumenttitel:                                                  Version:               Seitenzahl:
+
+                                                Mittelspannungsanlagen in Kunden-
+    TB3312                                                                                                      2                      2 (19)
+                                                und Netzstationen
+
+
+INHALT
+1 Änderungshinweise........................................................................................................................... 4
+2 Ziel und Zweck .................................................................................................................................. 4
+3 Geltungsbereich ................................................................................................................................ 4
+4 Mitgeltende Dokumente .................................................................................................................... 4
+      4.1     Verordnungen.......................................................................................................................... 4
+      4.2     Normen ................................................................................................................................... 5
+      4.3     Interna ..................................................................................................................................... 5
+5 Copyright .......................................................................................................................................... 5
+6 Allgemeine Bedingungen .................................................................................................................. 6
+7 Technische Daten der Schaltanlage .................................................................................................. 6
+8 Prüfungen für 12 kV-Schaltanlagen ................................................................................................... 7
+      8.1     Störlichtbogenprüfung ............................................................................................................. 7
+                           Anforderung an die Schaltanlage............................................................................... 7
+                           Anforderung an die Raumnachbildung (begehbare Stationen) ................................... 8
+                           Durchführung der Prüfung ......................................................................................... 8
+      8.2     Druckprüfung ........................................................................................................................... 8
+      8.3     Spannungsprüfung .................................................................................................................. 9
+9 Allgemeines zur Bauweise ................................................................................................................ 9
+10 Fernsteuerung ................................................................................................................................ 11
+11 Ringkabelfeld .................................................................................................................................. 11
+12 Transformator- oder Übergabeschaltfeld ......................................................................................... 12
+      12.1 Transformator- oder Übergabeschaltfeld mit Lasttrennschalter-Sicherungs-Kombination ....... 12
+      12.2 Transformator- oder Übergabeschaltfeld mit Leistungsschalter .............................................. 13
+13 Erdungsfestpunkte .......................................................................................................................... 13
+14 Erdungsschalter .............................................................................................................................. 14
+15 Kabelanschlussräume ..................................................................................................................... 14
+16 Isolierende Schutzplatten ................................................................................................................ 15
+17 Beschriftungen und Kennzeichnungen ............................................................................................ 15
+18 Kurzschlussanzeiger ....................................................................................................................... 17
+19 Kapazitive Spannungsanzeiger ....................................................................................................... 17
+Anhang ................................................................................................................................................ 18
+I     Abkürzungen, Definitionen .............................................................................................................. 18
+II Tabellenverzeichnis ........................................................................................................................ 18
+ Dokumentbezeichnung:                       Dokumenttitel:                                              Version:              Seitenzahl:
+
+                                            Mittelspannungsanlagen in Kunden-
+ TB3312                                                                                                 2                     3 (19)
+                                            und Netzstationen
+
+
+III Revisionsverzeichnis ...................................................................................................................... 19
+ Dokumentbezeichnung:                    Dokumenttitel:                          Version:   Seitenzahl:
+
+                                         Mittelspannungsanlagen in Kunden-
+ TB3312                                                                          2          4 (19)
+                                         und Netzstationen
+
+
+1    Änderungshinweise
+
+Alle Änderungshinweise aus älteren Versionen sind im Anhang III Revisionsverzeichnis, Tabelle
+Anhang III-1 Revisionsverzeichnis abgelegt.
+
+
+Tabelle 1 Änderungsübersicht
+
+ Version 2
+
+ Abschnitt                                                   Thema
+
+ 8.3 Spannungsprüfung                                        Aktualisierung
+
+
+
+2    Ziel und Zweck
+
+Diese Technische Beschreibung definiert den Sollzustand über die bestehenden Gesetze, Normen und
+Richtlinien hinaus, für luftisolierte und gasisolierte hermetisch, metallgekapselte Schaltanlagen und den
+Festlegungen zum Einsatz in Kunden- und Netzstationen im Verteilungsnetz der Stromnetz Berlin
+GmbH (nachfolgend SNB genannt).
+Die Geschäfts- und Verkehrssprache ist deutsch.
+
+
+
+3    Geltungsbereich
+
+Diese Technische Beschreibung gilt für den Einsatz in Kunden- und Netzstationen im Verteilungsnetz
+der folgenden Gesellschaft:
+                      Stromnetz Berlin GmbH
+
+
+
+4    Mitgeltende Dokumente
+
+Es gelten die einschlägigen Gesetze, Verordnungen, Normen und Richtlinien in der jeweils gültigen
+Fassung. Die beiden nachfolgenden Kapitel enthalten eine Auswahl der wichtigsten Verordnungen,
+Normen und Richtlinien.
+
+
+
+
+4.1 Verordnungen
+
+Tabelle 4.1 Übersicht der Verordnungen
+ ASR A1.3                                       Sicherheits- und Gesundheitskennzeichnung
+ Dokumentbezeichnung:                     Dokumenttitel:                             Version:      Seitenzahl:
+
+                                          Mittelspannungsanlagen in Kunden-
+ TB3312                                                                              2             5 (19)
+                                          und Netzstationen
+
+
+4.2 Normen
+
+Tabelle 4.2 Normenübersicht
+ DIN EN 50110-1                                   Betrieb von elektrischen Anlagen
+ DIN EN IEC 60282-1                               Hochspannungssicherungen
+ DIN EN IEC 61936-1                               Starkstromanlagen mit Nennwechselspannung über 1kV
+ DIN EN IEC 62271-100                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN EN IEC 62271-102                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN EN IEC 62271-103                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN EN IEC 62271-105                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN EN IEC 62271-200                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN EN IEC 62271-202                             Hochspannungs-Schaltgeräte und -Schaltanlagen
+ DIN VDE 0670-402                                 Wechselstromschaltgeräte für Spannungen über 1 kV
+ DIN VDE V 0681-1                                 Arbeiten unter Spannung – Geräte zum Betätigen und Prüfen
+                                                  mit Nennspannungen über 1 kV
+ DIN 43455                                        Bildzeichen für die Betätigung von Hochspannungsschaltgeräten
+                                                  unter 52 kV
+ DIN EN 50181                                     Steckbare Durchführungen über 1 kV bis 52 kV und von 250 A
+                                                  bis 2,50 kA für Anlagen anders als flüssigkeitsgefüllte
+                                                  Transformatoren
+ DIN EN 60447                                     Grund- und Sicherheitsregeln für die Mensch-Maschine-
+                                                  Schnittstelle
+ DIN EN 61243-5                                   Arbeiten unter Spannung - Spannungsprüfer
+
+
+4.3 Interna
+
+Tabelle 2.3 Übersicht relevanter interner Richtlinie und TB‘s
+ TB3300                                           Zugelassene Betriebsmittel für Netz- und Kundenstationen
+ TB3340                                           Fernsteuerung von Netz- und Kundenstationen im MS-Netz
+
+
+
+5     Copyright
+
+Alle Inhalte dieser Technischen Beschreibung inklusive der Abbildungen, Zeichnungen [Tabellen,
+Diagramme usw.] und Anlagen unterliegen, sofern nicht anders angegeben, urheberrechtlichem
+Schutz. Es ist untersagt, sie ganz oder teilweise, ohne ausdrückliche vorherige schriftliche Zustimmung
+der SNB zu vervielfältigen, zu verbreiten, zu bearbeiten oder umzugestalten.
+ Dokumentbezeichnung:                Dokumenttitel:                       Version:       Seitenzahl:
+
+                                     Mittelspannungsanlagen in Kunden-
+ TB3312                                                                   2              6 (19)
+                                     und Netzstationen
+
+
+6    Allgemeine Bedingungen
+
+Es werden Standanlagen und bei Netzstationen auch Wandanlagen bzw. Anlagen für Stationsräume
+mit offener Kabelverlegung eingesetzt.
+Die Ansprechpartner sind für technische Grundlagen das Kompetenzcenter Stationen und für
+kaufmännische Belange der Fachbereich Einkauf.
+
+
+Die Schaltanlagen werden mittels eines Präqualifikationsverfahrens, für den Einsatz, im Verteilungsnetz
+von SNB zugelassen.
+Für die Zulassung hat der Anlagenhersteller folgende Unterlagen an SNB, gemäß Einreichungsliste
+(kann beim Netzbetreiber angefordert werden), einzureichen:
+     •    Zeichnung der Schaltanlage (Ansicht- und Schnittzeichnung)
+     •    Prüfberichte gemäß DIN EN IEC 62271-200
+     •    Ggf. Nachweis des eingesetzten Isoliergases
+     •    Ggf. Nachweis des Fülldrucks
+     •    Nachweis des max. Drucks im Störlichtbogenfalls der Schaltanlage zur Druckberechnung
+          einer Raumnachbildung
+     •    Wirkschaltpläne der einzelnen Schaltfelder (Musterschaltungsbücher)
+     •    Checkliste der Besonderheiten bei Schaltanlagenausführung für SNB mit Fotodokumentation
+
+
+7    Technische Daten der Schaltanlage
+
+Tabelle 7-1 Bemessungswerte Schaltanlage
+
+ Bezeichnung                                            Wert
+
+ Höchste Spannung für Betriebsmittel Um                 12 kV
+
+ Bemessungs-Blitzstoßspannung                           75 kV
+
+ Bemessungs-Kurzzeitwechselspannung                     28 kV
+
+ Bemessungsfrequenz                                     50 Hz
+
+ Bemessungs(betriebs)strom                              630 A
+
+ Bemessungs-Kurzzeitstrom                               20 kA, 1 s
+
+ Bemessungs-Stoßstrom                                   50 kA
+
+ Bemessungslast-Ausschaltstrom                          630 A
+ Bemessungs-Kabel-Ausschaltstrom
+                                                        150 A
+ (unter Erdschlussbedingungen)
+ Bemessungs-Transformatorenausschaltstrom               1 % des Bemessungsbetriebsstromes
+
+ Schutzgrad                                             IP 3 X
+ Dokumentbezeichnung:          Dokumenttitel:                            Version:        Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                  2               7 (19)
+                               und Netzstationen
+
+
+ Bezeichnung                                        Wert
+
+ Die niedrigste Umgebungstemperatur                 -5°C (begehbar); -25°C (Kompaktstation)
+
+ Die höchste Umgebungstemperatur                    +40°C (begehbar); +55°C (Kompaktstation)
+ Betriebsverfügbarkeit nach
+                                                    mindestens LSC 2B** (Innenraumstation)
+ DIN EN IEC 62271-200*)
+ Betriebsverfügbarkeit nach
+                                                    Mindestens LSC1 (Kompaktstation)
+ DIN EN IEC 62271-202*)
+ Schottungsklasse                                   Vorzugsweise PM
+
+ Zugänglichkeit                                     mindestens IAC AFL
+*) Die Betriebsverfügbarkeitsklasse gilt bei SNB auch für die Auswirkung von Störlichtbögen
+**) Personensicherheit
+
+
+
+8   Prüfungen für 12 kV-Schaltanlagen
+
+8.1 Störlichtbogenprüfung
+
+Der Nachweis des Verhaltens bei innerem Fehler muss durch ein akkreditiertes Prüffeld innerhalb von
+Europa, wenn möglich in Anwesenheit von Netzbetreiberpersonal, mit Vorlage eines Prüfberichtes nach
+DIN EN IEC 62671 -200, Punkt 7.105 erbracht werden.
+Grad der Zugänglichkeit mindestens Typ IAC AFL
+
+
+
+           Anforderung an die Schaltanlage
+
+Prüfanordnung
+Das Prüfobjekt besteht aus zwei, wie im normalen Betrieb miteinander verbundenen Schaltfeldern, von
+dem ein Feld als Einspeisefeld und das andere Feld als Abgangsfeld aufgebaut ist.
+
+
+Gemäß DIN EN IEC 62271-200, 7.105.3
+
+
+Für Innenraumanlagen muss die Druckentlastung bei einem inneren Fehler (Störlichtbogen) definiert
+über ein Reduktionssystem, oder gleichwertige Störlichtbogenbegrenzungssysteme erfolgen, d. h.
+keine Druckentlastung in die Kabelkanäle oder Doppelböden, um Personen nicht zu gefährden. Für die
+hierbei verwendeten Konstruktionselemente (z. B. Druckentlastungssysteme) müssen die Nachweise
+durch einen Prüfbericht eines unabhängigen Institutes erbracht werden, die die Wirksamkeit des
+Systems bestätigen.
+ Dokumentbezeichnung:          Dokumenttitel:                              Version:      Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                    2             8 (19)
+                               und Netzstationen
+
+
+Bei Schaltanlagen für den Einsatz in Kompaktstationen in verkürzter Bauweise kann die
+Druckentlastung bei einem Störlichtbogen nach unten und in den Traforaum erfolgen. Die Prüfung
+erfolgt zusammen mit dem Baukörper nach DIN EN IEC 62271-202.
+
+Bei Kompaktstationen ist es nach DIN EN IEC 62271-202 notwendig die Schaltanlage im Baukörper zu
+prüfen. Bei Schaltanlagen mit Störlichtbogenbegrenzer (ABS) ist ein Störlichtbogen im
+Kabelanschlussraum als kritischer zu betrachten, daher ist hier eine Prüfung erforderlich.
+
+
+Die Prüflinge müssen in Abmessung und in allen baulichen Bestandteilen den zu liefernden
+Schaltfeldern entsprechen, wobei Einbauten durch Attrappen (außer die Lasttrennschalter) ersetzt
+werden können.
+
+
+           Anforderung an die Raumnachbildung (begehbare Stationen)
+
+
+Die Raumbegrenzung durch den Fußboden ist als glatter Boden nachzubilden.
+Unterhalb des Feldbodens liegende Räume einschließlich Doppelböden dürfen nicht für die
+Druckentlastung verwendet werden.
+
+
+Um für die spätere Schaltanlagenaufstellung freizügige Möglichkeiten zu haben, ist die Zugänglichkeit
+der Schaltanlage mindestens nach IAC AFL zu prüfen.
+
+
+Die DIN EN IEC 62271-200, Anhang A, A.1.1 ist zu beachten.
+
+
+
+           Durchführung der Prüfung
+
+Die Energiezuführung für die Prüfung erfolgt im Einspeisefeld von unten.
+
+Die Zündorte sind vom Hersteller entsprechend der DIN EN IEC 62271-200, Punkt 7.105 festzulegen.
+
+Bei gasisolierten Schaltanlagen sind mindestens die Lichtbögen dreiphasig im Gasraum der
+Schaltanlage und eine 2-polige Zündung bei 3-poliger Einspeisung in einem Außenfeld
+(Kabelanschlussraum) einzuleiten.
+
+Bei gasisolierten Schaltanlagen muss der linke Kabelanschlussraum bei 20kA
+Bemessungskurzzeitstrom zweiphasig mit min. 18 kA, 1 s geprüft werden.
+
+
+8.2 Druckprüfung
+
+Netzstationen
+Die Anlagen werden für den Innenraumeinsatz projektiert. Daher darf im Störlichtbogenfall in einem
+Raumvolumen von 44 m³, ohne Druckentlastungsöffnungen, der Druck im Aufstellraum 2500 Pascal
+nicht überschreiten.
+ Dokumentbezeichnung:            Dokumenttitel:                          Version:       Seitenzahl:
+
+                                 Mittelspannungsanlagen in Kunden-
+ TB3312                                                                  2              9 (19)
+                                 und Netzstationen
+
+
+
+Anmerkung
+Der Netzbetreiber kann für diese Prüfungen bei der IPH einen Prüfraum zur Verfügung stellen.
+Eine analoge Prüfung bei kleinerem Raumvolumen ist zulässig.
+Die Einhaltung dieser Forderung ist schriftlich nachzuweisen, vorzugsweise mit Messprotokollen eines
+akkreditierten Prüffeldes.
+
+Kundenstationen
+Der Nachweis des maximalen Drucks an der Schaltanlage ist nachzuweisen, um entsprechende
+Druckberechnungen für den Stationsraum durchführen zu können.
+
+
+8.3 Spannungsprüfung
+
+Lasttrennschalter in Einspeisefeldern (Ringkabelfeld) müssen in geöffneter Stellung eine Trennstrecke
+herstellen, deren Isoliervermögen so bemessen ist, dass Kabelprüfungen bei anstehender
+Netzwechselspannung möglich sind. Bei luftisolierten Schaltanlagen sind keine Isolierenden
+Einschubplatten zu verwenden. Es ist eine Prüfung mit einer Wechselspannung von 28 kV an der
+Sammelschiene bei gleichzeitig anliegender gegenphasiger Wechselspannung von 36 kV am
+Kabelabzweig über 1 Min. nachzuweisen. Die Schaltanlage muss geerdet sein.
+
+
+
+9   Allgemeines zur Bauweise
+
+Schaltanlagen müssen so konstruiert sein, dass sie gefahrlos betrieben und instandgehalten werden
+können. Dies schließt z. B. das Feststellen der Spannungsfreiheit, das Prüfen der Phasenfolge, das
+Erden und das Kurzschließen angeschlossener Kabel usw. ein.
+
+Die Spannungsanzeige der Schaltanlage erfolgt über zugelassene „Kapazitive Spannungsanzeiger“
+nach TB3300, die feldbezogen im Blindschaltbild anzuordnen sind.
+
+Die Schaltanlagen bestehen aus zwei Ringkabelfeldern und einem Trafoabgangsfeld mit
+Lasttrennschalter-Sicherungs-Kombination oder Leistungsschalter.
+
+Bei Kundenstationen ist ein luftisoliertes Messfeld erforderlich.
+
+Die Anordnung und Anzahl der Schaltfelder kann projektbezogen variiert werden.
+
+Die verwendeten Schaltgeräte müssen den jeweils gültigen DIN VDE-Normen und DIN-Normen
+entsprechen. Die vom Hersteller auf den Leistungsschildern gemachten Angaben dürfen nicht entfernt
+oder geändert werden.
+
+Als Schutz vor Korrosion ist vorzugsweise Edelstahl oder verzinktes Blech einzusetzen. Die Vorderfront
+ist grundiert und lackiert auszuführen.
+
+Bei Schaltanlagen muss die Erkennbarkeit des Schaltzustandes durch eine eindeutige
+Stellungsanzeige des Antriebes gewährleistet sein.
+ Dokumentbezeichnung:          Dokumenttitel:                            Version:        Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                  2               10 (19)
+                               und Netzstationen
+
+
+Bei luftisolierten Schaltanlagen muss eine bei geschlossener Schaltfeldtür mögliche Sichtprüfung der
+Trennstrecke des Schalters gewährleistet sein.
+
+Bei Anlagen mit Störlichtbogenbegrenzern muss nach deren Auslösung durch Störlichtbogen die
+Erderstellung erkennbar sein, und zusätzlich eine Anzeige erfolgen, dass der Störlichtbogenbegrenzer
+angesprochen hat.
+
+Gleiche Schalthandlungen (Schalten, Trennen, Erden) müssen bei allen Abgängen einer Anlage jeweils
+gleichsinnig ablaufen.
+
+Die bevorzugte Bewegungsrichtung ist beim Einschalten im Uhrzeigersinn; sie muss eindeutig
+erkennbar sein (DIN EN 60447). Das Betätigen von Lasttrennschaltern und Erdungsschaltern darf nur
+in getrennten unverwechselbaren Vorgängen möglich sein. Jede Schalthandlung darf aus nur einem
+Arbeitsgang bestehen.
+
+Der Kraftaufwand für die Betätigung des Handantriebes muss in den üblichen Grenzen liegen. Dies ist
+im Allgemeinen der Fall, wenn der Kraftaufwand 150 N nicht überschreitet.
+
+Für die Betätigung von Lasttrennschaltern und Erdungsschaltern sind unverwechselbare Schalthebel
+(bzw. Hebelenden) zu verwenden; die beiden Hebel bzw. Hebelenden sind zusätzlich farblich
+unterschiedlich zu kennzeichnen.
+
+Bei Schaltanlagen mit Dreistellungsschalter (Sammelschiene – Offen – Erde) ist ein Hebel zum
+Schalten zulässig.
+
+Durch Verriegelung mit dem jeweiligen Erdungsschalter ist sicherzustellen, dass Abdeckungen vor
+spannungsführenden Teilen (z. B. HH-Sicherungen, nicht berührungssichere Endverschlüsse) nicht
+entfernt werden können, solange der Abgang nicht geerdet ist. Das Einschalten des jeweiligen Last-
+trennschalters darf dann nur bei geschlossener Abdeckung möglich sein. Eine Kabelprüfung an den
+Endverschlüssen sollte über eine bewusste Entriegelung und Ausschaltung des Erdungsschalters
+möglich sein.
+
+Die Abschließbarkeit von Antrieben, sowie des Kabelanschlussraumes, des Übergabeschaltfeldes und
+des Messfeldes wird gefordert. SNB stellt hierzu Schlösser zur Verfügung (Schließzylinder 30mm,
+Briefkastenschloss SL310 und/oder Vorhängeschloss mit Bügeldurchmesser 8mm)
+
+Die Kabelanschlusspunkte sind für zugelassenen Kabelendverschlüssen auszurüsten (siehe TB3300).
+
+Es können in Sonderfällen bei Netzstationen zwei VPE-Kabel (Doppelkabelanschluss) und bei
+Kundenanlagen bis zu vier VPE-Kabel (Dreifach- bzw. Vierfachkabelanschluss) verwendet werden.
+
+
+
+
+Die Schaltanlage wird mit folgenden Kabeln angeschlossen:
+ Dokumentbezeichnung:                     Dokumenttitel:                          Version:        Seitenzahl:
+
+                                          Mittelspannungsanlagen in Kunden-
+ TB3312                                                                           2               11 (19)
+                                          und Netzstationen
+
+
+Tabelle 9-1 Kabelanschluss Schaltanlage
+
+ Anschluss der                     Kabeltyp                         Querschnitt        minimaler Biegeradius
+
+ Ringschaltfelder                  3x 1x 240 RE NA2XS(F)2Y          240 mm² Al         600 mm
+
+ Trafo- oder                       3x 1x 35 N2XSY *)                35 mm² Cu          450 mm
+ Übergabeschaltfelder
+                                   ≥ 3x 1x 95 N2XSY **)             95 mm² Cu          ≥ 450 mm
+*) Mit HH-Sicherungen
+**) Bei Leistungsschalter
+
+
+Im Kabelbereich unterhalb der Endverschlüsse ist eine freie gerade Kabellänge von ca. 120 mm für
+Kabelumbauwandler erforderlich.
+
+In allen Kabelanschlussfeldern sind horizontal und vertikal verstellbare Befestigungsschienen im
+Abstand von <800 mm für Kabel vorzusehen.
+
+Eine verdrehsichere Befestigung der Kabel ist notwendig, damit die Übertragung mechanischer
+Spannungen auf die Endverschlüsse verhindert werden. Die Biegeradien der einzusetzenden Kabel
+dürfen nicht unterschritten werden.
+Es muss in allen Feldern eine kapazitive Spannungsauskopplung an den Stützern und eine
+Spannungsanzeigeeinheit nach TB3300 in der Frontverblendung installiert werden.
+
+
+10 Fernsteuerung
+
+Für Schaltanlagen mit Fernsteuerung gilt die technische Beschreibung TB3340 „Fernsteuerung von
+Netz- und Kundenstationen im MS-Netz“.
+
+Die handgesteuerten Schaltanlagen müssen für eine spätere Fernsteuerung durch Motorantriebe inkl.
+Steuerung und Meldung nachrüstbar sein.
+
+
+11 Ringkabelfeld
+
+Die Ringkabelfelder sind mit einem Lasttrennschalter und einem einschaltfesten Erdungsschalter zu
+bestücken, die gegenseitig verriegelt sein müssen. Lasttrennschalter sind Mehrzweckschalter nach
+DIN EN 62271-103 und sollen von Hand oder Motor zu betätigen sein. Sie müssen mit Energiespeicher
+und Schaltschloss ausgerüstet sein.
+
+An sämtlichen Antrieben müssen eindeutig die Stellung der Schaltgeräte und der Zustand des
+Kraftspeichers erkennbar sein.
+
+Zum Auflegen der Kabelschirme wird in den Ringkabelfeldern eine potenzialfreie Schiene (bei
+Doppelkabel zwei) benötigt. Die Schienen müssen so installiert sein, dass die Zugänglichkeit der
+Anschlüsse bei aufgelegten Mittelspannungskabeln gut möglich ist.
+ Dokumentbezeichnung:         Dokumenttitel:                            Version:          Seitenzahl:
+
+                              Mittelspannungsanlagen in Kunden-
+ TB3312                                                                 2                 12 (19)
+                              und Netzstationen
+
+
+Optional wird bei Schaltanlagen im 6-kV-Netz in beiden Ringkabelfeldern ein
+Erdschlusserfassungsbügel zum Messen des kapazitiven Erdschlussstromes in 6-kV-Netzen benötigt,
+um im Fehlerfall bei anliegender potenzialverschobener Spannung   ( 3 *U ) gefahrlos, ohne Öffnen
+                                                                         n
+des Schaltfeldes messen zu können. Sie verbinden die isolierten Potenzialschienen mit der
+Erdungsschiene der Schaltanlage. Der Erdungsbügel ist außerhalb der Schaltanlage zu führen.
+
+
+12 Transformator- oder Übergabeschaltfeld
+
+12.1 Transformator- oder Übergabeschaltfeld mit Lasttrennschalter-Sicherungs-
+     Kombination
+
+Die Trafo- oder Übergabeschaltfelder sind mit Lasttrennschalter-Sicherungs-Kombination bestückt, die
+der DIN EN 62271-105 und DIN VDE 0670-402 entsprechen und einen einschaltfesten Erdungsschalter
+auf der Kabelanschlussseite verfügen. Die Schalter müssen gegeneinander verriegelt sein.
+
+Die Lasttrennschalter-Sicherungs-Kombination muss so konstruiert sein, dass der Schalter nur dann
+eingeschaltet werden kann, wenn der Energiespeicher zum Ausschalten bereits gespannt ist oder im
+Einschaltvorgang gespannt wird, d. h. die Ausschaltung jederzeit gewährleistet ist.
+
+Die Aufnahmen für HH-Sicherungen müssen so dimensioniert sein, dass HH-Sicherungseinsätze nach
+DIN EN IEC 60282-1 mit Schlagstift bis zu einer Nennstromstärke von max. 125 A verwendet werden
+können. Die max. Verluste der zugelassenen Sicherungen betragen 100 W pro Pol.
+
+Der Hersteller muss gewährleisten, dass die entstehende Verlustwärme der Sicherungen abgeführt
+wird.
+
+Bei gasisolierten Schaltanlagen sind die Aufnahmebehälter berührungssicher auszuführen oder durch
+eine allseitige Metallkapselung auch gegenüber dem Transformatoranschluss zu sichern.
+
+Die Funktion der Lasttrennschalter-Sicherungs-Kombination muss durch Auslösung einer
+Testeinrichtung prüfbar sein. Gegebenenfalls ist eine geeignete Vorrichtung zu liefern.
+
+Die Prüfung nach DIN EN 62271-105, Abs. 6.102 erfolgt im Allgemeinen mit einer Prüfpatrone deren
+Auslösekraft max. 48N bei 4mm Hub und 30N bei einem Mindesthub des Schlagstiftes von 20 mm, dies
+entspricht einer Energiemenge von ca. 0,5 J.
+
+Es werden HH-Sicherungen nach DIN EN IEC 60282-1 mit dem Stichmaß D = 292 mm und einer
+Auslösekraft von 50 – 120 N eingesetzt.
+
+Die Erdung im Transformatorschaltfeld muss vor und hinter den Sicherungen erfolgen. Sind hierfür zwei
+getrennte Schaltgeräte erforderlich, müssen diese für eine gemeinsame Betätigung gekoppelt sein. Der
+Wechsel der Sicherungseinsätze muss ohne isolierende Hilfsmittel nach DIN VDE V 0681-1 und nur bei
+ausgeschaltetem Lasttrennschalter sowie ohne Lösen der Kabelanschlüsse möglich sein.
+
+Besteht eine zwangsweise Verriegelung zwischen Lasttrennschalter und Erdungsschalter (z. B. durch
+Verwendung eines Dreistellungsschalters) kann auf die lasttrennschalterseitige Erdung an der
+Sicherung verzichtet werden.
+ Dokumentbezeichnung:                 Dokumenttitel:                      Version:       Seitenzahl:
+
+                                      Mittelspannungsanlagen in Kunden-
+ TB3312                                                                   2              13 (19)
+                                      und Netzstationen
+
+
+
+Aufnahmebehälter, insbesondere wenn sie in die hermetische Kapselung eingelassen sind, müssen
+derart konstruiert sein, dass bei Versagen eines HH-Sicherungseinsatzes keine Zerstörung des
+Kessels oder benachbarter Felder auftritt.
+
+Für die einzusetzenden Sicherungen der Lastschalter-Sicherungskombinationen sind die Vorgaben der
+jeweiligen Hersteller maßgeblich
+
+
+Im Verteilungsnetz von SNB wird beim Ansprechen einer Sicherung die allpolige Auslösung gefordert.
+
+Die Stellung der Lasttrennschalter-Sicherungs-Kombination ist über einen potenzialfreien Kontakt für
+die Trafoauslösung zu melden. Zusätzlich ist eine Auslösespule 230 V~ vorzusehen, die den Schalter
+dreipolig auslöst.
+
+
+Die Schutzauslösung des Leistungsschalters erfolgt mittels eines Überstromzeitschutzes (UMZ-
+Schutz).
+
+
+12.2 Transformator- oder Übergabeschaltfeld mit Leistungsschalter
+
+Bei der Auswahl von Leistungsschaltern ist darauf zu achten, dass der Nenn-Kurzschlussausschalt-
+strom der Schalter den maximal auftretenden Kurzschlussströmen entspricht. Leistungsschalter
+müssen gemäß DIN EN IEC 62271-100 gebaut und zum Einsatz gebracht werden. Zur Einhaltung der
+Trennerbedingungen ist ein zusätzlicher Trennschalter erforderlich, sofern der Leistungsschalter nicht
+die Trennerbedingungen erfüllt. Der Trennschalter ist gegen den Leistungsschalter zu verriegeln und
+darf nur bei ausgeschaltetem Leistungsschalter bestätigt werden können.
+
+Bei Leistungsschaltern mit Kraftantrieb muss der Zustand des Energiespeichers von außen erkennbar
+sein.
+
+Die Schutzauslösung des Leistungsschalters erfolgt mittels eines Überstromzeitschutzes (UMZ-Schutz)
+nach Vorgabe SNB. Es muss eine gegenseitige Verriegelung zwischen Erder- und Leistungsschalter
+vorhanden sein.
+
+
+13 Erdungsfestpunkte
+
+In den luftisolierten Schaltanlagenfeldern sind einschaltfeste Erdungsschalter Typ E1 einzubauen. Um
+die Vorschriften der DIN EN IEC 61936-1 und DIN EN 50110-1 zu erfüllen, müssen zwischen den
+Schaltern und den Kabelanschlüssen in allen Feldern Kugelkopfbolzen montiert werden. Zusätzlich
+werden Kugelkopfbolzen auf der Sammelschiene (vorzugsweise im Trafo- oder Übergabefeld)
+gefordert.
+Tabelle 13-1 Maßeinheiten Kugelkopfbolzen
+
+ Kugelkopfbolzen-Komponenten                           Maße
+
+ Kugelkopfdurchmesser                                  25 mm
+ Dokumentbezeichnung:          Dokumenttitel:                            Version:        Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                  2               14 (19)
+                               und Netzstationen
+
+
+ Zylinder-Schaftdurchmesser                      15,5 mm
+ Schaftlänge bis Kugelmitte                      32 mm
+
+Die Festpunkt-Schraubverbindungen sind für 45 Nm auszulegen. Die Kugelkopfbolzen sind so
+anzubringen, dass mit der Erdungs- und Kurzschließvorrichtung keine Anlagenteile berührt werden.
+
+Für Verbindungen aller Art darf nicht die Verschraubung der Festpunkterdung verwendet werden.
+Die Anordnung der Erdungslasche am Feldrahmen muss das Anlegen der Erdungs- und
+Kurzschließvorrichtung mit ausreichendem Abstand zu spannungsführenden Teilen ermöglichen.
+
+
+14 Erdungsschalter
+
+In den Schaltanlagenfeldern sind einschaltfeste Erdungsschalter Typ E1 einzubauen.
+Das Anschließen der Prüfungs- bzw. Ortungseinrichtungen muss im geerdeten Zustand des
+angeschlossenen Kabels möglich sein.
+
+
+Für den Anschluss der Erdverbindung des Kabeladerauslesegerätes ist es notwendig, dass sich im
+Kabelanschlussbereich eine Erdungslasche befindet.
+
+
+Erdungsschalter Typ E1 müssen für einen Bemessungs-Kurzschlusseinschaltstrom von 50 kA
+einschaltfest und einem Nenn(betriebs)strom von 630 A ausgelegt sein.
+
+Die Betätigungssymbolik ist nach DIN 43455 auszuführen.
+
+Der Erdungsschalter darf nur bei ausgeschaltetem Betriebsschalter betätigt werden können.
+
+
+15 Kabelanschlussräume
+
+Die Kabelanschlussräume der Schaltfelder sind grundsätzlich durch Blechwände untereinander und
+nach vorn und hinten abzuschotten. Die Kabelanschlussraumabdeckung bei gasisolierten
+Schaltanlagen muss mit dem Erdungsschalter abhängig verriegelt sein.
+
+Für begehbare Stationen:
+Der Bodenbereich muss mit einer Metallabdeckung versehen sein. Eine Druckentlastung nach unten in
+vorhandene Kabelkeller oder Doppelböden ist nicht zulässig.
+
+Eine verdrehsichere Befestigung der Kabel ist notwendig, damit die Übertragung mechanischer
+Spannungen auf die Endverschlüsse verhindert werden. Die Befestigungen sind so auszulegen, dass
+die Biegeradien der einzusetzenden Kabel nicht unterschritten werden.
+
+Für den Anschluss der Kabel sind an Schaltanlagen folgende Details zu beachten:
+
+Für die Befestigung der Einleiterkabel muss mindestens eine sowohl vertikal als auch horizontal
+verstellbare Befestigungsschiene vorhanden sein.
+ Dokumentbezeichnung:          Dokumenttitel:                             Version:        Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                   2               15 (19)
+                               und Netzstationen
+
+
+Im Kabelbereich unterhalb der Endverschlüsse ist eine freie gerade Kabellänge von ca. 120 mm für
+Wandler erforderlich.
+
+Für die Kabelmontage muss die untere vordere Querstrebe im Schaltfeldrahmen des Kabelfeldgestelles
+leicht demontierbar sein.
+
+Für den Anschluss von Kabeln und Leitungen an hermetisch metallgekapselte Lasttrennschaltanlagen
+wird standardmäßig nachstehendes Geräteanschlussteil verwendet:
+
+Ringkabelfelder
+Außenkonus für Winkel Stecker oder geraden Stecker nach DIN EN 50181 mit einer Nennstromstärke
+von 630 A und geschraubten Kontaktierungen.
+
+Bei Doppelkabel mit Koppelstecker für SF6, 10 kV, 240 mm².
+
+Trafo- oder Übergabeschaltfeld
+Außenkonus für Winkel Stecker oder geraden Stecker nach DIN EN 50181 mit einer Nennstromstärke
+von 200 A bis 1.250 A und gesteckten Kontaktierungen.
+
+Die Geräteanschlussteile von nicht belegten Trafoabgangsfeldern müssen mit isolierten Teilen
+abgeschottet sein.
+
+16 Isolierende Schutzplatten
+
+Herausnehmbare Teile müssen nachweislich den Anforderungen von DIN EN IEC 62271-200, 6.104
+entsprechen und mit einem Leistungsschild gemäß Punkt 5.10 und dem Zusatz -Baujahr- versehen
+sein.
+
+Die Schaltanlagen sind so zu konstruieren, dass zur Durchführung von Arbeiten im Rahmen der
+Instandhaltung isolierende Schutzplatten, ohne Berührung spannungsführender Teile, in offene
+Trennstrecken eingeschoben werden können. Die Schutzplatten müssen ohne zusätzliche Hilfsmittel,
+bei geschlossener Schaltfeldtür, einlegbar sein.
+
+Die dreifeldrige oder vierfeldrige Schaltanlage wird bei baugleichen Schaltfeldern mit zwei isolierenden
+Schutzplatten ausgerüstet. Die Schutzplatten sind vom Anlagenhersteller vorzugsweise in der Farbe
+signalrot zu liefern. Isolierende Schutzplatten und ihre Halterungen müssen ausreichende mechanische
+Festigkeit besitzen und ihre Oberfläche muss kratzfest sein.
+
+Bei eingeschobener Platte muss mindestens der Schutzgrad IP 2 X erreicht werden.
+
+Zulässig sind auch festinstallierte automatische Schiebeplatten mit Typenprüfung.
+
+Beim Entfernen der Schutzplatten muss sich der Einschiebeschlitz selbsttätig schließen
+
+17 Beschriftungen und Kennzeichnungen
+
+Schaltfelder von Mittelspannungsschaltanlagen sind immer fortlaufend von links nach rechts zu
+nummerieren.
+ Dokumentbezeichnung:          Dokumenttitel:                            Version:       Seitenzahl:
+
+                               Mittelspannungsanlagen in Kunden-
+ TB3312                                                                  2              16 (19)
+                               und Netzstationen
+
+
+
+Es ist die Schaltfeldnummer außen an der Schaltfeldtür und innen an der Seitenwand gut lesbar
+anzubringen.
+
+Jede Schaltfeldtür ist von außen mit einem Einsteckrahmen in den Abmessungen (B X H) von
+90 x 40 mm zu versehen.
+
+Es muss ein Blindschaltbild vorhanden sein, dass die Abgänge und die Funktion der Schaltanlage
+schematisch wieder gibt (Ausführung gem. DIN 43 455).
+
+Die Erkennbarkeit des Schaltzustandes muss durch eine eindeutige Stellungsanzeige des Antriebes
+gewährleistet sein. Ebenso klar muss der Zustand eines Kraftspeichers erkennbar sein. Bei Anlagen
+mit Motorantrieb sind auch die Motoren im Blindschaltbild darzustellen.
+
+Bei Anlagen mit Störlichtbogenbegrenzern muss nach Auslösung durch Störlichtbogen die
+Schnellerderstellung durch eine separate Anzeige (Blitzpfeil) erkennbar sein.
+
+Das Blindschaltbild muss die Zuordnung der Antriebe für Lasttrennschalter und Erdungsschalter zu
+dem jeweiligen Abgang eindeutig aufzeigen.
+Der Erdungsschalter muss rot im Blindschaltbild dargestellt sein.
+
+Die Antriebsöffnungen für Lasttrennschalter und Erdungsschalter müssen unverwechselbar angeordnet
+und eindeutig als solche gekennzeichnet sein.
+
+Der Schaltzustand ist durch Stellungsanzeiger anzuzeigen, die ein Teil des Blindschaltbildes sein
+müssen. Die Stellungsanzeiger müssen als Balkenanzeige oder Kennzeichnung durch Ziffern (I/O)
+vorzugsweise in schwarzer Schrift auf weißem Grund einheitlich ausgeführt werden.
+
+Für die Abgangsbezeichnungen ist ausreichend Freiraum vorzusehen. Um eine Vertauschung zu
+verhindern, dürfen die Abgangsbezeichnungen nicht auf abnehmbaren Blenden (z. B. der
+Kabelanschlussfelder) montiert sein.
+
+Das Anhängen von Schildern z. B. des Schaltverbotsschildes nach ASR A1.3 muss so möglich sein,
+dass benachbarte Abgänge nicht verdeckt werden.
+
+An der hermetischen Kapselung dürfen Schilder nicht unmittelbar angebracht werden. Gegen die
+Gefahr des Anbohrens muss ein Hinweis vorhanden sein.
+
+
+Die Druckanzeige der hermetischen Kapselung ist im Bedienfeld gut sichtbar anzuordnen. Das
+Manometer ist mit einem rot/grün-Anzeigebereich auszustatten.
+
+Das Manometer und bei Fernsteuerung der Druckschalter sind mit Rückschlagventil und
+Temperaturkompensation auszurüsten.
+
+Das Leistungsschild muss von der Bedienerseite einsehbar sein.
+
+Es ist entsprechend der F-Gasverordnung eine Kennzeichnung im Bereich des Manometers
+vorzunehmen.
+ Dokumentbezeichnung:         Dokumenttitel:                           Version:       Seitenzahl:
+
+                              Mittelspannungsanlagen in Kunden-
+ TB3312                                                                2              17 (19)
+                              und Netzstationen
+
+
+18 Kurzschlussanzeiger
+
+Es werden nur Kurzschlussanzeiger eingesetzt, die die Anforderungen der Technischen Beschreibung
+für Kurzschlussanzeiger TB3370 entsprechen.
+
+Die zugelassenen Kurzschlussanzeiger mit Kabelumbauwandler müssen in der Anlage installiert und
+bis zum Kabelanschlussraum vormontiert werden. Dazu sind in allen Ringkabelfeldern Ausschnitte für
+Kurzschlussanzeiger vorzusehen.
+Die Kabel müssen dabei am Kurzschlussanzeiger so gekürzt werden, dass die Leitungen im
+Kabelanschlussraum 50cm über den Feldboden hinausragen.
+
+Bei Mittelspannungsschaltanlagen werden in allen Ringkabelfeldern Kurzschlussanzeiger benötigt,
+
+
+19 Kapazitive Spannungsanzeiger
+
+Die kapazitiven Spannungsanzeigesysteme müssen DIN EN 61243-5 entsprechen und gemäß TB3300
+zugelassen sein.
+
+Die kapazitiven Spannungsanzeiger sind in Berlin für 6- bzw. 10 kV auszulegen (projektbezogen) und
+dürfen gemäß DIN EN 61243-5 bei Betriebsspannung einen Sekundärstrom von 3,2 A nicht
+unterschreiten.
+
+Für das Koppelteil sind die Schnittstellenbedingungen des LRM-Systems einzuhalten.
+
+Die kapazitiven Messpunkte zur Spannungsanzeige müssen den Abgängen unverwechselbar
+zugeordnet und Teil des Blindschaltbildes sein.
+    Dokumentbezeichnung:                   Dokumenttitel:                                             Version:            Seitenzahl:
+
+                                           Mittelspannungsanlagen in Kunden-
+    TB3312                                                                                            2                   18 (19)
+                                           und Netzstationen
+
+
+Anhang
+
+I      Abkürzungen, Definitionen
+
+Abkürzung                Definition
+SNB                      Stromnetz Berlin GmbH
+TA-MS                    Technische Anforderungen Mittelspannung
+MS                       Mittelspannung
+IPH                      IPH Institut Prüffeld für elektrische Hochleistungstechnik GmbH
+VPE                      Kabelmantel mit Vernetztes Polyethylen
+LRM                      niederohmige kapazitive Spannungsauskopplung
+
+
+
+II     Tabellenverzeichnis
+
+Tabelle 1 Änderungsübersicht ............................................................................................................... 4
+Tabelle 2.3 Übersicht relevanter interner Richtlinie und TB‘s ................................................................. 5
+Tabelle 7-1 Bemessungswerte Schaltanlage ......................................................................................... 6
+Tabelle 9-1 Kabelanschluss Schaltanlage ............................................................................................ 11
+Tabelle 13-1 Maßeinheiten Kugelkopfbolzen ....................................................................................... 13
+Tabelle Anhang III-1 Revisionsverzeichnis ........................................................................................... 19
+Tabelle Anhang III-2 Übersicht Erstellung, Verantwortlicher, Prüfung und Genehmigung ..................... 19
+ Dokumentbezeichnung:                   Dokumenttitel:                                     Version:        Seitenzahl:
+
+                                        Mittelspannungsanlagen in Kunden-
+ TB3312                                                                                    2               19 (19)
+                                        und Netzstationen
+
+
+III Revisionsverzeichnis
+
+Tabelle Anhang III-1 Revisionsverzeichnis
+
+ Version 2
+
+ Abschnitt                          Thema
+
+ 8.3                                Spannungsprüfung
+
+ Gesamtes Dokument                  Version 1 vom 06.07.2023 wird ersetzt durch Version 2 vom 01.12.2023
+
+
+
+
+Tabelle Anhang III-2 Übersicht Erstellung, Verantwortlicher, Prüfung und Genehmigung
+
+                        Erstellt:                  Verantwortet:              Geprüft:                Genehmigt:
+
+ Datum:                  01.11.2023                11.07.2023                 06.07.2023              03.08.2023
+
+ Durch:                 Hr. Preuß                  Hr. Voth                   Hr. Hartinger           Hr. Schunk
+

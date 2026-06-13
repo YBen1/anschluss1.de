@@ -1,0 +1,24 @@
+Bild 1.5 Übergabestation mit Anschluss an einem offenen 10-kV-Ring und mit mehreren Abgängen
+
+
+
+
+              Allgemeiner Grundsatz: Je Mittelspannungskunde ein Übergabeteil (Anschlussmodul)
+    *1 Schalterbedienung durch Kunden im             Erdungsschalter sowie deren Antriebe und Bedienhebel
+       Normalbetrieb                                 sind rot zu kennzeichnen. Sämtliche Schaltfeldtüren des
+    *2 Die Bedienung der Schaltgeräte                Übergabeteils dürfen nur von Beauftragten des
+       einschließlich Erdungsschalter                Netzbetreibers geöffnet werden. Alle dargestellten
+       in den Einspeisefeldern ist nur vom           Schutzgeräte sind dreipolig auszuführen und allpolig
+       Netzbetreiber bzw. deren Beauftragten         anzuschließen. Der Netzübergabeschutz wirkt direkt auf
+       zulässig. Der jeweilige Antrieb ist durch ein den Übergabeschalter. Für die Messung am
+       Hinweisschild „Schalterbedienung nur durch    Netzverknüpfungspunkt sind die Spannungswandler vom
+       Netzbetreiber-Personal“ zu kennzeichnen.      Netz des Netzbetreibers aus gesehen vor den
+    *3 Beistellung durch Messstellenbetreiber        Messstromwandlern anzuschließen.
+    *4 Kurzschlussanzeiger                           Vor Beginn der Arbeiten am Übergabeteil benennt der
+    *5 Für Messzwecke und Wartungsarbeiten           Anlagenbetreiber dem Netzbetreiber-
+    *6 Netzübergabeschutz                            Störungsmanagement einen Anlagenverantwortlichen,
+    *7 Alternativ Leistungsschalter –                der nach DIN VDE 0105-100 die Verantwortung für die
+       Erdungsschalter – Kombination                 Anlagenteile an der Arbeitsstelle trägt.
+       (Verriegelung) möglich                        Der zuständige Betriebsverantwortliche (verantwortliche
+    *8 Schutz des Kunden                             Person gemäß DIN VDE 0105-100 ) ist zu informieren.
+

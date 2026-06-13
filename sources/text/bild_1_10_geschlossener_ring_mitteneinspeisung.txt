@@ -1,0 +1,43 @@
+Bild 1.10 Übergabestation mit Anschluss an einem geschlossenen 10-kV-Ring (Mitteneinspeisung)
+
+
+
+
+    *1 Schalterbedienung durch Kunden im                Erdungsschalter sowie deren Antriebe und Bedienhebel
+       Normalbetrieb                                    sind rot zu kennzeichnen. Sämtliche Schaltfeldtüren des
+    *2 Die Bedienung der Schaltgeräte                   Übergabeteiles sind mit Netzbetreiber- Schließzylinder zu
+       einschließlich Erdungsschalter                   versehen und dürfen nur von Beauftragten des
+       in den Einspeisefeldern ist nur vom              Netzbetreibers geöffnet werden. Ist ein fest eingebauter
+       Netzbetreiber bzw. deren Beauftragten            Leistungsschalter geplant, ist vor diesem
+       Zulässig. Plombieren der Schalterantriebe        Leistungsschalter ein Lasttrennschalter (oder verriegelter
+       erfüllt diese Forderung nicht. Der jeweilige     Trennschalter) und nach diesem Leistungsschalter eine
+       Antrieb ist durch ein Hinweisschild              Lasttrennschalter- Erdungsschalter-Kombination
+       „Schalterbedienung nur durch Netzbetreiber-      (Verriegelung) vorzusehen. In diesem Fall sind vor und
+       Personal“ zu kennzeichnen.                       nach dem fest eingebauten Erdungsschalter
+    *3 Beistellung durch den Messstellenbetreiber       Erdungsfestpunkte erforderlich.
+                                                        Alle dargestellten Schutzgeräte sind dreipolig
+    *4 a) Beistellung durch den Netzbetreiber,
+                                                        auszuführen und allpolig anzuschließen. Die Beistellung
+        Vergleichsschutz, Schutz gemäß aktuellem
+                                                        der relevanten Schutzgeräte im Übergabeteil erfolgt
+        Konzept (mehrere IL - und 3I0 - Stufen,
+                                                        durch den Netzbetreiber. Für die Messung am Netz-
+        intermittierender EK-Schutz, Leistungs-
+                                                        verknüpfungspunkt sind die Spannungswandler vom Netz
+        versagerschutz usw.)
+                                                        des Netzbetreibers aus gesehen vor den
+    *4 b) Beistellung durch den Netzbetreiber,
+                                                        Messstromwandlern anzuschließen.
+        Impedanzschutz (unverzögert bei
+                                                        Vor Beginn der Arbeiten am Übergabeteil benennt der
+        mehrpoligem Nahfehler im Netz)
+                                                        Anlagenbetreiber dem Netzbetreiber-
+    *5 Für Messzwecke und Wartungsarbeiten
+                                                        Störungsmanagement einen Anlagen-verantwortlichen,
+    *6 alternativ Lasttrennschalter – Erdungsschalter
+                                                        der nach DIN VDE 0105-100 die Verantwortung für die
+        – Kombination (Verriegelung) möglich
+                                                        Anlagenteile an der Arbeitsstelle trägt. Der zuständige
+                                                        Betriebsverantwortliche (verantwortliche Person gemäß
+                                                        DIN VDE 0105-100) ist zu informieren.
+

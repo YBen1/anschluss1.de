@@ -1,0 +1,446 @@
+                                                                                                                                      Inhalt zurücksetzen
+
+
+Checklisten für Abnahme, Inbetriebsetzung und
+Dokumentation
+
+
+
+Diese Checklisten sind Bestandteil der Abnahme, Inbetriebsetzung und Dokumentation.
+
+       Deckblatt zu den Checklisten
+       Liste 1 Allgemeine Angaben
+       Liste 2 Gebäude/Gehäuse
+       Liste 3 Mittelspannungsschaltanlage
+       Liste 4 Zubehör und Aushänge
+       Liste 5 Dokumentation
+       Liste 6 Abschließende Prüfungen zur Inbetriebnahme von Kundenstationen
+
+
+
+
+Projektbezeichnung                                                    Teilnehmer an der Abnahme/Inbetriebsetzung
+
+
+                                                                      Anschlussnehmer:
+
+                                                                      Anlagenerrichter:
+
+                                                                      Netzbetreiber:
+
+ Stationsbezeichnung:                                                 Sonstige:
+
+ Adresse:
+
+
+
+
+Unterschriften
+
+
+
+Ort, Datum
+
+
+
+
+Anlagenerrichter:                                      Anschlussnehmer:                                       Für die Belange des Netzbetreibers:
+
+
+
+
+Unterschrift                                           Unterschrift                                            Unterschrift
+
+Datenschutzhinweis: Die Stromnetz Berlin GmbH verarbeitet Ihre personenbezogenen Daten im Einklang mit den geltenden Datenschutzvorschriften. Details zur
+Verarbeitung finden Sie in den Hinweise n zum Datenschutz der Stromnetz Berlin GmbH. Mit Ihrer Unterschrift bestätigen Anschlussnehmer, Anschlussnutzer und
+Elektrofachbetrieb, dass ihnen die Datenschutzerklärungen des Netzbetreibers und des grundzuständigen Messstellenbetreibers zugänglich gemacht wurden.
+Liste 1 - Allgemeine Angaben
+
+                                                   1/3
+
+
+
+
+Gebäude
+
+
+
+Bauform:                       Eigentümer:
+
+Hersteller/Typ:                Anlagenerrichter:
+
+Baujahr:                       Anlagenbetreiber:
+
+
+
+
+Bemerkungen:
+Bemerkungen ein
+Liste 1 - Allgemeine Angaben
+
+
+                                                                                               2/3
+
+
+
+Mittelspannungsschaltanlage
+
+
+
+Felder:                         bis               Eigentumsverhältnis:
+
+                                                  Anlagenerrichter:
+Hersteller:
+Typ:                                              Anlagenbetreiber:
+
+Isoliermedium:     Luft       Gas     sonstiges   Übersichtsschaltplan-Nr:
+
+Baujahr:                                          Nachweis der Störlichtbogenfestigkeit   ja   nein
+
+
+Felder:                         bis               Eigentumsverhältnis:
+
+                                                  Anlagenerrichter:
+Hersteller:
+Typ:                                              Anlagenbetreiber:
+
+Isoliermedium:     Luft       Gas     sonstiges   Übersichtsschaltplan-Nr:
+
+Baujahr:                                          Nachweis der Störlichtbogenfestigkeit   ja   nein
+
+
+
+
+Bemerkungen
+Bemerkungen:ein
+Liste 1 - Allgemeine Angaben
+
+
+                                                                     3/3
+
+
+
+Transformator
+
+
+
+
+                              Trafo:       Trafo:       Trafo:
+
+
+ Hersteller:
+
+
+ Typ:
+
+
+ Serien-Nr.:
+
+
+ Baujahr:
+
+
+ Isoliermedium:
+
+
+ Nennleistung:
+
+
+ Nennspannung:
+
+
+ Kurzschlussspannung in % :            %            %            %
+
+
+ Schaltgruppe:
+
+
+Bemerkungen:
+Bemerkungen ein
+
+
+
+
+Transformator
+
+
+        Mittelspannung
+        Niederspannung
+
+
+Bemerkungen:
+Bemerkungen ein
+Liste 2 – Gebäude / Gehäuse
+
+                                                                                                       1/2
+
+
+
+2.1     Die Bauarbeiten - soweit für den Betrieb erforderlich - sind abgeschlossen         ja   nein    entfällt
+
+
+2.2     Kabelanschlussarbeiten sind möglich                                                ja   nein    entfällt
+
+
+2.3     Das Gebäude und das Dach sind bei fabrikfertigen Stationen ohne Beschädigung       ja   nein    entfällt
+        Alle Türen lassen sich ordnungsgemäß öffnen, schließen, verschließen.
+2.4     Türanschlag/Fluchtrichtung korrekt (nach außen zu öffnen)                          ja   nein    entfällt
+
+
+2.5     Türfeststeller vorhanden bei fabrikfertigen Stationen                              ja   nein    entfällt
+
+
+2.6     Zugangstür von außen nur mit Schlüssel zu öffnen                                   ja   nein    entfällt
+
+
+2.7     Das Schloss hat Panikfunktion                                                      ja   nein    entfällt
+        Türen mit Doppelschließung sind für die Aufnahme einer Netzbetreiber-Schließung
+2.8
+        (z. B. Profilhalbzylinder) ausgelegt                                               ja   nein    entfällt
+
+
+2.9     Beschilderung wie gefordert                                                        ja   nein    entfällt
+        Kabeleinführung entsprechend Vorgaben ist vorhanden,
+2.10
+        z.Zt. nicht genutzte Durchführungen sind mit wasserdichten Blinddeckeln versehen
+        (bzw. Abdichtung der Kabeleinführung wie gefordert)
+
+
+        Erforderliche Kabelverlegetiefe ist gewährleistet.                                 ja   nein    entfällt
+
+
+2.11    Die Be- und Entlüftung ist vorhanden und stochersicher                             ja   nein    entfällt
+
+
+2.12    Druckentlastungsöffnungen vorhanden                                                ja   nein    entfällt
+
+
+2.13    Bediengänge entsprechend DIN VDE 0105                                              ja   nein    entfällt
+
+
+2.14    Doppelboden                                                                        ja   nein    entfällt
+
+
+2.15    Kabelkeller wie gefordert (geschlossener Boden mit definiertem Zugang)             ja   nein    entfällt
+
+
+2 .16   umschaltbare Beleuchtungsanlage vorhanden                                          ja   nein    entfällt
+Liste 2 – Gebäude / Gehäuse
+
+                                                                                                      2/2
+
+
+        Keine Rohre und Leitungen in der Station vorhanden, die nicht für deren Betrieb
+2.17
+        erforderlich sind                                                                 ja   nein    entfällt
+
+
+2.18    Zugänglichkeit der Station ist zu jeder Zeit sichergestellt                       ja   nein    entfällt
+
+
+2.19    Zählerplatzgestaltung entsprechend Vorgaben des Netzbetreibers                    ja   nein    entfällt
+
+
+2 .20   Erdungssammelschiene ordnungsgemäß beschriftet                                    ja   nein    entfällt
+
+
+Bemerkungen:
+Bemerkungen ein
+
+
+
+
+Zu lfd. Nr.
+Anhang H: Liste 3 – Mittelspannungsschaltanlage
+
+                                                                                                         1/2
+
+
+
+3.1    Schaltanlage nach Vorgabe aufgebaut (Übersichtsschaltplan)                            ja   nein    entfällt
+
+
+3.2    Feldnummerierung und Kennzeichnung entsprechend Übersichtsschaltplan ausgeführt       ja   nein    entfällt
+
+
+3.3    Es sind keine erkennbaren äußeren Beschädigungen vorhanden                            ja   nein    entfällt
+       Die Schaltanlage ist mit der Unterkonstruktion (Tragrahmen)
+3.4
+       gemäß Herstellerangaben verbunden                                                     ja   nein    entfällt
+       Leistungsschilder der Schaltanlage sind in deutscher Sprache;
+3.5
+       der Inhalt entspricht den Bestellangaben; sie sind dauerhaft befestigt                ja   nein    entfällt
+
+
+3.6    Blindschaltbild entsprechend Vorgaben vorhanden                                       ja   nein    entfällt
+       Möglichkeiten zum Feststellen der Spannungsfreiheit und Durchführen des
+3.7
+       Phasenvergleiches sind gegeben                                                        ja   nein    entfällt
+
+
+3.8    Spannungsprüfsysteme:
+       Die kap. Messpunkte sind unverwechselbar den Abgängen zugeordnet
+       und entsprechend der Norm beschriftet                                                 ja   nein    entfällt
+
+       Die Schutzkappen der Messbuchsen sind unverlierbar angebracht                         ja   nein    entfällt
+
+       Die Lage der kapazitiven Abgriffe in der Schaltanlage
+       sind auf dem Blindschaltbild dargestellt                                              ja   nein    entfällt
+
+3.9    Kurzschlussanzeiger:
+
+       wie gefordert eingebaut
+                                                                                             ja   nein    entfällt
+       Ansprechwert und Rückstellzeit wie gefordert eingestellt
+                                                                                             ja   nein    entfällt
+
+3.10   Schaltgeräte:
+
+       Alle Schaltgeräte lassen sich ein- und ausschalten
+                                                                                             ja   nein    entfällt
+       Geforderte Verriegelungen funktionsfähig
+                                                                                             ja   nein    entfällt
+       Die Schalterstellungsanzeigen stimmen eindeutig mit der jeweiligen Schalterstellung
+       überein
+                                                                                             ja   nein    entfällt
+       Maßnahmen gegen unbefugtes Betätigen der Schaltgeräte und Öffnen der Türen für
+       die im Verfügungsbereich des Netzbetreiber stehenden Felder sind getroffen
+                                                                                             ja   nein    entfällt
+Anhang H: Liste 3 - Mittelspannungsschaltanlage
+
+
+                                                                                                             2/2
+
+
+
+3.11   Außenleiterkennzeichnung in allen Feldern erfolgt (L1, L2, L3)                            ja   nein    entfällt
+
+
+3.12   Gasdichtigkeitsanzeige (z. B. grün/rot-Anzeige) ist vorhanden; Gasdruck ist ausreichend   ja   nein    entfällt
+3.13   Schutzkonzept für die Übergabestelle einschließlich Sekundärtechnik und Meldungen         ja   nein    entfällt
+       entsprechen Vorgaben des Netzbetreibers Schutzprüfprotokolle liegen vor!
+
+3.14   Die Schutzeinrichtungen (Trafo- und Leitungsschutz) sind gemäß Vorgaben des
+       Netzbetreibers eingestellt                                                                ja   nein    entfällt
+
+
+3.15   Berührungsschutz sichergestellt                                                           ja   nein    entfällt
+
+
+3.16   Ausführung und Anordnung der Erdungsfestpunkte wie gefordert                              ja   nein    entfällt
+
+
+3.17   Schaltfeld- und Nischentüren schließen in Fluchtrichtung                                  ja   nein    entfällt
+       Fernsteuerung gemäß Vorgaben des Netzbetreibers geprüft
+3.18   Prüfprotokolle liegen vor!                                                                ja   nein    entfällt
+
+
+3.19   Antennenanschluss vorhanden                                                               ja   nein    entfällt
+
+
+3.20   Fm-Hausanschluss montiert                                                                 ja   nein    entfällt
+
+
+Bemerkungen ein
+Bemerkungen:
+
+
+
+
+Zu lfd. Nr.
+Anhang H: Liste 4 – Zubehör und Aushänge
+
+                                                                                             1/1
+
+
+
+4.1    Anzeigegeräte für kapazitive Messpunkte vorhanden                                ja         nein   entfällt
+
+
+4.2    Erforderliche Schalthebel / Betätigungsstangen für LS vorhanden                  ja         nein   entfällt
+
+4.3    Erdungs- und Kurzschließvorrichtung mit Erdungsstange (Anzahl und Querschnitt)
+
+       gemäß Vorgaben des Netzbetreibers vorhanden                                      ja         nein   entfällt
+       Isolierende Schutzplatten für die MS-Schaltanlage (Anzahl)
+4.4
+       gemäß Vorgaben des Netzbetreibers vorhanden                                      ja         nein   entfällt
+
+
+4.5    Schaltfeldtürschlüssel vorhanden                                                 ja         nein   entfällt
+       Zusatzschilder (z. B. Vorsicht nicht schalten, etc.)
+4.6    entsprechend Vorgaben des Netzbetreibers vorhanden                               ja         nein   entfällt
+       Aushänge (z. B. Merkblätter der Berufsgenossenschaft)
+4.7    entsprechend Vorgaben des Netzbetreibers vorhanden                               ja         nein   Entfällt
+
+
+Bemerkungen:
+Bemerkungen ein
+
+
+
+
+Zu lfd. Nr.
+Anhang H: Liste 5 – Dokumentation
+
+                                                                                                              1/1
+
+5.1    Technische Dokumentationen der eingesetzten Schaltanlage vorhanden
+       (Wartungs- und Bedienungsanleitungen)                                                      ja   nein    entfällt
+
+
+5.2    Inbetriebsetzungsauftrag E.5 vorhanden                                                     ja   nein    entfällt
+
+
+5.3    Gültiger MS-/NS-Übersichtsschaltplan der Übergabestation liegt vor                         ja   nein    entfällt
+
+
+5.4    Protokoll der Schutzeinstellung und Schutzprüfprotokolle (z.B. für Kunden LS) liegen vor   ja   nein    entfällt
+
+
+5.5    Erdungs-Messprotokoll E.6 liegt vor                                                        ja   nein    entfällt
+
+
+5.6     Inbetriebsetzungsformular E.7 vorhanden                                                   ja   nein    entfällt
+
+
+Bemerkungen:
+Bemerkungen ein
+
+
+
+
+Zu lfd. Nr.
+Liste 6 – Abschließende Prüfungen zur Inbetriebnahme von
+Kundenstationen
+
+                                                                        1/1
+
+
+
+6.1    Drehfeld prüfen und Spannung                         ja   nein    entfällt
+
+
+6.2    Inbetriebnahme von abgesetzten Transformatoren       ja   nein    entfällt
+
+
+6.3    Inbetriebnahme von Kabeln zu Unterstationen          ja   nein    entfällt
+
+
+6.4    Überprüfung der Mitnahmeschaltung                    ja   nein    entfällt
+
+
+6.5    Überprüfung Batterieanlage                           ja   nein    entfällt
+
+
+6.6    Anlagenverantwortlicher vor Ort zur Inbetriebnahme   ja   nein    entfällt
+
+
+Bemerkungen:
+Bemerkungen ein
+
+
+
+
+Zu lfd. Nr.
+
