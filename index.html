@@ -661,6 +661,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
           <tr><td>Erdfehlerfaktor</td><td><b>1,73</b></td><td><b>1,73</b></td></tr>
           <tr><td>Erdschluss-/Erdkurzschlussstrom</td><td><b>1&nbsp;kA</b> (5&nbsp;s) Auslegungswert; toleranzbedingt bis ca. 1,1&nbsp;kA möglich</td><td><b>≤ 250&nbsp;A</b> Erdschlussstrom; Doppelerdschlussstrom <b>8,5&nbsp;kA</b> (Auslegung Erdungsanlage)</td></tr>
         </table></div>
+        <p style="font-size:.9rem;color:var(--ink-soft);margin:.2em 0 .9em"><strong>Warum 1,73 trotz „niederohmig“?</strong> Die NOSPE ist hier <em>strombegrenzend</em> ausgelegt (Auslegung ~1&nbsp;kA), im Sinne der Normung also <em>nicht „wirksam geerdet“</em>. Bei einpoligem Erdfehler steigt die Spannung der gesunden Außenleiter bis nahe √3·U<sub>Phase</sub> – daher der Erdfehlerfaktor 1,73 (wie im isoliert betriebenen 6-kV-Netz). Genau dafür sind die Betriebsmittel auf 12&nbsp;kV U<sub>m</sub> / 28&nbsp;kV Prüfwechselspannung ausgelegt.</p>
         <ul>
           <li>Die Erdung der 10(6)-kV-<strong>Sternpunkte der Transformatoren in Übergabestationen ist unzulässig</strong>.</li>
           <li>Ebenso unzulässig: die Sternpunkterdung direkt angeschlossener <strong>Generatoren während des Parallelbetriebs</strong> – zur Inbetriebnahme ist ein messtechnischer Nachweis vorzulegen.</li>
@@ -1688,7 +1689,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
     </div>
 
     <div class="abweich reveal">
-      <p>Die VDE-AR-N 4110 stellt die Messung anders dar – Berlin ordnet den <strong>Spannungswandler im Messfeld in Energieflussrichtung grundsätzlich vor dem Stromwandler</strong> an: bei Bezugsanlagen vom Netz aus gesehen, bei Erzeugungsanlagen <em>von der Kundeneinspeisung aus gesehen</em>. Die Spannungswandler sind außerdem mit einer <strong>Bedämpfungseinrichtung</strong> zu beschalten. <span class="src">TA MS 2025, Kap. 3.2.1</span></p>
+      <p>Die VDE-AR-N 4110 stellt die Messung anders dar – Berlin ordnet den <strong>Spannungswandler im Messfeld in Energieflussrichtung grundsätzlich vor dem Stromwandler</strong> an: bei Bezugsanlagen vom Netz aus gesehen, bei Erzeugungsanlagen <em>von der Kundeneinspeisung aus gesehen</em>. Die Spannungswandler sind außerdem mit einer <strong><button class="abbr" data-abbr="bedaempfung" type="button">Bedämpfungseinrichtung</button></strong> zu beschalten. <span class="src">TA MS 2025, Kap. 3.2.1</span></p>
     </div>
 
     <h3>Spielregeln am Zählerplatz</h3>
@@ -1730,7 +1731,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
           <li>Zum Zählerschrank ist eine <strong>3×1,5 mm² NYM-J</strong>-Leitung zu verlegen, angeschlossen an das 230-V-Netz der Stationssicherheitsbeleuchtung, abgesichert mit <strong>1×10 A</strong>.</li>
           <li>Je Außenleiter ein <strong>Stützerstromwandler</strong> (DIN 42600 Teil 4, kleine Bauform, U<sub>m</sub> 12 kV) und ein <strong>einpolig isolierter Spannungswandler</strong> (DIN 42600 Teil 7, kleine Bauform).</li>
           <li>Sekundärleitungen Wandler → Reihenklemme X1: <strong>6 mm²</strong> (Spannung) bzw. <strong>4 mm²</strong> (Strom) Cu; X1 → X2: 4 mm² bis 15 m – jeweils <strong>ungeschnitten</strong> verlegt.</li>
-          <li>Reihenklemmen: bis 10 mm² Cu, Isolierstege, 500 V, <strong>Sicherungsreihenklemmen 2,0 A mit Kennmelder</strong>; Wandler-Erdung sichtbar nachvollziehbar.</li>
+          <li>Reihenklemmen: bis 10 mm² Cu, Isolierstege, 500 V, <strong>Sicherungsreihenklemmen 2,0 A mit Kennmelder</strong>.</li>
           <li>Die technischen Voraussetzungen der <strong>Datenübertragung</strong> sind mit dem Messstellenbetreiber abzustimmen. <span class="src">Kap. 4.4</span></li>
         </ul>
       </div>
@@ -2029,7 +2030,7 @@ const ABBR = {
   nues:{t:"NÜS – Netzübergabeschutz",d:"Schutzeinrichtung von Stromnetz Berlin am Übergabe-Leistungsschalter. Eigentum von Stromnetz Berlin, wirkt direkt auf den Übergabe-Leistungsschalter."},
   nes:{t:"NES – Netzentkupplungsschutz",d:"Trennt Erzeugungsanlagen/Speicher bei Netzfehlern vom Netz (Entkupplungsschutz), z. B. über Spannungs- und Frequenzkriterien."},
   esm:{t:"ESM – Einspeisemanagement",d:"Einrichtung zur ferngesteuerten Reduzierung/Abschaltung der Einspeiseleistung von Erzeugungsanlagen (Netzsicherheitsmanagement)."},
-  rua:{t:"RUA – Reserveumschaltautomatik",d:"Automatische Umschaltung im Umspannwerk auf den Reserve-Transformator. Direkt angeschlossene Erzeuger werden dabei per Mitnahmeschaltung getrennt, damit keine Inselnetze entstehen."},
+  rua:{t:"RUA – Reserveumschaltung",d:"Automatische Umschaltung im Umspannwerk auf den Reserve-Transformator. Direkt angeschlossene Erzeuger werden dabei per Mitnahmeschaltung getrennt, damit keine Inselnetze entstehen."},
   usv:{t:"USV – unterbrechungsfreie Stromversorgung",d:"Versorgt die Fernwirkeinheit und die Mittelspannungsschalter-Antriebe bei Netzausfall (Einschubkassette im Montagerahmen nach TB3340)."},
   lwl:{t:"LWL – Lichtwellenleiter",d:"Glasfaser für die Kommunikation des netzrelevanten Schutzes (z. B. Differentialschutz). Der Kunde hält Platz für einen an der Wand befestigten LWL-Verteiler vor."},
   eeg:{t:"EEG – Erneuerbare-Energien-Gesetz",d:"Gesetz für den Ausbau erneuerbarer Energien. EEG-Anlagen > 100 kW unterliegen Redispatch- und Echtzeitdaten-Anforderungen."},
@@ -2051,6 +2052,7 @@ const ABBR = {
   tb3351:{t:"TB3351",d:"Technische Beschreibung „Aufstellung von Kompaktstationen“."},
   tb3354:{t:"TB3354",d:"Technische Beschreibung „Räume für Kunden- und Netzstationen“ – u. a. Fußböden und Doppelboden."},
   tb3371:{t:"TB3371",d:"Richtlinie „Erdung in Netz- und Kundenstationen“."},
+  bedaempfung:{t:"Bedämpfungseinrichtung",d:"Dämpfungsglied am Spannungswandler gegen Ferroresonanz – niederfrequente Sättigungsschwingungen zwischen der nichtlinearen Wandler-Induktivität und den Netzkapazitäten, die den Wandler sonst zerstören können. Im nicht wirksam geerdeten Netz besonders relevant."},
   vn37:{t:"VN37",d:"Richtlinie „Erdung und Maßnahmen zum Schutz gegen gefährliche Körperströme in den Verteilungsnetzen bis 10 kV“."}
 };
 const tipEl = $("#tooltip");
