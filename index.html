@@ -459,8 +459,39 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
 .foot-note{border-top:1px solid #2a3a4f;margin-top:2.2em;padding-top:1.4em;font-size:.85rem;color:#8093a9}
 .foot-note b{color:#c8d6e6}
 
+/* ---------- Vergleichsmatrix (Sektion 09) ---------- */
+.tbl-matrix{min-width:820px}
+.tbl-matrix th:first-child,.tbl-matrix td:first-child{position:sticky;left:0;z-index:1;background:#fff;box-shadow:inset -1px 0 0 var(--line-soft);min-width:132px;max-width:170px}
+.tbl-matrix th:first-child{background:var(--bg-soft)}
+.tbl-matrix td:nth-child(2){background:#f8fbff}
+.tbl-matrix td:nth-child(3){background:#f5fbf8}
+.tbl-matrix td:nth-child(4){background:#fefaf1}
+.tbl-matrix .mtx-key{font-weight:700;color:var(--ink);display:block;margin-bottom:.15em}
+.tbl-matrix .mtx-go{font-size:.74rem;font-weight:650;color:var(--muted);text-decoration:none;white-space:nowrap}
+.tbl-matrix .mtx-go:hover{color:var(--open-deep)}
+.tbl-matrix td b{font-variant-numeric:tabular-nums}
+
+/* ---------- Weiter-Links (geführter Lernpfad) ---------- */
+.next-link{margin:2.8em 0 0;display:flex;justify-content:flex-end}
+.next-link a{display:inline-flex;align-items:center;gap:.6em;font-size:.9rem;font-weight:700;text-decoration:none;
+  color:var(--ink-soft);border:1px solid var(--line);background:#fff;border-radius:99px;padding:.55em 1.25em;
+  box-shadow:var(--shadow-s);transition:all .15s}
+.next-link a:hover{color:var(--open-deep);border-color:var(--open-line);background:var(--open-soft)}
+.next-link .nk{color:var(--faint);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.76em}
+
+/* Quiz: Sprunglinks & Fehler-Review */
+.quiz-go{display:inline-block;margin-top:.55em;font-weight:700;color:var(--open-deep);text-decoration:none}
+.quiz-go:hover{text-decoration:underline}
+.quiz-review{margin:1.2em auto 0;max-width:30em;text-align:left;background:var(--bg-soft);border:1px solid var(--line-soft);border-radius:var(--radius-s);padding:1em 1.2em}
+.quiz-review h5{margin:0 0 .5em;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.quiz-review ul{margin:0;padding-left:1.2em;font-size:.92rem}
+.quiz-review a{color:var(--open-deep);font-weight:650;text-decoration:none}
+.quiz-review a:hover{text-decoration:underline}
+
 /* Druck */
 @media print{
+  .tbl-scroll{overflow:visible}
+  .next-link{display:none}
   .topnav,#progressbar,.hero-cta,.diagram-controls,.info-pane,#tooltip{display:none}
   .reveal{opacity:1;transform:none;transition:none}
   section.block{padding:1.5rem 0}
@@ -484,6 +515,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
       <a href="#erzeugung">Erzeugung</a>
       <a href="#notstrom">Notstrom</a>
       <a href="#station">Station</a>
+      <a href="#ueberblick">Überblick</a>
       <a href="#quiz">Quiz</a>
     </div>
   </div>
@@ -613,6 +645,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         <p>Die Ausgabe 2025 <strong>ersetzt die Ausgabe 2024</strong>. <strong>Geltungsbeginn ist der 01.07.2025.</strong> DIN-/VDE-Normen und Anwendungsregeln gelten dabei jeweils in ihrer aktuellen Fassung. <span class="src">TA MS 2025, Kap. 1 u. 6</span></p>
       </div>
     </details>
+    <p class="next-link"><a href="#zahlen"><span class="nk">Weiter</span>02 · Das Netz in Zahlen →</a></p>
   </div>
 </section>
 
@@ -719,6 +752,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         <p>R<sub>A</sub> jeweils ohne angeschaltetes 10(6)-kV- bzw. 0,4-kV-Netz gemessen. Details zur Ausführung: <button class="abbr" data-abbr="tb3371" type="button">TB3371</button> und <button class="abbr" data-abbr="vn37" type="button">VN37</button>.</p>
       </div>
     </details>
+    <p class="next-link"><a href="#konzepte"><span class="nk">Weiter</span>03 · Die drei Anschlusskonzepte →</a></p>
   </div>
 </section>
 
@@ -1511,7 +1545,83 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
     <p style="font-size:.85rem;color:var(--muted)">¹ in Summe im gesamten Ring &nbsp;·&nbsp; ² nur für Einspeisungen zulässig &nbsp;·&nbsp; Bilder 1.2 und 1.4 entfallen.</p>
 
     <h3>Kernthema Eigentumsgrenzen: Wem gehört was?</h3>
-    <p>Der größte praktische Unterschied zwischen den Konzepten liegt nicht im Kupfer, sondern im <strong>Grundbuch</strong>: Beim offenen Ring betreibt Stromnetz Berlin den Übergabeteil in der Kundenstation – beim geschlossenen Ring und beim Stich gehört die komplette Schaltanlage dem Kunden, und das Netz endet schon am Kabelendverschluss.</p>
+    <p>Der größte praktische Unterschied zwischen den Konzepten liegt nicht im Kupfer, sondern im <strong>Grundbuch</strong>: Beim offenen Ring betreibt Stromnetz Berlin den Übergabeteil in der Kundenstation – beim geschlossenen Ring und beim Stich gehört die komplette Schaltanlage dem Kunden, und das Netz endet schon am Kabelendverschluss. Dieselbe Anlagenkette, dreimal – schau, wie die Grenze wandert:</p>
+
+    <figure class="reveal" id="grenzvergleich" style="margin:1.8em 0">
+      <svg class="dg" viewBox="0 0 880 392" role="img" aria-label="Vergleich der Eigentumsgrenzen: Beim offenen Ring liegt die Grenze hinter dem Messfeld, beim geschlossenen Ring und beim Stich bereits am Kabelendverschluss – dieselbe Anlagenkette, drei Grenzpositionen.">
+        <!-- ===== Zeile 1: Offener Ring ===== -->
+        <g>
+          <text x="162" y="26" class="t-zone" fill="var(--open-deep)">Offener Ring</text>
+          <rect class="zone-snb" x="162" y="36" width="547" height="64" rx="10"/>
+          <rect class="zone-kunde" x="709" y="36" width="145" height="64" rx="10"/>
+          <line class="wire" x1="292" y1="68" x2="310" y2="68"/><line class="wire" x1="430" y1="68" x2="448" y2="68"/><line class="wire" x1="568" y1="68" x2="586" y2="68"/><line class="wire" x1="706" y1="68" x2="724" y2="68"/>
+          <rect x="172" y="46" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="232" y="72" text-anchor="middle" class="t-small t-strong">Ringkabel</text>
+          <rect x="310" y="46" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="370" y="66" text-anchor="middle" class="t-small t-strong">Ringkabel-</text>
+          <text x="370" y="80" text-anchor="middle" class="t-small t-strong">felder</text>
+          <rect x="448" y="46" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="508" y="72" text-anchor="middle" class="t-small t-strong">Übergabefeld</text>
+          <rect x="586" y="46" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="646" y="72" text-anchor="middle" class="t-small t-strong">Messfeld</text>
+          <circle cx="700" cy="46" r="7" class="badge-msb"/><text x="700" y="49" text-anchor="middle" class="badge-txt">M</text>
+          <rect x="724" y="46" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="784" y="66" text-anchor="middle" class="t-small t-strong">Betriebsteil</text>
+          <text x="784" y="80" text-anchor="middle" class="t-tiny">Trafo, NS-Verteilung</text>
+          <line class="grenze" x1="715" y1="30" x2="715" y2="106"/>
+          <text x="170" y="122" class="t-tiny zone-lbl-snb" font-weight="800">EIGENTUM STROMNETZ BERLIN</text>
+          <text x="715" y="122" text-anchor="middle" class="t-tiny" style="fill:#b0451f" font-weight="800">GRENZE: HINTER DEM MESSFELD</text>
+          <text x="846" y="134" text-anchor="end" class="t-tiny zone-lbl-kunde" font-weight="800">KUNDE</text>
+        </g>
+        <!-- ===== Zeile 2: Geschlossener Ring ===== -->
+        <g>
+          <text x="162" y="172" class="t-zone" fill="var(--closed-deep)">Geschlossener Ring</text>
+          <rect class="zone-snb" x="162" y="182" width="143" height="64" rx="10"/>
+          <rect class="zone-kunde" x="305" y="182" width="549" height="64" rx="10"/>
+          <line class="wire" x1="292" y1="214" x2="310" y2="214"/><line class="wire" x1="430" y1="214" x2="448" y2="214"/><line class="wire" x1="568" y1="214" x2="586" y2="214"/><line class="wire" x1="706" y1="214" x2="724" y2="214"/>
+          <circle cx="301" cy="214" r="4.6" fill="#37445a"/>
+          <rect x="172" y="192" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="232" y="218" text-anchor="middle" class="t-small t-strong">Ringkabel</text>
+          <rect x="310" y="192" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="370" y="212" text-anchor="middle" class="t-small t-strong">Ringkabel-</text>
+          <text x="370" y="226" text-anchor="middle" class="t-small t-strong">felder</text>
+          <rect x="448" y="192" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="508" y="218" text-anchor="middle" class="t-small t-strong">Übergabefeld</text>
+          <rect x="586" y="192" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="646" y="218" text-anchor="middle" class="t-small t-strong">Messfeld</text>
+          <circle cx="700" cy="192" r="7" class="badge-msb"/><text x="700" y="195" text-anchor="middle" class="badge-txt">M</text>
+          <rect x="724" y="192" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="784" y="212" text-anchor="middle" class="t-small t-strong">Abgänge</text>
+          <text x="784" y="226" text-anchor="middle" class="t-tiny">je Feld eigener Schutz</text>
+          <line class="grenze" x1="301" y1="176" x2="301" y2="252"/>
+          <text x="301" y="268" text-anchor="middle" class="t-tiny" style="fill:#b0451f" font-weight="800">GRENZE: KABELENDVERSCHLUSS</text>
+          <text x="846" y="268" text-anchor="end" class="t-tiny zone-lbl-kunde" font-weight="800">SCHALTANLAGE = EIGENTUM KUNDE</text>
+        </g>
+        <!-- ===== Zeile 3: Stich ===== -->
+        <g>
+          <text x="162" y="318" class="t-zone" fill="var(--stich-deep)">Stich</text>
+          <rect class="zone-snb" x="162" y="328" width="143" height="64" rx="10"/>
+          <rect class="zone-kunde" x="305" y="328" width="549" height="64" rx="10"/>
+          <line class="wire" x1="292" y1="360" x2="310" y2="360"/><line class="wire" x1="430" y1="360" x2="448" y2="360"/><line class="wire" x1="568" y1="360" x2="586" y2="360"/><line class="wire" x1="706" y1="360" x2="724" y2="360"/>
+          <circle cx="301" cy="360" r="4.6" fill="#37445a"/>
+          <rect x="172" y="338" width="120" height="44" rx="8" fill="#fff" stroke="#37445a" stroke-width="1.8"/>
+          <text x="232" y="364" text-anchor="middle" class="t-small t-strong">Stichkabel</text>
+          <rect x="310" y="338" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="370" y="358" text-anchor="middle" class="t-small t-strong">Stichkabel-</text>
+          <text x="370" y="372" text-anchor="middle" class="t-small t-strong">feld</text>
+          <rect x="448" y="338" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="508" y="364" text-anchor="middle" class="t-small t-strong">Übergabefeld</text>
+          <rect x="586" y="338" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="646" y="364" text-anchor="middle" class="t-small t-strong">Messfeld</text>
+          <circle cx="700" cy="338" r="7" class="badge-msb"/><text x="700" y="341" text-anchor="middle" class="badge-txt">M</text>
+          <rect x="724" y="338" width="120" height="44" rx="8" fill="#fff" stroke="#8c6d1f" stroke-width="1.8"/>
+          <text x="784" y="358" text-anchor="middle" class="t-small t-strong">Abgang</text>
+          <text x="784" y="372" text-anchor="middle" class="t-tiny">NES · Schutz · ESM</text>
+          <line class="grenze" x1="301" y1="322" x2="301" y2="392"/>
+        </g>
+      </svg>
+      <figcaption style="font-size:.85rem;color:var(--muted);margin-top:.6em">Dieselbe Kette, drei Grenzen: <span style="color:var(--snb);font-weight:700">dunkelblauer Rahmen</span> = Eigentum Stromnetz Berlin, <span style="color:var(--kunde);font-weight:700">goldener Rahmen</span> = Eigentum Kunde, <b style="color:var(--msb)">M</b> = Beistellung Messstellenbetreiber (bleibt dessen Eigentum). Beim geschlossenen Ring und Stich bleiben zusätzlich die SNB-Schutzgeräte im separaten Schrank Eigentum von Stromnetz Berlin. <span class="src">TA MS 2025, Kap. 3.2.2–3.2.4</span></figcaption>
+    </figure>
     <div class="cards c3">
       <div class="card card-accent reveal" style="--accent:var(--open)">
         <h4><span class="pill open">Offener Ring</span></h4>
@@ -1536,6 +1646,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
     <div class="assist reveal" id="assist">
       <!-- wird per JS gefüllt -->
     </div>
+    <p class="next-link"><a href="#schutz"><span class="nk">Weiter</span>04 · Schutz &amp; Fernsteuerung →</a></p>
   </div>
 </section>
 
@@ -1652,6 +1763,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         </ul>
       </div>
     </details>
+    <p class="next-link"><a href="#messung"><span class="nk">Weiter</span>05 · Messstellenbetrieb &amp; Messung →</a></p>
   </div>
 </section>
 
@@ -1774,6 +1886,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         </ul>
       </div>
     </details>
+    <p class="next-link"><a href="#erzeugung"><span class="nk">Weiter</span>06 · Blindleistung &amp; Erzeugung →</a></p>
   </div>
 </section>
 
@@ -1855,6 +1968,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         <p>Die Erdung der 10(6)-kV-Sternpunkte direkt angeschlossener Generatoren ist <strong>während des Parallelbetriebs unzulässig</strong> – das würde das Sternpunkterdungs-Konzept des Netzes (niederohmig, 1 kA Auslegung) unterlaufen. Zur Inbetriebnahme ist ein messtechnischer Nachweis vorzulegen.</p>
       </div>
     </details>
+    <p class="next-link"><a href="#notstrom"><span class="nk">Weiter</span>07 · Notstromaggregate →</a></p>
   </div>
 </section>
 
@@ -1918,6 +2032,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         <p class="mini">Auch hier gilt: Kunde und Stromnetz Berlin schließen eine <strong>Betriebsvereinbarung Notstromanlage</strong> über die beiderseitigen Rechte und Pflichten. <span class="src">TA MS 2025, Kap. 3.5.4</span></p>
       </div>
     </div>
+    <p class="next-link"><a href="#station"><span class="nk">Weiter</span>08 · Baulicher &amp; elektrischer Teil →</a></p>
   </div>
 </section>
 
@@ -1941,7 +2056,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
     <p>Hake ab, was dein Projekt schon erfüllt – der Fortschritt wird lokal im Browser gespeichert. (Didaktische Auswahl; die vollständigen Abnahme-Checklisten liefert <a href="https://www.stromnetz.berlin/files/globalassets/dokumente/technische-anschlussbedingungen/ta-mittelspannung-2025/TA_MS_Berlin_Ausgabe_2025_Anlage_6_Checklisten.pdf" target="_blank" rel="noopener">Anlage 6</a>.)</p>
     <div class="checklist reveal" id="bau-checklist">
       <div class="check-head">
-        <div class="row"><h4>Baulicher Teil – Kernanforderungen</h4><span class="check-count" id="check-count">0 von 10 erledigt</span></div>
+        <div class="row"><h4>Baulicher Teil – Kernanforderungen</h4><span style="display:inline-flex;align-items:center;gap:.9em"><span class="check-count" id="check-count">0 von 10 erledigt</span><button class="dctl" id="check-reset" type="button" aria-label="Checkliste zurücksetzen">↺ Zurücksetzen</button></span></div>
         <div class="progress-track"><div class="progress-fill" id="check-fill"></div></div>
       </div>
       <label class="check-item"><span class="chk-row"><input type="checkbox" data-chk="fenster"><span class="chk-box" aria-hidden="true"></span><span class="chk-main"><span class="chk-title">Fensterlos bauen <span class="src">Kap. 3.6.1.2</span></span><span class="chk-detail">Die Räume der Übergabestation sind aus Sicherheitsgründen fensterlos auszuführen. Werden dennoch Fenster eingebaut, ist VDE 0101-1 zu beachten.</span></span></span></label>
@@ -2006,13 +2121,113 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
         <p>Die Formulare der VDE-AR-N 4110 (Anhang E) stehen als beschreibbare PDFs zur Verfügung (Anlage 5). Zusätzlich sind die <strong>Checklisten der Anlage 6</strong> auszufüllen – sechs Listen von „Allgemeine Angaben“ bis zu den abschließenden Prüfungen, u. a.: Drehfeld und Spannung prüfen, Inbetriebnahme abgesetzter Trafos und Kabel zu Unterstationen, <strong>Überprüfung der Mitnahmeschaltung</strong>, Überprüfung der Batterieanlage, Anlagenverantwortlicher vor Ort.</p>
       </div>
     </details>
+    <p class="next-link"><a href="#ueberblick"><span class="nk">Weiter</span>09 · Alles auf einen Blick →</a></p>
   </div>
 </section>
 
-<!-- ===================== 09 QUIZ ===================== -->
+<!-- ===================== 09 ÜBERBLICK ===================== -->
+<section class="block" id="ueberblick">
+  <div class="wrap">
+    <p class="kicker">09 · Alles auf einen Blick</p>
+    <h2>Die drei Konzepte im direkten Vergleich</h2>
+    <p class="sec-intro">Alle Kapitel dieser Seite, verdichtet auf eine Tabelle: Wer die Spalten nebeneinander liest, sieht die Logik des Regelwerks – <strong>je unterbrechungsfreier der Anschluss, desto mehr Verantwortung wandert zum Kunden</strong>. Jede Zeile verlinkt den Abschnitt mit den Details und Fundstellen.</p>
+
+    <div class="tbl-scroll reveal"><table class="tbl tbl-matrix">
+      <tr>
+        <th>Merkmal</th>
+        <th><span class="pill open">Offener Ring</span></th>
+        <th><span class="pill closed">Geschlossener Ring</span></th>
+        <th><span class="pill stich">Stich</span></th>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Typischer Einsatz</span><a class="mtx-go" href="#konzepte">→ 03 Konzepte</a></td>
+        <td><b>Standardanschlussform</b> – deckt den Großteil der Anschlussbedarfe ab</td>
+        <td>Entnahme über der Übertragungsfähigkeit offener Ringe, hohe Zuverlässigkeits&shy;anforderungen, größere Netzrückwirkungen; auch Mischanlagen</td>
+        <td><b>nur Einspeisungen</b>: größere Wind-/PV-Anlagen, im Einzelfall</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Versorgungssicherheit</span><a class="mtx-go" href="#konzepte">→ 03 Konzepte</a></td>
+        <td><b>(n-1)</b> durch Umschaltung – kurze Unterbrechung möglich</td>
+        <td><b>(n-1)</b> im Stand-by – unterbrechungsfrei</td>
+        <td><b>(n-0)</b> – keine Redundanz</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Einspeisung aus</span><a class="mtx-go" href="#konzepte">→ 03 Konzepte</a></td>
+        <td>UW; Ring an genau einer Trennstelle offen betrieben</td>
+        <td>direkt aus einem 110/10-kV-UW, beide Ringenden zugeschaltet</td>
+        <td>direkt aus einem 110/10-kV-UW, ein einziges Kabel</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Übergabe</span><a class="mtx-go" href="#konzepte">→ 03 Konzepte</a></td>
+        <td>Trafo <b>≤ 800 kVA</b>: LTS-Sicherungs-Kombination · <b>&gt; 800 kVA</b>/mehrere Abgänge: Leistungsschalter + NÜS</td>
+        <td>Leistungsschalter + NÜS, zusätzlich Impedanzschutz (&lt;Z)</td>
+        <td>Leistungsschalter + NÜS (mit &lt;Z-Funktion)</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Eigentumsgrenze</span><a class="mtx-go" href="#konzepte">→ 03 Konzepte</a></td>
+        <td><b>hinter dem Messfeld</b> – der Übergabeteil gehört Stromnetz Berlin</td>
+        <td><b>Kabelendverschluss</b> – die gesamte Schaltanlage gehört dem Kunden</td>
+        <td><b>Kabelendverschluss</b> – wie geschlossener Ring</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Netzrelevanter Schutz</span><a class="mtx-go" href="#schutz">→ 04 Schutz</a></td>
+        <td>NÜS im Übergabefeld (bei Übergabe mit Leistungsschalter)</td>
+        <td>separater SNB-Schrank: NÜS, ΔI-Leitungsschutz, Knotenpunktschutz · 2 Schränke bei Mitteneinspeisung</td>
+        <td>separater SNB-Schrank: NÜS, ΔI-Leitungsschutz</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Kundenschutz</span><a class="mtx-go" href="#schutz">→ 04 Schutz</a></td>
+        <td>1 Schaltfeld: NÜS genügt · mehrere Felder: je Feld schnellschaltender Schutz</td>
+        <td>jedes 10-kV-Abgangsfeld mit eigenem schnellschaltendem Schutz</td>
+        <td>schnellschaltender Schutz für die 10-kV-Schaltanlage ist Pflicht</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Eigenbedarf / Hilfsenergie</span><a class="mtx-go" href="#schutz">→ 04 Schutz</a></td>
+        <td>Revisions-Hausanschluss <b>230 V AC</b></td>
+        <td>netzunabhängig: Batterie <b>≥ 8 h</b>, DC <b>60/110/220 V</b>, erdfrei</td>
+        <td>wie geschlossener Ring</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Erzeugungsanlagen</span><a class="mtx-go" href="#erzeugung">→ 06 Erzeugung</a></td>
+        <td>Q(P)-Kennlinie · Vektorsprungrelais · Rückspeisung im Fehlerfall <b>≤ 600 A</b> in Summe im Ring</td>
+        <td>fester <b>cos φ = 1</b> · RUA-Mitnahmeschaltung</td>
+        <td>fester <b>cos φ = 1</b> · RUA-Mitnahmeschaltung</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">NEA-Netzparallelbetrieb</span><a class="mtx-go" href="#notstrom">→ 07 Notstrom</a></td>
+        <td>nur <b>≤ 100 ms</b> zum Synchronisieren + 1-h-Probelauf (1×/Monat, Anmeldung ≥ 10 Werktage)</td>
+        <td><b>möglich</b></td>
+        <td>– (reine Erzeugungsanlagen)</td>
+      </tr>
+      <tr>
+        <td><span class="mtx-key">Übersichtsschaltbilder</span><a class="mtx-go" href="#quellen">→ Quellen</a></td>
+        <td><b>1.1–1.8</b> (Anlage 2)</td>
+        <td><b>1.9</b> Seiten- / <b>1.10</b> Mitteneinspeisung</td>
+        <td><b>1.11</b></td>
+      </tr>
+    </table></div>
+    <p style="font-size:.85rem;color:var(--muted)">Verdichtung der Abschnitte 03–07; Fundstellen jeweils dort. Grundlage: TA MS 2025, Kap. 3.2–3.5 · Anlagen 1–2. Die Tabelle eignet sich auch zum Ausdrucken.</p>
+
+    <h3>Drei Merksätze</h3>
+    <div class="cards c3">
+      <div class="card card-accent reveal" style="--accent:var(--open)">
+        <p class="mini" style="margin:0"><span class="pill open">Offener Ring</span><br><br><strong>Der Standard.</strong> Stromnetz Berlin betreibt den Übergabeteil in deiner Station – die Grenze liegt hinter dem Messfeld. (n-1) heißt hier: kurz dunkel, dann umgeschaltet.</p>
+      </div>
+      <div class="card card-accent reveal" style="--accent:var(--closed)">
+        <p class="mini" style="margin:0"><span class="pill closed">Geschlossener Ring</span><br><br><strong>Unterbrechungsfrei – gegen Verantwortung.</strong> Die ganze Schaltanlage gehört dir, das Netz endet am Kabelendverschluss; SNB stellt die Schutzgeräte im eigenen Schrank bei.</p>
+      </div>
+      <div class="card card-accent reveal" style="--accent:var(--stich)">
+        <p class="mini" style="margin:0"><span class="pill stich">Stich</span><br><br><strong>Nur für Erzeuger.</strong> Ein Kabel direkt ans UW, keine Redundanz (n-0), fester cos φ = 1 – fällt das Kabel aus, steht die Einspeisung.</p>
+      </div>
+    </div>
+    <p class="next-link"><a href="#quiz"><span class="nk">Weiter</span>10 · Wissens-Check →</a></p>
+  </div>
+</section>
+
+<!-- ===================== 10 QUIZ ===================== -->
 <section class="block" id="quiz">
   <div class="wrap">
-    <p class="kicker">09 · Wissens-Check</p>
+    <p class="kicker">10 · Wissens-Check</p>
     <h2>10 Fragen zur TA Mittelspannung</h2>
     <p class="sec-intro">Jede Frage hat genau eine richtige Antwort. Du bekommst sofort Feedback mit Begründung und Fundstelle – ideal, um die Kernaussagen zu festigen.</p>
     <div class="quiz reveal" id="quizbox"><!-- per JS gefüllt --></div>
@@ -2432,21 +2647,21 @@ $$("[data-meter]").forEach(b=>b.addEventListener("click",()=>{
 
 /* ============ Entscheidungs-Assistent ============ */
 const A_RESULTS = {
-  open_le:{c:"open",badge:"Offener Ring · vereinfachte Übergabe",bild:"Bild 1.1",
+  open_le:{c:"open",v:"le",badge:"Offener Ring · vereinfachte Übergabe",bild:"Bild 1.1",
     why:["Der offen betriebene Ring ist die <strong>Standardanschlussform</strong> und deckt den Großteil der Anschlussbedarfe ab (Kap. 3.2.1).","Bei Transformator-Bemessungsleistung <strong>≤ 800 kVA</strong> genügt die vereinfachte Übergabe als <strong>Lasttrennschalter-Sicherungs-Kombination</strong> (Kap. 3.2.2, Anlage 2).","(n-1)-sicher durch Umschaltung; Eigenbedarf über Revisions-Hausanschluss 230 V AC."]},
-  open_gt:{c:"open",badge:"Offener Ring · Übergabe mit Leistungsschalter",bild:"Bild 1.3",
+  open_gt:{c:"open",v:"gt",badge:"Offener Ring · Übergabe mit Leistungsschalter",bild:"Bild 1.3",
     why:["Standardanschlussform offener Ring (Kap. 3.2.1).","Bei Transformator-Bemessungsleistung <strong>&gt; 800 kVA</strong>: Übergabe mit <strong>Leistungsschalter und Netzübergabeschutz (NÜS)</strong>; der NÜS wirkt direkt auf den Übergabe-LS (Kap. 3.2.2, Anlage 2)."]},
-  open_multi:{c:"open",badge:"Offener Ring · mehrere Abgänge",bild:"Bild 1.5",
+  open_multi:{c:"open",v:"gt",badge:"Offener Ring · mehrere Abgänge",bild:"Bild 1.5",
     why:["Standardanschlussform offener Ring (Kap. 3.2.1).","Bei <strong>mehreren Abgängen</strong>: Übergabe mit Leistungsschalter und NÜS; <strong>jedes Kundenschaltfeld braucht eine eigene schnellschaltende Schutzeinrichtung</strong> (Kap. 3.2.2, Anlage 2)."]},
-  open_ez_le:{c:"open",badge:"Offener Ring · mit Erzeugung, vereinfachte Übergabe",bild:"Bild 1.6",
+  open_ez_le:{c:"open",v:"le",badge:"Offener Ring · mit Erzeugung, vereinfachte Übergabe",bild:"Bild 1.6",
     why:["Die Einspeisung passt in den offenen Ring; Bedingung: <strong>Kurzschlussstrombeitrag ≤ 600 A in Summe im gesamten Ring</strong> (Anlage 2, Kap. 3.2.2).","Trafo ≤ 800 kVA → vereinfachte Übergabe; Erzeuger mit <strong>NES + Einspeisemanagement</strong>, Spannungsschutz-Auslösesignal von Stromnetz Berlin (Bild 1.6).","Statik: Beteiligung an der Spannungshaltung per <strong>Q(P)-Kennlinie</strong> (Kap. 3.4.1)."]},
-  open_ez_gt:{c:"open",badge:"Offener Ring · mit Erzeugung, Leistungsschalter",bild:"Bild 1.7",
+  open_ez_gt:{c:"open",v:"gt",badge:"Offener Ring · mit Erzeugung, Leistungsschalter",bild:"Bild 1.7",
     why:["Einspeisung im offenen Ring mit <strong>Kurzschlussstrombeitrag ≤ 600 A in Summe</strong> (Anlage 2).","Trafo &gt; 800 kVA → Übergabe mit <strong>Leistungsschalter + NÜS</strong>.","Q(P)-Kennlinie und dynamische Netzstützung gemäß Kap. 3.4."]},
-  open_ez_2:{c:"open",badge:"Offener Ring · ≥ zwei Einspeisungen",bild:"Bild 1.8",
+  open_ez_2:{c:"open",v:"gt",badge:"Offener Ring · ≥ zwei Einspeisungen",bild:"Bild 1.8",
     why:["Mehrere Einspeisungen, zusammen <strong>≤ 600 A Kurzschlussstrombeitrag im Ring</strong> (Anlage 2).","Übergabe mit Leistungsschalter und mehreren Schaltfeldern – je Feld eigener Schutz (Kap. 3.2.2)."]},
-  closed:{c:"closed",badge:"Geschlossener Ring",bild:"Bild 1.9 / 1.10",
+  closed:{c:"closed",v:"seite",badge:"Geschlossener Ring",bild:"Bild 1.9 / 1.10",
     why:["Bei Entnahmeleistungen <strong>oberhalb der Übertragungsfähigkeit offener Ringe</strong>, höheren Anforderungen an die Versorgungszuverlässigkeit oder größeren Netzrückwirkungen erfolgt der Anschluss an einen <strong>geschlossen betriebenen Netzring</strong>, direkt aus einem 110/10-kV-UW (Kap. 3.2.1).","(n-1)-sicher im <strong>stand-by</strong> – Fehler werden vom Differentialschutz unterbrechungsfrei selektioniert (Kap. 3.2.3).","Je nach Aufbau: <strong>Seiteneinspeisung</strong> (Bild 1.9) oder <strong>Mitteneinspeisung mit Längskupplung</strong> (Bild 1.10).","Pflichten: netzunabhängiger Eigenbedarf (8-h-Batterie), Platz für SNB-Schutzschrank und LWL-Verteiler."]},
-  closed_mix:{c:"closed",badge:"Geschlossener Ring (Mischanlage)",bild:"Bild 1.9 / 1.10",
+  closed_mix:{c:"closed",v:"seite",badge:"Geschlossener Ring (Mischanlage)",bild:"Bild 1.9 / 1.10",
     why:["Bei <strong>Kombinationen aus Entnahme und Erzeugung</strong> oberhalb der Übertragungsfähigkeit offener Ringe erfolgt der Anschluss an einen geschlossen betriebenen Netzring (Kap. 3.2.1).","Erzeugung fährt hier mit festem <strong>cos φ = 1</strong>; bei Reserveumschaltung trennt die <strong>Mitnahmeschaltung</strong> (Kap. 3.4).","(n-1)-sicher im stand-by; Eigenbedarf netzunabhängig mit 8-h-Batterie (Kap. 3.2.3)."]},
   stich:{c:"stich",badge:"Stichanschaltung",bild:"Bild 1.11",
     why:["Bei <strong>reinen Erzeugungsanlagen</strong> (größere Wind-/PV-Anlagen), die die mögliche Anschlussleistung des offenen Rings übersteigen, sind im Einzelfall <strong>Stichanbindungen direkt an ein 110/10-kV-UW</strong> möglich – ohne Redundanz (Kap. 3.2.1).","<strong>(n-0)</strong> und <strong>nur für Einspeisungen zulässig</strong> (Anlage 2).","Erzeugung mit festem cos φ = 1, RUA-Mitnahmeschaltung, netzrelevanter Schutz im SNB-Schrank (Kap. 3.2.4, 3.4)."]}
@@ -2516,6 +2731,7 @@ function aResult(key){
   $(".assist-back",box).addEventListener("click",()=>{aPath=[];aRender("s0");});
   $("#a-show").addEventListener("click",()=>{
     $("#tab-"+r.c).click();
+    if(r.v){ const vb = $("[data-var-"+r.c+"='"+r.v+"']"); if(vb) vb.click(); }
     $("#diagram-stage").scrollIntoView({behavior:REDUCED?"auto":"smooth",block:"start"});
   });
 }
@@ -2541,6 +2757,12 @@ chkBoxes.forEach(c=>{
   });
 });
 chkUpdate();
+$("#check-reset").addEventListener("click",()=>{
+  chkBoxes.forEach(c=>{ c.checked = false; });
+  chkState = {};
+  try{ localStorage.setItem(CHK_KEY, "{}"); }catch(e){}
+  chkUpdate();
+});
 
 /* ============ Quiz ============ */
 const QUIZ = [
@@ -2549,73 +2771,81 @@ const QUIZ = [
       "Die TA ersetzt die VDE-AR-N 4110 im Berliner Netzgebiet vollständig.",
       "Die TA gilt nur dann, wenn die VDE-AR-N 4110 keine Aussage trifft.",
       "Die VDE-AR-N 4110 betrifft nur Niederspannungsanschlüsse."],
-   a:0,src:"TA MS 2025, Kap. 1 u. 2",
+   a:0,src:"TA MS 2025, Kap. 1 u. 2",go:"#einordnung",
    e:"Die VDE-AR-N 4110 beschreibt Mindestanforderungen, deckt aber nicht alle netzbetreiberspezifischen Bedingungen ab. Die TA ergänzt sie (Bemessungsdaten, Sternpunkterdung, Anschluss-/Schutzprinzipien, Messung, Eigentumsgrenzen) und gilt zusammen mit ihr."},
   {q:"Welche Netzform ist die Standardanschlussform im Berliner 10-kV-Netz?",
    o:["Der geschlossen betriebene Ring – wegen der höheren Zuverlässigkeit.",
       "Der offen betriebene Ring – er deckt den Großteil der Anschlussbedarfe ab.",
       "Die Stichanschaltung – sie ist am günstigsten.",
       "Die Doppelstichanbindung an zwei Umspannwerke."],
-   a:1,src:"TA MS 2025, Kap. 3.2.1",
+   a:1,src:"TA MS 2025, Kap. 3.2.1",go:"#konzepte",
    e:"„Der offen betriebene Ring stellt die Standardanschlussform dar und deckt den Großteil der Anschlussbedarfe ab.“ Geschlossener Ring und Stich sind Speziallösungen."},
   {q:"Ein Kunde plant einen Transformator mit 1.000 kVA am offenen Ring. Was gilt für das Übergabefeld?",
    o:["Eine Lasttrennschalter-Sicherungs-Kombination genügt.",
       "Leistungsschalter mit Netzübergabeschutz – die vereinfachte Übergabe gilt nur bis 800 kVA.",
       "Ab 1.000 kVA ist zwingend der geschlossene Ring vorgeschrieben.",
       "Das Übergabefeld entfällt, der Trafo wird direkt angeschlossen."],
-   a:1,src:"TA MS 2025, Kap. 3.2.2 · Anlage 2",
+   a:1,src:"TA MS 2025, Kap. 3.2.2 · Anlage 2",go:"#konzepte",
    e:"Bis 800 kVA: vereinfachte Übergabe (LTS-Sicherungs-Kombination, Bild 1.1). Über 800 kVA: Leistungsschalter mit Netzübergabeschutz (Bild 1.3). Die Netzform bleibt der offene Ring."},
   {q:"Wie viel Rückspeisung ist im Fehlerfall in einem Mittelspannungsring maximal zulässig?",
    o:["600 A je einzelnem Einspeiser.",
       "800 A im Halbring.",
       "600 A – in Summe aller Einspeiser im Netzring (Vollring), auch beim Einsatz von Is-Begrenzern.",
       "Unbegrenzt, sofern Is-Begrenzer eingebaut sind."],
-   a:2,src:"TA MS 2025, Kap. 3.2.2",
+   a:2,src:"TA MS 2025, Kap. 3.2.2",go:"#schutz",
    e:"Die 600-A-Grenze gilt in Summe für alle Einspeiser im Vollring und ausdrücklich auch beim Einsatz von Is-Begrenzern."},
   {q:"Wo liegt beim geschlossen betriebenen Ring die Eigentumsgrenze der Primäranlagen?",
    o:["Hinter dem Messfeld – der Übergabeteil gehört Stromnetz Berlin.",
       "Am Kabelendverschluss der Mittelspannungskabel – die Schaltanlage gehört dem Kunden.",
       "An der Niederspannungsseite des Kundentransformators.",
       "An der Grundstücksgrenze."],
-   a:1,src:"TA MS 2025, Kap. 3.2.3",
+   a:1,src:"TA MS 2025, Kap. 3.2.3",go:"#konzepte",
    e:"„Der Kabelendverschluss der Mittelspannungskabel bildet die Eigentumsgrenze der Primäranlagen.“ Die Variante „hinter dem Messfeld“ beschreibt den offenen Ring – dort gehören Ringkabelfelder, Übergabefeld und Messfeld Stromnetz Berlin."},
   {q:"Wie sind die Messwandler im Messfeld anzuordnen?",
    o:["Stromwandler immer zuerst – wie in der VDE-AR-N 4110 dargestellt.",
       "Die Reihenfolge ist beliebig, solange die Wandler geeicht sind.",
       "Spannungswandler nur bei Bezugsanlagen, bei Erzeugung reicht der Stromwandler.",
       "Spannungswandler in Energieflussrichtung vor dem Stromwandler – bei Erzeugungsanlagen von der Einspeisung aus gesehen."],
-   a:3,src:"TA MS 2025, Kap. 3.2.1",
+   a:3,src:"TA MS 2025, Kap. 3.2.1",go:"#messung",
    e:"Berlin weicht hier bewusst von der Darstellung der VDE-AR-N 4110 ab: SpW grundsätzlich vor StW in Energieflussrichtung – bei Bezugsanlagen vom Netz, bei Erzeugungsanlagen von der Kundeneinspeisung aus gesehen."},
   {q:"Welche Vorgabe gilt für den Verschiebungsfaktor cos φ der Kundenanlage?",
    o:["Mindestens 0,9 induktiv, niemals kapazitiv – und keine lastunabhängige Festkompensation.",
       "Zwischen 0,9 kapazitiv und 0,9 induktiv frei wählbar.",
       "Fest cos φ = 1 für alle Anlagen.",
       "Beliebig, solange die Kompensationsanlage verdrosselt ist."],
-   a:0,src:"TA MS 2025, Kap. 3.3",
+   a:0,src:"TA MS 2025, Kap. 3.3",go:"#erzeugung",
    e:"Der cos φ soll 0,9 induktiv nicht unterschreiten und darf keine kapazitiven Werte annehmen; Festkompensation ist unzulässig. Kompensationsanlagen voll verdrosselt (Empfehlung ≥ 7 %), Überkompensation ausgeschlossen."},
   {q:"Wie beteiligt sich eine Erzeugungsanlage im geschlossenen Ring an der statischen Spannungshaltung?",
    o:["Mit der Q(P)-Kennlinie wie im offenen Ring.",
       "Mit dauerhaft cos φ = 0,9 induktiv.",
       "Gar nicht aktiv – es gilt ein fester cos φ = 1; die Q(P)-Kennlinie gilt nur im offenen Ring.",
       "Über den Stufensteller des UW-Transformators."],
-   a:2,src:"TA MS 2025, Kap. 3.4.1",
+   a:2,src:"TA MS 2025, Kap. 3.4.1",go:"#erzeugung",
    e:"Erzeugungsanlagen im offenen Ring fahren Q(P); im geschlossenen Ring und am Stich gilt ein fester cos φ von 1."},
   {q:"Notstromaggregat im offen betriebenen Ring: Was erlaubt die TA beim Probebetrieb?",
    o:["Dauerhaften Netzparallelbetrieb ohne weitere Auflagen.",
       "Synchronisierung mit max. 100 ms Parallelbetrieb; toleriert wird 1× pro Monat eine Stunde – mit Anmeldung mind. 10 Werktage vorher.",
       "Wöchentliche Probeläufe ohne Anmeldung.",
       "Gar keinen Parallelbetrieb, auch nicht zur Synchronisierung."],
-   a:1,src:"TA MS 2025, Kap. 3.5.3",
+   a:1,src:"TA MS 2025, Kap. 3.5.3",go:"#notstrom",
    e:"Zulässig: Kurzzeitparallelbetrieb ≤ 100 ms zur Synchronisierung plus einstündiger Probelauf (1× pro Monat toleriert), Anmeldung mindestens 10 Werktage vorab bei der Netzführung, Entkupplungsschutz (U≫, U>, U<, f>, f< inkl. Vektorsprung) vorausgesetzt. Im geschlossenen Ring wäre Parallelbetrieb dagegen möglich."},
   {q:"Wofür ist die Stichanschaltung zulässig?",
    o:["Für Kunden mit besonders hohen Zuverlässigkeitsanforderungen.",
       "Für jede Anlage mit mehr als 800 kVA.",
       "Für Notstromaggregate im Probebetrieb.",
       "Nur für Einspeisungen – größere Wind-/PV-Anlagen direkt am 110/10-kV-UW, ohne Redundanz (n-0)."],
-   a:3,src:"TA MS 2025, Kap. 3.2.1 · Anlage 2",
+   a:3,src:"TA MS 2025, Kap. 3.2.1 · Anlage 2",go:"#konzepte",
    e:"Der Stich ist (n-0)-sicher – keine Redundanz – und laut Anlage 2 „nur für Einspeisungen zulässig“: für größere Wind-/PV-Anlagen, deren Leistung den offenen Ring übersteigt, im Einzelfall direkt am UW."}
 ];
-let qIdx = 0, qScore = 0;
+let qIdx = 0, qScore = 0, qWrong = [];
+const SECTITLE = {
+  "#einordnung":"01 · Einordnung & Geltungsbereich",
+  "#konzepte":"03 · Die drei Anschlusskonzepte",
+  "#schutz":"04 · Schutzkonzept & Eigenbedarf",
+  "#messung":"05 · Messstellenbetrieb & Messung",
+  "#erzeugung":"06 · Blindleistung & Erzeugungsanlagen",
+  "#notstrom":"07 · Notstromaggregate"
+};
 function qRender(){
   const box = $("#quizbox");
   if(qIdx >= QUIZ.length){
@@ -2624,11 +2854,16 @@ function qRender(){
                     qScore>=7 ? "Stark! Die Kernkonzepte sitzen." :
                     qScore>=5 ? "Solide Basis – wirf noch einen Blick auf die Abschnitte zu deinen Fehlern." :
                     "Ein guter Anfang – arbeite die Abschnitte oben noch einmal durch.";
+    const review = qWrong.length
+      ? '<div class="quiz-review"><h5>Diese Abschnitte lohnen einen zweiten Blick</h5><ul>'+
+        qWrong.map(i=>'<li>Frage '+(i+1)+' → <a href="'+QUIZ[i].go+'">'+(SECTITLE[QUIZ[i].go]||QUIZ[i].go)+'</a></li>').join("")+
+        '</ul></div>'
+      : "";
     box.innerHTML = '<div class="quiz-final"><div class="big">'+qScore+' / '+QUIZ.length+'</div>'+
       '<div class="quiz-bar"><i style="width:'+pct+'%"></i></div>'+
-      '<p>'+verdict+'</p>'+
+      '<p>'+verdict+'</p>'+review+
       '<div class="quiz-actions" style="justify-content:center"><button class="dctl" id="q-restart">↺ Quiz neu starten</button></div></div>';
-    $("#q-restart").addEventListener("click",()=>{qIdx=0;qScore=0;qRender();});
+    $("#q-restart").addEventListener("click",()=>{qIdx=0;qScore=0;qWrong=[];qRender();});
     return;
   }
   const Q = QUIZ[qIdx];
@@ -2640,7 +2875,7 @@ function qRender(){
     '<div class="quiz-actions"><button class="btn btn-primary" id="q-next" style="display:none">Weiter →</button></div>';
   $$(".quiz-opt",box).forEach(btn=>btn.addEventListener("click",()=>{
     const i = +btn.dataset.i, ok = i===Q.a;
-    if(ok) qScore++;
+    if(ok) qScore++; else qWrong.push(qIdx);
     $$(".quiz-opt",box).forEach((b,bi)=>{
       b.disabled = true;
       if(bi===Q.a) b.dataset.state="correct";
@@ -2648,7 +2883,8 @@ function qRender(){
     });
     const fb = $("#q-fb");
     fb.classList.add("show", ok?"good":"bad");
-    fb.innerHTML = "<strong>"+(ok?"Richtig! ":"Leider nein. ")+"</strong>"+Q.e+' <span class="src">'+Q.src+'</span>';
+    fb.innerHTML = "<strong>"+(ok?"Richtig! ":"Leider nein. ")+"</strong>"+Q.e+' <span class="src">'+Q.src+'</span>'+
+      (!ok && Q.go ? '<br><a class="quiz-go" href="'+Q.go+'">↑ Nachlesen: '+(SECTITLE[Q.go]||"Abschnitt ansehen")+'</a>' : "");
     $(".quiz-score",box).textContent = qScore+" richtig";
     const nx = $("#q-next"); nx.style.display="inline-flex";
     nx.textContent = (qIdx===QUIZ.length-1) ? "Zum Ergebnis →" : "Weiter →";
