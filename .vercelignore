@@ -2,4 +2,6 @@ sources
 node_modules
 .git
 .vercel
+.claude
+README.md
 *.log

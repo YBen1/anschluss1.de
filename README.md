@@ -17,6 +17,9 @@ Checkliste „Baulicher Teil" und ein Abschluss-Quiz.
 ## Aufbau
 
 - `index.html` — die komplette Seite, alles inline, keine Abhängigkeiten.
+- `og-image.png` — Social-Preview-Bild (1200×630) für Open Graph/Twitter-Cards.
+- `robots.txt` — erlaubt Indexierung.
+- `vercel.json` — statisches Deployment ohne Build plus Security-/Cache-Header.
 - `sources/` — die verwendeten Original-PDFs, extrahierter Text (`sources/text/`)
   und gerenderte Bilder (`sources/png/`); dienen nur als Quellennachweis und sind
   per `.vercelignore` vom Deployment ausgeschlossen.
