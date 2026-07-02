@@ -7,9 +7,12 @@ Stromnetz Berlin GmbH, gültig ab 01.07.2025).
 
 Didaktisch aufbereitet im Stil eines Distill.pub-Artikels: interaktives
 SVG-Netzdiagramm der drei Anschlusskonzepte (offener Ring / geschlossener Ring /
-Stich) mit Fehlersimulation und Eigentumsgrenzen, Entscheidungs-Assistent
-„Welcher Anschluss passt?", Faktenkacheln, Abkürzungs-Tooltips, interaktive
-Checkliste „Baulicher Teil" und ein Abschluss-Quiz.
+Stich) mit schrittweiser Fehlersimulation und Eigentumsgrenzen,
+Entscheidungs-Assistent „Welcher Anschluss passt?", synoptische
+Vergleichsmatrix, Faktenkacheln, Abkürzungs-Tooltips, interaktive Checkliste
+„Baulicher Teil", Karteikarten-Deck und ein Abschluss-Quiz. Helles und dunkles
+Farbschema (folgt dem System, manuell umschaltbar); Konzept-Tabs sind per
+`#offener-ring` / `#geschlossener-ring` / `#stich` direkt verlinkbar.
 
 > **Hinweis:** Inoffizielle Lernhilfe. Im Zweifel gelten ausschließlich die
 > Originaldokumente von Stromnetz Berlin.
