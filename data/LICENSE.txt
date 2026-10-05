@@ -1,0 +1,6 @@
+Infrastructure and boundary data: © OpenStreetMap contributors.
+Open Database License (ODbL) 1.0: https://opendatacommons.org/licenses/odbl/1-0/
+Attribution and rights: https://www.openstreetmap.org/copyright
+Source extract: https://download.geofabrik.de/europe/germany.html
+Derived database: stations.json, lines.json, boundary.json. See manifest.json for snapshot and transformations.
+Redistribution and adaptation subject to ODbL. No capacity or accuracy warranty.

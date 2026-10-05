@@ -5,3 +5,9 @@ node_modules
 .claude
 README.md
 *.log
+
+tests
+SOURCES.md
+VERIFICATION.md
+WORK_LOG.md
+WISSEN.md

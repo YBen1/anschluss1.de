@@ -1,0 +1,50 @@
+# MVP-Abnahme · 05.10.2026
+
+## Daten
+
+- 107.519 Stationsobjekte und 76.990 Leitungsobjekte, OSM-/Geofabrik-Datenstand 03.10.2026 20:20:50 UTC.
+- Nur Stationen innerhalb der Deutschlandgeometrie und Leitungen, die sie schneiden. Grenzüberschreitende Linien werden nicht auf deutsche Segmente beschnitten.
+- Deutschlandgrenze OSM-Relation 51477, Quell-Snapshot 15.07.2026. Separat im Manifest dokumentiert.
+- IDs, Zeitstempel, Geometrien, Objektzahlen und SHA-256-Integrität geprüft (`tests/data.test.mjs`). Tests an neun städtischen/ländlichen Orten von Flensburg bis Bodensee erfolgreich; Paris, Wien, Amsterdam und Nullkoordinate abgewiesen.
+- Quellen und Lizenzbedingungen in SOURCES.md; Daten-Downloads einschließlich ODbL-Hinweis öffentlich innerhalb der privaten Site bereitgestellt.
+- NRW-WMS: Capabilities mit dl-de/zero-2-0 und Layername geprüft; repräsentativer GetMap-Aufruf liefert PNG. Objektbezogene Katasteraktualität bleibt ungeprüft und so beschriftet.
+
+## Rechenlogik
+
+Acht erfolgreiche Tests (`node tests/engine.test.mjs`):
+
+- fehlende Preise/Mengen ergeben keinen Gesamtpreis;
+- vollständige eigene Szenarien ergeben nachvollziehbare Mengen × Einheitspreise;
+- bereits ein offenes Szenario blockiert eine vollständige Gesamtbandbreite;
+- Netze-BW-Tarif nur bei exakt passendem Operator, HS und Bezug/beidem;
+- Preise anderer Ebenen werden nicht übertragen;
+- N−1 ohne zweiten geprüften Netzpfad bleibt offen;
+- Kandidaten berücksichtigen Radius, Spannung, Operator und Sonderanlagen;
+- ungültige Leistung, unsortierte Szenarien und fehlende Preisprovenienz werden abgewiesen;
+- Geometrieabstände, Grenzen, Löcher und selbstkreuzende Flächen geprüft.
+
+## Browser
+
+Isolierter Chromium, Desktop 1440 × 1100 und Mobil 390 × 844. Erfolgreich geprüft:
+
+- echte lokale Daten geladen, drei Kandidaten für Leipzig;
+- Koordinatensuche und Detaildialog;
+- sichtbare Kostenlücken; Eingabe eigener **ausschließlich im Test verwendeter** Preise liefert Bandbreite;
+- zwei Standorte werden mit gleichem Bedarf verglichen;
+- Redundanz blockiert eine scheinbar vollständige Schätzung;
+- Wechsel der Projektart überträgt alte eigene Preise nicht automatisch;
+- Bericht enthält eingebettete SVG-Lagekarte, Eingaben, Kosten, Quellen, Annahmen und offene Fragen;
+- Mobilansicht und Vergleich ohne horizontalen Überlauf;
+- keine JavaScript-Laufzeitfehler.
+
+Automatisierte Browserprüfungen blockieren OSM-Kacheln und NRW-WMS, um bei programmatischen Ansichtswechseln keine Kartendienste zu belasten. Screenshots zeigen deshalb bewusst die echte Infrastruktur ohne Hintergrundkacheln. Testartefakte sind ignoriert und werden nicht veröffentlicht. Adresssuche hängt vom externen Photon-Dienst ab; Koordinaten und Kartenklick funktionieren ohne diesen Dienst.
+
+WebMCP: Zwei Tools mit Schemata und Annotationen registrieren korrekt in einer injizierten kompatiblen Testschnittstelle. Gültige Eingaben verändern denselben sichtbaren Zustand, ungültige Eingaben werden ohne Zustandsänderung abgewiesen; Readback geprüft. Ein nativer WebMCP-Host stand nicht zur Verfügung. Die normale Browsernutzung benötigt WebMCP nicht.
+
+## Bewusst offene fachliche Grenzen
+
+Keine bestätigten Kapazitäten, keine Betreiberzuständigkeitskarte, kein Lastfluss, keine automatische Hindernis-/Querungsanalyse, keine N−1-Dimensionierung, keine Ausführungsplanung. Außer dem eng anwendbaren publizierten BKZ-Tarif werden keine unbelegten Standardpreise behauptet. Daher ist ein offener Gesamtpreis bei der ersten Nutzung das fachlich richtige Ergebnis: Jede fehlende Kostenposition wird benannt und kann durch Angebote/ausdrückliche eigene Annahmen ergänzt werden.
+
+Der ausgelieferte Datenbestand ist ein dokumentierter Snapshot der ausgewählten öffentlich nutzbaren Quellen, kein Anspruch auf vollständige Erfassung aller physischen Anlagen oder aller existierenden Datenquellen. Amtliche Flurstücke sind zunächst regional in NRW darstellbar. Die übrigen Länder bleiben manuell skizzierbar. Weitere regionale Quellen können über den dokumentierten Adapter ergänzt werden.
+
+Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkte, Betreiber-/Leitungstypfilter, ungültige Leistung und echte Photon-Ortssuche nach Leipzig. Die ungültige Leistung setzt Kandidaten und Speicherknopf zurück; veraltete Ergebnisse werden nicht weiter angezeigt.

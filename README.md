@@ -1,39 +1,27 @@
-# anschluss1.de — TA Mittelspannung Berlin 2025, interaktiv
+# Anschluss1.de – Stromnetzanschlüsse vorplanen
 
-Eine einzelne, in sich geschlossene Lernseite (`index.html`, kein Build-Step,
-CSS/JS vollständig inline) zu den **Technischen Anforderungen für den Anschluss
-an das Mittelspannungsnetz Berlin** (TA Mittelspannung, Ausgabe 2025,
-Stromnetz Berlin GmbH, gültig ab 01.07.2025).
+Produktiv: https://www.anschluss1.de/ · Hosting: Vercel · Repository: YBen1/anschluss1.de.
 
-Didaktisch aufbereitet im Stil eines Distill.pub-Artikels: interaktives
-SVG-Netzdiagramm der drei Anschlusskonzepte (offener Ring / geschlossener Ring /
-Stich) mit schrittweiser Fehlersimulation und Eigentumsgrenzen,
-Entscheidungs-Assistent „Welcher Anschluss passt?", synoptische
-Vergleichsmatrix, Faktenkacheln, Abkürzungs-Tooltips, interaktive Checkliste
-„Baulicher Teil", Karteikarten-Deck und ein Abschluss-Quiz. Helles und dunkles
-Farbschema (folgt dem System, manuell umschaltbar); Konzept-Tabs sind per
-`#offener-ring` / `#geschlossener-ring` / `#stich` direkt verlinkbar.
+Die Startseite zeigt den deutschlandweiten Netzplanungs-MVP. Die bisherige interaktive Lernseite zur TA Mittelspannung Berlin ist vollständig unter /wissen erhalten; Details in WISSEN.md.
 
-> **Hinweis:** Inoffizielle Lernhilfe. Im Zweifel gelten ausschließlich die
-> Originaldokumente von Stromnetz Berlin.
+## Dateien und Betrieb
 
-## Aufbau
+Statische Anwendung ohne Build oder Installation: index.html, app.js, engine.js, style.css, config.json, vendor/, data/. Lokal: `python3 -m http.server 8787`. Für /wissen lokal wissen.html öffnen; Vercel richtet die saubere Route über vercel.json ein.
 
-- `index.html` — die komplette Seite, alles inline, keine Abhängigkeiten.
-- `og-image.png` — Social-Preview-Bild (1200×630) für Open Graph/Twitter-Cards.
-- `robots.txt` — erlaubt Indexierung.
-- `vercel.json` — statisches Deployment ohne Build plus Security-/Cache-Header.
-- `sources/` — die verwendeten Original-PDFs, extrahierter Text (`sources/text/`)
-  und gerenderte Bilder (`sources/png/`); dienen nur als Quellennachweis und sind
-  per `.vercelignore` vom Deployment ausgeschlossen.
+## Funktionen
 
-## Deployment
+Reale OSM-Netzdaten, Adress-/Koordinatensuche, Kartenpunkt oder Flächenskizze, Leistungsbedarf und Energierichtung, Spannung-/Betreiberfilter, bis zu drei räumliche Anschlusskandidaten, editierbares Kostenmodell mit offenen Positionen, Standortvergleich und HTML-Bericht mit Karte zum PDF-Druck. Amtliche Flurstücke NRW können ab Zoom 17 zugeschaltet werden.
 
-Statische Seite ohne Build-Step. Es genügt, `index.html` aus dem Repo-Root zu
-servieren. Ausgeliefert über Vercel auf https://anschluss1.de.
+107.519 Stationen und 76.990 Leitungsobjekte, OSM-Snapshot vom 03.10.2026. Keine bestätigten Kapazitäten; keine automatische Trassen- oder Hindernisprüfung. Unbekannte Preise werden nicht mit null angesetzt. Quellen und Lizenzprüfung: SOURCES.md; Datenmanifest: data/manifest.json; Prüfungen: VERIFICATION.md.
 
-## Quellen
+## Tests
 
-Stromnetz Berlin GmbH — TA Mittelspannung, Ausgabe 2025, inklusive der Anlagen
-1, 2, 4 und 6 sowie der Übersichtsschaltbilder (Bilder 1.1–1.11). Sämtliche
-Original-PDFs sind im Footer der Seite verlinkt.
+`node tests/engine.test.mjs` und `node tests/data.test.mjs`.
+
+## Veröffentlichung
+
+Pushes auf den bestehenden Hauptbranch dieses GitHub-Repositories werden vom angebundenen Vercel-Projekt veröffentlicht. Der frühere Sites-Prototyp ist ein getrenntes Deployment und aktualisiert diese Domain nicht. Keine Sites-Manifestdatei in dieses Repository übernehmen.
+
+## Datenschutz und externe Dienste
+
+Kein Tracking, keine Konten. Projektstandorte und eigene Preise bleiben in der Sitzung. Sichtbare Kartenkacheln: OpenStreetMap; abgesendete Suchbegriffe: Photon/Komoot; optional NRW-WMS. Die CSP erlaubt ausschließlich diese benötigten externen Dienste. Für größere öffentliche Last eigenen/vertraglichen Geocoder verwenden. Endpunkte sind in config.json konfigurierbar; bei Anbieterwechsel CSP ebenfalls anpassen.

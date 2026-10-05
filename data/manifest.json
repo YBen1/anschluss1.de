@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-05T15:29:11.189923+00:00",
+  "snapshot": "2026-10-03T20:20:50Z",
+  "source": "https://download.geofabrik.de/europe/germany.html",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "stationCount": 107519,
+  "lineCount": 76990,
+  "boundarySource": "OSM relation/51477",
+  "selection": "power=substation (nodes, ways, relations); power=line (ways); power=minor_line|cable with voltage (ways)",
+  "stationGeometry": "OSM node or bounding box center, not an electrical connection point",
+  "lineGeometry": "OSM geometry simplified with tolerance 0.00003 degrees",
+  "completeness": "All matching objects in the Germany extract, not a complete inventory of physical infrastructure",
+  "capacity": "unknown",
+  "boundarySnapshot": "2026-07-15T15:22:01Z",
+  "sha256": {
+    "stations": "d35c3903e933f781b35714046e9037f4fde2835bb69224e909aee727953bde9e",
+    "lines": "81ae6487b784cfa0fda55272f8291d8e90e12be67f411a1b7cb404fd7bafefc1",
+    "boundary": "3ee7e2f946a5a9f575070504b39700041068810df22d9485869ef6ce8aff5ab0"
+  }
+}
