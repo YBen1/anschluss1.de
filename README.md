@@ -10,7 +10,7 @@ Statische Anwendung ohne Build oder Installation: index.html, app.js, engine.js,
 
 ## Funktionen
 
-Reale OSM-Netzdaten, Adress-/Koordinatensuche, Kartenpunkt oder Flächenskizze, Leistungsbedarf und Energierichtung, Spannung-/Betreiberfilter, bis zu drei räumliche Anschlusskandidaten, editierbares Kostenmodell mit offenen Positionen, Standortvergleich und HTML-Bericht mit Karte zum PDF-Druck. Amtliche Flurstücke NRW können ab Zoom 17 zugeschaltet werden.
+Reale OSM-Netzdaten, Adress-/Koordinatensuche, Kartenpunkt oder Flächenskizze, Leistungsbedarf und Energierichtung, Spannung-/Betreiberfilter, bis zu drei räumliche Anschlusskandidaten, editierbares Kostenmodell mit offenen Positionen, Standortvergleich und HTML-Bericht mit Karte zum PDF-Druck. Amtliche Flurstückskarten aller 16 Bundesländer können ab Zoom 17 zugeschaltet werden; Bayern als Parzellarkarte ohne Flurstücksnummern.
 
 107.519 Stationen und 76.990 Leitungsobjekte, OSM-Snapshot vom 03.10.2026. Keine bestätigten Kapazitäten; keine automatische Trassen- oder Hindernisprüfung. Unbekannte Preise werden nicht mit null angesetzt. Quellen und Lizenzprüfung: SOURCES.md; Datenmanifest: data/manifest.json; Prüfungen: VERIFICATION.md.
 
@@ -26,7 +26,7 @@ Pushes auf den bestehenden Hauptbranch dieses GitHub-Repositories werden vom ang
 
 ## Datenschutz und externe Dienste
 
-Kein Tracking, keine Konten. Projektstandorte und eigene Preise bleiben in der Sitzung. Sichtbare Kartenkacheln: OpenStreetMap; Adresseingaben ab drei Zeichen nach Tipp-Pause: Photon/Komoot; optional NRW-WMS. Die CSP erlaubt ausschließlich diese benötigten externen Dienste. Für größere öffentliche Last eigenen/vertraglichen Geocoder verwenden. Endpunkte sind in config.json konfigurierbar; bei Anbieterwechsel CSP ebenfalls anpassen.
+Kein Tracking, keine Konten. Projektstandorte und eigene Preise bleiben in der Sitzung. Sichtbare Kartenkacheln: OpenStreetMap; Adresseingaben ab drei Zeichen nach Tipp-Pause: Photon/Komoot; optional die im Kartenausschnitt benötigten amtlichen Flurstücksdienste. Die CSP erlaubt ausschließlich diese benötigten externen Dienste. Für größere öffentliche Last eigenen/vertraglichen Geocoder verwenden. Endpunkte sind in config.json konfigurierbar; bei Anbieterwechsel CSP ebenfalls anpassen.
 
 ## Regionale Karte
 
@@ -43,3 +43,11 @@ Regenerierung: `python scripts/split-states.py /path/to/germany.osm.pbf /path/to
 Die Adresseingabe zeigt ab drei Zeichen bis zu sechs Vorschläge nach 450 ms Tipp-Pause. Der bestehende Mindestabstand zwischen externen Suchanfragen (1.500 ms) bleibt erhalten. Neue Eingaben brechen laufende Anfragen ab; überholte Antworten werden ignoriert. Bis zu 30 Suchbegriffe werden nur im Arbeitsspeicher der geöffneten Seite zwischengespeichert. Koordinaten werden lokal verarbeitet. Auswahl per Klick/Touch oder Pfeiltasten und Enter; Escape und Verlassen des Felds schließen die Liste. Bei leeren Ergebnissen oder Fehlern erscheint ein Hinweis.
 
 Browserprüfung: `node tests/browser-address.mjs` mit demselben Testserver/CDP wie beim Kartentest. Deterministische Photon-Antworten decken Tipp-Pause, Cache, Tastatur, Auswahl, überholte Antworten, Fehler, Koordinaten und mobile Darstellung ab.
+
+## Flurstückskarten
+
+Unter Kartenebenen „Amtliche Flurstücke“ einschalten. Ist ein Projektstandort gewählt, zoomt die Karte dorthin auf Stufe 17. Andernfalls am gewünschten Ort hineinzoomen oder „Flurstücke am Standort anzeigen“ wählen. Die Landesdienste werden nur im Detailzoom und für den sichtbaren Ausschnitt zugeschaltet. Beim Herauszoomen oder Abschalten werden die Ebenen entfernt. Ein Dienstfehler erscheint mit einer Wiederholungsmöglichkeit.
+
+`data/parcel-services.json` dokumentiert alle 16 amtlichen Anbieter, WMS-Layer/Stile/Version, räumliche Abdeckung, Quellen, Lizenzen, Prüfdatum und je einen echten Teststandort. Bayern liefert die reduzierte Parzellarkarte ohne Flurstücksnummern, Baden-Württemberg und Rheinland-Pfalz eine Liegenschaftskarte mit weiteren Katasterinhalten. Die übrigen Adapter verwenden Flurstücks- bzw. INSPIRE-Parzellenlayer. Die Anzeige übernimmt Kartendarstellungen, keine Eigentümerdaten und keine vermessungstechnisch geprüften Polygone. Die Landesbilder werden nicht in den schematischen HTML-Bericht übernommen.
+
+Prüfungen: `node tests/parcels.test.mjs`; expliziter Live-Bildtest mit Pillow: `python3 scripts/check-parcel-services.py /tmp/parcel-check` (optionale nachfolgende Bundesland-IDs schränken den Test ein). Browserprüfung: `node tests/browser-parcels.mjs` mit lokalem Server/CDP wie oben, optional `TEST_URL`. Anders als der allgemeine Kartentest ruft dieser Test reale Katasterkarten ab; OSM-Kacheln bleiben blockiert.

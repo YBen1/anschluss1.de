@@ -30,7 +30,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://www.wms.nrw.de; connect-src 'self' https://photon.komoot.io; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org https://gdi.berlin.de https://geodatenportal.sachsen-anhalt.de https://geodienste.bremen.de https://geodienste.hamburg.de https://geodienste.sachsen.de https://geoportal.saarland.de https://geoservices.bayern.de https://inspire-hessen.de https://isk.geobasis-bb.de https://owsproxy.lgl-bw.de https://service.gdi-sh.de https://www.geodaten-mv.de https://www.geoportal.rlp.de https://www.geoproxy.geoportal-th.de https://www.inspire.niedersachsen.de https://www.wms.nrw.de; connect-src 'self' https://photon.komoot.io; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
         }
       ]
     },

@@ -29,3 +29,7 @@ Aktuelles Repository `/root/anschluss1-live`, Vercel-Ziel www.anschluss1.de. Inf
 ## Adressvorschläge – 08.10.2026
 
 Adresseingabe durch `address-search.js` um Vorschläge beim Tippen erweitert. Dropdown mit Straße/Hausnummer und Ortsangabe, Tastatur- und Zeigerauswahl, Drosselung, begrenztem Cache, Abbruch und Schutz vor veralteten Antworten. Koordinateneingabe weiterhin lokal. Lokale Browserprüfungen mit simuliertem und echtem Photon-Dienst sowie Kartenregression bestanden. Ziel bleibt das bestehende Vercel-Deployment auf www.anschluss1.de.
+
+## Flurstückserweiterung – 08.10.2026
+
+NRW-Einzellayer durch konfigurierbare Landesadapter für alle 16 Bundesländer ersetzt. Amtliche WMS/INSPIRE-/ALKIS-Dienste mit belegten Quellen und Nutzungsangaben; Bayern als Parzellarkarte ohne Nummern. Laden nur auf Anfrage und im Detailzoom für den Ausschnitt, Status und Retry pro Dienst, Quellenanzeige und Datenschutzhinweise aktualisiert. Echte GetMap-PNGs und Browserabläufe aller Länder bestanden, Konfiguration und reproduzierbare Prüfskripte gesichert.

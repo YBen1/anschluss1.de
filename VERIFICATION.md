@@ -65,3 +65,12 @@ Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkt
 - `node tests/browser-address-real.mjs`: bestanden mit echtem Photon-Aufruf „Alexanderplatz 1 Berlin“, Auswahl durch Browser-Mausereignisse und drei anschließend berechneten Anschlusskandidaten.
 - `node tests/browser-regions.mjs`: bestehender vollständiger Kartenablauf weiterhin bestanden, einschließlich Bundesländer, Vergleich, Export, Ladefehler und Standortwechsel. Keine JavaScript-Ausnahmen.
 - Suchdaten nur im begrenzten Seitenspeicher; laufende Abrufe abbrechbar, Timeout 15 Sekunden, Mindestabstand 1,5 Sekunden. Datenschutzhinweise an automatische Vorschläge angepasst.
+
+## Amtliche Flurstückskarten – 08.10.2026
+
+- Alle 16 Landesdienste per GetCapabilities auf Layer, Stil, Projektion und Nutzungsangaben geprüft. `data/parcel-services.json` dokumentiert die eingesetzten Konfigurationen und echten Referenzstandorte.
+- Live-Bildprüfung: 512 × 512 Pixel, EPSG:3857, je ein Kartenausschnitt pro Bundesland. Alle 16 liefern decodierbare PNGs mit sichtbaren Karteninhalten. Metadaten-URLs in Rheinland-Pfalz und Saarland lieferten zunächst ServiceExceptions und wurden durch die offiziell ausgewiesenen GetMap-Adressen ersetzt; beide Nachtests bestanden. Keine leeren PNGs oder XML-Fehler als Erfolg gewertet.
+- Bildnachweise `/tmp/anschluss-parcel-tests/`, RP/SL-Nachtests `/tmp/anschluss-parcel-retest/`; Stichproben Berlin, Bayern und Rheinland-Pfalz visuell kontrolliert.
+- `node tests/browser-parcels.mjs`: alle 16 Landesdienste über die echte Kartenoberfläche erfolgreich geladen, Quellenvermerke vorhanden, keine Katasterabrufe vor Aktivierung oder im Deutschlandzoom; Ausschalten und Herauszoomen entfernen die Ebenen. Simulierter Berliner Dienstausfall sichtbar gemeldet und per Wiederholen erfolgreich behoben. Keine JavaScript-Ausnahmen. Nachweise `/tmp/anschluss-parcel-browser/`.
+- `node --test tests/parcels.test.mjs tests/engine.test.mjs`: bestanden, einschließlich vollständiger Länderabdeckung, CSP-Hostfreigaben, Zoom-/Gebietsbegrenzung und bestehender Berechnungen.
+- Bayern: reduzierte Parzellarkarte ohne Flurstücksnummern. BW/RP: weitere Liegenschaftsinhalte enthalten. Landesdienste liefern Darstellungen; keine Eigentümerdaten und keine Übernahme amtlicher Flurstückspolygone in die manuelle Skizze. WMS-Bilder werden nicht in den schematischen Bericht eingebettet.

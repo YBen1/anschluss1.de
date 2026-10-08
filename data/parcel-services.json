@@ -1,0 +1,404 @@
+{
+  "providers": [
+    {
+      "id": "DE-BW",
+      "name": "Baden-Württemberg",
+      "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ALKIS_Basis_Vertrieb",
+      "layers": "nora:ALKIS_Basis_Vertrieb",
+      "styles": "alkis_basis_vertrieb",
+      "version": "1.3.0",
+      "bounds": [
+        47.5326035,
+        7.5117461,
+        49.7912772,
+        10.4952642
+      ],
+      "minZoom": 17,
+      "attribution": "LGL-BW (2026)",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ALKIS_Basis_Vertrieb?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        48.778,
+        9.18
+      ],
+      "note": "Liegenschaftskarte einschließlich weiterer Katasterinhalte."
+    },
+    {
+      "id": "DE-BY",
+      "name": "Bayern",
+      "url": "https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkarte",
+      "layers": "by_alkis_parzellarkarte_umr_schwarz",
+      "styles": "Schwarz",
+      "version": "1.3.0",
+      "bounds": [
+        47.2702482,
+        8.9763851,
+        50.5632937,
+        13.8395522
+      ],
+      "minZoom": 17,
+      "attribution": "Bayerische Vermessungsverwaltung",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://geoservices.bayern.de/od/wms/alkis/v1/parzellarkarte?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        48.137,
+        11.575
+      ],
+      "note": "Parzellarkarte ohne Flurstücksnummern."
+    },
+    {
+      "id": "DE-BE",
+      "name": "Berlin",
+      "url": "https://gdi.berlin.de/services/wms/alkis_flurstuecke",
+      "layers": "flurstuecke",
+      "styles": "alkis_flurstuecke",
+      "version": "1.3.0",
+      "bounds": [
+        52.3382448,
+        13.088345,
+        52.6755087,
+        13.7611609
+      ],
+      "minZoom": 17,
+      "attribution": "Geoportal Berlin / SenStadt",
+      "license": "dl-de/zero-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/zero-2-0",
+      "source": "https://gdi.berlin.de/services/wms/alkis_flurstuecke?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        52.52,
+        13.405
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-BB",
+      "name": "Brandenburg",
+      "url": "https://isk.geobasis-bb.de/ows/alkis_wms",
+      "layers": "adv_alkis_flurstuecke",
+      "styles": "SW",
+      "version": "1.3.0",
+      "bounds": [
+        51.3590081,
+        11.2657725,
+        53.5587965,
+        14.7651199
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis-DE/LGB",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://isk.geobasis-bb.de/ows/alkis_wms?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        52.4,
+        13.06
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-HB",
+      "name": "Bremen",
+      "url": "https://geodienste.bremen.de/wms_flurstuecke",
+      "layers": "flurstuecke",
+      "styles": "default",
+      "version": "1.3.0",
+      "bounds": [
+        53.0111644,
+        8.4815929,
+        53.610083,
+        8.99083
+      ],
+      "minZoom": 17,
+      "attribution": "Landesamt GeoInformation Bremen",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://geodienste.bremen.de/wms_flurstuecke?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        53.075,
+        8.807
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-HH",
+      "name": "Hamburg",
+      "url": "https://geodienste.hamburg.de/HH_WMS_INSPIRE_Flurstuecke",
+      "layers": "CP.CadastralParcel",
+      "styles": "default",
+      "version": "1.3.0",
+      "bounds": [
+        53.3952678,
+        8.1044993,
+        54.02765,
+        10.3252805
+      ],
+      "minZoom": 17,
+      "attribution": "Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://geodienste.hamburg.de/HH_WMS_INSPIRE_Flurstuecke?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        53.55,
+        9.993
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-HE",
+      "name": "Hessen",
+      "url": "https://inspire-hessen.de/ows/services/org.2.07247d95-adc7-4c7d-9c7a-ed17af855317_wms",
+      "layers": "CP.CadastralParcel",
+      "styles": "CP.CadastralParcel.Default",
+      "version": "1.3.0",
+      "bounds": [
+        49.3955693,
+        7.7724673,
+        51.6577614,
+        10.2364142
+      ],
+      "minZoom": 17,
+      "attribution": "Hessische Verwaltung für Bodenmanagement und Geoinformation",
+      "license": "dl-de/zero-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/zero-2-0",
+      "source": "https://inspire-hessen.de/ows/services/org.2.07247d95-adc7-4c7d-9c7a-ed17af855317_wms?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        50.111,
+        8.682
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-MV",
+      "name": "Mecklenburg-Vorpommern",
+      "url": "https://www.geodaten-mv.de/dienste/inspire_cp_alkis_view",
+      "layers": "CP.CadastralParcel",
+      "styles": "CP.CadastralParcel.Default",
+      "version": "1.3.0",
+      "bounds": [
+        53.1103525,
+        10.5949741,
+        54.8849662,
+        14.4122208
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis-DE/M-V 2026",
+      "license": "Nutzungsbedingungen M-V",
+      "licenseUrl": "https://www.geoportal-mv.de/portal/Geowebdienste/INSPIRE-Themen/Flurstuecke_Grundstuecke",
+      "source": "https://www.geodaten-mv.de/dienste/inspire_cp_alkis_view?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        53.629,
+        11.415
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-NI",
+      "name": "Niedersachsen",
+      "url": "https://www.inspire.niedersachsen.de/doorman/noauth/alkis-vs-cp",
+      "layers": "CP.CadastralParcel",
+      "styles": "CP.CadastralParcel.Default",
+      "version": "1.3.0",
+      "bounds": [
+        51.2950693,
+        6.3459138,
+        54.1378463,
+        11.598118
+      ],
+      "minZoom": 17,
+      "attribution": "LGLN (2026)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.inspire.niedersachsen.de/doorman/noauth/alkis-vs-cp?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        52.373,
+        9.737
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-NW",
+      "name": "Nordrhein-Westfalen",
+      "url": "https://www.wms.nrw.de/geobasis/wms_nw_alkis",
+      "layers": "adv_alkis_flurstuecke",
+      "styles": "Grau",
+      "version": "1.3.0",
+      "bounds": [
+        50.3228458,
+        5.8663153,
+        52.5314935,
+        9.4616354
+      ],
+      "minZoom": 17,
+      "attribution": "Geobasis NRW",
+      "license": "dl-de/zero-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/zero-2-0",
+      "source": "https://www.wms.nrw.de/geobasis/wms_nw_alkis?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        51.2277,
+        6.7735
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-RP",
+      "name": "Rheinland-Pfalz",
+      "url": "https://www.geoportal.rlp.de/owsproxy/00000000000000000000000000000000/85fd2a2e2b058ab4a6b0a9c331b07246",
+      "layers": "rp_lika",
+      "styles": "",
+      "version": "1.1.1",
+      "bounds": [
+        48.9664472,
+        6.1122591,
+        50.9423049,
+        8.5079853
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis-DE / LVermGeoRP (2026)",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://www.geoportal.rlp.de/mapbender/php/wms.php?inspire=1&layer_id=61688&withChilds=1&SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        49.999,
+        8.273
+      ],
+      "note": "Liegenschaftskarte einschließlich weiterer Katasterinhalte."
+    },
+    {
+      "id": "DE-SL",
+      "name": "Saarland",
+      "url": "https://geoportal.saarland.de/gdi-sl/inspirewms_Flurstuecke_Grundstuecke_ALKIS",
+      "layers": "CP.CadastralParcel",
+      "styles": "default",
+      "version": "1.1.1",
+      "bounds": [
+        49.1120517,
+        6.3557914,
+        49.6383308,
+        7.4036669
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis DE/LVGL-SL (2026)",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://geoportal.saarland.de/mapbender/php/wms.php?inspire=1&layer_id=42092&withChilds=1&SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        49.234,
+        6.997
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-SN",
+      "name": "Sachsen",
+      "url": "https://geodienste.sachsen.de/wms_geosn_flurstuecke/guest",
+      "layers": "Flurstueck,Flurstuecksnummer",
+      "styles": "default,default",
+      "version": "1.3.0",
+      "bounds": [
+        50.1716496,
+        11.8714837,
+        51.6849651,
+        15.0417476
+      ],
+      "minZoom": 17,
+      "attribution": "GeoSN",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://geodienste.sachsen.de/wms_geosn_flurstuecke/guest?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        51.34,
+        12.37
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-ST",
+      "name": "Sachsen-Anhalt",
+      "url": "https://geodatenportal.sachsen-anhalt.de/ows_INSPIRE_LVermGeo_ALKIS_CP_WMS",
+      "layers": "CP.CadastralParcel",
+      "styles": "CP.CadastralParcel.Default",
+      "version": "1.3.0",
+      "bounds": [
+        50.9378455,
+        10.5608411,
+        53.0416243,
+        13.186794
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis-DE / LVermGeo ST",
+      "license": "dl-de/by-2-0",
+      "licenseUrl": "https://www.govdata.de/dl-de/by-2-0",
+      "source": "https://geodatenportal.sachsen-anhalt.de/ows_INSPIRE_LVermGeo_ALKIS_CP_WMS?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        52.12,
+        11.627
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-SH",
+      "name": "Schleswig-Holstein",
+      "url": "https://service.gdi-sh.de/SH_INSPIREVIEW_AI_CP_ALKIS",
+      "layers": "CP.CadastralParcel",
+      "styles": "CP.CadastralParcel.Default",
+      "version": "1.3.0",
+      "bounds": [
+        53.3598218,
+        7.5211615,
+        55.099161,
+        11.672386
+      ],
+      "minZoom": 17,
+      "attribution": "GeoBasis-DE/LVermGeo SH",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://service.gdi-sh.de/SH_INSPIREVIEW_AI_CP_ALKIS?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        54.323,
+        10.139
+      ],
+      "note": ""
+    },
+    {
+      "id": "DE-TH",
+      "name": "Thüringen",
+      "url": "https://www.geoproxy.geoportal-th.de/geoproxy/services/ALKISKOMPAKT",
+      "layers": "alkis_fl,alkis_fsnr",
+      "styles": "palette_grau,default",
+      "version": "1.3.0",
+      "bounds": [
+        50.2043783,
+        9.8769608,
+        51.6492842,
+        12.6539261
+      ],
+      "minZoom": 17,
+      "attribution": "GDI-Th",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.geoproxy.geoportal-th.de/geoproxy/services/ALKISKOMPAKT?SERVICE=WMS&REQUEST=GetCapabilities",
+      "checkedAt": "2026-10-08",
+      "sample": [
+        50.978,
+        11.029
+      ],
+      "note": ""
+    }
+  ]
+}
