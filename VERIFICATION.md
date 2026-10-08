@@ -58,3 +58,10 @@ Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkt
 - Initiale unkomprimierte Datenmenge vorher: 49.517.218 Bytes; jetzt: 4.046.955 Bytes (Landesindex, Deutschlandgrenze und Manifest). Reduktion: 91,83 %. Dies beschreibt Datenmenge, keine pauschale Laufzeitgarantie; Browser-, Netz- und Kompressionsbedingungen variieren.
 - Externe Kartenkacheln und NRW-WMS werden im automatisierten Test blockiert. Die Netzdaten und Bundesländergeometrien wurden über den lokalen Server geprüft. Bildschirmaufnahmen und Netzwerkprotokoll: `/tmp/anschluss-regions-results/`.
 - Fehler im bestehenden CSS korrigiert: Die Druck-Media-Query wurde nicht geschlossen und schloss folgende Bildschirmregeln ein. Filterfelder bleiben jetzt innerhalb der Kartenhöhe scrollbar.
+
+## Adressvorschläge – 08.10.2026
+
+- `node tests/browser-address.mjs`: bestanden. Vorschläge ab drei Zeichen nach Tipp-Pause, nur die letzte schnelle Eingabe wird angefragt, wiederholte Suche aus Cache, ARIA-Combobox mit Pfeiltasten/Enter und Escape, Auswahl per Klick, veraltete Antworten verworfen, leere Ergebnisse und Fehler, Koordinaten ohne externe Anfrage, mobile Ansicht ohne Überlauf. Photon-Antworten für reproduzierbare Fehler-/Rennbedingungen kontrolliert simuliert.
+- `node tests/browser-address-real.mjs`: bestanden mit echtem Photon-Aufruf „Alexanderplatz 1 Berlin“, Auswahl durch Browser-Mausereignisse und drei anschließend berechneten Anschlusskandidaten.
+- `node tests/browser-regions.mjs`: bestehender vollständiger Kartenablauf weiterhin bestanden, einschließlich Bundesländer, Vergleich, Export, Ladefehler und Standortwechsel. Keine JavaScript-Ausnahmen.
+- Suchdaten nur im begrenzten Seitenspeicher; laufende Abrufe abbrechbar, Timeout 15 Sekunden, Mindestabstand 1,5 Sekunden. Datenschutzhinweise an automatische Vorschläge angepasst.

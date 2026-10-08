@@ -26,7 +26,7 @@ Pushes auf den bestehenden Hauptbranch dieses GitHub-Repositories werden vom ang
 
 ## Datenschutz und externe Dienste
 
-Kein Tracking, keine Konten. Projektstandorte und eigene Preise bleiben in der Sitzung. Sichtbare Kartenkacheln: OpenStreetMap; abgesendete Suchbegriffe: Photon/Komoot; optional NRW-WMS. Die CSP erlaubt ausschließlich diese benötigten externen Dienste. Für größere öffentliche Last eigenen/vertraglichen Geocoder verwenden. Endpunkte sind in config.json konfigurierbar; bei Anbieterwechsel CSP ebenfalls anpassen.
+Kein Tracking, keine Konten. Projektstandorte und eigene Preise bleiben in der Sitzung. Sichtbare Kartenkacheln: OpenStreetMap; Adresseingaben ab drei Zeichen nach Tipp-Pause: Photon/Komoot; optional NRW-WMS. Die CSP erlaubt ausschließlich diese benötigten externen Dienste. Für größere öffentliche Last eigenen/vertraglichen Geocoder verwenden. Endpunkte sind in config.json konfigurierbar; bei Anbieterwechsel CSP ebenfalls anpassen.
 
 ## Regionale Karte
 
@@ -37,3 +37,9 @@ Die Startansicht zeigt die 16 Bundesländer. Landeswahl per Karte oder Auswahlfe
 Kandidatensuche und Standortvergleich laden sämtliche Stationen innerhalb der Bundeslandabdeckungen, die den 50-km-Suchkreis berühren. Die Anzeigeauswahl beschränkt die Kandidatensuche nicht. Berichte laden die benötigten regionalen Leitungen zusätzlich. Ein begrenzter LRU-Cache hält höchstens zwölf Datendateien; parallele Abrufe derselben Datei werden zusammengeführt. Versionsparameter aus SHA-256 und HTTP-Cache ermöglichen wiederholte Aufrufe. Veraltete Suchergebnisse werden verworfen; fehlgeschlagene Abrufe können erneut gestartet werden.
 
 Regenerierung: `python scripts/split-states.py /path/to/germany.osm.pbf /path/to/cache` mit osmium und shapely sowie nationalen Ausgangsdateien in `data/`. Der PBF muss zum Snapshot der nationalen Ausgangsdaten passen. Nationale Originaldateien bleiben für Quellen-Downloads und Vollständigkeitsprüfungen erhalten, werden von der Kartenanwendung aber nicht automatisch geladen.
+
+## Adressvorschläge
+
+Die Adresseingabe zeigt ab drei Zeichen bis zu sechs Vorschläge nach 450 ms Tipp-Pause. Der bestehende Mindestabstand zwischen externen Suchanfragen (1.500 ms) bleibt erhalten. Neue Eingaben brechen laufende Anfragen ab; überholte Antworten werden ignoriert. Bis zu 30 Suchbegriffe werden nur im Arbeitsspeicher der geöffneten Seite zwischengespeichert. Koordinaten werden lokal verarbeitet. Auswahl per Klick/Touch oder Pfeiltasten und Enter; Escape und Verlassen des Felds schließen die Liste. Bei leeren Ergebnissen oder Fehlern erscheint ein Hinweis.
+
+Browserprüfung: `node tests/browser-address.mjs` mit demselben Testserver/CDP wie beim Kartentest. Deterministische Photon-Antworten decken Tipp-Pause, Cache, Tastatur, Auswahl, überholte Antworten, Fehler, Koordinaten und mobile Darstellung ab.

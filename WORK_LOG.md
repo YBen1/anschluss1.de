@@ -25,3 +25,7 @@ Die echte Domain www.anschluss1.de ist an Vercel und YBen1/anschluss1.de angebun
 ## Bundesländerkarte – 08.10.2026
 
 Aktuelles Repository `/root/anschluss1-live`, Vercel-Ziel www.anschluss1.de. Infrastruktur nach 16 OSM-Bundesländern aufgeteilt, leichte Landesübersicht und bedarfsgesteuertes Laden implementiert. Begrenzter Dateicache, wiederverwendete Kartenobjekte, kooperatives Zeichnen, vollständige länderübergreifende 50-km-Suche, asynchroner Vergleich und Bericht. Originalbestände für Download/Validierung erhalten. Generator und Tests liegen im Repository. Daten- und Browserprüfung bestanden, Details in VERIFICATION.md.
+
+## Adressvorschläge – 08.10.2026
+
+Adresseingabe durch `address-search.js` um Vorschläge beim Tippen erweitert. Dropdown mit Straße/Hausnummer und Ortsangabe, Tastatur- und Zeigerauswahl, Drosselung, begrenztem Cache, Abbruch und Schutz vor veralteten Antworten. Koordinateneingabe weiterhin lokal. Lokale Browserprüfungen mit simuliertem und echtem Photon-Dienst sowie Kartenregression bestanden. Ziel bleibt das bestehende Vercel-Deployment auf www.anschluss1.de.
