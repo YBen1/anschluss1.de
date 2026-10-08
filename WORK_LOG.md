@@ -21,3 +21,7 @@ Rohdaten, Entwicklungsbrowser und Testartefakte bleiben außerhalb des veröffen
 ## Korrektur des Veröffentlichungsziels
 
 Die echte Domain www.anschluss1.de ist an Vercel und YBen1/anschluss1.de angebunden. Der Sites-Push hat diese Domain nicht aktualisiert. Der geprüfte MVP wird deshalb in einem sauberen Checkout unter /root/anschluss1-live in das bestehende Repository übernommen. Die vorherige Startseite bleibt unverändert inhaltlich unter /wissen erhalten. Sicherheitsheader werden um die tatsächlich benötigten Karten-/Suchdienste ergänzt. Die Markenbezeichnung auf der Domain lautet Anschluss1.de.
+
+## Bundesländerkarte – 08.10.2026
+
+Aktuelles Repository `/root/anschluss1-live`, Vercel-Ziel www.anschluss1.de. Infrastruktur nach 16 OSM-Bundesländern aufgeteilt, leichte Landesübersicht und bedarfsgesteuertes Laden implementiert. Begrenzter Dateicache, wiederverwendete Kartenobjekte, kooperatives Zeichnen, vollständige länderübergreifende 50-km-Suche, asynchroner Vergleich und Bericht. Originalbestände für Download/Validierung erhalten. Generator und Tests liegen im Repository. Daten- und Browserprüfung bestanden, Details in VERIFICATION.md.

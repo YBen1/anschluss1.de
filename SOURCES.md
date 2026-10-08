@@ -19,3 +19,8 @@ Leaflet 1.9.4: BSD-2-Clause, Copyright Vladimir Agafonkin und Mitwirkende. Lizen
 ## Regionaler Katasteradapter NRW
 
 Eingebunden: [WMS NW ALKIS](https://www.wms.nrw.de/geobasis/wms_nw_alkis?SERVICE=WMS&REQUEST=GetCapabilities), Layer `adv_alkis_flurstuecke`, Stil `Grau`, ab Zoom 17, nur räumlich NRW. Am 05.10.2026 geladene Capabilities erklären Datenlizenz Deutschland Zero 2.0 und AccessConstraints NONE. Quelle Geobasis NRW wird trotzdem sichtbar genannt. Der Dienst ist nur eine amtliche Kartendarstellung; keine amtliche Geometrieübernahme und kein Eigentumsnachweis. Einzelobjekt-Datenstand bleibt ungeprüft (wäre über GetFeatureInfo abrufbar). Koordinatentransformation EPSG:3857 ist keine amtliche Koordinatenausgabe; nur EPSG:25832 ist laut Dienstbeschreibung amtlich. Der Export enthält eine schematische OSM-Karte und eigene Flächenskizze, keine NRW-WMS-Kachel.
+
+
+## Bundesländer-Aufteilung (08.10.2026)
+
+Landesgrenzen: OSM-Relationen mit `admin_level=4` und `ISO3166-2=DE-*`, extrahiert aus demselben lokalen Geofabrik-PBF (Snapshot 03.10.2026). Die 16 Relations-IDs sind in `data/states.json` dokumentiert. Darstellung mit 0,003° Toleranz vereinfacht; Zuordnung der Infrastruktur erfolgt anhand der unvereinfachten Geometrien. Unveränderte OSM-Objekte und vollständige Leitungsverläufe, keine abgeschnittenen Grenzleitungen. Quellenangabe und Lizenz bleiben © OpenStreetMap-Mitwirkende / ODbL 1.0. Keine amtlichen Landes- oder Grundstücksgrenzen.

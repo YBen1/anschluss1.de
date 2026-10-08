@@ -48,3 +48,13 @@ Keine bestätigten Kapazitäten, keine Betreiberzuständigkeitskarte, kein Lastf
 Der ausgelieferte Datenbestand ist ein dokumentierter Snapshot der ausgewählten öffentlich nutzbaren Quellen, kein Anspruch auf vollständige Erfassung aller physischen Anlagen oder aller existierenden Datenquellen. Amtliche Flurstücke sind zunächst regional in NRW darstellbar. Die übrigen Länder bleiben manuell skizzierbar. Weitere regionale Quellen können über den dokumentierten Adapter ergänzt werden.
 
 Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkte, Betreiber-/Leitungstypfilter, ungültige Leistung und echte Photon-Ortssuche nach Leipzig. Die ungültige Leistung setzt Kandidaten und Speicherknopf zurück; veraltete Ergebnisse werden nicht weiter angezeigt.
+
+## Bundesländerkarte – 08.10.2026
+
+- `node --test tests/engine.test.mjs tests/data.test.mjs tests/regions.test.mjs`: alle drei Testsuiten bestanden. Bestehende Kosten-/Geometrieprüfungen unverändert.
+- Alle 16 Bundesländer aus dem vorhandenen PBF extrahiert. Vollständigkeitsvergleich einschließlich unveränderter Objektdaten: 107.519 eindeutige Stationen, 76.990 eindeutige Leitungen. Regionale Prüfsummen, Größen und Objektzahlen stimmen mit dem Index überein. Grenzleitungen werden vollständig in mehreren Ländern vorgehalten und bei Verwendung dedupliziert.
+- An 19 Stadt-, Land- und Grenzstandorten sämtliche Stationen innerhalb 50 km mit dem Gesamtbestand abgeglichen; Kandidaten für MS/HS/HöS und Spannungsfilter identisch.
+- Browserprüfung `tests/browser-regions.mjs`: Startübersicht ohne nationale Infrastrukturdateien oder regionale Datendateien; Landeswahl per Kartenklick und Auswahlfeld; regionale Abrufe und Cache-Wiederverwendung; Suche, Kandidatendetails, eigene Preise, zwei Vergleichsstandorte, Tool-Schnittstelle, HTML-Bericht mit SVG, Rückkehr zur Deutschlandübersicht, mobile Ansicht ohne horizontalen Überlauf; Fehlerabruf mit anschließendem erfolgreichen Retry; schnelle Standortwechsel; ungültige Leistung entfernt alte Ergebnisse. Keine JavaScript-Ausnahmen.
+- Initiale unkomprimierte Datenmenge vorher: 49.517.218 Bytes; jetzt: 4.046.955 Bytes (Landesindex, Deutschlandgrenze und Manifest). Reduktion: 91,83 %. Dies beschreibt Datenmenge, keine pauschale Laufzeitgarantie; Browser-, Netz- und Kompressionsbedingungen variieren.
+- Externe Kartenkacheln und NRW-WMS werden im automatisierten Test blockiert. Die Netzdaten und Bundesländergeometrien wurden über den lokalen Server geprüft. Bildschirmaufnahmen und Netzwerkprotokoll: `/tmp/anschluss-regions-results/`.
+- Fehler im bestehenden CSS korrigiert: Die Druck-Media-Query wurde nicht geschlossen und schloss folgende Bildschirmregeln ein. Filterfelder bleiben jetzt innerhalb der Kartenhöhe scrollbar.
