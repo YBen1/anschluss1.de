@@ -50,15 +50,21 @@ export function parcelSummaryHTML(parcel,links=true){
   return `<strong>${escape(parcelDescription(parcel))}</strong>${parcel.reference?`<br>Kennzeichen: ${escape(parcel.reference)}`:''}${parcel.area?`<br>Amtliche Fläche: ${escape(new Intl.NumberFormat('de-DE').format(Number(parcel.area)))} m²`:''}<br>${links?`<a href="${escape(parcel.source)}" target="_blank" rel="noopener">${escape(parcel.attribution)}</a> · <a href="${escape(parcel.licenseUrl)}" target="_blank" rel="noopener">${escape(parcel.license)}</a>`:escape(parcel.attribution)+' · '+escape(parcel.license)}`;
 }
 export function setupParcelSelection({map,button,panel,checkbox,getProviders,getSite,onSelect,onMode}){
-  let enabled=false,revision=0,controller=null,pending=null,lastPoint=null;
+  let enabled=false,revision=0,controller=null,pending=null,lastPoint=null,group=[];
   const highlight=L.layerGroup().addTo(map);
   const status=panel.querySelector('[data-status]'),results=panel.querySelector('[data-results]'),use=panel.querySelector('[data-use]'),retry=panel.querySelector('[data-retry]');
-  function reset(){revision++;controller?.abort();pending=null;lastPoint=null;highlight.clearLayers();results.replaceChildren();use.disabled=true;retry.hidden=true;}
+  function reset(){revision++;controller?.abort();pending=null;lastPoint=null;highlight.clearLayers();results.replaceChildren();use.disabled=true;panel.querySelector('[data-add-group]').disabled=true;retry.hidden=true;drawGroup();}
+  function drawGroup(){
+    const holder=panel.querySelector('[data-group-list]'),finish=panel.querySelector('[data-finish-group]');holder.replaceChildren();
+    group.forEach((parcel,index)=>{const row=document.createElement('p');row.className='scope-chip';row.textContent=`${index+1}. ${parcelDescription(parcel)}${parcel.area?` · ${new Intl.NumberFormat('de-DE').format(Number(parcel.area))} m²`:''}`;holder.append(row);});
+    finish.hidden=group.length===0;finish.textContent=`Standort mit ${group.length} ${group.length===1?'Flurstück':'Flurstücken'} übernehmen`;
+    for(const parcel of group)if(parcel.geometry)L.geoJSON({type:'Feature',properties:{},geometry:parcel.geometry},{interactive:false,style:{color:'#b46523',weight:3,fillColor:'#f2b75b',fillOpacity:.32}}).addTo(highlight);
+  }
   function choose(feature,point){
     pending={feature,point};highlight.clearLayers();
-    if(feature?.geometry)L.geoJSON({type:'Feature',properties:{},geometry:feature.geometry},{interactive:false,style:{color:'#b46523',weight:3,fillColor:'#f2b75b',fillOpacity:.35}}).addTo(highlight);
+    if(feature){feature.selectedPoint=point;}if(feature?.geometry)L.geoJSON({type:'Feature',properties:{},geometry:feature.geometry},{interactive:false,style:{color:'#b46523',weight:3,fillColor:'#f2b75b',fillOpacity:.35}}).addTo(highlight);
     L.circleMarker([point.lat,point.lon],{interactive:false,radius:7,color:'#9b4c14',fillColor:'#ffd38a',fillOpacity:1,weight:3}).addTo(highlight);
-    use.disabled=false;use.textContent=feature?'Flurstück als Standort übernehmen':'Kartenpunkt als Standort übernehmen';
+    use.disabled=false;panel.querySelector('[data-add-group]').disabled=!feature||group.some(p=>p.reference===feature.reference);use.textContent=feature?'Flurstück als Standort übernehmen':'Kartenpunkt als Standort übernehmen';
     status.textContent=feature?(feature.geometry?'Flurstück ausgewählt. Orange zeigt die vom Landesdienst gelieferte Grenze.':'Flurstück ausgewählt. Der Dienst liefert keine Grenze; markiert ist der angeklickte Punkt.'):'Manuelle Auswahl auf der Flurstückskarte. Kennzeichen und Grenze wurden nicht automatisch ermittelt.';
   }
   async function lookup(point){
@@ -78,13 +84,15 @@ export function setupParcelSelection({map,button,panel,checkbox,getProviders,get
     if(features.length===1)results.firstElementChild.click();else status.textContent=`${features.length} Flurstücke gefunden. Bitte das gewünschte Flurstück auswählen.`;
     if(failed){status.textContent+=' Ein weiterer Landesdienst ist nicht erreichbar.';retry.hidden=false;}
   }
-  function setEnabled(value){enabled=value;reset();panel.hidden=!value;button.classList.toggle('selected',value);button.setAttribute('aria-pressed',String(value));onMode(value);map.getContainer().style.cursor=value?'crosshair':'';
+  function setEnabled(value){enabled=value;if(!value)group=[];reset();panel.hidden=!value;button.classList.toggle('selected',value);button.setAttribute('aria-pressed',String(value));onMode(value);map.getContainer().style.cursor=value?'crosshair':'';
     if(value){checkbox.checked=true;checkbox.dispatchEvent(new Event('change'));const site=getSite();if(site)map.setView([site.lat,site.lon],Math.max(17,map.getZoom()));status.textContent='Adresse suchen oder hineinzoomen. Dann innerhalb eines Flurstücks klicken und die Auswahl übernehmen.';}
   }
   button.onclick=()=>setEnabled(!enabled);
   panel.querySelector('[data-map]').onclick=()=>map.getContainer().scrollIntoView({block:'center',behavior:'smooth'});
   document.getElementById('parcel-selection-back').onclick=()=>panel.scrollIntoView({block:'start',behavior:'smooth'});
-  panel.querySelector('[data-clear]').onclick=()=>{reset();status.textContent='Auswahl aufgehoben. Klicken Sie auf ein Flurstück.';};
+  panel.querySelector('[data-add-group]').onclick=()=>{if(!pending?.feature)return;group.push(pending.feature);reset();drawGroup();status.textContent=`${group.length} ${group.length===1?'Flurstück wurde':'Flurstücke wurden'} hinzugefügt. Klicken Sie auf ein benachbartes Flurstück oder übernehmen Sie den Standort.`;};
+  panel.querySelector('[data-finish-group]').onclick=()=>{if(!group.length)return;const parcels=[...group],points=parcels.map(p=>p.selectedPoint).filter(Boolean),coords=points.length?points:[pending?.point].filter(Boolean);const point={lat:coords.reduce((n,p)=>n+p.lat,0)/coords.length,lon:coords.reduce((n,p)=>n+p.lon,0)/coords.length};const geometries=parcels.flatMap(p=>p.geometry?(p.geometry.type==='Polygon'?[p.geometry.coordinates]:p.geometry.coordinates):[]);const numericAreas=parcels.map(p=>Number(p.area)).filter(Number.isFinite);const district=[...new Set(parcels.map(p=>p.district).filter(Boolean))].join(', ');const parcel={...parcels[0],number:parcels.map(p=>p.number||p.reference).join(', '),reference:parcels.map(p=>p.reference).filter(Boolean).join('; '),district,area:numericAreas.length===parcels.length?numericAreas.reduce((n,a)=>n+a,0):'',geometry:geometries.length?{type:'MultiPolygon',coordinates:geometries}:null,parcels};onSelect(point,parcel);group=[];drawGroup();};
+  panel.querySelector('[data-clear]').onclick=()=>{group=[];reset();status.textContent='Auswahl aufgehoben. Klicken Sie auf ein Flurstück.';};
   retry.onclick=()=>{if(lastPoint)lookup(lastPoint);};
   use.onclick=()=>{if(!pending)return;try{onSelect(pending.point,pending.feature);status.textContent='Auswahl als Projektstandort übernommen.';}catch(error){status.textContent=error.message;}};
   checkbox.addEventListener('change',()=>{if(!checkbox.checked&&enabled)setEnabled(false);});

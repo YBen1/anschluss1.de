@@ -61,3 +61,10 @@ Vollständige Grenzen werden in Baden-Württemberg, Berlin, Brandenburg, Mecklen
 Die Abfrage erfolgt nur auf Klick. Landeszuständigkeit wird anhand der vorhandenen OSM-Landesgeometrien eingegrenzt. Die festen `/parcel-service/DE-XX`-Rewrites in `vercel.json` ermöglichen die Abfrage der Landesdienste über dieselbe Domain, auch wenn diese kein CORS anbieten. Es werden ausschließlich ausgewählte Flurstücksmerkmale übernommen, keine Eigentümerangaben. Koordinaten werden zur Abfrage an den jeweiligen Landesdienst weitergeleitet. Quelle und Lizenz bleiben bei der Auswahl und im Bericht erhalten; Kartenbilder werden nicht exportiert.
 
 Lokaler Server einschließlich dieser Rewrites: `python3 scripts/serve-dev.py`. Browserprüfung bei Chromium-CDP auf Port 9334: `node tests/browser-parcel-selection.mjs`. Sie prüft 14 reale Antwort-Fixtures, echte Auswahl in Berlin/Sachsen, manuelle Auswahl in Bayern, Vergleich, Bericht, Fehlermeldung/Retry, Moduswechsel und mobile Darstellung. Fixtures wurden am 09.10.2026 an den dokumentierten Teststandorten abgefragt; in der BW-Fixture sind ausschließlich Geometrien nicht relevanter Verwaltungs-/Straßenobjekte entfernt. Quellen und Lizenzen siehe `data/parcel-services.json`.
+
+
+## Anschlussanmeldung und Projektführung
+
+Die Planung ist in vier Schritte gegliedert. Der Anmeldeschritt fragt mit Koordinate und gewünschter Anschlussebene die VNBdigital-Suche ab und zeigt das zugehörige Betreiberprofil sowie dessen ausdrücklich aktivierte Netzanschluss-Links. Der Aufruf öffnet das externe Portal; er versendet keine Anmeldung. Bei Höchstspannung wird keine automatische VNB-Zuordnung behauptet. VNBdigital-Antworten sind eine Vorabzuordnung, die der Betreiber bestätigen muss.
+
+Koordinaten, Vergleichsstandorte, Kostenmodell und Planungseinstellungen können im lokalen Browser-Speicher abgelegt, beim nächsten Besuch wiederhergestellt und dort gelöscht werden. Der Speicher wird nicht zum Server übertragen. Die Karte bleibt neben dem schrittweisen Seitenpanel sichtbar; dieses lässt sich auf dem Desktop einklappen und auf dem Mobilgerät aufziehen.

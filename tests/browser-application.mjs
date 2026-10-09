@@ -1,0 +1,40 @@
+import {writeFileSync,mkdirSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const tabs=await (await fetch(process.env.CDP_URL||'http://127.0.0.1:9334/json/list')).json();const tab=tabs.find(t=>t.type==='page');
+const ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise(r=>ws.addEventListener('open',r,{once:true}));let id=0;const pending=new Map(),errors=[];
+ws.addEventListener('message',ev=>{const m=JSON.parse(ev.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p?.reject(Error(JSON.stringify(m.error))):p?.resolve(m.result);}if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails);});
+function send(method,params={}){const cid=++id;return new Promise((resolve,reject)=>{pending.set(cid,{resolve,reject});ws.send(JSON.stringify({id:cid,method,params}));});}
+async function evaluate(expression){const r=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function until(expression){for(let i=0;i<300;i++){if(await evaluate(expression))return;await wait(100);}throw Error('Timeout: '+expression);}
+await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Network.setCacheDisabled',{cacheDisabled:true});
+await send('Network.setBlockedURLs',{urls:['*tile.openstreetmap.org/*']});
+await send('Page.addScriptToEvaluateOnNewDocument',{source:`if(!sessionStorage.getItem('plannerTestStorageReady')){localStorage.removeItem('anschluss1.local-project.v1');sessionStorage.setItem('plannerTestStorageReady','1');}`});
+await send('Page.navigate',{url:process.env.TEST_URL||'http://127.0.0.1:8788/'});
+await until(`document.querySelector('#state-filter')?.options.length===17`);
+await evaluate(`document.querySelector('#search').value='52.52, 13.405';document.querySelector('#search-form').requestSubmit()`);
+await until(`document.querySelectorAll('[data-candidate]').length===3`);
+assert.equal(await evaluate(`JSON.parse(localStorage.getItem('anschluss1.local-project.v1')).site.lat`),52.52);
+await evaluate(`document.querySelector('#plan-tab').click();document.querySelector('[data-planner-step="project"]').click();document.querySelector('#level').value='mv';document.querySelector('#level').dispatchEvent(new Event('change'));document.querySelector('#analyze').click()`);
+await evaluate(`document.querySelector('[data-planner-step="application"]').click()`);
+await evaluate(`document.querySelector('#find-operator').click()`);
+await until(`document.querySelector('.operator-card')`);
+assert.ok((await evaluate(`document.querySelector('.operator-card').textContent`)).includes('Stromnetz Berlin GmbH'));
+assert.equal(await evaluate(`document.querySelector('.operator-card a[href="https://www.stromnetz.berlin/anschliessen"]').textContent`),'Zur Anschlussanmeldung ↗');
+assert.ok((await evaluate(`document.querySelector('#operator-status').textContent`)).includes('Ein Netzbetreiber'));
+assert.ok((await evaluate(`document.querySelector('#operator-results').textContent`)).includes('keine Anmeldung'));
+await evaluate(`document.querySelector('#level').value='ehv';document.querySelector('#level').dispatchEvent(new Event('change'))`);
+assert.ok((await evaluate(`document.querySelector('#operator-status').textContent`)).includes('Übertragungsnetzbetreiber'));
+assert.equal(await evaluate(`document.querySelector('#find-operator').hidden`),true);
+await evaluate(`document.querySelector('#level').value='mv';document.querySelector('#level').dispatchEvent(new Event('change'));document.querySelector('[data-planner-step="location"]').click()`);await until(`!document.querySelector('#save-site').disabled`);await evaluate(`document.querySelector('#save-site').click()`);
+await wait(250);await evaluate(`document.querySelector('#search').value='51.34, 12.37';document.querySelector('#search-form').requestSubmit()`);
+await until(`document.querySelectorAll('[data-candidate]').length===3&&JSON.parse(localStorage.getItem('anschluss1.local-project.v1')).site.lat===51.34`);
+await evaluate(`document.querySelector('#save-site').click()`);
+assert.equal(await evaluate(`JSON.parse(localStorage.getItem('anschluss1.local-project.v1')).saved.length`),2);
+await send('Page.reload');await until(`document.querySelector('#state-filter')?.options.length===17`);await until(`document.querySelector('#location-summary').textContent.includes('51,34')`);
+assert.equal(await evaluate(`document.querySelector('#compare-count').textContent`),'2');
+assert.equal(await evaluate(`JSON.parse(localStorage.getItem('anschluss1.local-project.v1')).site.lat`),51.34);
+await evaluate(`document.querySelector('#clear-local-project').click()`);
+assert.equal(await evaluate(`localStorage.getItem('anschluss1.local-project.v1')`),null);
+assert.equal(await evaluate(`document.querySelector('#compare-count').textContent`),'0');
+assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,operatorLookup:true,officialPortal:true,ehvGuard:true,restore:true,clear:true,errors}));ws.close();

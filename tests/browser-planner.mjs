@@ -1,0 +1,60 @@
+import {writeFileSync,mkdirSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const tabs=await (await fetch(process.env.CDP_URL||'http://127.0.0.1:9334/json/list')).json();const tab=tabs.find(t=>t.type==='page');
+const ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise(r=>ws.addEventListener('open',r,{once:true}));let id=0;const pending=new Map(),errors=[];
+ws.addEventListener('message',ev=>{const m=JSON.parse(ev.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p?.reject(Error(JSON.stringify(m.error))):p?.resolve(m.result);}if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails);});
+function send(method,params={}){const cid=++id;return new Promise((resolve,reject)=>{pending.set(cid,{resolve,reject});ws.send(JSON.stringify({id:cid,method,params}));});}
+async function evaluate(expression){const r=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+
+async function until(expression){for(let i=0;i<150;i++){if(await evaluate(expression))return;await wait(100);}throw Error('Timeout: '+expression);}
+await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Network.setCacheDisabled',{cacheDisabled:true});
+await send('Network.setBlockedURLs',{urls:['*tile.openstreetmap.org/*']});
+await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.testTools={};Object.defineProperty(document,'modelContext',{value:{registerTool(tool){window.testTools[tool.name]=tool;}}});`});
+await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
+await send('Page.navigate',{url:process.env.TEST_URL||'http://127.0.0.1:8788/'});
+await until(`document.querySelector('#state-filter')?.options.length===17`);
+assert.equal(await evaluate(`document.querySelector('[data-planner-step="project"]').disabled`),true);
+assert.equal(await evaluate(`document.querySelector('[data-planner-panel="project"]').hidden`),true);
+await evaluate(`document.querySelector('#search').value='52.52, 13.405';document.querySelector('#search-form').requestSubmit()`);
+await until(`document.querySelectorAll('[data-candidate]').length>0`);
+assert.equal(await evaluate(`document.querySelector('#continue-project').disabled`),false);
+await evaluate(`document.querySelector('#continue-project').click()`);
+assert.equal(await evaluate(`document.querySelector('[aria-current="step"]').dataset.plannerStep`),'project');
+assert.equal(await evaluate(`document.querySelector('.advanced-settings').open`),false);
+assert.ok((await evaluate(`document.querySelector('#search-voltage').textContent`)).includes('Mittelspannung'));
+await evaluate(`document.querySelector('#level').value='hv';document.querySelector('#level').dispatchEvent(new Event('change'))`);
+assert.ok((await evaluate(`document.querySelector('#search-voltage').textContent`)).includes('Hochspannung'));
+assert.ok((await evaluate(`document.querySelector('#visible-voltage').textContent`)).includes('Alle Spannungsebenen'));
+await evaluate(`document.querySelector('#analyze').click()`);
+await until(`document.querySelectorAll('[data-candidate]').length>0`);
+assert.equal(await evaluate(`document.querySelector('[aria-current="step"]').dataset.plannerStep`),'results');
+mkdirSync('/tmp/anschluss-planner-review',{recursive:true});
+async function shot(name){const s=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});writeFileSync('/tmp/anschluss-planner-review/'+name+'.png',Buffer.from(s.data,'base64'));}
+await shot('desktop-results');
+const originalWidth=await evaluate(`document.querySelector('#map').clientWidth`);
+await evaluate(`document.querySelector('#sidebar-toggle').click()`);await wait(150);
+assert.ok(await evaluate(`document.querySelector('#map').clientWidth>${originalWidth}`));
+assert.equal(await evaluate(`document.querySelector('.sidebar').inert`),true);
+await evaluate(`document.querySelector('#sidebar-toggle').click()`);await wait(150);
+assert.equal(await evaluate(`document.querySelector('.sidebar').inert`),false);
+await evaluate(`document.querySelector('[data-planner-step="location"]').click()`);await shot('desktop-location');
+await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await wait(300);
+assert.ok(await evaluate(`document.documentElement.scrollWidth<=innerWidth+1`));
+assert.ok(await evaluate(`document.querySelector('#map').getBoundingClientRect().top<200`));
+await shot('mobile-location');
+await evaluate(`document.querySelector('#show-map').click()`);await wait(250);
+assert.equal(await evaluate(`document.querySelector('.sidebar').dataset.sheet`),'collapsed');
+assert.ok(await evaluate(`document.querySelector('.sidebar').getBoundingClientRect().height<=65`));
+await shot('mobile-map');
+await evaluate(`document.querySelector('#sheet-toggle').click()`);await wait(250);
+assert.equal(await evaluate(`document.querySelector('.sidebar').dataset.sheet`),'middle');
+await evaluate(`document.querySelector('#sheet-toggle').focus()`);
+await send('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowUp',code:'ArrowUp',windowsVirtualKeyCode:38});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'ArrowUp',code:'ArrowUp',windowsVirtualKeyCode:38});await wait(250);
+assert.equal(await evaluate(`document.querySelector('.sidebar').dataset.sheet`),'expanded');
+await shot('mobile-expanded');
+await evaluate(`document.querySelector('#compare-tab').click()`);
+assert.equal(await evaluate(`document.querySelector('#workspace').hidden`),true);
+await evaluate(`document.querySelector('#plan-tab').click();document.querySelector('[data-planner-step="project"]').click()`);
+assert.equal(await evaluate(`document.activeElement.textContent`),'Was haben Sie vor?');
+assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,steps:true,voltageScopes:true,desktopCollapse:true,mobileSheet:true,keyboard:true,errors}));ws.close();

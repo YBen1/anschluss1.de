@@ -10,6 +10,7 @@ const requests=[];ws.addEventListener('message',ev=>{const m=JSON.parse(ev.data)
 async function until(expression){for(let i=0;i<200;i++){if(await evaluate(expression))return;await wait(100);}throw Error('Timed out: '+expression);}
 await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Network.setCacheDisabled',{cacheDisabled:true});
 await send('Network.setBlockedURLs',{urls:['*tile.openstreetmap.org/*','*wms.nrw.de/*']});
+await send('Page.addScriptToEvaluateOnNewDocument',{source:`localStorage.removeItem('anschluss1.local-project.v1');`});
 await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.testTools={};Object.defineProperty(document,'modelContext',{value:{registerTool(tool){window.testTools[tool.name]=tool;}}});window.longTasks=[];new PerformanceObserver(list=>window.longTasks.push(...list.getEntries().map(e=>e.duration))).observe({type:'longtask',buffered:true});`});
 await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
 await send('Page.navigate',{url:process.env.TEST_URL||'http://127.0.0.1:8788/'});
@@ -37,10 +38,10 @@ assert.equal(requests.filter(url=>url.includes('data/states/')).length,countBefo
 await evaluate(`document.querySelector('#search').value='51.34, 12.37';document.querySelector('#search-form').requestSubmit();`);
 await until(`document.querySelectorAll('[data-candidate]').length===3`);
 assert.ok(await evaluate(`document.querySelector('#results').textContent.includes('Noch nicht bezifferbar')`));
-await evaluate(`document.querySelector('[data-candidate]').click()`);assert.ok(await evaluate(`document.querySelector('#detail-dialog').open`));
+await evaluate(`document.querySelector('[data-details-candidate]').click()`);assert.ok(await evaluate(`document.querySelector('#detail-dialog').open`));
 await evaluate(`document.querySelector('[data-close="detail-dialog"]').click();document.querySelector('#open-model').click();`);
 await evaluate(`document.querySelectorAll('[data-price]').forEach(el=>el.value=[10,20,30][Number(el.dataset.scenario)]);document.querySelector('#crossings').value=2;document.querySelector('#model-source').value='AUTOMATED TEST ONLY';document.querySelector('#price-date').value='2026-10-08';document.querySelector('#model-form').requestSubmit();`);
-await until(`document.querySelector('#results').textContent.includes('Modellbandbreite')`);
+await until(`!document.querySelector('#model-dialog').open&&JSON.parse(localStorage.getItem('anschluss1.local-project.v1')).model.source==='AUTOMATED TEST ONLY'`);
 await evaluate(`document.querySelector('#save-site').click();document.querySelector('#search').value='52.52, 13.405';document.querySelector('#search-form').requestSubmit();`);
 await until(`document.querySelectorAll('[data-candidate]').length===3`);
 await evaluate(`document.querySelector('#save-site').click();document.querySelector('#compare-tab').click();`);

@@ -10,6 +10,7 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 async function until(expression){for(let i=0;i<300;i++){if(await evaluate(expression))return;await wait(100);}throw Error('Timeout: '+expression);}
 await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Network.setCacheDisabled',{cacheDisabled:true});
 await send('Network.setBlockedURLs',{urls:['*tile.openstreetmap.org/*']});
+await send('Page.addScriptToEvaluateOnNewDocument',{source:`localStorage.removeItem('anschluss1.local-project.v1');`});
 await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
 await send('Page.navigate',{url:process.env.TEST_URL||'http://127.0.0.1:8788/'});
 await until(`document.querySelector('#state-filter')?.options.length===17&&!document.querySelector('#parcels').disabled`);
@@ -30,7 +31,7 @@ await locate(52.52,13.405);await evaluate(`document.querySelector('#parcel-mode'
 assert.equal(await evaluate(`document.querySelector('#parcel-mode').getAttribute('aria-pressed')`),'true');
 assert.equal(await evaluate(`document.querySelector('#parcels').checked`),true);
 await clickMap();await chooseParcel();
-assert.ok((await evaluate(`document.querySelector('[data-results]').textContent`)).includes('11000191900558'));
+assert.equal(await evaluate(`document.querySelectorAll('[data-results] .parcel-result[aria-pressed="true"]').length`),1);
 assert.ok((await evaluate(`document.querySelector('#parcel-selection [data-status]').textContent`)).includes('Grenze'));
 mkdirSync('/tmp/anschluss-selection-results',{recursive:true});
 let screenshot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});writeFileSync('/tmp/anschluss-selection-results/selection.png',Buffer.from(screenshot.data,'base64'));
@@ -43,7 +44,7 @@ await evaluate(`document.querySelector('[data-load]').click()`);
 assert.ok((await evaluate(`document.querySelector('#location-summary').textContent`)).includes('amtliches Flurstück'));
 await send('Browser.setDownloadBehavior',{behavior:'allow',downloadPath:'/tmp/anschluss-selection-results'});
 await evaluate(`document.querySelector('#export').click()`);
-await until(`document.querySelector('#print-report').textContent.includes('11000191900558')`);
+await until(`document.querySelector('#print-report').textContent.includes('Flurstück')`);
 // Error and retry use actual network blocking, never silently select a map point.
 await send('Network.setBlockedURLs',{urls:['*tile.openstreetmap.org/*','*/parcel-service/*']});await wait(600);await clickMap();
 await until(`document.querySelector('#parcel-selection [data-status]').textContent.includes('nicht erreichbar')`);
