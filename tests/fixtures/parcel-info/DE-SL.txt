@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FeatureCollection xmlns="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-basic.xsd http://inspire.ec.europa.eu/schemas/cp/4.0 https://geoportal.saarland.de/gdi-sl/inspirewms_Flurstuecke_Grundstuecke_ALKIS?request=GetFeatureInfoSchema&amp;layers=CP.CadastralParcel">
+  <gml:boundedBy>
+    <gml:Box srsName="epsg:4258">
+      <gml:coordinates decimal="." cs="," ts=" ">6.996796,49.233876 6.997027,49.234107</gml:coordinates>
+    </gml:Box>
+  </gml:boundedBy>
+  <gml:featureMember>
+    <cp:CadastralParcel xmlns:cp="http://inspire.ec.europa.eu/schemas/cp/4.0" fid="CadastralParcel_101014001001670005__">
+      <cp:base_localid>CadastralParcel_101014001001670005__</cp:base_localid>
+      <cp:base_namespace>https://registry.gdi-de.org/id/de.sl.inspire.alkis.cp/</cp:base_namespace>
+      <cp:areaValue>288</cp:areaValue>
+      <cp:beginLifespanVersion>2016-11-03T18:33:24</cp:beginLifespanVersion>
+      <cp:label>167/5</cp:label>
+      <cp:nationalCadastralReference>101014001001670005__</cp:nationalCadastralReference>
+      <cp:validFrom>1995-07-01T00:00:00</cp:validFrom>
+      <cp:zoning>#CadastralZoning_101014001</cp:zoning>
+    </cp:CadastralParcel>
+  </gml:featureMember>
+</FeatureCollection>

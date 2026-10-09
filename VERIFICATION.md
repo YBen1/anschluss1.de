@@ -74,3 +74,13 @@ Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkt
 - `node tests/browser-parcels.mjs`: alle 16 Landesdienste über die echte Kartenoberfläche erfolgreich geladen, Quellenvermerke vorhanden, keine Katasterabrufe vor Aktivierung oder im Deutschlandzoom; Ausschalten und Herauszoomen entfernen die Ebenen. Simulierter Berliner Dienstausfall sichtbar gemeldet und per Wiederholen erfolgreich behoben. Keine JavaScript-Ausnahmen. Nachweise `/tmp/anschluss-parcel-browser/`.
 - `node --test tests/parcels.test.mjs tests/engine.test.mjs`: bestanden, einschließlich vollständiger Länderabdeckung, CSP-Hostfreigaben, Zoom-/Gebietsbegrenzung und bestehender Berechnungen.
 - Bayern: reduzierte Parzellarkarte ohne Flurstücksnummern. BW/RP: weitere Liegenschaftsinhalte enthalten. Landesdienste liefern Darstellungen; keine Eigentümerdaten und keine Übernahme amtlicher Flurstückspolygone in die manuelle Skizze. WMS-Bilder werden nicht in den schematischen Bericht eingebettet.
+
+## Flurstücksauswahl – 09.10.2026
+
+- `node --test tests/engine.test.mjs tests/regions.test.mjs tests/parcels.test.mjs`: bestanden. Zusätzlicher Routing-/WMS-Achsentest nach Erweiterung ebenfalls bestanden.
+- `node tests/browser-parcel-selection.mjs` gegen `scripts/serve-dev.py` mit echtem Chromium: bestanden. Reale JSON/GML-Fixtures aller 14 abfragbaren Länder werden normalisiert, acht Antworten enthalten Polygongeometrien in der richtigen Achsenreihenfolge. Verwaltungs- und Straßenobjekte in Baden-Württemberg werden herausgefiltert.
+- Echte Kartenklicks: Berlin mit mehreren Treffern und manueller Auswahl, amtlicher Flurstücksgrenze und Sachmerkmalen; Sachsen mit Sachmerkmalen ohne Polygon; Bayern als ausdrücklich manueller Kartenpunkt.
+- Übernahme in Projektstandort, Speicherung und Wiederaufruf im Standortvergleich sowie Kennzeichen/Quelle im exportierten Bericht geprüft.
+- Blockierte Abfrage: kein übernehmbarer Treffer, verständlicher Fehler, Wiederholung erfolgreich. Auswahl aufheben und Wechsel in Zeichenmodus löschen die Vorschau; alte Antworten aktivieren die Auswahl nicht erneut.
+- 390-Pixel-Mobilansicht: volle Breite der Auswahl, Tastaturfokus auf Treffer, kein horizontaler Überlauf. Kartenfilter im Auswahlmodus eingeklappt. Desktop- und Mobil-Screenshots in `/tmp/anschluss-selection-results/` visuell geprüft. Keine unbehandelten Browserfehler.
+- `git diff --check`: bestanden. Externe Dienste bleiben abhängig von Verfügbarkeit und Datenstand; Bayern/Rheinland-Pfalz unterstützen im verwendeten Dienst keine Einzel-Flurstücksauskunft.

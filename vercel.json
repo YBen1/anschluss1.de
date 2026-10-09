@@ -66,6 +66,62 @@
     {
       "source": "/wissen",
       "destination": "/wissen.html"
+    },
+    {
+      "source": "/parcel-service/DE-BW",
+      "destination": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_LGL-BW_ALKIS_Basis_Vertrieb"
+    },
+    {
+      "source": "/parcel-service/DE-BE",
+      "destination": "https://gdi.berlin.de/services/wms/alkis_flurstuecke"
+    },
+    {
+      "source": "/parcel-service/DE-BB",
+      "destination": "https://isk.geobasis-bb.de/ows/alkis_wms"
+    },
+    {
+      "source": "/parcel-service/DE-HB",
+      "destination": "https://geodienste.bremen.de/wms_flurstuecke"
+    },
+    {
+      "source": "/parcel-service/DE-HH",
+      "destination": "https://geodienste.hamburg.de/HH_WMS_INSPIRE_Flurstuecke"
+    },
+    {
+      "source": "/parcel-service/DE-HE",
+      "destination": "https://inspire-hessen.de/ows/services/org.2.07247d95-adc7-4c7d-9c7a-ed17af855317_wms"
+    },
+    {
+      "source": "/parcel-service/DE-MV",
+      "destination": "https://www.geodaten-mv.de/dienste/inspire_cp_alkis_view"
+    },
+    {
+      "source": "/parcel-service/DE-NI",
+      "destination": "https://www.inspire.niedersachsen.de/doorman/noauth/alkis-vs-cp"
+    },
+    {
+      "source": "/parcel-service/DE-NW",
+      "destination": "https://www.wms.nrw.de/geobasis/wms_nw_alkis"
+    },
+    {
+      "source": "/parcel-service/DE-SL",
+      "destination": "https://geoportal.saarland.de/gdi-sl/inspirewms_Flurstuecke_Grundstuecke_ALKIS"
+    },
+    {
+      "source": "/parcel-service/DE-SN",
+      "destination": "https://geodienste.sachsen.de/wms_geosn_flurstuecke/guest"
+    },
+    {
+      "source": "/parcel-service/DE-ST",
+      "destination": "https://geodatenportal.sachsen-anhalt.de/ows_INSPIRE_LVermGeo_ALKIS_CP_WMS"
+    },
+    {
+      "source": "/parcel-service/DE-SH",
+      "destination": "https://service.gdi-sh.de/SH_INSPIREVIEW_AI_CP_ALKIS"
+    },
+    {
+      "source": "/parcel-service/DE-TH",
+      "destination": "https://www.geoproxy.geoportal-th.de/geoproxy/services/ALKISKOMPAKT"
     }
   ]
 }

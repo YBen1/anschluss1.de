@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FeatureCollection xmlns="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-basic.xsd http://www.deegree.org/app https://geodienste.bremen.de/wms_flurstuecke?request=GetFeatureInfoSchema&amp;layers=flurstuecke">
+  <gml:boundedBy>
+    <gml:Box srsName="EPSG:25832">
+      <gml:coordinates decimal="." cs="," ts=" ">53.074088,8.805727 53.075052,8.807159</gml:coordinates>
+    </gml:Box>
+  </gml:boundedBy>
+  <gml:featureMember>
+    <app:flurstuecke xmlns:app="http://www.deegree.org/app" fid="APP_FLURSTUECKE_150663">
+      <app:oid>DEHB01ALh00007fpFL</app:oid>
+      <app:aktualit>2020-07-15Z</app:aktualit>
+      <app:idflurst>DEHB01ALh00007fp</app:idflurst>
+      <app:flaeche>2176.0</app:flaeche>
+      <app:flstkennz>041004004004510020__</app:flstkennz>
+      <app:land>Bremen</app:land>
+      <app:landschl>04</app:landschl>
+      <app:gemarkung>Altstadt 4</app:gemarkung>
+      <app:gemaschl>041004</app:gemaschl>
+      <app:flur>004</app:flur>
+      <app:flurschl>041004004</app:flurschl>
+      <app:flstnrzae>451</app:flstnrzae>
+      <app:flstnrnen>20</app:flstnrnen>
+      <app:regbezirk>Freie Hansestadt Bremen</app:regbezirk>
+      <app:regbezschl>040</app:regbezschl>
+      <app:kreis>Kreisfreie Stadt Bremen</app:kreis>
+      <app:kreisschl>04011</app:kreisschl>
+      <app:gemeinde>Stadtgemeinde Bremen</app:gemeinde>
+      <app:gmdschl>04011000</app:gmdschl>
+      <app:abwrecht>Kein abweichender Rechtszustand</app:abwrecht>
+      <app:lagebeztxt>Wachtstraße</app:lagebeztxt>
+      <app:tntxt>Weg; 419|Strassenverkehr; 1185|Weg; 572</app:tntxt>
+    </app:flurstuecke>
+  </gml:featureMember>
+</FeatureCollection>

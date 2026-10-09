@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gml:FeatureCollection gml:id="collection.0" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:cp="http://inspire.ec.europa.eu/schemas/cp/4.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/cp/4.0 https://www.geodaten-mv.de/aaa-suite/schema/inspire.ec.europa.eu/schemas/cp/4.0/CadastralParcels.xsd http://www.opengis.net/gml/3.2 https://www.geodaten-mv.de/aaa-suite/schema/ogc/gml/3.2.1/gml.xsd http://www.isotc211.org/2005/gco https://www.geodaten-mv.de/aaa-suite/schema/ogc/iso/19139/20070417/gco/gco.xsd http://www.isotc211.org/2005/gmd https://www.geodaten-mv.de/aaa-suite/schema/ogc/iso/19139/20070417/gmd/gmd.xsd">
+<gml:boundedBy>
+<gml:Envelope srsName="http://www.opengis.net/def/crs/epsg/0/4326">
+<gml:lowerCorner>53.6285104327228 11.414367898491</gml:lowerCorner>
+<gml:upperCorner>53.6291972668811 11.4154212364901</gml:upperCorner>
+</gml:Envelope>
+</gml:boundedBy>
+<gml:featureMember>
+<cp:CadastralParcel gml:id="CadastralParcel_130768037000720002__">
+<gml:identifier codeSpace="http://inspire.ec.europa.eu/ids">https://registry.gdi-de.org/id/de.mv.land.inspire.cp.alkis/CadastralParcel_130768037000720002__</gml:identifier>
+<cp:areaValue uom="m2">3271.0</cp:areaValue>
+<cp:beginLifespanVersion>2024-04-22T07:00:00Z</cp:beginLifespanVersion>
+<cp:endLifespanVersion nilReason="other:unpopulated" xsi:nil="true"/>
+<cp:geometry>
+<gml:Polygon gml:id="o11001.id.1096998.position.Geom_0">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>53.6286723988483 11.414367898491 53.6286465974132 11.4144902977813 53.6286215892105 11.4146088621796 53.6285740861256 11.4148341421517 53.6285397392138 11.4149969978078 53.6285104327228 11.4151590925819 53.628526307388 11.4151672168702 53.628527571727 11.4151547936531 53.6285903573778 11.4151812085146 53.6285889273827 11.4151914065456 53.6285880548081 11.4151976990845 53.6285928491402 11.4152001215648 53.6286418269833 11.415224954593 53.6286426630095 11.4152195426977 53.628691684604 11.4152521338463 53.6287825998116 11.4152985545653 53.6287838271704 11.415298995099 53.6287992770285 11.4153070496251 53.6288497949926 11.4153328567001 53.6288489703302 11.4153371480176 53.6290111668853 11.415419173919 53.6290119691627 11.4154150357891 53.6290241256955 11.4154212364901 53.6290635521604 11.4152618972642 53.6291036043716 11.4151000383816 53.6290927411196 11.4150925781012 53.6291353287883 11.4149139057632 53.6291464782135 11.4149213114567 53.6291892282756 11.4147453635186 53.6291972668811 11.4146367412011 53.6291837346052 11.4146506446806 53.6290306355995 11.4145903933826 53.6289263148659 11.414544718388 53.6288063000263 11.4144570578696 53.6288050864513 11.4144561774135 53.6288044057705 11.4144586711567 53.6287110040556 11.414394428079 53.6286723988483 11.414367898491</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</cp:geometry>
+<cp:inspireId>
+<base:Identifier>
+<base:localId>CadastralParcel_130768037000720002__</base:localId>
+<base:namespace>https://registry.gdi-de.org/id/de.mv.land.inspire.cp.alkis</base:namespace>
+</base:Identifier>
+</cp:inspireId>
+<cp:label>72/2</cp:label>
+<cp:nationalCadastralReference>130768037000720002__</cp:nationalCadastralReference>
+<cp:referencePoint>
+<gml:Point gml:id="o11001.id.1096998.ST_PointOnSurface__T_.position__.Geom_0">
+<gml:pos>53.6288879521056 11.4149353370912</gml:pos>
+</gml:Point>
+</cp:referencePoint>
+<cp:validFrom>2000-01-01</cp:validFrom>
+<cp:validTo nilReason="other:unpopulated" xsi:nil="true"/>
+<cp:zoning xlink:href="CadastralZoning_130768037"/>
+</cp:CadastralParcel>
+</gml:featureMember>
+</gml:FeatureCollection>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gml:FeatureCollection gml:id="collection.0" xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" xmlns:cp="http://inspire.ec.europa.eu/schemas/cp/4.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/cp/4.0 http://download.lgln.niedersachsen.de/aaa-suite/schema/inspire.ec.europa.eu/schemas/cp/4.0/CadastralParcels.xsd http://www.opengis.net/gml/3.2 http://download.lgln.niedersachsen.de/aaa-suite/schema/ogc/gml/3.2.1/gml.xsd http://www.isotc211.org/2005/gco http://download.lgln.niedersachsen.de/aaa-suite/schema/ogc/iso/19139/20070417/gco/gco.xsd http://www.isotc211.org/2005/gmd http://download.lgln.niedersachsen.de/aaa-suite/schema/ogc/iso/19139/20070417/gmd/gmd.xsd">
+<gml:boundedBy>
+<gml:Envelope srsName="http://www.opengis.net/def/crs/epsg/0/4326">
+<gml:lowerCorner>52.3724568388918 9.73481653620463</gml:lowerCorner>
+<gml:upperCorner>52.3737973246593 9.73748965065672</gml:upperCorner>
+</gml:Envelope>
+</gml:boundedBy>
+<gml:featureMember>
+<cp:CadastralParcel gml:id="CadastralParcel_034880045002080015__">
+<gml:identifier codeSpace="http://inspire.ec.europa.eu/ids">https://registry.gdi-de.org/id/de.ni.land.geobasisdaten.inspire.cp.alkis/CadastralParcel_034880045002080015__</gml:identifier>
+<cp:areaValue uom="m2">4056.0</cp:areaValue>
+<cp:beginLifespanVersion>2024-10-02T14:16:18Z</cp:beginLifespanVersion>
+<cp:endLifespanVersion nilReason="other:unpopulated" xsi:nil="true"/>
+<cp:geometry>
+<gml:Polygon gml:id="o11001.id.482767891.position.Geom_0">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>52.3737678456832 9.73481653620463 52.373536631908 9.73484886409487 52.3735422108712 9.73505484347127 52.3735343403688 9.73536185363912 52.3735306710637 9.73535914860163 52.3735165843468 9.73541236936907 52.373520702219 9.73541522875502 52.3734843960075 9.73555429243287 52.3734514054449 9.73568063121743 52.3734115919906 9.73579379757586 52.3733817850089 9.7358881807816 52.3732459116433 9.73631817017142 52.3732244730511 9.73636949061408 52.3731924773405 9.73644280155898 52.3731798070239 9.73647063266616 52.3730332318234 9.73677386300005 52.3728804259566 9.73683476282338 52.3728269050328 9.73695589510123 52.3727843281849 9.73705209081395 52.372718596764 9.73720078174167 52.3724568388918 9.73732573117042 52.3728274865949 9.73748965065672 52.372919139242 9.73729755888106 52.3729216987637 9.73729080040094 52.3729241165688 9.73728514125071 52.3729440024311 9.73724210983592 52.3729640435984 9.73720156344684 52.3729647589221 9.73720219230455 52.373091519585 9.73696247359747 52.3731666527439 9.73676364141214 52.3732672439334 9.73652921386624 52.3732731378313 9.73653561363306 52.3732953983765 9.73648225038069 52.3733159039821 9.73642195389645 52.3733832910295 9.73622381359338 52.3734119374368 9.73624074203548 52.3734300643757 9.73618847019699 52.3734585190503 9.73610627148411 52.3734659448447 9.73611066955656 52.3735266680059 9.73614662524393 52.373671698777 9.73560161946435 52.3736982720243 9.73539114966382 52.3737387311014 9.73522327463948 52.3737973246593 9.73496709335116 52.3737908240683 9.73493390470007 52.3737894530756 9.73493461641666 52.3737805704955 9.73491146522771 52.3737730330891 9.73487295648314 52.3737720429198 9.73484567636056 52.373773413912 9.73484496464149 52.3737678456832 9.73481653620463</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</cp:geometry>
+<cp:inspireId>
+<base:Identifier>
+<base:localId>CadastralParcel_034880045002080015__</base:localId>
+<base:namespace>https://registry.gdi-de.org/id/de.ni.land.geobasisdaten.inspire.cp.alkis</base:namespace>
+</base:Identifier>
+</cp:inspireId>
+<cp:label>208/15</cp:label>
+<cp:nationalCadastralReference>034880045002080015__</cp:nationalCadastralReference>
+<cp:referencePoint>
+<gml:Point gml:id="o11001.id.482767891.ST_PointOnSurface__T_.position__.Geom_0">
+<gml:pos>52.3731299940186 9.73671743230853</gml:pos>
+</gml:Point>
+</cp:referencePoint>
+<cp:validFrom>1971-01-01</cp:validFrom>
+<cp:validTo nilReason="other:unpopulated" xsi:nil="true"/>
+<cp:zoning xlink:href="CadastralZoning_034880045"/>
+</cp:CadastralParcel>
+</gml:featureMember>
+</gml:FeatureCollection>

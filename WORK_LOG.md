@@ -33,3 +33,7 @@ Adresseingabe durch `address-search.js` um Vorschläge beim Tippen erweitert. Dr
 ## Flurstückserweiterung – 08.10.2026
 
 NRW-Einzellayer durch konfigurierbare Landesadapter für alle 16 Bundesländer ersetzt. Amtliche WMS/INSPIRE-/ALKIS-Dienste mit belegten Quellen und Nutzungsangaben; Bayern als Parzellarkarte ohne Nummern. Laden nur auf Anfrage und im Detailzoom für den Ausschnitt, Status und Retry pro Dienst, Quellenanzeige und Datenschutzhinweise aktualisiert. Echte GetMap-PNGs und Browserabläufe aller Länder bestanden, Konfiguration und reproduzierbare Prüfskripte gesichert.
+
+## Flurstücksauswahl – 09.10.2026
+
+Eigener Auswahlmodus in der Standortwahl ergänzt. GetFeatureInfo-Adapter für 14 Länder, normalisierte Flurstücksmerkmale und Polygon-/MultiPolygon-Hervorhebung, Trefferliste bei mehreren Ergebnissen, explizite Übernahme in Netzplanung, Vergleich und Bericht. In Bayern/Rheinland-Pfalz transparente manuelle Auswahl aufgrund fehlender Einzelabfrage im bestehenden WMS. Feste Vercel-Rewrites für Dienste ohne CORS, Schutz vor veralteten Antworten, Abbruch bei Modus-/Standortwechsel, Fehler/Retry. Fremde parallele Backend-Änderungen bleiben unberührt. Die bestehenden Punkt- und Zeichenmodi bleiben separat wählbar.

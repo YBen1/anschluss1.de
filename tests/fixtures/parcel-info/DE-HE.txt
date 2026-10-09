@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CadastralParcel_060460009000660007__",
+      "properties": {
+        "identifier": {
+          "value": "https://registry.gdi-de.org/id/de.he.0462.de7.cp.alkis/CadastralParcel_060460009000660007__",
+          "codeSpace": "http://inspire.ec.europa.eu/ids"
+        },
+        "areaValue": {
+          "uom": "m2",
+          "value": 1213.0
+        },
+        "beginLifespanVersion": "2023-07-12T10:35:56Z",
+        "endLifespanVersion": {
+          "nil": true,
+          "nilReason": "other:unpopulated"
+        },
+        "inspireId": {
+          "Identifier": {
+            "namespace": "https://registry.gdi-de.org/id/de.he.0462.de7.cp.alkis",
+            "localId": "CadastralParcel_060460009000660007__"
+          }
+        },
+        "label": "66/7",
+        "nationalCadastralReference": "060460009000660007__",
+        "validTo": {
+          "nil": true,
+          "nilReason": "other:unpopulated"
+        },
+        "zoning": {
+          "href": "#CadastralZoning_060460009"
+        }
+      }
+    }
+  ]
+}

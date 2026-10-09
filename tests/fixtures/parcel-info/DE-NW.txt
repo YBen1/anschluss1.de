@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gml:FeatureCollection gml:id="collection.0" xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.adv-online.de/namespaces/adv/gid/7.1 https://www.wms.nrw.de/aaa-suite/schema/NAS/7.1/adv/nas/7.1/AAA-Fachschema.xsd http://www.opengis.net/gml/3.2 https://www.wms.nrw.de/aaa-suite/schema/NAS/7.1/ogc/gml/3.2.1/gml.xsd http://www.isotc211.org/2005/gco https://www.wms.nrw.de/aaa-suite/schema/NAS/7.1/iso/19139/20070417/gco/gco.xsd http://www.isotc211.org/2005/gmd https://www.wms.nrw.de/aaa-suite/schema/NAS/7.1/iso/19139/20070417/gmd/gmd.xsd">
+<gml:boundedBy>
+<gml:Envelope srsName="urn:ogc:def:crs:EPSG::4326">
+<gml:lowerCorner>51.2275126481875 6.77297867309525</gml:lowerCorner>
+<gml:upperCorner>51.2288868201889 6.77366220755226</gml:upperCorner>
+</gml:Envelope>
+</gml:boundedBy>
+<gml:featureMember>
+<adv:AX_Flurstueck gml:id="DENW20AL0000DR8m">
+<gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:DENW20AL0000DR8m</gml:identifier>
+<adv:lebenszeitintervall>
+<adv:AA_Lebenszeitintervall>
+<adv:beginnt>2024-02-26T13:13:38Z</adv:beginnt>
+</adv:AA_Lebenszeitintervall>
+</adv:lebenszeitintervall>
+<adv:modellart>
+<adv:AA_Modellart>
+<adv:advStandardModell>DLKM</adv:advStandardModell>
+</adv:AA_Modellart>
+</adv:modellart>
+<adv:anlass xlink:href="https://registry.gdi-de.org/codelist/de.adv-online.gid/AA_Anlassart/010704" xlink:title="Qualitätssicherung und Datenpflege"/>
+<adv:zeigtAufExternes>
+<adv:AA_Fachdatenverbindung>
+<adv:art>urn:adv:fdv:0901</adv:art>
+<adv:fachdatenobjekt>
+<adv:AA_Fachdatenobjekt>
+<adv:uri>urn:adv:oid:DENW20AL0001c6Tm</adv:uri>
+</adv:AA_Fachdatenobjekt>
+</adv:fachdatenobjekt>
+</adv:AA_Fachdatenverbindung>
+</adv:zeigtAufExternes>
+<adv:inversZu_dientZurDarstellungVon_AP_PTO xlink:href="urn:adv:oid:DENW20AL0000DR0P"/>
+<adv:position>
+<gml:Polygon gml:id="o11001.id.54602871.position.Geom_0">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>51.228851594306 6.77297867309525 51.2287608958623 6.77302980660595 51.2287256797719 6.7730531077943 51.2286776397485 6.77308449099881 51.2286245592332 6.7731189680018 51.2285905079406 6.77314109553427 51.2285885268179 6.77314238008642 51.2285172275926 6.77318454053126 51.2284872585954 6.77320237419567 51.2284444887753 6.77322525201161 51.2282954090797 6.77331021460739 51.228156172858 6.77338832727874 51.228118813257 6.77340958278056 51.2280009560371 6.77347500312769 51.2279702508985 6.77334737070206 51.2279594561946 6.77330566530045 51.2279569337729 6.77330733405665 51.2279342317354 6.77321933612593 51.2279367631412 6.77321766693197 51.2279252751339 6.7731730873354 51.2279160760056 6.77313772202987 51.2278171652266 6.77316895388305 51.2277604984922 6.77324607316194 51.2277461656411 6.773265600897 51.2277386468658 6.77323819019367 51.2276926832115 6.7732699879036 51.2276890526027 6.7732724979611 51.2276466228427 6.77329575993755 51.2275126481875 6.77337058085168 51.2275542538677 6.77366220755226 51.2275966273134 6.77363220222413 51.2275847925871 6.77358971652547 51.2276049194415 6.77357549549781 51.227609108755 6.77356737225699 51.2276137514209 6.77355944198449 51.2276186908776 6.77355198438842 51.2276240156171 6.7735449235783 51.2276294784072 6.77353850066859 51.2276352126665 6.77353263760004 51.2276411737407 6.77352735085221 51.2276470596687 6.77352284121087 51.2276537055409 6.7735185670317 51.2276602228995 6.77351510118318 51.2276668527151 6.77351234609027 51.2276724391454 6.77351052943754 51.227680456251 6.77350883894354 51.2276872872952 6.77350815107303 51.2276941403982 6.77350814967596 51.2276995275296 6.77350862011484 51.2277195996436 6.77349435868611 51.2277313529926 6.77353681976514 51.2277791284897 6.77350381757289 51.2278197628991 6.77365037894439 51.2279255125545 6.77357586092898 51.2279478818351 6.7736563121115 51.2279935341189 6.77362799599864 51.2279951618273 6.77362751635545 51.2279976913392 6.77362716506409 51.228000229294 6.7736272574034 51.2280027310371 6.77362780985292 51.2280051870386 6.77362879422517 51.2280069508956 6.77362979768644 51.2280098079762 6.77363200886931 51.2280117893924 6.77363404746711 51.2280136243215 6.77363642258447 51.2280152847181 6.77363907827999 51.2280175798171 6.77364389488069 51.2280207372686 6.77365574582084 51.2281619272902 6.77357206816515 51.2284154661577 6.77342180276272 51.2284190504834 6.77341969598069 51.228423720796 6.77343637275852 51.2287167975502 6.77322857645971 51.2287875132157 6.77317843691804 51.2287839235921 6.7731656183218 51.2288868201889 6.77309242422667 51.228851594306 6.77297867309525</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</adv:position>
+<adv:gemarkung>
+<adv:AX_Gemarkung_Schluessel>
+<adv:land>05</adv:land>
+<adv:gemarkungsnummer>3110</adv:gemarkungsnummer>
+</adv:AX_Gemarkung_Schluessel>
+</adv:gemarkung>
+<adv:flurstuecksnummer>
+<adv:AX_Flurstuecksnummer>
+<adv:zaehler>273</adv:zaehler>
+</adv:AX_Flurstuecksnummer>
+</adv:flurstuecksnummer>
+<adv:flurstueckskennzeichen>05311000400273______</adv:flurstueckskennzeichen>
+<adv:amtlicheFlaeche uom="m2">2355.0</adv:amtlicheFlaeche>
+<adv:flurnummer>4</adv:flurnummer>
+<adv:abweichenderRechtszustand>false</adv:abweichenderRechtszustand>
+<adv:rechtsbehelfsverfahren>false</adv:rechtsbehelfsverfahren>
+<adv:zeitpunktDerEntstehung>2013-04-12</adv:zeitpunktDerEntstehung>
+<adv:gemeindezugehoerigkeit>
+<adv:AX_Gemeindekennzeichen>
+<adv:land>05</adv:land>
+<adv:regierungsbezirk>1</adv:regierungsbezirk>
+<adv:kreis>11</adv:kreis>
+<adv:gemeinde>000</adv:gemeinde>
+</adv:AX_Gemeindekennzeichen>
+</adv:gemeindezugehoerigkeit>
+<adv:istGebucht xlink:href="urn:adv:oid:DENW20AL0000JAH2"/>
+<adv:zeigtAuf xlink:href="urn:adv:oid:DENW20AL0000agbo"/>
+</adv:AX_Flurstueck>
+</gml:featureMember>
+<gml:featureMember>
+<adv:AX_LagebezeichnungOhneHausnummer gml:id="DENW20AL0000agbo">
+<gml:identifier codeSpace="http://www.adv-online.de/">urn:adv:oid:DENW20AL0000agbo</gml:identifier>
+<adv:lebenszeitintervall>
+<adv:AA_Lebenszeitintervall>
+<adv:beginnt>2010-12-01T20:57:35Z</adv:beginnt>
+</adv:AA_Lebenszeitintervall>
+</adv:lebenszeitintervall>
+<adv:modellart>
+<adv:AA_Modellart>
+<adv:advStandardModell>DLKM</adv:advStandardModell>
+</adv:AA_Modellart>
+</adv:modellart>
+<adv:modellart>
+<adv:AA_Modellart>
+<adv:sonstigesModell xlink:href="https://registry.gdi-de.org/codelist/de.adv-online.gid/AA_WeitereModellart/NWABK" xlink:title="NWABK"/>
+</adv:AA_Modellart>
+</adv:modellart>
+<adv:anlass xlink:href="https://registry.gdi-de.org/codelist/de.adv-online.gid/AA_Anlassart/000000" xlink:title="Ersteinrichtung"/>
+<adv:inversZu_dientZurDarstellungVon_AP_PTO xlink:href="urn:adv:oid:DENW20AL0000HGK0"/>
+<adv:inversZu_dientZurDarstellungVon_AP_PTO xlink:href="urn:adv:oid:DENW20AL0000HGLP"/>
+<adv:lagebezeichnung>
+<adv:AX_Lagebezeichnung>
+<adv:verschluesselt>
+<adv:AX_VerschluesselteLagebezeichnung>
+<adv:land>05</adv:land>
+<adv:regierungsbezirk>1</adv:regierungsbezirk>
+<adv:kreis>11</adv:kreis>
+<adv:gemeinde>000</adv:gemeinde>
+<adv:lage>02275</adv:lage>
+</adv:AX_VerschluesselteLagebezeichnung>
+</adv:verschluesselt>
+</adv:AX_Lagebezeichnung>
+</adv:lagebezeichnung>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL00009QLL"/>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL00009QLW"/>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL00009QMm"/>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL0000DR8H"/>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL0000DR8K"/>
+<adv:gehoertZu xlink:href="urn:adv:oid:DENW20AL0000DR8m"/>
+</adv:AX_LagebezeichnungOhneHausnummer>
+</gml:featureMember>
+</gml:FeatureCollection>

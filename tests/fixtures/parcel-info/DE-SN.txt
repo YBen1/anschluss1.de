@@ -1,0 +1,19 @@
+
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "OBJECTID": "168307",
+          "Flaeche_in_m2": "11257",
+          "Flurstuecksnummer": "4348",
+          "Gemarkungsschluessel": "0415",
+          "Shape": "Polygon"
+        },
+        "layerName": "Flurstueck"	
+      }
+    ]
+  }
+  

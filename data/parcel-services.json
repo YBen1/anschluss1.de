@@ -23,7 +23,11 @@
         48.778,
         9.18
       ],
-      "note": "Liegenschaftskarte einschließlich weiterer Katasterinhalte."
+      "note": "Liegenschaftskarte einschließlich weiterer Katasterinhalte.",
+      "query": {
+        "layers": "nora:ALKIS_Basis_Vertrieb",
+        "format": "application/json"
+      }
     },
     {
       "id": "DE-BY",
@@ -73,7 +77,12 @@
         52.52,
         13.405
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "flurstuecke",
+        "format": "application/json",
+        "swapXY": true
+      }
     },
     {
       "id": "DE-BB",
@@ -98,7 +107,11 @@
         52.4,
         13.06
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "adv_alkis_flurstuecke",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-HB",
@@ -123,7 +136,11 @@
         53.075,
         8.807
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "flurstuecke",
+        "format": "application/vnd.ogc.gml"
+      }
     },
     {
       "id": "DE-HH",
@@ -148,7 +165,11 @@
         53.55,
         9.993
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "application/vnd.ogc.gml"
+      }
     },
     {
       "id": "DE-HE",
@@ -173,7 +194,11 @@
         50.111,
         8.682
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "application/geo+json"
+      }
     },
     {
       "id": "DE-MV",
@@ -198,7 +223,11 @@
         53.629,
         11.415
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-NI",
@@ -223,7 +252,11 @@
         52.373,
         9.737
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-NW",
@@ -248,7 +281,11 @@
         51.2277,
         6.7735
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "adv_alkis_flurstuecke",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-RP",
@@ -298,7 +335,11 @@
         49.234,
         6.997
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "application/vnd.ogc.gml"
+      }
     },
     {
       "id": "DE-SN",
@@ -323,7 +364,11 @@
         51.34,
         12.37
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "Flurstueck",
+        "format": "application/geo+json"
+      }
     },
     {
       "id": "DE-ST",
@@ -348,7 +393,11 @@
         52.12,
         11.627
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-SH",
@@ -373,7 +422,11 @@
         54.323,
         10.139
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "CP.CadastralParcel",
+        "format": "text/xml;subtype=gml/3.2.1"
+      }
     },
     {
       "id": "DE-TH",
@@ -398,7 +451,11 @@
         50.978,
         11.029
       ],
-      "note": ""
+      "note": "",
+      "query": {
+        "layers": "alkis_fl",
+        "format": "application/vnd.ogc.gml"
+      }
     }
   ]
 }

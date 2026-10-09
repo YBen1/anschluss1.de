@@ -43,5 +43,5 @@ export function setupParcels({map,checkbox,status,zoomButton,retryButton,getSite
   zoomButton.onclick=()=>{const site=getSite();map.setView(site?[site.lat,site.lon]:map.getCenter(),17);};
   retryButton.onclick=()=>{if(!ready){init();return;}for(const r of active.values()){r.errors=0;r.layer.redraw();}report();};
   map.on('moveend',update);init();
-  return {sourcesHtml(esc){return providers.map(p=>`<li><strong>${esc(p.name)}</strong>: <a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.attribution)}</a> · <a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>${p.note?' · '+esc(p.note):''}</li>`).join('');}};
+  return {getProviders:()=>providers,sourcesHtml(esc){return providers.map(p=>`<li><strong>${esc(p.name)}</strong>: <a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.attribution)}</a> · <a href="${esc(p.licenseUrl)}" target="_blank" rel="noopener">${esc(p.license)}</a>${p.note?' · '+esc(p.note):''}</li>`).join('');}};
 }

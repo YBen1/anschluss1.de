@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FeatureCollection xmlns="http://www.opengis.net/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-basic.xsd http://www.deegree.org/app https://geodienste.hamburg.de/HH_WMS_INSPIRE_Flurstuecke?request=GetFeatureInfoSchema&amp;layers=CP.CadastralParcel">
+  <gml:boundedBy>
+    <gml:Box srsName="EPSG:25832">
+      <gml:coordinates decimal="." cs="," ts=" ">53.549065,9.991545 53.550159,9.993222</gml:coordinates>
+    </gml:Box>
+  </gml:boundedBy>
+  <gml:featureMember>
+    <app:CP.CadastralParcel xmlns:app="http://www.deegree.org/app" fid="CadastralParcel_020101___01376______">
+      <app:gml_identifier>https://registry.gdi-de.org/id/de.hh/b7b0c1f4-6ce4-4179-95bb-8815f29355f4/CadastralParcel_020101___01376______</app:gml_identifier>
+      <app:cp_inspireid_base_identifier_base_localid>CadastralParcel_020101___01376______</app:cp_inspireid_base_identifier_base_localid>
+      <app:cp_inspireid_base_identifier_base_namespace>https://registry.gdi-de.org/id/de.hh/b7b0c1f4-6ce4-4179-95bb-8815f29355f4</app:cp_inspireid_base_identifier_base_namespace>
+      <app:gml_identifier_attr_codespace>http://inspire.ec.europa.eu/ids</app:gml_identifier_attr_codespace>
+      <app:label>1376</app:label>
+      <app:cp_nationalcadastralreference>020101___01376______</app:cp_nationalcadastralreference>
+      <app:cp_zoning_href>#CadastralZoning_020101</app:cp_zoning_href>
+    </app:CP.CadastralParcel>
+  </gml:featureMember>
+</FeatureCollection>
