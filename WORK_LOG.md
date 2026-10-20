@@ -37,3 +37,7 @@ NRW-Einzellayer durch konfigurierbare Landesadapter für alle 16 Bundesländer e
 ## Flurstücksauswahl – 09.10.2026
 
 Eigener Auswahlmodus in der Standortwahl ergänzt. GetFeatureInfo-Adapter für 14 Länder, normalisierte Flurstücksmerkmale und Polygon-/MultiPolygon-Hervorhebung, Trefferliste bei mehreren Ergebnissen, explizite Übernahme in Netzplanung, Vergleich und Bericht. In Bayern/Rheinland-Pfalz transparente manuelle Auswahl aufgrund fehlender Einzelabfrage im bestehenden WMS. Feste Vercel-Rewrites für Dienste ohne CORS, Schutz vor veralteten Antworten, Abbruch bei Modus-/Standortwechsel, Fehler/Retry. Fremde parallele Backend-Änderungen bleiben unberührt. Die bestehenden Punkt- und Zeichenmodi bleiben separat wählbar.
+
+## 20.10.2026 – UW-Daten, Schwerpunkt Berlin
+
+OSM-Transformatoren räumlich eindeutig zugeordnet, Berliner Betreiberquellen mit Projektstatus und Quellenprüfung ergänzt. Originaldaten erhalten; Gerätewerte nicht als freie Kapazität ausgegeben. Wuhletals Spannung ergänzt und außer Betrieb bzw. noch nicht in Betrieb bestätigte Anlagen aus Kandidaten ausgeschlossen. Kartenpopup, Kandidatendetails und Export zeigen die Belege. Nationale/regionale Daten und Prüfsummen regeneriert. Daten-, Regressions- und gezielte Browserprüfung erfolgreich. Veröffentlichung über den bestehenden Hauptbranch/Vercel.

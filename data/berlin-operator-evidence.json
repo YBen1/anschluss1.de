@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-20",
+  "scope": "Manuell geprüfte Zuordnung zu bestehenden Berliner OSM-Objekten. Projekttermine sind Planungen, keine Inbetriebnahmebestätigung.",
+  "rights": "Eigene kurze Zusammenfassungen einzelner veröffentlichter Fakten mit Links; keine Übernahme von Bildern oder Seitentexten.",
+  "records": [
+    {
+      "stationIds": [
+        "way/46523216"
+      ],
+      "title": "Ersatzneubau Westend",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/ersatzneubau-des-umspannwerks-westend/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Ehemaliger UW-Standort für einen Neubau. Abriss für 2026, Baustart für 2027 und Fertigstellung für 2031 vorgesehen.",
+      "status": "planned",
+      "excludeCandidate": true
+    },
+    {
+      "stationIds": [
+        "way/1080486178"
+      ],
+      "title": "Ersatzneubau Poelchaustraße",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/neubau-eines-umspannwerks-in-marzahn/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Inbetriebnahme des Neubaus im 3. Quartal 2027 geplant; danach Demontage der Altanlage. Projektabschluss für Ende 2028 vorgesehen.",
+      "status": "construction",
+      "excludeCandidate": true
+    },
+    {
+      "stationIds": [
+        "way/1218053753"
+      ],
+      "title": "Neubau Voltairestraße",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/neubau-umspannwerk-berlin-mitte/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Neubau am früheren UW-Standort. Inbetriebnahme für Juli 2027 geplant.",
+      "status": "construction",
+      "excludeCandidate": true
+    },
+    {
+      "stationIds": [
+        "way/168921728"
+      ],
+      "title": "Erweiterung Richardstraße / Böhmisches Dorf",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-boehmisches-dorf/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Erweiterungsbau ab Ende 2026 bis Ende 2028 vorgesehen; Anlagentechnik bis zum 3. Quartal 2030, Netzerweiterung bis Mitte 2031.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/42486826",
+        "way/996923565"
+      ],
+      "title": "Ersatzneubau Rollberg",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/neubau-umspannwerk-rollberg/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Neubau neben der Altanlage. Fertigstellung für 2026, Rückbau der Altanlage ab 2027 angekündigt. Tatsächliche Inbetriebnahme des Neubaus durch diese Projektseite nicht bestätigt.",
+      "status": "transition-unconfirmed"
+    },
+    {
+      "stationIds": [
+        "way/27328809"
+      ],
+      "title": "Ersatzneubau Netzknoten Wittenau",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/neubau-netzknoten-wittenau/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Neubau bis Ende 2028; Ablösung des alten Netzknotens durch Inbetriebnahme 2031 geplant. Termin der Detailseite hat Vorrang vor der älteren Projektübersicht.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/48215742"
+      ],
+      "title": "Erweiterung Heiligensee",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/erweiterungsbau-heiligensee/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Erweiterung am bestehenden Gebäude sowie Erneuerung des örtlichen Kabelnetzes angekündigt. Keine freie Anschlussleistung veröffentlicht.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/27060514",
+        "way/46616429"
+      ],
+      "title": "Ersatzneubau Amalienhof",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-amalienhof/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Elektrische Ausstattung des Neubaus bis 2031 geplant; Rückbau der Altanlage voraussichtlich ab 2031. Außenanlagen 2031/2032.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/48216209"
+      ],
+      "title": "Modernisierung Kladow",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-kladow/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Ersatzneubau auf dem Nachbargrundstück bei weiterlaufendem Altwerk geplant; Realisierung abhängig vom Bebauungsplan 5-132. Kein gesicherter Inbetriebnahmetermin.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/118032545"
+      ],
+      "title": "Erweiterung Tiefwerder",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/erweiterung-umspannwerk-tiefwerder/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Erweiterung des bestehenden Umspannwerks. Rohbau bis Herbst 2026, Einbau der elektrotechnischen Anlagen bis 2031 und Außenanlagen 2031/2032 geplant.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/46607755"
+      ],
+      "title": "Modernisierung Claszeile",
+      "url": "https://www.stromnetz.berlin/technik-und-innovationen/investitionen/baumassnahmen/modernisierung-umspannwerk-claszeile/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "note": "Anbau bis Ende 2027, Erneuerung der elektrischen Anlagen bis Ende 2031 geplant; weitere Kabelarbeiten bis Ende 2030.",
+      "status": "modernisation"
+    },
+    {
+      "stationIds": [
+        "way/46507168"
+      ],
+      "title": "Wuhletal: Inbetriebnahme",
+      "url": "https://www.stromnetz.berlin/uber-uns/presse/pressemitteilungen-2023/investition-in-versorgungssicherheit-umspannwerk-wuhletal-in-betrieb-genommen/",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "publishedAt": "2023-11-29",
+      "note": "Inbetriebnahme am 29.11.2023 vom Betreiber veröffentlicht.",
+      "status": "operational"
+    },
+    {
+      "stationIds": [
+        "way/46507168"
+      ],
+      "title": "Wuhletal: technische Projektunterlagen",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/anwohnernformationen/broschuere_stromnetz_berlin_wuhletal.pdf",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "publishedAt": "2015-08",
+      "note": "Projektunterlagen nennen 110-kV- und 10-kV-Schaltanlagen sowie 80 MW gesicherte Leistung als Planungswert. Keine freie Anschlusskapazität; alte Bauzeitangaben sind durch die Inbetriebnahmemeldung überholt.",
+      "voltage": "110000;10000",
+      "ratingNote": "80 MW gesicherte Leistung laut Planung 2015; keine verfügbare Anschlussleistung."
+    },
+    {
+      "stationIds": [
+        "way/46507166"
+      ],
+      "title": "Münsterberger Weg: Altanlage außer Betrieb",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/geschaftsfuhrung/geschaeftsbericht_2023.pdf",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "publishedAt": "2023",
+      "note": "Geschäftsbericht 2023 beschreibt das alte Umspannwerk Münsterberger Weg als außer Betrieb genommen; Rückbau bis 2026 vorgesehen. Ersatz durch Wuhletal.",
+      "status": "decommissioned",
+      "excludeCandidate": true
+    },
+    {
+      "stationIds": [
+        "way/46507168"
+      ],
+      "title": "Wuhletal: Anlagenleistung im Geschäftsbericht 2023",
+      "url": "https://www.stromnetz.berlin/files/globalassets/dokumente/geschaftsfuhrung/geschaeftsbericht_2023.pdf#page=12",
+      "publisher": "Stromnetz Berlin GmbH",
+      "reviewedAt": "2026-10-20",
+      "publishedAt": "2023",
+      "note": "Der Geschäftsbericht 2023 nennt auf Seite 22 eine Anlagenkapazität von 80 MW. Dies ist keine Aussage über freie Anschlussleistung.",
+      "ratingNote": "80 MW Anlagenkapazität laut Geschäftsbericht 2023; freie Anschlussleistung unbekannt."
+    }
+  ]
+}

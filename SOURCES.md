@@ -60,3 +60,11 @@ Bayern hat im bestehenden Dienst keine GetFeatureInfo-Operation. Rheinland-Pfalz
 ### Zuständiger Verteilnetzbetreiber
 
 VNBdigital, Dienstanbieter BDEW, `vnb_coordinates` GraphQL-Abfrage, abgefragt 09.10.2026. Die Koordinate ist `lat,lon`; der Filter enthält die gewählte Ebene `Niederspannung`, `Mittelspannung` oder `Hochspannung`. Übernommen werden Name, Profil-ID und nur aktive `Netzanschluss`-Links. Quelle: https://www.vnbdigital.de/ und Betreibereinträge. Diese Verzeichniszuordnung ist kein Anschlussnachweis; maßgebend ist die Rückmeldung des Betreibers. Bei Höchstspannung erfolgt keine VNB-Empfehlung. Der Browser übermittelt die Standortkoordinate nur beim ausdrücklichen Start der Suche.
+
+## Umspannwerksanreicherung, geprüft am 19.10.2026
+
+- Deutschland: zusätzliche `power=transformer`-Knoten aus demselben Geofabrik-PBF vom 03.10.2026; © OpenStreetMap-Mitwirkende, ODbL-1.0. Geometrisch eindeutige Zuordnung innerhalb geschlossener Stationsflächen, keine Zuordnung allein über Entfernung. Originalobjekt-ID und Änderungsdatum bleiben an jedem Gerät erhalten.
+- Berlin: einzelne technische Fakten und Bau-/Betriebsstatus aus offiziellen Veröffentlichungen der Stromnetz Berlin GmbH. Vollständige objektbezogene Belegliste: [data/berlin-operator-evidence.json](data/berlin-operator-evidence.json). Eigene kurze Zusammenfassungen; keine Übernahme von Fotos, Grafiken oder längeren Quellentexten. Diese Quellen sind keine OSM-Angaben und erhalten eigene Herkunftsfelder.
+- Wuhletal: technische Broschüre Stand August 2015 plus Inbetriebnahmemeldung vom 29.11.2023. Die 80 MW sind eine historische Planungsangabe zur gesicherten Leistung, keine freie Leistung. Münsterberger Weg: Geschäftsbericht 2023 dokumentiert die Außerbetriebnahme.
+- Detailseiten gehen widersprüchlichen Übersichtsangaben vor: Wittenau nennt 2031 für die Inbetriebnahme; Claszeile nennt Ende 2031 für die elektrischen Anlagen. Keine automatische Statusänderung bei Erreichen eines geplanten Termins.
+- Der geprüfte Berliner Open-Data-Dienst „Energienetze“ enthält Gas-/Fernwärme-Näheflächen und eignet sich nicht als Quelle für Umspannwerke. Er wurde nicht zur Ergänzung elektrischer Infrastruktur verwendet.

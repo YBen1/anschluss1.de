@@ -84,3 +84,9 @@ Zusätzliche Browserprüfung bestanden: Flächenzeichnung durch drei Kartenpunkt
 - Blockierte Abfrage: kein übernehmbarer Treffer, verständlicher Fehler, Wiederholung erfolgreich. Auswahl aufheben und Wechsel in Zeichenmodus löschen die Vorschau; alte Antworten aktivieren die Auswahl nicht erneut.
 - 390-Pixel-Mobilansicht: volle Breite der Auswahl, Tastaturfokus auf Treffer, kein horizontaler Überlauf. Kartenfilter im Auswahlmodus eingeklappt. Desktop- und Mobil-Screenshots in `/tmp/anschluss-selection-results/` visuell geprüft. Keine unbehandelten Browserfehler.
 - `git diff --check`: bestanden. Externe Dienste bleiben abhängig von Verfügbarkeit und Datenstand; Bayern/Rheinland-Pfalz unterstützen im verwendeten Dienst keine Einzel-Flurstücksauskunft.
+
+## UW-Datenprüfung 20.10.2026
+
+`node --test tests/*.test.mjs`: sechs Testdateien erfolgreich. Nationale/regionale Objektgleichheit, Prüfsummen, eindeutige Transformatorzuordnung und Kandidatenausschlüsse geprüft. `node tests/browser-regions.mjs`: erfolgreich, keine Laufzeitfehler; Landesladen, Kandidaten, Standortvergleich und Bericht geprüft. Alle 14 bisherigen Betreiberbelege erneut mit öffentlichen Projektseiten bzw. PDFs abgeglichen. Wuhletals 80 MW zusätzlich mit Geschäftsbericht 2023, Seite 22, belegt.
+
+`node tests/browser-station-evidence.mjs`: erfolgreich; Wuhletal als Kandidat, Betreiberbelege und Prüfdatum in Details, Belege im Bericht, keine Laufzeitfehler. Vergleich gegen Git-Ausgangsstand: alle 107.519 ursprünglichen Stationsobjekte unverändert, ausschließlich `equipment` und `operatorEvidence` ergänzt. Nach erneuter Generierung: 5.923 Transformatorobjekte an 2.897 Stationen, 42 Berliner Stationen mit Geräten und 15 Berliner OSM-Stationsobjekte mit Betreiberbelegen.
