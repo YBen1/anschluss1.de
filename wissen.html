@@ -618,6 +618,14 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
   section.block{padding:1.5rem 0}
   body{font-size:12pt}
 }
+/* Gemeinsamer Markenauftritt von Planung und Wissen */
+.topnav { background: #163e34; border-color: #315749; }
+.topnav .brand { color: white; font-size: 1.12rem; letter-spacing: -.045em; }
+.topnav .brand b { color: #c1ed78; }
+.topnav .brand small { border-left: 1px solid #78988a; padding-left: 9px; color: #dfeada; font-size: .78rem; letter-spacing: normal; }
+.topnav .navlinks a { color: #ebf2ed; }
+.topnav .navlinks a:is(:hover,.active) { background: #e4efda; color: #163e34; }
+.hero h1 { font-family: Georgia, serif; font-weight: 500; letter-spacing: -.04em; }
 </style>
 </head>
 <body><a href="/" style="display:block;padding:12px 24px;background:#224d40;color:white;text-align:center;font:14px sans-serif;text-decoration:none">← Zur Deutschlandkarte und Netzanschlussplanung</a>
@@ -626,7 +634,7 @@ footer a:hover{color:#bcdcff;text-decoration:underline}
 
 <nav class="topnav" aria-label="Seitennavigation">
   <div class="bar">
-    <a class="brand" href="#top"><img src="/netzzeichen.svg" alt="Anschluss1" width="30" height="30">TA&nbsp;Mittelspannung&nbsp;Berlin</a>
+    <a class="brand" href="#top" aria-label="Anschluss1 Wissen – zum Seitenanfang"><img src="/netzzeichen.svg" alt="" width="30" height="30"><span>anschluss<b>1</b>.de</span><small>Wissen</small></a>
     <div class="navlinks" id="navlinks">
       <a href="#einordnung">Einordnung</a>
       <a href="#zahlen">Zahlen</a>
