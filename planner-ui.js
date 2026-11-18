@@ -5,23 +5,40 @@ export function setupPlannerUI({map,getSite,getSearchLevel}){
   let step='location',height='middle',drag=null,suppressClick=false;
   const titles={location:'Standort wählen',project:'Vorhaben beschreiben',results:'Anschlussmöglichkeiten',application:'Anmeldung vorbereiten'};
   document.querySelector('.results-section').dataset.plannerPanel='results';
-  $('planner-content').append(document.querySelector('.results-section'));
+  document.querySelector('.local-save').before(document.querySelector('.results-section'));
+  const actionBar = $('planner-action');
+  const actions = {location: $('continue-project'), project: $('analyze'), results: $('continue-application')};
+  actionBar.append(...Object.values(actions));
   const panels=()=>document.querySelectorAll('[data-planner-panel]');
   function resizeMap(){requestAnimationFrame(()=>map.invalidateSize({pan:false}));}
-  function setHeight(value){height=value;sidebar.dataset.sheet=value;$('sheet-toggle').setAttribute('aria-expanded',String(value!=='collapsed'));$('sheet-toggle').setAttribute('aria-label',value==='expanded'?'Detailfläche verkleinern':'Detailfläche vergrößern');}
+  function setHeight(value) {
+    height = value;
+    sidebar.dataset.sheet = value;
+    const collapsed = mobile.matches && value === 'collapsed';
+    for (const el of [document.querySelector('.planner-steps'), $('planner-content'), actionBar, $('show-map')]) {
+      el.inert = collapsed;
+    }
+    $('sheet-toggle').setAttribute('aria-expanded', String(!collapsed));
+    $('sheet-toggle').setAttribute('aria-label', value === 'expanded' ? 'Eingabemaske verkleinern' : 'Eingabemaske vergrößern');
+  }
   function focusPanel(){const heading=sidebar.querySelector('[data-planner-panel]:not([hidden]) h2');heading?.focus({preventScroll:true});}
   function setStep(value,{focus=false}={}){
     if(value!=='location'&&!getSite())return;
-    step=value;panels().forEach(p=>p.hidden=p.dataset.plannerPanel!==value);
+    step=value;
+    Object.entries(actions).forEach(([name, button]) => { button.hidden = name !== step; });
+    actionBar.hidden = !actions[step];
+    panels().forEach(p=>p.hidden=p.dataset.plannerPanel!==value);
     document.querySelectorAll('[data-planner-step]').forEach(b=>{const active=b.dataset.plannerStep===value;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
     $('sheet-title').textContent=titles[value];$('planner-content').scrollTop=0;
     workspace.classList.remove('sidebar-collapsed');sidebar.inert=false;$('sidebar-toggle').setAttribute('aria-expanded','true');
-    if(mobile.matches)setHeight('middle');
+    if(mobile.matches)setHeight(value==='location'?'middle':'expanded');
     if(focus)focusPanel();document.dispatchEvent(new CustomEvent('planner:step',{detail:value}));resizeMap();
   }
   function update(){
     const hasSite=!!getSite();document.querySelectorAll('[data-planner-step]').forEach(b=>b.disabled=b.dataset.plannerStep!=='location'&&!hasSite);
     $('continue-project').disabled=!hasSite;
+    $('selected-site').hidden=!hasSite;
+    if(!hasSite && step!=='location')setStep('location');
     $('project-site').textContent=hasSite?getSite().name||`${getSite().lat.toFixed(5)}, ${getSite().lon.toFixed(5)}`:'Noch kein Standort gewählt';
     const filter=$('voltage-filter');$('visible-voltage').textContent=`Karte: ${filter.selectedOptions[0].textContent}`;
     $('search-voltage').textContent=`Anschlusssuche: ${getSearchLevel()}`;
@@ -40,13 +57,19 @@ export function setupPlannerUI({map,getSite,getSearchLevel}){
   $('sheet-toggle').addEventListener('pointercancel',()=>drag=null);
   function showMap(){if(mobile.matches)setHeight('collapsed');else{workspace.classList.add('sidebar-collapsed');sidebar.inert=true;$('sidebar-toggle').textContent='Planung öffnen';$('sidebar-toggle').setAttribute('aria-expanded','false');resizeMap();}map.getContainer().focus({preventScroll:true});}
   $('show-map').onclick=showMap;
+  $('search').addEventListener('focus', () => { if(mobile.matches)setHeight('expanded'); });
+  for (const id of ['point-mode', 'draw-mode']) {
+    const button = $(id);
+    new MutationObserver(() => button.setAttribute('aria-pressed', String(button.classList.contains('selected'))))
+      .observe(button, {attributes:true, attributeFilter:['class']});
+  }
   // Replace scrolling between distant mobile sections with a persistent sheet.
   document.querySelector('#parcel-selection [data-map]').onclick=showMap;
   $('parcel-selection-back').onclick=()=>{sidebar.inert=false;setStep('location');setHeight('expanded');$('parcel-selection').scrollIntoView({block:'nearest'});};
-  for(const id of ['point-mode','draw-mode','parcel-mode'])$(id).addEventListener('click',()=>{if(mobile.matches&&!(id==='parcel-mode'&&$(id).getAttribute('aria-pressed')==='false'))setHeight('collapsed');});
+  for(const id of ['point-mode','draw-mode','parcel-mode'])$(id).addEventListener('click',()=>{if(mobile.matches&&!(id==='parcel-mode'&&$(id).getAttribute('aria-pressed')==='false'))showMap();});
   const parcelObserver=new MutationObserver(()=>{if(!mobile.matches||$('parcel-selection').hidden)return;if(document.querySelector('#parcel-selection .parcel-result'))setHeight('middle');});
   parcelObserver.observe(document.querySelector('#parcel-selection [data-results]'),{childList:true});
-  $('location-summary').addEventListener('click',()=>{if(getSite())map.setView([getSite().lat,getSite().lon],17);});
+  $('location-summary').addEventListener('click',()=>{if(getSite()){map.setView([getSite().lat,getSite().lon],17);if(mobile.matches)showMap();}});
   for(const id of ['voltage-filter','power','unit','level'])$(id).addEventListener('change',update);
   document.addEventListener('planner:site',()=>{update();if(mobile.matches&&height==='collapsed'&&!document.body.classList.contains('parcel-selecting'))setHeight('middle');});
   mobile.addEventListener('change',()=>{workspace.classList.remove('sidebar-collapsed');sidebar.inert=false;$('sidebar-toggle').setAttribute('aria-expanded','true');setHeight('middle');resizeMap();});

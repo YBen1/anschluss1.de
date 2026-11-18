@@ -72,3 +72,38 @@
 .local-save { padding: 0 20px; border-top: 1px solid var(--line); background: #fafbf7; }
 .local-save summary { padding: 12px 0; color: #43594a; font-size: 14px; }
 .local-save p { margin: 0; font-size: 13px; }
+
+/* Eingabe und Schrittaktion bleiben auch bei langen Formularen getrennt bedienbar. */
+.sidebar { --form-gap: 20px; }
+.sidebar #planner-content { padding: 20px clamp(16px, 2vw, 28px); }
+.sidebar .intro { margin: 0; padding: 0; background: none; border: 0; }
+.sidebar .intro h1 { margin: 0; font-size: clamp(28px, 2.4vw, 36px); }
+.sidebar .intro p { margin: 5px 0 0; display: block; font-size: 14px; }
+.sidebar label, .map-methods legend { font-weight: 600; color: #284a3b; }
+.sidebar .search-box, .sidebar input, .sidebar select { border-radius: 9px; }
+.sidebar .search-box input { border: 0; }
+.sidebar #search-hint { margin: 7px 0; }
+.sidebar #search-status:empty { margin: 0; }
+.map-methods { margin: var(--form-gap) 0; padding: 0; min-width: 0; border: 0; }
+.map-methods legend { margin-bottom: 8px; padding: 0; font-size: 14px; }
+.map-methods > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.map-methods .button { flex-direction: column; gap: 6px; padding: 10px 3px; font-size: 13px; line-height: 1.2; }
+.map-methods [aria-pressed="true"] { color: #163e34; background: #eef5e6; border-color: #537657; box-shadow: inset 0 0 0 1px #537657; }
+#selected-site { border-left: 3px solid #739950; background: #f3f7ef; padding: 14px; border-radius: 0 10px 10px 0; }
+#selected-site h3 { font-size: 15px; margin: 0; }
+#location-summary { display: block; padding: 7px 0; margin: 0; text-align: left; font: inherit; font-size: 14px; background: none; border: 0; text-decoration: underline; text-underline-offset: 3px; }
+.sidebar .local-save { margin-top: 18px; padding: 0; background: none; }
+.sidebar .local-save summary { font-size: 13px; }
+#planner-action { flex: none; padding: 10px clamp(16px, 2vw, 28px); background: white; border-top: 1px solid var(--line); }
+#planner-action .primary { margin: 0; }
+#planner-action .primary:disabled { opacity: 1; background: #e6ebe4; border-color: #e0e6de; color: #59675f; }
+.sidebar .show-map { display: none; }
+@media (max-width:760px) {
+  .sidebar[data-sheet="middle"] { --sheet-height: min(62dvh, calc(100% - 54px)); }
+  .sidebar[data-sheet="collapsed"] #planner-action { display: none; }
+  .sidebar #planner-content { padding: 14px 16px; }
+  .sidebar .intro h1 { font-size: 25px; }
+  .sidebar .intro p { display: none; }
+  .sidebar .show-map { display: block; min-height: 38px; padding: 6px; }
+  #planner-action { padding: 7px 16px; }
+}
