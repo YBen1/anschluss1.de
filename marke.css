@@ -1,0 +1,48 @@
+.header {
+  background: #163e34;
+  color: #fff;
+  border-bottom: 1px solid #315749;
+}
+.header .brand { color: #fff; letter-spacing: -.055em; }
+.brand img { width: 36px; height: 36px; margin-right: 9px; }
+.header .brand-one { color: #c1ed78; }
+.header .brand-de { color: #c4d6ca; letter-spacing: -.04em; }
+.header .nav { color: #e1ebe4; border-radius: 6px; }
+.header .nav:is(:hover, .active) { color: #163e34; background: #e8f4dd; }
+.header #compare-count { color: #183c31; background: #cfe2c4; }
+.header #export { margin-left: auto; background: transparent; border-color: #78988a; color: white; }
+.header #export:hover { background: #2c5548; }
+.header :focus-visible { outline: 3px solid #c1ed78; outline-offset: 2px; }
+.planner-steps { background: #f6f8f2; }
+.planner-steps button[aria-current="step"] { background: #e4efda; color: #193e34; }
+.planner-steps button[aria-current="step"] span { background: #254e3e; color: white; }
+.intro h1, .page-view h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.intro h1 { font-size: clamp(27px, 2.5vw, 38px); line-height: 1.1; }
+.search-box:focus-within { outline: 2px solid #396d50; outline-offset: 2px; }
+.map-label { border-left: 4px solid #416447; }
+@media (max-width: 760px) {
+  .header nav { border-color: #395b50; }
+  .brand img { width: 32px; height: 32px; }
+  .intro h1 { font-size: 26px; }
+}
+@media (max-width: 760px) {
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: 50px 42px;
+    align-content: center;
+    gap: 0 4px;
+    padding: 0 10px;
+  }
+  .header .brand { font-size: 21px; }
+  .header .brand-de { font-size: 15px; }
+  .brand img { width: 27px; height: 27px; margin-right: 5px; }
+  .header #export { grid-column: 2; grid-row: 1; padding: 6px; font-size: 10px; }
+  .header nav { grid-column: 1 / -1; grid-row: 2; gap: 2px; align-items: center; }
+  .header .nav { font-size: 11px; padding: 5px; min-height: 36px; white-space: nowrap; }
+}
